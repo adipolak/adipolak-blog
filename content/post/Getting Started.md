@@ -9,6 +9,11 @@ It's very easy to get started with Vibrant Shadows. How? Read on.
 
 <!--more-->
 
+
+## Trying out images
+![image alt text](/images/image.jpg)
+
+
 ## Prerequisites
 
 Firstly, *ensure you have installed the latest (min v0.75.1) [extended version of Hugo](https://github.com/gohugoio/hugo/releases)*. You may need to scroll down a bit to see extended versions. Alternatively, you may see installation steps from [Hugo's official docs](https://gohugo.io/getting-started/installing/).
