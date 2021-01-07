@@ -9,7 +9,7 @@ theme = "HugoTheme-VibrantShadows"
     identifier = "about"
     name = "about hugo"
     pre = "<i class='fa fa-heart'></i>"
-    url = "/about/"
+    url = "about/"
     weight = -110
 
   [[menu.main]]
