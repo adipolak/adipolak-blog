@@ -1,4 +1,4 @@
-baseURL = "https://agreeable-tree-09f32440f.azurestaticapps.net"
+baseURL = "http://agreeable-tree-09f32440f.azurestaticapps.net"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "hyde"
