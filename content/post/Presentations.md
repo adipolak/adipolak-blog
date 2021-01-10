@@ -1,8 +1,7 @@
 ---
 title: "Presentations"
 author: "Adi Polak"
-description: "Don't miss a thing! "
-tags: ["speaking", "conferences", "youtube"]
+tags: ["speaking", "conferences"]
 date: "2020-01-10"
 author_twitter: "adipolak"
 # draft: true

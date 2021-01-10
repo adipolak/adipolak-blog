@@ -147,15 +147,15 @@ params:
     #myWOT: "ba8579f668r8w3g62503" # content for meta tag to verify your website on 'Web Of Trust'
 menu:
   main:
-  - identifier: home
-    name: home
-    pre: <i class='fa fa-home'></i>
-    url: /
-    weight: -110
+  # - identifier: home
+  #   name: home
+  #   pre: <i class='fa fa-home'></i>
+  #   url: /
+  #   weight: -110
   - identifier: about
     name: about
     pre: <i class='fa fa-road'></i>
-    url: /
+    url: /post/about/
     weight: -110
   - identifier: presentations
     name: presentations
