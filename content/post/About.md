@@ -5,7 +5,7 @@ tags: ["adi polak"]
 date: "1970-30-30"
 author_twitter: "adipolak"
 draft: false
-toc: false
+toc: "false"
 hidden: true
 ---
 
