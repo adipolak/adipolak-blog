@@ -2,7 +2,7 @@
 title: "Presentations"
 author: "Adi Polak"
 tags: ["speaking", "conferences"]
-date: "2020-01-10"
+date: "1970-30-30"
 author_twitter: "adipolak"
 # draft: true
 toc: false

@@ -2,7 +2,7 @@
 title: "About"
 author: "Adi Polak"
 tags: ["adi polak"]
-date: "2020-01-10"
+date: "1970-30-30"
 author_twitter: "adipolak"
 draft: false
 toc: false
