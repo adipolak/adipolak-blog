@@ -271,7 +271,7 @@ There are many more commands to debug K8s cluster and this was just the tip of t
 Have something to add that I forgot to mention? want to discuss more options? write in comments or send a DM on [twitter](https://twitter.com/AdiPolak).
 
 
-# Learn more 💡
+## Learn more 💡
  👉🏼  Watch this [video](https://azure.microsoft.com/en-us/resources/videos/azure-friday-virtual-kubelet-introduction?WT.mc_id=devto-blog-adpolak
 ) on Virtual Kubelet by Ria Bhatia and Scott Hanselman
 
