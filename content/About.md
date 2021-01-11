@@ -12,7 +12,7 @@ url: "/about/"
 
 # About
 
-<img style="float: right;width:250px;" src="https://databricks.com/wp-content/uploads/2020/11/Adi-Polak.jpg;" alt="drawing">
+<img style="float: right;width:150px;" src="https://databricks.com/wp-content/uploads/2020/11/Adi-Polak.jpg;" alt="drawing">
 
 
 

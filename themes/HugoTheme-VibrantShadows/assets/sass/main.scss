@@ -21,6 +21,12 @@ $antinav-light: mix($antinav, $nav, 2%); // background
  * Custom CSS
  */
 
+.responsive {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
 html {
 scroll-behavior: smooth;
 }

@@ -7,7 +7,7 @@ date: "2021-01-10"
 draft: false
 ---
 
-<img style="float: right;width:350px;" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
+<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
 
 Today, you will learn how to take a web app (it can be any programming language,\
 we used Java & Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).
@@ -40,7 +40,6 @@ There are many more concepts and terminology but this is the basic that we need 
 ------------------------
 In the chart from [Kubernetes.io](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) we can see the nodes and master:
 
-<img style="width:100%;height:auto;max-width:650px;" src="https://d33wubrfki0l68.cloudfront.net/d35c2b375b43b4fa374ae834f95224975418e33f/6b47b/images/blog/2018-06-05-11-ways-not-to-get-hacked/kubernetes-control-plane.png;" alt="drawing">
 
 
 
@@ -50,14 +49,15 @@ The ReplicaSet/Deployment defines the replicas that are distributed among multip
 \
 Here is another chart that shows the pods work from [the new stack](https://thenewstack.io/kubernetes-deployments-work/) website:
 
-![](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/07751442-deployment.png)
-
+<img class="responsive"  src="https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/07751442-deployment.png" alt="drawing">
 
 Another diagram shows how ReplicaSet work with Deployment,\
 where Deployment can be view as a template for ReplicaSet with replicas default of 3.\
 Diagram from Nir Mata [site](https://www.nirmata.com/2018/03/03/kubernetes-for-developers-part-2-replica-sets-and-deployments/):
 
-![](https://www.nirmata.com/wp-content/uploads/2018/03/Deployment.png)
+
+<img class="responsive"  src="https://www.nirmata.com/wp-content/uploads/2018/03/Deployment.png" alt="drawing">
+
 
 ### How Kubernetes works? 
 Kubernetes manages N number of nodes and within those nodes, there are these kubelets.\
@@ -99,7 +99,9 @@ According to the managed service in use, we can benefit from [Pay-as-you-Go acco
 
  [Virtual nodes](https://docs.microsoft.com/en-us/azure/aks/virtual-nodes-cli?WT.mc_id=devto-blog-adpolak) can be used with AKS and are powered by the open-source Virtual Kubelet.
 
-![](https://github.com/virtual-kubelet/virtual-kubelet/raw/master/website/static/img/diagram.svg?sanitize=true)
+
+<img class="responsive"  src="https://github.com/virtual-kubelet/virtual-kubelet/raw/master/website/static/img/diagram.svg?sanitize=true" alt="drawing">
+
 
 ### **Pros:**
 **✅ Fully managed solution of top of Kubernetes**
@@ -138,7 +140,7 @@ go to Spring initializer [site](https://start.spring.io/) and download a templat
 In this tutorial, we will deploy a kotlin-spring app to a Virtual Node on K8s cluster.
 We will use the next services: AKS, ACR and ACI.
 
-<img style="width:450px;" src="/images/k8s.png" alt="drawing">
+<img class="responsive" src="/images/k8s.png" alt="drawing">
 
 
 
@@ -167,8 +169,8 @@ docker tag demo $ACR_NAME.azurecr.io/samples/demo
 docker push $ACR_NAME.azurecr.io/samples/demo
 ```
 This is the push process:
-![](https://github.com/adipola/my-posts/blob/master/pictures/01-02-push_docker.png?raw=true)
 
+<img class="responsive" src="/images/01-02-push_docker.png" alt="drawing"> \
 
 To test yourself - run your local docker with remote image
 ```bash
