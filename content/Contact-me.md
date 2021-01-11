@@ -2,6 +2,7 @@
 title: "Contact Me"
 date: "1970-30-30"
 draft: false
+description: "Have something to share? "
 toc: "false"
 url: "/contact-me/"
 ---
