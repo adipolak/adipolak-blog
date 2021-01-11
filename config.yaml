@@ -32,7 +32,7 @@ params:
       github: "https://github.com/AdiPola"
       # gitlab: "https://gitlab.com/Softorage/"
       # instagram: "https://www.instagram.com/softorage/"
-    share: ["facebook", "twitter", "linkedin", "telegram", "whatsapp", "reddit", "email"] # accepts array of values: "facebook", "twitter", "linkedin", "whatsapp", "reddit", "email". just type the name of those you want you articles to be able to be shared on
+    share: ["facebook", "twitter", "linkedin", "telegram", "reddit", "email"] # accepts array of values: "facebook", "twitter", "linkedin", "whatsapp", "reddit", "email". just type the name of those you want you articles to be able to be shared on
   meta:
     author: "Adi Polak" # website-wide author | required
     footerMessage: "Adi Polak" # text shown in footer above footer links | optional
@@ -155,12 +155,12 @@ menu:
   - identifier: about
     name: about
     pre: <i class='fa fa-road'></i>
-    url: /post/about/
+    url: /about/
     weight: -110
   - identifier: presentations
     name: presentations
     pre: <i class='fa fa-road'></i>
-    url: /post/Presentations/
+    url: /presentations/
     weight: -110
   - identifier: subscribe
     post: <span class='alert'>New!</span>
