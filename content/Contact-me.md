@@ -1,5 +1,3 @@
-
-
 ---
 title: "Contact Me"
 date: "1970-30-30"
