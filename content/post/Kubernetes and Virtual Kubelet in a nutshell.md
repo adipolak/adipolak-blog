@@ -40,7 +40,7 @@ There are many more concepts and terminology but this is the basic that we need 
 ------------------------
 In the chart from [Kubernetes.io](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) we can see the nodes and master:
 
-<img style="width:650px;" src="https://d33wubrfki0l68.cloudfront.net/d35c2b375b43b4fa374ae834f95224975418e33f/6b47b/images/blog/2018-06-05-11-ways-not-to-get-hacked/kubernetes-control-plane.png;" alt="drawing">
+<img style="width:100%;height:auto;max-width:650px;" src="https://d33wubrfki0l68.cloudfront.net/d35c2b375b43b4fa374ae834f95224975418e33f/6b47b/images/blog/2018-06-05-11-ways-not-to-get-hacked/kubernetes-control-plane.png;" alt="drawing">
 
 
 

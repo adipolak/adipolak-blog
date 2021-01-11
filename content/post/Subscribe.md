@@ -6,7 +6,7 @@ tags: ["subscribe", "twitter", "youtube"]
 date: "1970-30-30"
 author_twitter: "adipolak"
 # draft: true
-toc: false
+toc: "false"
 url: "/subscribe/"
 hidden: true
 ---
