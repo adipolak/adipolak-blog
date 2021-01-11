@@ -7,6 +7,7 @@ author_twitter: "adipolak"
 # draft: true
 toc: false
 hidden: true
+url: "/presentations/"
 ---
 
 # Presentations
