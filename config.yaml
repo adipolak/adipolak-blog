@@ -156,20 +156,20 @@ menu:
     name: about
     pre: <i class='fa fa-road'></i>
     url: /about/
-    weight: -110
+    weight: 1
   - identifier: presentations
     name: presentations
     pre: <i class='fa fa-road'></i>
     url: /presentations/
-    weight: -110
+    weight: 2
   - identifier: subscribe
     post: <span class='alert'>New!</span>
     name: subscribe
     pre: <i class='fa fa-heart'></i>
     url: /subscribe/
-    weight: -110
+    weight: 3
   - name: contact
     post: <span class='alert'>New!</span>
     pre: <i class='fa fa-address-card'></i>
     url: /contact-me/
-    weight: -100
+    weight: 4

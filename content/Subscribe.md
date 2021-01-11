@@ -8,7 +8,7 @@ author_twitter: "adipolak"
 # draft: true
 toc: "false"
 url: "/subscribe/"
-hidden: true
+hidden: "true"
 ---
 
 
