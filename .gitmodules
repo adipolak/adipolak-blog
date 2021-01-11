@@ -7,3 +7,6 @@
 [submodule "themes/HugoTheme-VibrantShadows"]
 	path = themes/HugoTheme-VibrantShadows
 	url = https://github.com/Softorage/HugoTheme-VibrantShadows.git
+[submodule "themes/hugo-theme-chunky-poster"]
+	path = themes/hugo-theme-chunky-poster
+	url = https://github.com/puresyntax71/hugo-theme-chunky-poster.git
