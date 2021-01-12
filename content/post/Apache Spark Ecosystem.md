@@ -1,7 +1,7 @@
 ---
-title: Apache Spark Ecosystem Jan 2021 Highlights
+title: Apache Spark Ecosystem, Jan 2021 Highlights
 author: "Adi Polak"
-description: "Ever growing Open Source Ecosystem"
+description: "The ever growing Open Source Ecosystem"
 tags: ["open-source", "apache spark", "koalas","pandas","delta lake","ray","ray on spark","analytic zoo"]
 date: "2021-01-12"
 draft: false
@@ -60,7 +60,7 @@ Koalas is built with an internal frame to hold indexes and information on top of
 
 <img  style="width:auto;max-width:650px; height: auto;" src="https://i.ytimg.com/vi/NpAMbzerAp0/maxresdefault.jpg" alt="drawing">
  <br></br>
- 
+
 To learn more about it, checkout [Tim Hunter talk on Koalas](https://databricks.com/session_eu19/koalas-pandas-on-apache-spark) from Spark Summit 2019.
 
 -------------------------------
