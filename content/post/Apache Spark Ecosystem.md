@@ -9,9 +9,9 @@ draft: false
 
 If you've been reading here for a while, you know that I'm a big fan of Apache Spark and have been using it for more than 8 years.\
 Apache Spark is continually growing. It started as part of the Hadoop family,\
-but with [the slow death of hadoop](https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac) and the fast growth of Kubernetes, many new tools and connectors have emerged.
+but with [the slow death of hadoop](https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac) and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.
 
-Let's take a look at them:
+Let's take a look at three exciting open sources:
 
 ## **Ray:**
 <img class="responsive" src=" https://github.com/ray-project/ray/raw/master/doc/source/images/ray_header_logo.png" alt="drawing">
