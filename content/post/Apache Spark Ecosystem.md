@@ -7,6 +7,8 @@ date: "2021-01-12"
 draft: false
 ---
 
+<link rel="canonical" href="blog.adipolak.com/post/apache-spark-ecosystem">
+
 If you've been reading here for a while, you know that I'm a big fan of Apache Spark and have been using it for more than 8 years.\
 Apache Spark is continually growing. It started as part of the Hadoop family,\
 but with [the slow death of hadoop](https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac) and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.
