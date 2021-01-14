@@ -7,7 +7,6 @@ date: "2021-01-12"
 draft: false
 ---
 
-<link rel="canonical" href="blog.adipolak.com/post/apache-spark-ecosystem">
 
 If you've been reading here for a while, you know that I'm a big fan of Apache Spark and have been using it for more than 8 years.\
 Apache Spark is continually growing. It started as part of the Hadoop family,\
