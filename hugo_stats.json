@@ -5,6 +5,7 @@
       "!doctype",
       "a",
       "b",
+      "blockquote",
       "body",
       "br",
       "button",
@@ -16,8 +17,10 @@
       "h1",
       "h2",
       "h3",
+      "h4",
       "head",
       "header",
+      "highlight",
       "hr",
       "html",
       "i",
@@ -40,6 +43,7 @@
       "strong",
       "textarea",
       "title",
+      "u",
       "ul"
     ],
     "classes": [
@@ -158,14 +162,19 @@
     "ids": [
       "TableOfContents",
       "about",
+      "acid-fundementals-in-delta-lake",
+      "atomicity",
       "basic-glossary",
       "cons",
+      "consistency",
       "content",
       "delta-lake",
+      "durability",
       "email",
       "how-kubernetes-works",
       "how-to-debug",
       "install-connector",
+      "isolation",
       "koalas",
       "learn-more-",
       "lets-get-practical-with-a-tutorial",
@@ -178,7 +187,10 @@
       "subscribe-on-twitter",
       "subscribe-on-youtube",
       "thats-it",
-      "what-about-virtual-kubelet-vk"
+      "what-about-virtual-kubelet-vk",
+      "what-is-delta-lake",
+      "what-is-delta-lake-",
+      "whats-next"
     ]
   }
 }
