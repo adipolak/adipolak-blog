@@ -36,8 +36,8 @@ params:
   meta:
     author: "Adi Polak" # website-wide author | required
     footerMessage: "Adi Polak" # text shown in footer above footer links | optional
-    tagline: "Live, Laugh, Code" # shown in website title on homepage and also used in seo | required
-    description: "Data Technologies and Open Source" # should include brand name | character length: 50 to 160 characters
+    tagline: "Data, ML & Open Source" # shown in website title on homepage and also used in seo | required
+    description: "" # should include brand name | character length: 50 to 160 characters
     contentLicense: "CC-BY-SA-3.0" # cc-by-3.0, etc or 'All right reserved.' should also be same as the one in copyright above
     titleSeparator: " | " # used in website/blog title, to separate (say) page title from website/blog title | default: " | "
     attribution: "enable" # attribute Hugo team for awesome software and Softorage for great theme | default: "enable"
@@ -77,7 +77,7 @@ params:
         content: "bottom" # accepts array of values: "summary", "content" | this configuration shows "tags" when 'summary' is shown & in 'blog post' | optional | no default
   font:
     general:
-      family: "Lato" # must match to a css font-family | default: "Lato"
+      family: "-apple-system" # must match to a css font-family | default: "Lato"
       #cdnLink: "" # a link tag for font other than Lato and Roboto | recommended
     heading: 
       list: ["h1"] # accepts array of values: "h1", "h2", "h3", "h4", "h5", "h6" | default: ["h1"]
