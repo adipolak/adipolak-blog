@@ -12,5 +12,7 @@ url: "/thankyou/"
 
 
 Thank you for your message.<br>
-If I won't get back to you within a week, please know that my twitter direct messages are always open.
+<br>
+If I won't get back to you within a week, please know that my [twitter](https://twitter.com/AdiPolak) direct messages are always open.
 
+<iframe src="https://giphy.com/embed/wIVA0zh5pt0G5YtcAL" width="480" height="316" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
