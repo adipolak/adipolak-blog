@@ -33,7 +33,7 @@ But it's not.</p>
 Part 1 focuses on ACID Fundamentals:
 
 ## ACID Fundamentals in Delta Lake:
-Let's break it down to understandFundamentals what each means and how it translates in Delta:
+Let's break it down to understand what each means and how it translates in Delta:
 
 #### Atomicity
   The transaction succeeded or not, all changes, updates, deletes, and other operations either happened as a single unit or not. Think Binary, there is only yes or no - 1 or 0. In Delta, it means that a commit of a transaction happened, and a new transaction log file was written. Transaction log file name example - `000001.json`, the number represents the commit number.
