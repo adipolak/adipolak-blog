@@ -5,6 +5,7 @@ description: "Multi-part series that will take you from beginner to expert in De
 tags: ["open-source", "apache spark", "delta lake","beginner","ACID"]
 date: "2021-02-04"
 draft: false
+image: "/images/image.jpg"
 ---
 🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
 
