@@ -9,7 +9,7 @@ draft: false
 🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
 
 
-## What is Delta Lake
+## What is Delta Lake ?
 <blockquote>
 <p>Delta Lake is an open-source storage layer that brings ACID
 transactions to Apache Spark™ and big data workloads. </p>
@@ -32,7 +32,7 @@ But it's not.</p>
 
 Part 1 focuses on ACID Fundamentals:
 
-## ACID Fundementals in Delta Lake:
+## ACID Fundamentals in Delta Lake:
 Let's break it down to understand what each means and how it translates in Delta:
 
 #### Atomicity
