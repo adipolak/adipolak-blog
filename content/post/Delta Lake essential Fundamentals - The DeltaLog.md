@@ -5,7 +5,6 @@ description: "Multi-part series that will take you from beginner to expert in De
 tags: ["open-source", "apache spark", "delta lake","beginner", "DeltaLog"]
 date: "2021-02-11"
 draft: false
-thumbnail: "/images/Detla/Exploring-DeltaLake.png"
 ---
 
 
