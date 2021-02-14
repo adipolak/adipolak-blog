@@ -9,7 +9,7 @@ draft: false
 
 
 In the previous part, we discussed what [ACID transaction](https://blog.adipolak.com/post/delta-lake-essential-fundamentals) is and what it means in Delta Lake.<br>
-In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving it.
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.
 
 ## Transaction Log
 A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantees [ACID properties](https://blog.adipolak.com/post/delta-lake-essential-fundamentals/) over a crash.
@@ -17,15 +17,15 @@ A transaction log is a history of actions executed by a (TaDa 💡) database man
 ## DeltaLake transaction log - DetlaLog
 
 DeltaLog is a transaction log directory which holds an **ordered** record of every transaction committed on a Delta Lake table since it was created.
-The goal of DeltaLog is to be the **single** source of truth for readers who read from the same table at the same time. Readers have access to the **exact** same data.
-Hence, all users view the same correct data at all times. It's achieved with deltalog tracking all the changes - read, delete, update, etc. that users make to the table.
+The goal of DeltaLog is to be the **single** source of truth for readers who read from the same table at the same time. That means, readers read the **exact** same data.
+Hence, all users view the same correct data at all times. This is achieved with deltalog tracking all the changes that users do: read, delete, update, etc.
 
-DeltaLogs also contains statistics on the data; depending on the data, it can have min, max values, resulting in faster querying. It uses a simplified [push down mechanism](https://medium.com/microsoftazure/data-at-scale-learn-how-predicate-pushdown-will-save-you-money-7063b80878d7).
+DeltaLog can also contain statistics on the data; depending on the type of the actual type of data/field, each field can have min, max values. Having this extra metadata on the large set of data can help with faster querying. DeltaTable read mechanism uses uses a simplified [push down predict](https://medium.com/microsoftazure/data-at-scale-learn-how-predicate-pushdown-will-save-you-money-7063b80878d7).
 
-Here is a simplification of deltalog on the file systems from Databricks site:
+Here is a simplification of deltalog on the file systems from Databricks site: <br>
 <img class="responsive" src="/images/Detla/deltalake-deltalog.png" alt="drawing">
 
-The Delta Log is a folder that consists of multiple JSON files until it reaches 10 files, and then it operates a checkpoint and compaction ( we will dive into it in upcoming chapters).
+The Delta Log itself is a folder that consists out of multiple JSON files. When it reaches 10 files, Delta does a checkpoint and compaction operation( we will dive into it in the next chapter).
 
 
 Here is an example of a Deltalog JSON file from the OSS test resources:
@@ -34,7 +34,7 @@ Here is an example of a Deltalog JSON file from the OSS test resources:
 {"remove":{"path":"part-00000-f4aeebd0-a689-4e1b-bc7a-bbb0ec59dce5-c000.snappy.parquet","dataChange":true}}
 ```
 
-You can see that the operation was to remove path, and it results in dataChange true.
+You can see that the operation was: _remove_ path(it can be a whole field or specific values), in this operation the metadata field _dataChange_ is set to true.
 
 Here is a more complex JSON file:
 ```json
@@ -46,84 +46,83 @@ Here is a more complex JSON file:
 {"add":{"path":"id=4/part-00001-36c738bf-7836-479b-9cc1-7a4934207856.c000.snappy.parquet","partitionValues":{"id":"4"},"size":362,"modificationTime":1501109076000,"dataChange":true}}
 ```
 
-Here we have the metadata object - it means that there has been an update to the table schema or that a new table created.
-Later we see 2 _remove_ operations, followed by 3 _add_ operations. Inside there can be a "stat" field, which contains statistics about the data in the file itself, such as the number of records, minValues, maxValues, and other stats we would like to save on the data for when we want to query it; 
+Here there is the _metadata_ object entry - it means that there has been an update to the table schema or that a new table was created.
+Later we see 2 _remove_ operations, followed by 3 _add_ operations. These operations objects can have a "stat" field, that stat can contain statistical information, such as the number of records, minValues, maxValues, and more.
 
-These JSON files might also contain operations such as - "STREAMING UPDATE", notebook- if the operation took place from a notebook, isolationLevel, etc.
+These JSON files might also contain operation objects with fields such as - "STREAMING UPDATE", notebook- if the operation took place from a notebook, isolationLevel, etc.
 
-This information is valuable for managing the table overall and helps delta to know exactly which files to read, hence avoiding full scanning of the storage as much as possible. 
+This information is valuable for managing the table overall and helps delta with optimizing read files, this optimization reduce the chances of running a full scan on the storage.
 
-DeltaTable is abstracted to be a result of a set of actions (deltalog).
+To simplified it, DeltaTable a result of a set of actions (deltalog).
 
 
 
 ## DeltaLog and Atomicity
-From the [first part](https://blog.adipolak.com/post/delta-lake-essential-fundamentals), you already know that atomicity means that a transaction has happened or not. The DeltaLog consists of atomic operations; each line in the log (like the ones you see above) represents an action, an atomic unit; we also call them commits.
-The transactions that take place on the data can be broken into multiple components in which each one individually represents a commit in the deltalog. Breaking complex operations into small transactions helps us with ensuring atomicity.
+From the [first part](https://blog.adipolak.com/post/delta-lake-essential-fundamentals), you already know that atomicity means that a transaction either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action,which is an atomic unit; These are called commits.
+The transactions that took place on the data can be broken into multiple components in which each one individually represents a commit in the deltalog. Breaking complex operations into small transactions helps with ensuring atomicity.
 
 
 
 ## DeltaLog and Isolation
-Operations such as Update, Delete, Add can harm our isolation; hence when we want to guarantee isolation with DeltaTable, we enable readers to read from a table snapshot. For deletion operations, delta avoids deleting the files immediately; it will tag it as deleted file and remove it only when considered safe (similar to Cassandra delete operations with a tombstone).
+Operations such as Update, Delete, Add can harm isolation; Hence, since we want to guarantee isolation with DeltaTable, readers get access to the table snapshot. This guarantees all parallel readers read the exact data. For handling deletion operations, delta postpones the actual delete operation on the files ; it first tag the files as deleted and later, remove it only when considered safe (similar to Cassandra delete operations with a tombstone).
 
 
-Here in Delta 0.8.1 source code, you can see that they recommended delete operations retention to be at least 2 weeks and generally should be larger than the duration of a job.
-This will impact your streaming operations because there will be a need to delete/vacuum the actual files at some point.
+In Delta 0.8.1 source code, there is a comment stating that it's recommended to have the delete operations retention set to at least 2 weeks and that generally it should be larger than the duration of a job. <br>
+*Note:* This will impact streaming workload too, because there will be a need to delete/vacuum the actual files at some point, which might result in blocking the stream.
 <img class="responsive" src="/images/Detla/delta-tombston-retention.png" alt="drawing">
 
 
 
 ## DeltaLog and Consistency
 Delta Lake solves the problem of consistency by solving conflicts with an optimistic concurrency algorithm.
-The class in charge of this algorithm is the OptimisticTransaction class. It achieves it by using [Java 8 ReentrantLock](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html) that is "owned" by DeltaLog instance.
-Here is the code snippet:
+The class in charge of this algorithm is the OptimisticTransaction class. It achieves it by using [Java 8 ReentrantLock](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html) that is "owned" by DeltaLog instance. <br>
+Here is the code snippet: <br>
 
 <img class="responsive" src="/images/Detla/delta-log-optimistic-concurrency-algo.png" alt="drawing">
 
-It actively uses the ReentrantLock lock in the OptimisticTransaction under `doCommitRetryIteratively` function.
-The optimistic approach was chosen here because we tend to add more data in the big data world than update it.
-It's less common to find and update a specific record unless there was some data corruption. It can be that investigations will lead to the conclusion that it's better to update than delete and re-write. But updating scenario is less common.
+DeltaTable instance actively uses the ReentrantLock lock in the OptimisticTransaction under `doCommitRetryIteratively` function.
+The optimistic approach was chosen here because in the big data world there is a tendency to add more data than update it.
+It's less common to find and update a specific record unless there was some data corruption. It can be that investigations if missing data or corrupted data scenario will lead to the conclusion that it's better to update than delete and re-write. But in practice, update scenario is less common.
 
 Here is the code for the optimistic algorithm:
 <img class="responsive" src="/images/Detla/delta-log-OptimisticTransaction.png" alt="drawing">
 
 It works like this:
-In line 572, it records the attempted version as the commit version; as you can see, it's from type `var`,
-`var` in Scala represents a mutable object, which means its value can change.
-In line 575, it starts the `while(true)` loop and maintains an attemptNumber; if it's `==0`, it will try to commit; if it fails here, that means that a file with this `commitVersion` was already written into the system and it will throw an exception that is being caught online 592+593. From there, the algorithm is increasing the attemptNumber by 1.
-Now, it won't go into the first if statement on line 577; it will go straights into the `else if` on line 579.
-If the attemptNumber is bigger than what is configured, it will throw a `DeltaErrors.maxCommitRetriesExceededException` exception.
+In line 572, the program records the attempted version as the `commitVersion` instance which is of type `var`.
+`var` in Scala represents a mutable object instance, which means its value can change.
+In line 575, it starts the `while(true)` loop and maintains an `attemptNumber` counter; if it's `==0`, it will try to commit; if it fails here, that means that a file with this `commitVersion` was already written/committed into the table and it will throw an exception. That exception is being caught in lines 592+593. From there, with each failure, the algorithm is increasing the attemptNumber by 1.
+After the first failure, the program won't go into the first if statement on line 577; it will go straights into the `else if` on line 579.
+If the program reached the state where `attemptNumber` is bigger than the maximum allowed/configured, it will throw a `DeltaErrors.maxCommitRetriesExceededException` exception.
 maxCommitRetriesExceededException exception will provide information about the commit version, the first commit version attempt, the number of attempts commits, and total time spent attempting this commit in ms.
-Otherwise, it will try to record this updated with checkForConflict functionality in line 588.
+Otherwise, it will try to record this update with checkForConflict functionality in line 588.
 Multiple scenarios can bring us to this state.
 
-DeltaLake introduces a set of conflict exceptions to provide us with as much information as possible about the data and the conflicts:
+To support the users, DeltaLake introduces a set of conflict exceptions to that provides more information about the data and the conflicts:
 
 <img class="responsive" src="/images/Detla/delte-concurrent-exceptions.png" alt="drawing">
 
-Let's look at some of the scenarios:
+Let's look at some of the conflict scenarios:
 
-### Two writers at the same time:
+### Two Writers:
 This is the case of two writers who appends data to the same table simultaneously, without reading anything. In this scenario, one writer will commit, and the second writer will read the first one's updates before adding its own updates. Suppose it was only appended operation, like a counter which both are executing. In that case, there is no need to redo all computation, and it will automatically commit; if that's not the case, writer number two will need to redo the computation given the new information from writer one.
 
 
-### Delete and Read operation:
-In a more complex scenario like this one, 
-for concurrent Delete-Read, there is `ConcurentDeleteReadException`.
-That means that there is a request to delete a file that at the same time was used for a read operation.
+### Delete and Read:
+In a more complex scenario like this one, there is no automated solution. For concurrent Delete-Read, there is a dedicated `ConcurentDeleteReadException` exception.
+That means that if there is a request to delete a file that at the same time is being used for a read, the program throws an exception.
 
-### Delete and Delete operation:
-When two operations delete the same file, it might be due to a compaction mechanism or other operation.
+### Delete and Delete:
+When two operations delete the same file, it might be due to a compaction mechanism or other operation, here too an exception will occur.
 
 
 
 ## DeltaLog and Durability
-Since all transactions made on a DeltaTable are being stored directly to disk/file system, durability is givin, since all the commits are being persistent to disk and if there is an event of system failure, we can restore them from the disk.
+Since all transactions made on a DeltaTable are being stored directly to disk/file system, durability is given. All commits are being _persistent_ to disk and if there is an event of system failure, they can be restored from the disk.
 (Unless there is a true disaster like fire etc and damage to the actual disks holding the information).
 
 
 ------------------------------------------
-For exploring and learning about delta, I do a deep dive into the open source itself, if you are interested in that, I captured it through videos, please let me know if that is useful for you.
+For exploring and learning about delta, I did a deep dive into the code source itself, if you are interested in that, I captured it through videos, please let me know if that is useful for you.
 
 
 # What's next?
