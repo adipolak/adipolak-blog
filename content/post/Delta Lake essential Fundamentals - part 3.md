@@ -45,7 +45,7 @@ Snapshot of the function that is in charge of the writing the checkpoint files, 
 <br>
 
 <img class="responsive" src="/images/Detla/delta-lake-postcommit.png" alt="drawing">
-<img class="responsive" src="/images/Detla/checkpointfile.png" alt="drawing">
+<img class="responsive" src="/images/Detla/deltalake-interval-config.png" alt="drawing">
 
 
 Delta Lake configuration can be set as a Spark Configuration property, or Hadoop configuration depends on the LogStore, the cloud used, etc.
