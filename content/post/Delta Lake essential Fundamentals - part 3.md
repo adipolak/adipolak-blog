@@ -15,7 +15,7 @@ Let's understand what are Delta Lake compact and checkpoint and why they are imp
 
   There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let's understand them and how they differ from each other:
 
-  ### 1- RDD Checkpoint
+  ### Spark RDD Checkpoint
    Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.
   This operation, by default, breaks data lineage when used without auditing.
 
@@ -48,30 +48,30 @@ Snapshot of the function that is in charge of the writing the checkpoint files, 
 <img class="responsive" src="/images/Detla/checkpointfile.png" alt="drawing">
 
 
-Delta Lake configuration can be set as a Spark Configuration property or hadoop configuration, depends on the LogStore, cloud used etc.
+Delta Lake configuration can be set as a Spark Configuration property, or Hadoop configuration depends on the LogStore, the cloud used, etc.
 
   -------------------------------------------------------------------------------------------
 
   I hope this provides more clarity into the differences between the three checkpoint mechanisms and their usage.
 
 
-Next, let's examine the compact files mechanism Delta recommends as part of it's best practices:
+Next, let's examine the compact files mechanism Delta recommends as part of its best practices:
 
 ## Delta Lake Compact files
 
-The same way Delta Lake handles it's own small JSON DeltaLog files it is creating, we as developers need to take care of the small files we might introduce to the system when adding data in small batches. Small batches can happen when we have Streaming workloads or continues small batch data ingesting without compacting it.
+The same way Delta Lake handles its own small JSON DeltaLog files is creating, we as developers need to take care of the small files we might introduce to the system when adding data in small batches. Small batches can happen when we have Streaming workloads or continuous small batches of data ingesting without compacting it.
 
-Small files can have a harmful effect on the efficiency of table reads, and it can also affect the performance of the file system itself. Ideally, a large number of small files should be rewritten into a smaller number of larger files on a regular basis. This is known as compaction.
+Small files can hurt the efficiency of table reads, and it can also affect the performance of the file system itself. Ideally, a large number of small files should be rewritten into a smaller number of larger files regularly. This is known as compaction.
 
-We can compact a table by repartitioning it to smaller number of files. 
+We can compact a table by repartitioning it to a smaller number of files. 
 
-Delta Lake also introduce the ability to set `dataChange` field to be false, this indicates that the operation did not change the data, only rearranges the data layout. But be carful with it, since if you are introducing a data change that is not only a layout, it can corrupt the data in the table.
+Delta Lake also introduces the ability to set the `dataChange` field false; this indicates that the operation did not change the data, only rearranges the data layout. But be careful with it, since if you are introducing a data change that is not only a layout, it can corrupt the data in the table.
 
 
 
 
 ------------------------------------------
-For exploring and learning about Delta, I explore code source itself. If you are interested in joining me, I captured it through videos, let me know if that is useful for you, we can schedule twitch as well.
+For exploring and learning about Delta, you are invited in joining me by watching the videos. Let me know if that is useful for you, and we can schedule twitch as well.
 
 
 # What's next?
