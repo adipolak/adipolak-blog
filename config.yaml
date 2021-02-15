@@ -154,7 +154,7 @@ menu:
   #   weight: -110
   - identifier: about
     name: about
-    pre: <i class='fa fa-road'></i>
+    pre: <i class='fa fa-user'></i>
     url: /about/
     weight: 1
   - identifier: presentations
