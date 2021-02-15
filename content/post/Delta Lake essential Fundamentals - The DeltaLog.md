@@ -16,7 +16,7 @@ A transaction log is a history of actions executed by a (TaDa 💡) database man
 
 ## DeltaLake transaction log - DetlaLog
 
-DeltaLog is a transaction log directory which holds an **ordered** record of every transaction committed on a Delta Lake table since it was created.
+DeltaLog is a transaction log directory that holds an **ordered** record of every transaction committed on a Delta Lake table since it was created.
 The goal of DeltaLog is to be the **single** source of truth for readers who read from the same table at the same time. That means, parallel readers read the **exact** same data.
 This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.
 
@@ -35,7 +35,7 @@ Here is an example of a DeltaLog JSON file from the code source test resources, 
 {"remove":{"path":"part-00000-f4aeebd0-a689-4e1b-bc7a-bbb0ec59dce5-c000.snappy.parquet","dataChange":true}}
 ```
 
-There were total of two commits captured in this file:
+There was a total of two commits captured in this file:
 _remove_ -it can be a delete operation on a whole column or only specific values in it. In this operation the metadata field _dataChange_ is set to true.
 
 Here is a more complex JSON file example, each entry in the file is on JSON:
@@ -50,7 +50,7 @@ Here is a more complex JSON file example, each entry in the file is on JSON:
 ```
 
 In this example, there is the _metadata_ object entry - it represents a change in the table columns either an update to the table schema or that a new table was created.
-Later we see two _remove_ operations, followed by three _add_ operations. These operation objects can have a _stat_ field, which contain statistical information, such as the number of records, minValues, maxValues, and more.
+Later we see two _remove_ operations, followed by three _add_ operations. These operation objects can have a _stat_ field, which contains statistical information, such as the number of records, minValues, maxValues, and more.
 
 These JSON files might also contain operation objects with fields such as - "STREAMING UPDATE", "NOTEBOOK"  if the operation took place from a notebook, isolationLevel, etc.
 
@@ -61,8 +61,8 @@ To simplify the connection between DeltaTable and DeltaLog, it's easier to think
 
 
 ## DeltaLog and Atomicity
-From the [part one](https://blog.adipolak.com/post/delta-lake-essential-fundamentals), you already know that atomicity means that a transaction either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
-The transactions that took place on the data can be broken into multiple components in which each one individually represents a commit in the DeltaLog. These breaking complex operations into small transactions helps with ensuring atomicity.
+From [part one](https://blog.adipolak.com/post/delta-lake-essential-fundamentals), you already know that atomicity means that a transaction either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
+The transactions that took place on the data can be broken into multiple components in which each one individually represents a commit in the DeltaLog. These breaking complex operations into small transactions help with ensuring atomicity.
 
 
 
@@ -91,7 +91,7 @@ Here is the code snippet for the optimistic algorithm:
 <img class="responsive" src="/images/Detla/delta-log-OptimisticTransaction.png" alt="drawing">
 
 Notice that in line 572, the program records the attempted version as the `commitVersion` instance which is of type `var`.
-`var` in Scala represents a mutable object instance, which means we should expect it's value to change.
+`var` in Scala represents a mutable object instance, which means we should expect its value to change.
 
 In line 575, we start the algorithm:
  it starts the `while(true)` loop and maintains an `attemptNumber` counter; if it's `==0`, it will try to commit; if it fails here, that means that a file with this `commitVersion` was already written/committed into the table and it will throw an exception. That exception is being caught in lines 592+593. From there, with each failure, the algorithm is increasing the attemptNumber by 1.
@@ -101,7 +101,7 @@ maxCommitRetriesExceededException exception will provide information about the c
 Otherwise, it will try to record this update with checkForConflict functionality in line 588.
 Multiple scenarios can bring us to this state.
 
-High level pseudo code:
+High-level pseudo-code:
 
 ```
 while(tryCommit)
@@ -141,7 +141,7 @@ When two operations delete the same file, it might be due to a compaction mechan
 
 
 ## DeltaLog and Durability
-Since all transactions made on a DeltaTable are being stored directly to disk/file system, durability is a given. All commits are being _persisted_ to disk.  In case of a system failure, they can be restored from the disk.
+Since all transactions made on a DeltaTable are being stored directly to the disk/file system, durability is a given. All commits are being _persisted_ to disk.  In case of a system failure, they can be restored from the disk.
 (Unless there is a true disaster like fire etc and damage to the actual disks holding the information).
 
 
@@ -151,7 +151,7 @@ For exploring and learning about Delta, I did a deep dive into the code source i
 
 # What's next?
 
-Next we will see more examples, scenarios and use cases for DeltaLake! We will learn about the compaction mechanism, schema enforcement and how it can enforce exactly once operation.
+Next, we will see more examples, scenarios and use cases for DeltaLake! We will learn about the compaction mechanism, schema enforcement and how it can enforce exactly once operation.
 
 As always, I would love to get your comments and feedback on [Adi Polak](https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A1313%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=AdiPolak&tw_p=followbutton) 🐦.
 
