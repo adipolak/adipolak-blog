@@ -61,7 +61,7 @@ To simplify the connection between DeltaTable and DeltaLog, it's easier to think
 
 
 ## DeltaLog and Atomicity
-From [part one](https://blog.adipolak.com/post/delta-lake-essential-fundamentals), you already know that atomicity means that a transaction either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
+From [part one](https://blog.adipolak.com/post/delta-lake-essential-fundamentals), you already know that atomicity means that a transaction, either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
 The transactions that took place on the data can be broken into multiple components in which each one individually represents a commit in the DeltaLog. These breaking complex operations into small transactions help with ensuring atomicity.
 
 
