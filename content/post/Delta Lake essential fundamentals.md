@@ -22,7 +22,7 @@ DeltaLake open source consists of 3 projects:
 
 
 Delta provides us the ability to <u>"travel back in time"</u> into previous versions of our data, <u>scalable metadata</u> - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to <u>unify streaming and batch data</u>.<br>
-<u>Schema enforcement</u> - handel schema variations to prevent insertion of bad/non-compliant records, and <u>ACID transactions</u> to ensure that the users/readers never see inconsistent data.
+<u>Schema enforcement</u> - handle schema variations to prevent insertion of bad/non-compliant records, and <u>ACID transactions</u> to ensure that the users/readers never see inconsistent data.
 
 <highlight>
 <p>It's important to remember that Delta Lake is not a DataBase (DB), yes, just like Apache Kafka is not a DB.<br>
@@ -40,7 +40,7 @@ Let's break it down to understand what each means and how it translates in Delta
 #### Consistency
    A transaction can only bring the DB from one state to another; data is valid according to all the rules, constraints, triggers, etc. The transaction itself can be consistent but incorrect. To achieve consistency, DeltaLake relay on the commit timestamp that comes from the storage system modification timestamps. If you are using cloud provider storage such as [Azure blob](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction?WT.mc_id=delta-13569-adpolak) or AWS S3, the timestamp will come from the storage server.
 #### Isolation
-  Transactions taking place concurrently result in an equals state as if transactions would have been executed sequentially. This is the primary goal of Concurrency control strategies. In Delta, after 10 commits, there is a merging mechanism that marges these commits into a checkpoint file. The checkpoint file has a timestamp. 1 second is being added to the modification timestamp to avoid flakiness. This is how it looks in the code base of Delta: 
+  Transactions taking place concurrently result in an equals state as if transactions would have been executed sequentially. This is the primary goal of Concurrency control strategies. In Delta, after 10 commits, there is a merging mechanism that merges these commits into a checkpoint file. The checkpoint file has a timestamp. 1 second is being added to the modification timestamp to avoid flakiness. This is how it looks in the code base of Delta: 
   <img class="responsive" src="/images/delta-lake-avoid-flakiness-commit.png" alt="drawing">
 
 #### Durability
