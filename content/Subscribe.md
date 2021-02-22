@@ -26,8 +26,9 @@ You can subscribe to the YouTube channel of [Adi Polak](http://www.youtube.com/c
 
 <div class="g-ytsubscribe" data-channelid="UCN3hX3Ie1kZ3L0KZ5sCTsxw" data-layout="default" data-count="default"></div>
 
-<!-- # Subscribe with email
-To get weekly posts and updates from this blog via email you can subscribe to Adi Polak Data & Open Source Updates:
+# Subscribe with Email
+To get posts and updates from this blog via email you can subscribe to Adi Polak Data & Open Source Updates [here](https://sub.adipolak.com/subscribe). No ads or spam; I'm not too fond of that stuff myself.
+
 <!-- Begin Mailchimp Signup Form -->
 
 
