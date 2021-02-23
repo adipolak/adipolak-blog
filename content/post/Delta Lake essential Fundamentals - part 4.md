@@ -101,6 +101,8 @@ Using DeltaLake helps introduce table versioning and allows you to control the c
 I hope you enjoyed reading about Delta Lake, the two practical scenarios, and the breakdown of the open-source;  <br>
 I will continue to share scenarios, insights, and code samples throughout the blog. As always, if you have questions, suggestions, ideas, please don't hesitate to DM me on [Adi Polak](https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A1313%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=AdiPolak&tw_p=followbutton) 🐦.
 
+If you would like to get monthly updates, consider [subscribing](https://sub.adipolak.com/subscribe).
+
 
 ## 💡 Learn more!
 

@@ -161,3 +161,8 @@ As always, I would love to get your comments and feedback on [Adi Polak](https:/
 
 
 
+If you would like to get monthly updates, consider [subscribing](https://sub.adipolak.com/subscribe).
+
+
+
+
