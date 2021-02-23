@@ -52,3 +52,7 @@ After understanding ACID basics and a bit about the Transaction Log (aka DeltaLo
 
 -------------------------------------------
 As always, I would love to get your comments and feedback on [Adi Polak](https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A1313%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=AdiPolak&tw_p=followbutton) 🐦.
+---
+
+
+If you would like to get monthly updates, consider [subscribing](https://sub.adipolak.com/subscribe).
