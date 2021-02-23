@@ -95,7 +95,7 @@ Using DeltaLake helps introduce table versioning and allows you to control the c
 
 -------------------------
 
-<iframe src="https://giphy.com/embed/Ec5RkrmARxPmTuXgrZ" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/Ec5RkrmARxPmTuXgrZ" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
 
 
 I hope you enjoyed reading about Delta Lake, the two practical scenarios, and the breakdown of the open-source;  <br>
