@@ -25,6 +25,8 @@ The training set is the data ingested into the machine learning algorithm; it tr
 ## Testing set
 The testing set is the dataset we test the ml model with. To test the ML model's accuracy, we ingest the data into the model and measure the accuracy level of the outcome. It helps us reason about the quality of the machine learning model.
 
+<div style="width:100%;height:0;padding-bottom:140%;position:relative;"><iframe src="https://giphy.com/embed/HUplkVCPY7jTW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a>via GIPHY</a></p>
+
 
 ## Machine Learning pipeline
 The machine learning pipeline is an automation process of the machine learning workflow. It includes data transformation and correlation to fit the ML algorithm, running the algorithm to produce a model, and testing it with a test set.
@@ -45,6 +47,8 @@ You can detect concept drift by measuring the statistical properties of the targ
 Machine learning's actual target variable can change over time in unforeseen ways and presents a challenge since the predictions become less accurate as time passes.
 
 ------------------------------------
+
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/EXFAJtutz5Ig8" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a>via GIPHY</a></p>
 
 I hope it was helpful for you and gave you more clarity about the concepts.
 
