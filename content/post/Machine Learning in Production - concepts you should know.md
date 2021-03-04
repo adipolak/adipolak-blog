@@ -25,7 +25,9 @@ The training set is the data ingested into the machine learning algorithm; it tr
 ## Testing set
 The testing set is the dataset we test the ml model with. To test the ML model's accuracy, we ingest the data into the model and measure the accuracy level of the outcome. It helps us reason about the quality of the machine learning model.
 
-<div style="width:100%;height:0;padding-bottom:140%;position:relative;"><iframe src="https://giphy.com/embed/HUplkVCPY7jTW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a>via GIPHY</a></p>
+
+<iframe src="https://giphy.com/embed/HUplkVCPY7jTW" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
+
 
 
 ## Machine Learning pipeline
@@ -48,7 +50,9 @@ Machine learning's actual target variable can change over time in unforeseen way
 
 ------------------------------------
 
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/EXFAJtutz5Ig8" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a>via GIPHY</a></p>
+
+<iframe src="https://giphy.com/embed/EXFAJtutz5Ig8" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
+
 
 I hope it was helpful for you and gave you more clarity about the concepts.
 
