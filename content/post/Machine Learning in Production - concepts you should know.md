@@ -3,7 +3,7 @@ title: "Machine Learning in Production - Concepts you should know"
 author: "Adi Polak"
 description: "To productionize machine learning, know the concepts first"
 tags: ["data science", "machine learning","terminology"]
-date: "2020-03-04"
+date: "2021-03-04"
 draft: true
 ---
 
