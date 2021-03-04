@@ -4,7 +4,7 @@ author: "Adi Polak"
 description: "To productionize machine learning, know the concepts first"
 tags: ["data science", "machine learning","terminology"]
 date: "2021-03-04"
-draft: true
+draft: false
 ---
 
 
