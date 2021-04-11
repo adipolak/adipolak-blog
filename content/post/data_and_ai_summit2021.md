@@ -1,5 +1,5 @@
 ---
-title: "Summit 2021 is Coming"
+title: "Wakeup... Summit 2021 is Coming"
 author: "Adi Polak"
 description: "Data + AI Summit (Formerly Spark+AI Summit) is just around the corner"
 tags: ["conference", "apache spark"]
