@@ -38,7 +38,7 @@ But, let's assume we can attend only three. Which 3 will you choose?
 
 ### **1st:** From the machine learning space - [Strategies for Debugging Machine Learning Systems](https://databricks.com/session_na21/real-world-strategies-for-debugging-machine-learning-systems)
  
- This session is interesting since there are many ways to build machine learning models, from centralized distributed machine learning to decentralized distributed like Federated Learning. Of course, many places where things can go wrong when training on one machine or multiple machines. The space of security and adversaries in machine learning training is also growing.
+ This session is interesting since there are many ways to build machine learning models, from centralized distributed machine learning to decentralized distributed like Federated Learning. Of course, many places where things can go wrong when training on one machine or multiple machines. The space of security and adversaries in machine learning training is a magical one. Like a rare diamond, you don't know its worth until carefully examined.
 For example, in federated learning, each device is training a model locally on its data and shares the model summary. Assuming one of the devices is an adversary, an attacker who wants to change the model's overall result can share a false summary with the rest of the group and impact the model's overall behavior.
 In some cases, that means smaller revenue, but when we use machine learning to save lives like healthcare usabilities, that's more complicated.
 
