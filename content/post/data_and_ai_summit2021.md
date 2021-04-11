@@ -56,6 +56,10 @@ Understanding the Modern lakehouse is one thing, but knowing how to rally all th
 
 
 
+<iframe src="https://giphy.com/embed/4JVTF9zR9BicshFAb7" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
+
+-------------------------------
+
 
 
 I'm going to let you in on a secret, all sessions are going to be recorded and shared after the summit. But there is some magic in attending, asking questions and participating in Twitter and Chat with like minded who came to learn, exchange ideas and network.
