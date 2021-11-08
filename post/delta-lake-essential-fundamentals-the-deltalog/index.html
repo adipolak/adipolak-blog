@@ -56,14 +56,14 @@ if (!doNotTrack) {
 <meta name="description" content="Multi-part series that will take you from beginner to expert in Delta Lake"> 
 
 
-<link rel="canonical" href="https://adipolak.github.io/adipolak-blog-hugo/post/delta-lake-essential-fundamentals-the-deltalog/" />
+<link rel="canonical" href="/post/delta-lake-essential-fundamentals-the-deltalog/" />
 
 
   
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:description" content="Multi-part series that will take you from beginner to expert in Delta Lake" /> 
   <meta name="twitter:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog | Adi Polak" />
-  <meta name="twitter:url" content="https://adipolak.github.io/adipolak-blog-hugo/post/delta-lake-essential-fundamentals-the-deltalog/" />
+  <meta name="twitter:url" content="/post/delta-lake-essential-fundamentals-the-deltalog/" />
   <meta name="twitter:site" content="@AdiPolak" /> 
   <meta name="twitter:creator" content="@AdiPolak" /> 
   <meta name="twitter:image" content="" /> 
@@ -76,7 +76,7 @@ if (!doNotTrack) {
   <meta property="og:site_name" content="Adi Polak" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://adipolak.github.io/adipolak-blog-hugo/post/delta-lake-essential-fundamentals-the-deltalog/" />
+  <meta property="og:url" content="/post/delta-lake-essential-fundamentals-the-deltalog/" />
   
   <meta property="og:image" content="" /> 
 
@@ -93,7 +93,7 @@ if (!doNotTrack) {
           "@type": "BlogPosting",
           "headline": "Delta Lake essential Fundamentals: Part 2 - The DeltaLog",
           
-          "url": "https://adipolak.github.io/adipolak-blog-hugo",
+          "url": "/",
           
           "datePublished": "2021-02-11T00:00:00Z",
           
@@ -139,18 +139,18 @@ if (!doNotTrack) {
   
   
   
-  <link rel="stylesheet" href="/adipolak-blog-hugo/assets/css/main.min.b36b0c5cb90918ccc0d97596176aa096a75147496aa72c009ae9f7c9fc244999.css" integrity="sha256-s2sMXLkJGMzA2XWWF2qglqdRR0lqpywAmun3yfwkSZk=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.min.b36b0c5cb90918ccc0d97596176aa096a75147496aa72c009ae9f7c9fc244999.css" integrity="sha256-s2sMXLkJGMzA2XWWF2qglqdRR0lqpywAmun3yfwkSZk=" crossorigin="anonymous">
   
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   
-  <link rel=apple-touch-icon sizes=180x180 href=https://adipolak.github.io/adipolak-blog-hugo/assets/favicon/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=https://adipolak.github.io/adipolak-blog-hugo/assets/favicon/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=https://adipolak.github.io/adipolak-blog-hugo/assets/favicon/favicon-16x16.png>
-<link rel=manifest href=https://adipolak.github.io/adipolak-blog-hugo/assets/favicon/site.webmanifest>
-<link rel=mask-icon href=https://adipolak.github.io/adipolak-blog-hugo/assets/favicon/safari-pinned-tab.svg color=#7817c4>
-<link rel=icon href=https://adipolak.github.io/adipolak-blog-hugo/assets/favicon/favicon.ico type=image/x-icon>
-<link rel="shortcut icon" href=https://adipolak.github.io/adipolak-blog-hugo/assets/favicon/favicon.ico type=image/x-icon>
+  <link rel=apple-touch-icon sizes=180x180 href=//assets/favicon/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=//assets/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=//assets/favicon/favicon-16x16.png>
+<link rel=manifest href=//assets/favicon/site.webmanifest>
+<link rel=mask-icon href=//assets/favicon/safari-pinned-tab.svg color=#7817c4>
+<link rel=icon href=//assets/favicon/favicon.ico type=image/x-icon>
+<link rel="shortcut icon" href=//assets/favicon/favicon.ico type=image/x-icon>
 <meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme">
 <meta name=application-name content="Vibrant Shadows Theme">
 <meta name=msapplication-TileColor content="#ffffff">
@@ -170,7 +170,7 @@ if (!doNotTrack) {
   <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
     <div class="container-fluid">
       
-      <a class="navbar-brand rounded px-3" href="https://adipolak.github.io/adipolak-blog-hugo"><span class="text-nav"><span class="brand"><img src="%7b%7b%20site.BaseURL%20%7d%7d/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" height="32"></img>&nbsp;&nbsp;&nbsp;Adi Polak</span></span></a>
+      <a class="navbar-brand rounded px-3" href="/"><span class="text-nav"><span class="brand"><img src="%7b%7b%20site.BaseURL%20%7d%7d/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" height="32"></img>&nbsp;&nbsp;&nbsp;Adi Polak</span></span></a>
       
       
         <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -182,25 +182,25 @@ if (!doNotTrack) {
             
               
                 <li class="nav-item mx-1 my-2">
-                  <a class="btn bg-nav text-clr1" href="/adipolak-blog-hugo/about/"><i class='fa fa-user'></i> about</a>
+                  <a class="btn bg-nav text-clr1" href="/about/"><i class='fa fa-user'></i> about</a>
                 </li>
               
             
               
                 <li class="nav-item mx-1 my-2">
-                  <a class="btn bg-nav text-clr1" href="/adipolak-blog-hugo/presentations/"><i class='fa fa-road'></i> presentations</a>
+                  <a class="btn bg-nav text-clr1" href="/presentations/"><i class='fa fa-road'></i> presentations</a>
                 </li>
               
             
               
                 <li class="nav-item mx-1 my-2">
-                  <a class="btn bg-nav text-clr1" href="/adipolak-blog-hugo/subscribe/"><i class='fa fa-heart'></i> subscribe</a>
+                  <a class="btn bg-nav text-clr1" href="/subscribe/"><i class='fa fa-heart'></i> subscribe</a>
                 </li>
               
             
               
                 <li class="nav-item mx-1 my-2">
-                  <a class="btn bg-nav text-clr1" href="/adipolak-blog-hugo/contact-me/"><i class='fa fa-address-card'></i> contact</a>
+                  <a class="btn bg-nav text-clr1" href="/contact-me/"><i class='fa fa-address-card'></i> contact</a>
                 </li>
               
             
@@ -288,23 +288,23 @@ if (!doNotTrack) {
               <div class="col p-0">
                 <span class="lead">
                   
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fadipolak.github.io%2fadipolak-blog-hugo%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&quote=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&quote=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
                   
                   
-                    <a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fadipolak.github.io%2fadipolak-blog-hugo%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&text=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog:%0Ahttps%3a%2f%2fadipolak.github.io%2fadipolak-blog-hugo%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                    <a href="https://twitter.com/intent/tweet?source=%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&text=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog:%0A%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
                   
                   
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fadipolak.github.io%2fadipolak-blog-hugo%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&title=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog&summary=Multi-part%20series%20that%20will%20take%20you%20from%20beginner%20to%20expert%20in%20Delta%20Lake&source=Adi%20Polak" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&title=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog&summary=Multi-part%20series%20that%20will%20take%20you%20from%20beginner%20to%20expert%20in%20Delta%20Lake&source=Adi%20Polak" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
                   
                   
-                    <a href="https://t.me/share/url?url=https%3a%2f%2fadipolak.github.io%2fadipolak-blog-hugo%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&text=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                    <a href="https://t.me/share/url?url=%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&text=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
                   
                   
                   
-                    <a href="https://reddit.com/submit?url=https%3a%2f%2fadipolak.github.io%2fadipolak-blog-hugo%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&title=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                    <a href="https://reddit.com/submit?url=%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f&title=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
                   
                   
-                    <a href="mailto:?subject=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog&body=Multi-part%20series%20that%20will%20take%20you%20from%20beginner%20to%20expert%20in%20Delta%20Lake%0A%0Ahttps%3a%2f%2fadipolak.github.io%2fadipolak-blog-hugo%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                    <a href="mailto:?subject=Delta%20Lake%20essential%20Fundamentals%3a%20Part%202%20-%20The%20DeltaLog&body=Multi-part%20series%20that%20will%20take%20you%20from%20beginner%20to%20expert%20in%20Delta%20Lake%0A%0A%2fpost%2fdelta-lake-essential-fundamentals-the-deltalog%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
                   
                 </span>
               </div>
@@ -478,8 +478,8 @@ That means that if there is a request to delete a file that at the same time is 
     
     
     
-    <script src="/adipolak-blog-hugo/assets/js/main.min.ff798fe8bbc88749c6f4c430cf209ef0cf00bc8a2b4d55339c3ec46f1437319c.js" integrity="sha256-/3mP6LvIh0nG9MQwzyCe8M8AvIorTVUznD7EbxQ3MZw=" crossorigin="anonymous"></script>
-    <script src="/adipolak-blog-hugo/assets/js/custom.min.21d1b65b48adbed41de7ac42ee68e7f9e464985356770f7e0b877b89044eb469.js" integrity="sha256-IdG2W0itvtQd56xC7mjn&#43;eRkmFNWdw9&#43;C4d7iQROtGk=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.min.ff798fe8bbc88749c6f4c430cf209ef0cf00bc8a2b4d55339c3ec46f1437319c.js" integrity="sha256-/3mP6LvIh0nG9MQwzyCe8M8AvIorTVUznD7EbxQ3MZw=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.21d1b65b48adbed41de7ac42ee68e7f9e464985356770f7e0b877b89044eb469.js" integrity="sha256-IdG2W0itvtQd56xC7mjn&#43;eRkmFNWdw9&#43;C4d7iQROtGk=" crossorigin="anonymous"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
     

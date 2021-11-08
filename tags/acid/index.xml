@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ACID on Adi Polak</title>
-    <link>https://adipolak.github.io/adipolak-blog-hugo/tags/acid/</link>
+    <link>/tags/acid/</link>
     <description>Recent content in ACID on Adi Polak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog-hugo/tags/acid/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/acid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>https://adipolak.github.io/adipolak-blog-hugo/post/delta-lake-essential-fundamentals/</link>
+      <link>/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://adipolak.github.io/adipolak-blog-hugo/post/delta-lake-essential-fundamentals/</guid>
+      <guid>/post/delta-lake-essential-fundamentals/</guid>
       <description>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
 What is Delta Lake ?  Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads.  DeltaLake open source consists of 3 projects:
  detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</description>
