@@ -59,12 +59,12 @@ If you want to have some references, check out a couple of events Adi Polak pres
 
 
 
-<img src="/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
-<img src="/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
-<img src="/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
-<img src="/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
-<img src="/images/adi_spark.jpeg" alt="drawing" style="width:350px;"/>
-<img src="/images/security.jpeg" alt="drawing" style="width:350px;"/>
-<img src="/images/sparkaisummit2.jpeg" alt="drawing" style="width:350px;"/>
-<img src="/images/ignite_sweeden.jpeg" alt="drawing" style="width:350px;"/>
-<img src="/images/voxxed_autralia2.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/adi_spark.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/security.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/sparkaisummit2.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/ignite_sweeden.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ .Site.BaseURL }}/images/voxxed_autralia2.jpeg" alt="drawing" style="width:350px;"/>
