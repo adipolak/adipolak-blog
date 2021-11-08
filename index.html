@@ -66,7 +66,7 @@ if (!doNotTrack) {
   <meta name="twitter:url" content="https://adipolak.github.io/adipolak-blog-hugo/" />
   <meta name="twitter:site" content="@AdiPolak" /> 
   <meta name="twitter:creator" content="@AdiPolak" /> 
-  <meta name="twitter:image" content="/assets/favicon/android-chrome-512x512.png" /> 
+  <meta name="twitter:image" content="{{ site.BaseURL }}/assets/favicon/android-chrome-512x512.png" /> 
 
 
 
@@ -78,7 +78,7 @@ if (!doNotTrack) {
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://adipolak.github.io/adipolak-blog-hugo/" />
   
-  <meta property="og:image" content="/assets/favicon/android-chrome-512x512.png" /> 
+  <meta property="og:image" content="{{ site.BaseURL }}/assets/favicon/android-chrome-512x512.png" /> 
 
 
 
@@ -97,7 +97,7 @@ if (!doNotTrack) {
         "name": "Adi Polak"
       },
       
-      "logo": "/assets/favicon/android-chrome-512x512.png",
+      "logo": "{{ site.BaseURL }}/assets/favicon/android-chrome-512x512.png",
       
       "description": "",
       
@@ -152,7 +152,7 @@ if (!doNotTrack) {
   <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
     <div class="container-fluid">
       
-      <a class="navbar-brand rounded px-3" href="https://adipolak.github.io/adipolak-blog-hugo"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" height="32"></img>&nbsp;&nbsp;&nbsp;Adi Polak</span></span></a>
+      <a class="navbar-brand rounded px-3" href="https://adipolak.github.io/adipolak-blog-hugo"><span class="text-nav"><span class="brand"><img src="%7b%7b%20site.BaseURL%20%7d%7d/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" height="32"></img>&nbsp;&nbsp;&nbsp;Adi Polak</span></span></a>
       
       
         <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
