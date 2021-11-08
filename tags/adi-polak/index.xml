@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>adi polak on Adi Polak</title>
-    <link>https://github.com/adipolak/adipolak-blog-hugo/tags/adi-polak/</link>
+    <link>https://adipolak.github.io/adipolak-blog-hugo/tags/adi-polak/</link>
     <description>Recent content in adi polak on Adi Polak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><atom:link href="https://github.com/adipolak/adipolak-blog-hugo/tags/adi-polak/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><atom:link href="https://adipolak.github.io/adipolak-blog-hugo/tags/adi-polak/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/about/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/about/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/about/</guid>
       <description>About I am a Sr. Software Engineer and Developer Advocate in the Azure Engineering organization at Microsoft.
 My work focuses on distributed systems, big data analysis, and machine learning pipelines.
 In my advocacy work, I bring my vast industry research &amp;amp; engineering experience to bear in educating and helping teams design, architect, and build cost-effective software and infrastructure solutions that emphasize scalability, team expertise, and business goals.
@@ -21,10 +21,10 @@ I am a frequent presenter at world-wide industry conferences and O’Reilly cour
     
     <item>
       <title>Thank You</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/thankyou/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/thankyou/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/thankyou/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/thankyou/</guid>
       <description>Thank you for your message.
 If I won&amp;rsquo;t get back to you within a week, please know that my twitter direct messages are always open.</description>
     </item>

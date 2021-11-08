@@ -2,243 +2,243 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Adi Polak</title>
-    <link>https://github.com/adipolak/adipolak-blog-hugo/tags/</link>
+    <link>https://adipolak.github.io/adipolak-blog-hugo/tags/</link>
     <description>Recent content in Tags on Adi Polak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/adipolak/adipolak-blog-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>apache spark</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/apache-spark/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/apache-spark/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/apache-spark/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/apache-spark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>conference</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/conference/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/conference/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/conference/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/conference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data science</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/data-science/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/data-science/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/data-science/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine learning</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/machine-learning/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/machine-learning/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/machine-learning/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>terminology</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/terminology/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/terminology/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/terminology/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/terminology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>beginner</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/beginner/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/beginner/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/beginner/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/beginner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>delta lake</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/delta-lake/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/delta-lake/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/delta-lake/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/delta-lake/</guid>
       <description></description>
     </item>
     
     <item>
       <title>open-source</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/open-source/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/open-source/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/open-source/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>scenarios</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/scenarios/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/scenarios/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/scenarios/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/scenarios/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DeltaLog</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/deltalog/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/deltalog/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/deltalog/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/deltalog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ACID</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/acid/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/acid/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/acid/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/acid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>analytic zoo</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/analytic-zoo/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/analytic-zoo/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/analytic-zoo/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/analytic-zoo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>koalas</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/koalas/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/koalas/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/koalas/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/koalas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pandas</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/pandas/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/pandas/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/pandas/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/pandas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ray</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/ray/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/ray/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/ray/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/ray/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ray on spark</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/ray-on-spark/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/ray-on-spark/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/ray-on-spark/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/ray-on-spark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>beginners</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/beginners/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/beginners/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/beginners/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/beginners/</guid>
       <description></description>
     </item>
     
     <item>
       <title>devops</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/devops/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/devops/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/devops/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/kubernetes/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/kubernetes/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/kubernetes/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/tutorial/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/tutorial/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/tutorial/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>adi polak</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/adi-polak/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/adi-polak/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/adi-polak/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/adi-polak/</guid>
       <description></description>
     </item>
     
     <item>
       <title>conferences</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/conferences/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/conferences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/conferences/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/conferences/</guid>
       <description></description>
     </item>
     
     <item>
       <title>speaking</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/speaking/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/speaking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/speaking/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/speaking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>subscribe</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/subscribe/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/subscribe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/subscribe/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/subscribe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>twitter</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/twitter/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/twitter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/twitter/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/twitter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>youtube</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/tags/youtube/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/tags/youtube/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/tags/youtube/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/tags/youtube/</guid>
       <description></description>
     </item>
     

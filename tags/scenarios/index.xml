@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scenarios on Adi Polak</title>
-    <link>https://github.com/adipolak/adipolak-blog-hugo/tags/scenarios/</link>
+    <link>https://adipolak.github.io/adipolak-blog-hugo/tags/scenarios/</link>
     <description>Recent content in scenarios on Adi Polak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/adipolak/adipolak-blog-hugo/tags/scenarios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog-hugo/tags/scenarios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>https://github.com/adipolak/adipolak-blog-hugo/post/delta-lake-essential-fundamentals-part-4/</link>
+      <link>https://adipolak.github.io/adipolak-blog-hugo/post/delta-lake-essential-fundamentals-part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/adipolak/adipolak-blog-hugo/post/delta-lake-essential-fundamentals-part-4/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog-hugo/post/delta-lake-essential-fundamentals-part-4/</guid>
       <description>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉
 There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.
 Let&amp;rsquo;s discuss two common data pipelines patterns and solutions:
