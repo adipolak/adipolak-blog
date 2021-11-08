@@ -5,10 +5,13 @@ on:
     branches:
       - main  # Set a branch to deploy
   pull_request:
+    types: [opened, synchronize, reopened, closed]
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
         with:
