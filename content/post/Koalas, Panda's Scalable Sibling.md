@@ -67,7 +67,7 @@ Click the Upload button at the top and choose the file you would like to upload.
 Now a new Upload blue button will appear at the bottom, click this too.
 
 The UI will show you the configuration file name and size, all you have to do is to click the blue Apply button at the buttom.\
-<img style="width:150px; height: auto;" src="/images/pandas-synapse-post/apply.png"> \
+<img class="responsive" src="/images/pandas-synapse-post/apply.png" alt="drawing"> \
 
 That's it, all set to start coding!  
 
