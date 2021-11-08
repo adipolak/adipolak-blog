@@ -59,10 +59,10 @@ If you want to have some references, check out a couple of events Adi Polak pres
 
 
 
-<img src="{{ site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
+<img href="{{ site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
+<img href="{{ site.BaseURL }}/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
+<img href="{{ site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
+<img href="{{ site.BaseURL }}/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
 <img src="{{ site.BaseURL }}/images/adi_spark.jpeg" alt="drawing" style="width:350px;"/>
 <img src="{{ site.BaseURL }}/images/security.jpeg" alt="drawing" style="width:350px;"/>
 <img src="{{ site.BaseURL }}/images/sparkaisummit2.jpeg" alt="drawing" style="width:350px;"/>
