@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>conferences on Adi Polak</title>
-    <link>/tags/conferences/</link>
+    <link>https://blog.adipolak.com/tags/conferences/</link>
     <description>Recent content in conferences on Adi Polak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><atom:link href="/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><atom:link href="https://blog.adipolak.com/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Presentations</title>
-      <link>/presentations/</link>
+      <link>https://blog.adipolak.com/presentations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/presentations/</guid>
+      <guid>https://blog.adipolak.com/presentations/</guid>
       <description>Presentations You can find Adi Polak often presenting at different conferences around the world. Adi works closely with Data &amp;amp; ML Open Source technologies. As a Public Presenter Adi shares her expertise in building distributed computing systems, productizing machine learning, and more. If you want to have some references, check out a couple of events Adi Polak presented at:
  She Codes, 2015 BIPA, Munich, September 2016 Akamai Internal Conference, Jan 2017 Cloudera Meetup, Tel Aviv, July 2017 FlipCon, Tel Aviv, July 2018 Codmotion, Berlin, November 2018 Codemotion, Milan, November 2018 Microsoft Ignite the tour - Tel Aviv, April 2019 Microsoft Ignite the tour - Stockholm, April 2019 Voxxedday the tour Australia,Melbourne May 2019 Voxxedday the tour Australia,Sydney May 2019 Voxxedday, Athens, June 2019 Devoxx Krakow, Poland, June 2019 CloudBrow , Stockholm, August 2019 FooCaffe, Malmo , August 2019 Spark &amp;amp; AI Europe, Amsterdam, 2019 Microsoft Ignite, Orlando, Nov 2019 DataCouncil, NYC, Nov 2019 CloudBrew, Belgium, Dec 2019 UnVoxxed, Hawaii, Feb 2020 Microsoft Build, Online, May 2020 Women in Big Data, Online, July 2020 DevOps Kathmandu, Online, July 2020 GeekTime code, Online, August 2020 She Codes, Online, August 2020 Microsoft Developer Twitch, Online, September 2020 JFrog Meetup, Online, September 2020 Microsoft Ignite, Online, September 2020 University of British Columbia, Online, October 2020 ngChina, Online, November 2020 Data &amp;amp; AI ( Prev.</description>
     </item>
