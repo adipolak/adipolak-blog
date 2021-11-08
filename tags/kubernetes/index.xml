@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on Adi Polak</title>
+    <link>https://blog.adipolak.com/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on Adi Polak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes and Virtual Kubelet in a nutshell</title>
+      <link>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
+      <description>Today, you will learn how to take a web app (it can be any programming language,
+we used Java &amp;amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).
+Well, if you don&amp;rsquo;t know yet why you should consider distributing your web app - read my post here.
+So, you are probably asking yourself
+&amp;ldquo;what is Kubernetes and what can I use it for?&amp;quot;
+Just keep reading
+Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.</description>
+    </item>
+    
+  </channel>
+</rss>

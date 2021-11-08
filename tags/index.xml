@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Adi Polak</title>
+    <link>https://blog.adipolak.com/tags/</link>
+    <description>Recent content in Tags on Adi Polak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>apache spark</title>
+      <link>https://blog.adipolak.com/tags/apache-spark/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conference</title>
+      <link>https://blog.adipolak.com/tags/conference/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://blog.adipolak.com/tags/data-science/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://blog.adipolak.com/tags/machine-learning/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminology</title>
+      <link>https://blog.adipolak.com/tags/terminology/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/terminology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>beginner</title>
+      <link>https://blog.adipolak.com/tags/beginner/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/beginner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>delta lake</title>
+      <link>https://blog.adipolak.com/tags/delta-lake/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/delta-lake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open-source</title>
+      <link>https://blog.adipolak.com/tags/open-source/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scenarios</title>
+      <link>https://blog.adipolak.com/tags/scenarios/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/scenarios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DeltaLog</title>
+      <link>https://blog.adipolak.com/tags/deltalog/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/deltalog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ACID</title>
+      <link>https://blog.adipolak.com/tags/acid/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/acid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>analytic zoo</title>
+      <link>https://blog.adipolak.com/tags/analytic-zoo/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/analytic-zoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>koalas</title>
+      <link>https://blog.adipolak.com/tags/koalas/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/koalas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandas</title>
+      <link>https://blog.adipolak.com/tags/pandas/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ray</title>
+      <link>https://blog.adipolak.com/tags/ray/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/ray/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ray on spark</title>
+      <link>https://blog.adipolak.com/tags/ray-on-spark/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/ray-on-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>beginners</title>
+      <link>https://blog.adipolak.com/tags/beginners/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/beginners/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://blog.adipolak.com/tags/devops/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.adipolak.com/tags/kubernetes/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://blog.adipolak.com/tags/tutorial/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adi polak</title>
+      <link>https://blog.adipolak.com/tags/adi-polak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/adi-polak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conferences</title>
+      <link>https://blog.adipolak.com/tags/conferences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speaking</title>
+      <link>https://blog.adipolak.com/tags/speaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/speaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>subscribe</title>
+      <link>https://blog.adipolak.com/tags/subscribe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/subscribe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>twitter</title>
+      <link>https://blog.adipolak.com/tags/twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>youtube</title>
+      <link>https://blog.adipolak.com/tags/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/tags/youtube/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

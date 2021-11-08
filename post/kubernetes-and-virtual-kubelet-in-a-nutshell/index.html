@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+      
+      
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+      <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+      <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+      <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+      
+      
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WTSD5NB');
+      </script>
+      
+      
+      
+      
+      
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-187000172-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+      
+    
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Kubernetes and Virtual Kubelet in a nutshell | Adi Polak</title>
+<meta name="title" content="Kubernetes and Virtual Kubelet in a nutshell | Adi Polak" />
+<meta name="description" content="Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet"> 
+
+
+<link rel="canonical" href="https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet" /> 
+  <meta name="twitter:title" content="Kubernetes and Virtual Kubelet in a nutshell | Adi Polak" />
+  <meta name="twitter:url" content="https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" />
+  <meta name="twitter:site" content="@AdiPolak" /> 
+  <meta name="twitter:creator" content="@AdiPolak" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="Kubernetes and Virtual Kubelet in a nutshell | Adi Polak" />
+  <meta property="og:description" content="Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet" /> 
+  <meta property="og:site_name" content="Adi Polak" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2021-01-10 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "Kubernetes and Virtual Kubelet in a nutshell",
+          
+          "url": "https://blog.adipolak.com/",
+          
+          "datePublished": "2021-01-10T00:00:00Z",
+          
+          
+          "dateModified": "2021-01-10T00:00:00Z",
+          
+          "description": Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Adi Polak"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Adi Polak",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/AdiPola",  
+            
+              "https://twitter.com/AdiPolak"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.89.1" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.71c8038a0f492f699f286fcec63932467af8dfdf8542bee82a4d8365219ddb41.css" integrity="sha256-ccgDig9JL2mfKG/OxjkyRnr439&#43;FQr7oKk2DZSGd20E=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=https://blog.adipolak.com//assets/favicon/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=https://blog.adipolak.com//assets/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=https://blog.adipolak.com//assets/favicon/favicon-16x16.png>
+<link rel=manifest href=https://blog.adipolak.com//assets/favicon/site.webmanifest>
+<link rel=mask-icon href=https://blog.adipolak.com//assets/favicon/safari-pinned-tab.svg color=#7817c4>
+<link rel=icon href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon>
+<link rel="shortcut icon" href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon>
+<meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme">
+<meta name=application-name content="Vibrant Shadows Theme">
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="https://blog.adipolak.com/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" height="32"></img>&nbsp;&nbsp;&nbsp;Adi Polak</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/"><i class='fa fa-user'></i> about</a>
+                </li>
+              
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/presentations/"><i class='fa fa-road'></i> presentations</a>
+                </li>
+              
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/subscribe/"><i class='fa fa-heart'></i> subscribe</a>
+                </li>
+              
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/contact-me/"><i class='fa fa-address-card'></i> contact</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTSD5NB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+<link rel="stylesheet" href="/static/images.css">
+  <div style="height:3.5rem;"></div>
+  <h1>Kubernetes and Virtual Kubelet in a nutshell</h1>
+  <p class="description">Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#basic-glossary">Basic Glossary:</a>
+      <ol>
+        <li><a href="#how-kubernetes-works">How Kubernetes works?</a></li>
+      </ol>
+    </li>
+    <li><a href="#what-about-virtual-kubelet-vk">What about Virtual Kubelet (VK)?</a>
+      <ol>
+        <li><a href="#pros"><strong>Pros:</strong></a></li>
+        <li><a href="#cons"><strong>Cons:</strong></a></li>
+      </ol>
+    </li>
+    <li><a href="#lets-get-practical-with-a-tutorial">Let&rsquo;s get practical with a tutorial</a>
+      <ol>
+        <li><a href="#install-connector">Install connector:</a></li>
+        <li><a href="#how-to-debug">How to debug:</a></li>
+      </ol>
+    </li>
+    <li><a href="#learn-more-">Learn more 💡</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Adi Polak &#183; 15 min read &#183; <span class=''>Last updated: January 10, 2021</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.adipolak.com%2fpost%2fkubernetes-and-virtual-kubelet-in-a-nutshell%2f&quote=Kubernetes%20and%20Virtual%20Kubelet%20in%20a%20nutshell" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fblog.adipolak.com%2fpost%2fkubernetes-and-virtual-kubelet-in-a-nutshell%2f&text=Kubernetes%20and%20Virtual%20Kubelet%20in%20a%20nutshell:%0Ahttps%3a%2f%2fblog.adipolak.com%2fpost%2fkubernetes-and-virtual-kubelet-in-a-nutshell%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.adipolak.com%2fpost%2fkubernetes-and-virtual-kubelet-in-a-nutshell%2f&title=Kubernetes%20and%20Virtual%20Kubelet%20in%20a%20nutshell&summary=Step%20by%20step%20tutorial%20on%20how%20to%20scale%20web%20app%20using%20the%20right%20infrastructure%20such%20as%20Kubernetes%20and%20virtual%20kubelet&source=Adi%20Polak" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=https%3a%2f%2fblog.adipolak.com%2fpost%2fkubernetes-and-virtual-kubelet-in-a-nutshell%2f&text=Kubernetes%20and%20Virtual%20Kubelet%20in%20a%20nutshell" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                  
+                    <a href="https://reddit.com/submit?url=https%3a%2f%2fblog.adipolak.com%2fpost%2fkubernetes-and-virtual-kubelet-in-a-nutshell%2f&title=Kubernetes%20and%20Virtual%20Kubelet%20in%20a%20nutshell" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=Kubernetes%20and%20Virtual%20Kubelet%20in%20a%20nutshell&body=Step%20by%20step%20tutorial%20on%20how%20to%20scale%20web%20app%20using%20the%20right%20infrastructure%20such%20as%20Kubernetes%20and%20virtual%20kubelet%0A%0Ahttps%3a%2f%2fblog.adipolak.com%2fpost%2fkubernetes-and-virtual-kubelet-in-a-nutshell%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
+<p>Today, you will learn how to take a web app (it can be any programming language,<br>
+we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
+<p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
+<p><span style="background-color: #FFFF00"><strong>So, you are probably asking yourself</strong></span><br>
+<span style="background-color: #FFFF00"><strong>&ldquo;what is Kubernetes and what can I use it for?&quot;</strong></span><br>
+<span style="background-color: #FFFF00"><strong>Just keep reading</strong></span></p>
+<p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
+It is used to build distributed, scalable microservices.</p>
+<p>It brings many new concepts and terminology we need to familiarize ourselves with, these are the very basics:</p>
+<h2 id="basic-glossary">Basic Glossary:</h2>
+<p><span style="background-color: #FFFF00"><strong>Node</strong></span> - Hardware component. Often a VM hosted on a cloud and provide CPU and RAM resources to be used by the Kubernetes cluster.<br>
+<span style="background-color: #FFFF00"><strong>Kubernetes Master</strong></span> - A node or nodes that are in charge of managing the Kubernetes cluster state.<br>
+<span style="background-color: #FFFF00"><strong>Kubelet</strong></span> - Primary &ldquo;node agents&rdquo; that runs on each node. It manages the containers that were created by Kubernetes and runs on the node it manages.\
+It communicates with the K8S master.<br>
+<span style="background-color: #FFFF00"><strong>Pod</strong></span> - hold one or more containers. Containers that share the same pod also share resources and network.<br>
+Pod can be in charge of containers on different nodes- different physical machines or virtual machine(VM).<br>
+It serves as unit of deployment, horizontal scaling, and replication.<br>
+<span style="background-color: #FFFF00"><strong>PodSpec</strong> </span> - Yaml or JSON file that describes the pod spec. It is used by kubelet to make sure that the containers are healthy and running according to expectations.<br>
+<span style="background-color: #FFFF00"><strong>Cluster</strong> </span> - Series of nodes connected together.<br>
+There are many more concepts and terminology but this is the basic that we need to understand virtual kubelet and to start using K8S.<br>
+<span style="background-color: #FFFF00"><strong>Kubernetes API</strong></span> - Server (REST) that runs on the master node and speaks directly with the kubelets running on the nodes.\</p>
+<hr>
+<p>In the chart from <a href="https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/">Kubernetes.io</a> we can see the nodes and master:</p>
+<p><strong>Hey, where are the pods?</strong>
+Well, the pods can be part of the Deployment or the ReplicaSet.<br>
+The ReplicaSet/Deployment defines the replicas that are distributed among multiple nodes.<br>
+<br>
+Here is another chart that shows the pods work from <a href="https://thenewstack.io/kubernetes-deployments-work/">the new stack</a> website:</p>
+<img class="responsive"  src="https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/07751442-deployment.png" alt="drawing">
+<p>Another diagram shows how ReplicaSet work with Deployment,<br>
+where Deployment can be view as a template for ReplicaSet with replicas default of 3.<br>
+Diagram from Nir Mata <a href="https://www.nirmata.com/2018/03/03/kubernetes-for-developers-part-2-replica-sets-and-deployments/">site</a>:</p>
+<img class="responsive"  src="https://www.nirmata.com/wp-content/uploads/2018/03/Deployment.png" alt="drawing">
+<h3 id="how-kubernetes-works">How Kubernetes works?</h3>
+<p>Kubernetes manages N number of nodes and within those nodes, there are these kubelets.<br>
+Kubelets manage everything related to the node and the pods running on it. Pods are just a collection of containers.</p>
+<p>When we take an app put it in a container, upload it to container <a href="https://azure.microsoft.com/en-in/services/container-registry/?WT.mc_id=devto-blog-adpolak">registry</a> and deploy it into Kubernetes.<br>
+It then deployed onto a VM somewhere that is managed by Kubernetes cluster in our case <a href="https://docs.microsoft.com/en-us/azure/aks?WT.mc_id=devto-blog-adpolak">Azure Kubernetes Service (AKS)</a>.<br>
+We can see that VM and track it from the CLI and the UI - at that point,<br>
+there is no per-second or pay-as-you-go billing since it is the classic scenario of<br>
+managed K8S service where we pay for the machines in use even if we end up not using them.</p>
+<h2 id="what-about-virtual-kubelet-vk">What about Virtual Kubelet (VK)?</h2>
+<p>With Virtual Kubelet we don&rsquo;t see the actual node only one virtual node for each service used.<br>
+It acts as an abstraction for us and can spin as many pods as needed.<br>
+Behind the scene, we can have multiple VMs but we will see only one for the specific service that we are using.<br>
+We are not exposed to the VMs running in the managed service that<br>
+we are using from the Virtual Kubelet.<br>
+<strong>Virtual Kubelet acts as a stand-in that help us proxy to other managed services</strong> with higher abstraction.</p>
+<p>Virtual Kubelet is an open-source implementation of Kubernetes kubelet<br>
+with the purpose of connecting Kubernetes to other APIs.<br>
+It registers itself as a node and allows us to deploy unlimited amounts of pods and containers.<br>
+It gives us the ability to connect with serverless containers platforms as well.<br>
+Meaning we can take any stateless app, containerize it and provision it through<br>
+the pods and the Virtual Kubelet will manage it for us and will shift it to the<br>
+managed service. We don&rsquo;t need to manage the infrastructure.<br>
+It can scales up or down - all managed by the service.<br>
+According to the managed service in use, we can benefit from <a href="https://azure.microsoft.com/en-in/offers/ms-azr-0003p?WT.mc_id=devto-blog-adpolak">Pay-as-you-Go accounts</a>, flexible auto-scaling and many more.</p>
+<hr>
+<p>When combining AKS with Azure Container Instances(ACI) you benefit from a fast orchestration of containers.<br>
+We combine the two using <em>virtual nodes</em>. Results in the automation of containers scheduling.<br>
+Scheduling in container context refers to the ability of the administrator to load a<br>
+service onto a host system that defined how to run a specific container.<br>
+Using ACI with <em>virtual nodes</em> results in faster provisioning of pods.</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/aks/virtual-nodes-cli?WT.mc_id=devto-blog-adpolak">Virtual nodes</a> can be used with AKS and are powered by the open-source Virtual Kubelet.</p>
+<img class="responsive"  src="https://github.com/virtual-kubelet/virtual-kubelet/raw/master/website/static/img/diagram.svg?sanitize=true" alt="drawing">
+<h3 id="pros"><strong>Pros:</strong></h3>
+<p><strong>✅ Fully managed solution of top of Kubernetes</strong>
+Allow us to connect to many managed solutions from various cloud providers in various regions.</p>
+<p><strong>✅ Pay exactly for what you use</strong>
+Managed solutions like <a href="https://azure.microsoft.com/en-us/services/container-instances?WT.mc_id=devto-blog-adpolak">ACI</a> or <a href="https://aws.amazon.com/fargate/">AWS Fargate</a> help us<br>
+scale up or down according to our needs without intervention from our side.</p>
+<p><strong>✅Portability</strong>
+Everywhere K8S runs, you can run your Virtual Kubelet and connect it with your managed service.</p>
+<p><strong>✅ Regions and other clusters</strong>
+From Virtual Kubelet you can leverage services that run on other regions and even other cloud providers.</p>
+<h3 id="cons"><strong>Cons:</strong></h3>
+<p><strong>❗️ Security</strong>
+In general, you should always think about security.<br>
+Remember, Security is everyone job!
+The overall security aspect of using Kubernetes is pretty complex to begin with.<br>
+When adding Virtual Kubelet, one should be aware of security issues that can<br>
+arise from communicating with other services outside of the Kubernetes cluster and outside of the region/cloud provider.<br>
+If we decide to work with ACI or other internal services, we can establish an internal virtual<br>
+network from K8s cluster to ACI. This way we can eliminate this security concern.</p>
+<hr>
+<h2 id="lets-get-practical-with-a-tutorial">Let&rsquo;s get practical with a tutorial</h2>
+<p>In JVM world there are many frameworks that can help us create a web app fast. One that includes the server and UI.<br>
+Our app uses Spring boot. Spring Boot has many embedded features like server and more.<br>
+For the server options, we can pick from Tomcat, Jetty or Undertow.</p>
+<p>So you are probably asking yourself, how to get started with Spring Boot?<br>
+go to Spring initializer <a href="https://start.spring.io/">site</a> and download a template or download the demo app from this <a href="https://github.com/adipola/virtual-kubelet-kotlin-spring-demo">github repository</a>.</p>
+<p>In this tutorial, we will deploy a kotlin-spring app to a Virtual Node on K8s cluster.
+We will use the next services: AKS, ACR and ACI.</p>
+<img class="responsive" src="/images/k8s.png" alt="drawing">
+<p><br>
+<strong>For the tutorial you will need:</strong></p>
+<ol>
+<li>Demo <a href="https://github.com/adipola/virtual-kubelet-kotlin-spring-demo">app</a></li>
+<li>Azure <a href="https://azure.microsoft.com/en-us/free?WT.mc_id=devto-blog-adpolak">free</a> subscription</li>
+<li><a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=devto-blog-adpolak&amp;view=azure-cli-latest">Azure CLI</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough?WT.mc_id=devto-blog-adpolak">AKS cluster</a></li>
+</ol>
+<p><span style="background-color: #FFFF00"><strong>At this point we have an AKS cluster</strong></span>
+, an app to deploy to our cluster and CLI tools installed.<br>
+For the second phase, we will need an ACI account, Docker registry to store our app image (we will use Azure container registry - <a href="%5Bhttps://azure.microsoft.com/en-in/services/container-registry?WT.mc_id=devto-blog-adpolak%5D">ACR</a></p>
+<p>Our demo app comes with a docker file that defines the app already, so we can push it to ACR.<br>
+Navigate in the terminal or CMD into your app directory and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set ACR_NAME<span style="color:#f92672">={</span>acr name<span style="color:#f92672">}</span>
+az login
+az acr login --name $ACR_NAME
+docker build --no-cache -t demo .
+docker tag demo $ACR_NAME.azurecr.io/samples/demo
+docker push $ACR_NAME.azurecr.io/samples/demo
+</code></pre></div><p>This is the push process:</p>
+<p><img class="responsive" src="/images/01-02-push_docker.png" alt="drawing"> \</p>
+<p>To test yourself - run your local docker with remote image</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -it --rm -p 8080:80 $ACR_NAME.azurecr.io/samples/demo
+</code></pre></div><p>The docker container will start running locally and you will see something like this:
+<img src="https://github.com/adipola/my-posts/blob/master/pictures/01-01-spring.png?raw=true" alt="">
+you can stop it with <em>ctrl+C</em>.</p>
+<p>Now let&rsquo;s connect to our AKS cluster, for that we will need our resource group name and our AKS cluster name:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set RES_GROUP<span style="color:#f92672">={</span>resource group name<span style="color:#f92672">}</span>
+set AKS_NAME<span style="color:#f92672">={</span>AKS name<span style="color:#f92672">}</span>
+az aks get-credentials --resource-group $RES_GROUP --name $AKS_NAME
+</code></pre></div><p><em>Verify the connection to the cluster</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl get nodes
+</code></pre></div><p>we will get the list of our nodes, version, status and more.</p>
+<p>Next we will create the authentication between the container registry (ACR) and AKS,<br>
+this is an important step, without it, AKS cluster will not be able to pull the image from the registry.
+We will do it using secret - follow <a href="https://docs.microsoft.com/bs-latn-ba/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret?WT.mc_id=devto-blog-adpolak">this</a></p>
+<p>in the tutorial you are running this - remember to <strong>take a note</strong> of them both!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Output used when creating Kubernetes secret.</span>
+echo <span style="color:#e6db74">&#34;Service principal ID: </span>$CLIENT_ID<span style="color:#e6db74">&#34;</span>
+echo <span style="color:#e6db74">&#34;Service principal password: </span>$SP_PASSWD<span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>Validate your connection and secret with logging into docker -</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker login $ACR_LOGIN_SERVER --username $CLIENT_ID --password $SP_PASSWD
+</code></pre></div><p>If this is failing, AKS will not be able to pull the image, and later in the tutorial you will get this error <code>got HTTP response status code 400 error code “InaccessibleImage”</code>.
+Make sure to follow the tutorial in the <a href="https://docs.microsoft.com/bs-latn-ba/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret?WT.mc_id=devto-blog-adpolak">link</a> step by step.</p>
+<h3 id="install-connector">Install connector:</h3>
+<p>For installing the connector and the ability to use virtual nodes, we will create a subnet in our network and will install an AKS cluster there with add-ons for virtual node.
+This is a more secure way since we create an internal network that is isolated from our bigger K8s cluster.<br>
+Follow the step-by-step <a href="https://docs.microsoft.com/en-us/azure/aks/virtual-nodes-cli?WT.mc_id=devto-blog-adpolak">here</a> but don&rsquo;t deploy the app - we will deploy our app instead.</p>
+<p>For deploying the app run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f kotlin-spring-virtual-kublet-linux.yaml
+</code></pre></div><p>This YAML file describes to K8s, pods and kubelet how we want our app to run,<br>
+what is the deployments and the services in use. Each deploy component in our file<br>
+starts with <code>apiVersion</code> followed by <code>kind</code>, <code>metadata</code> and <code>spec</code> In our file we have one service named- <code>azure-spring-kotlin-front-virtual-service</code>
+and one deployment named: <code>azure-spring-kotlin-front-virtual</code>.
+Under <code>deployment</code> and under <code>spec -&gt; template -&gt; spec</code> we have the configuration<br>
+for the node selector, we might have many nodes in our cluster, and we would like this app<br>
+to be deployed to our virtual node one and not to the rest.<br>
+For achieving this, under <code>nodeSelector</code> we describe the <code>type</code> by giving it the value of <code>virtual-kubelet</code>.<br>
+This specifies the pods and kubelet that we will deploy this app only on this specific type of node and no other.</p>
+<p>Our second component is of <code>kind</code> <code>service</code> , it&rsquo;s spec type is <code>loadBalancer</code> and<br>
+it will have an <code>External API</code> for the app so we can load it in our browser.<br>
+For doing it, we need to expose it first - notice that we are exposing the app and not the LoadBalancer itself since we can expose a deployment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl expose deployment azure-spring-kotlin-front-virtual --type<span style="color:#f92672">=</span>LoadBalancer --port <span style="color:#ae81ff">80</span> --target-port <span style="color:#ae81ff">8080</span>
+</code></pre></div><p>To find the <code>External API</code> run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl get services
+</code></pre></div><p>And search for <code>External API</code> at <strong>azure-spring-kotlin-front-virtual</strong> entry.</p>
+<h3 id="how-to-debug">How to debug:</h3>
+<p>Use the next commands to debug and get a hold of what is happening in the cluster:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl get services
+kubectl get pods
+kubectl get deployment
+</code></pre></div><p>From the commands above we will get the data and first statuses of the various component, after figuring out what failed we can run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl describe <span style="color:#f92672">{</span>pod/service/node<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>name of pod/service/node<span style="color:#f92672">}</span>
+</code></pre></div><p>This will give us a JSON back with information like events, under event we will see what failed, it can be - <code>FailedSynch</code> app status <code>Terminated</code> - which usually reflects that the app crashed and we should check the node logs using</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl logs <span style="color:#f92672">{</span>name of node<span style="color:#f92672">}</span>
+</code></pre></div><p>There are many more commands to debug K8s cluster and this was just the tip of the iceberg. Feel free to play and investigate the API.</p>
+<p>Have something to add that I forgot to mention? want to discuss more options? write in comments or send a DM on <a href="https://twitter.com/AdiPolak">twitter</a>.</p>
+<h2 id="learn-more-">Learn more 💡</h2>
+<p>👉🏼  Watch this <a href="https://azure.microsoft.com/en-us/resources/videos/azure-friday-virtual-kubelet-introduction?WT.mc_id=devto-blog-adpolak">video</a> on Virtual Kubelet by Ria Bhatia and Scott Hanselman</p>
+<p>👉🏼 <a href="https://docs.microsoft.com/en-us/azure/dev-spaces/quickstart-java?toc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Faks%2FTOC.json&amp;bc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json&amp;WT.mc_id=devto-blog-adpolak">Quickstart:</a> Develop with Java on Kubernetes using Azure Dev Spaces</p>
+<p>👉🏼 Java and <a href="https://azure.microsoft.com/en-us/develop/java/?WT.mc_id=devto-blog-adpolak">Azure</a></p>
+<p>👉🏼 Kubernetes and Apache Spark on Azure <a href="https://docs.microsoft.com/en-us/azure/aks/spark-job?WT.mc_id=devto-blog-adpolak">tutorial</a></p>
+<p><br></br></p>
+<p><em>This article originally appeared in Adi Polak&rsquo;s Dev.to blog <a href="https://dev.to/adipolak/kubernetes-and-virtual-kubelet-in-a-nutshell-gn4">https://dev.to/adipolak/kubernetes-and-virtual-kubelet-in-a-nutshell-gn4</a>.</em></p>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/beginners"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">BEGINNERS</span></a><a href="/tags/devops"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">DEVOPS</span></a><a href="/tags/tutorial"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">TUTORIAL</span></a><a href="/tags/kubernetes"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">KUBERNETES</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/AdiPola"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/AdiPolak"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Adi Polak
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2021 Adi Polak <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.ff798fe8bbc88749c6f4c430cf209ef0cf00bc8a2b4d55339c3ec46f1437319c.js" integrity="sha256-/3mP6LvIh0nG9MQwzyCe8M8AvIorTVUznD7EbxQ3MZw=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.21d1b65b48adbed41de7ac42ee68e7f9e464985356770f7e0b877b89044eb469.js" integrity="sha256-IdG2W0itvtQd56xC7mjn&#43;eRkmFNWdw9&#43;C4d7iQROtGk=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

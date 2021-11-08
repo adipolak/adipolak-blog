@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+      
+      
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+      <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+      <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+      <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+      
+      
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WTSD5NB');
+      </script>
+      
+      
+      
+      
+      
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-187000172-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+      
+    
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Adi Polak | Data, ML &amp; Open Source</title>
+<meta name="title" content="Adi Polak | Data, ML &amp; Open Source" />
+<meta name="description" content=""> 
+
+
+<link rel="canonical" href="https://blog.adipolak.com/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="" /> 
+  <meta name="twitter:title" content="Adi Polak | Data, ML &amp; Open Source" />
+  <meta name="twitter:url" content="https://blog.adipolak.com/" />
+  <meta name="twitter:site" content="@AdiPolak" /> 
+  <meta name="twitter:creator" content="@AdiPolak" /> 
+  <meta name="twitter:image" content="/assets/favicon/android-chrome-512x512.png" /> 
+
+
+
+  
+  <meta property="og:title" content="Adi Polak | Data, ML &amp; Open Source" />
+  <meta property="og:description" content="" /> 
+  <meta property="og:site_name" content="Adi Polak" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://blog.adipolak.com/" />
+  
+  <meta property="og:image" content="/assets/favicon/android-chrome-512x512.png" /> 
+
+
+
+<meta property="article:published_time" content="2021-04-11 00:00:00 &#43;0000 UTC" />
+
+
+  
+  <script type="application/ld+json">
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https://blog.adipolak.com/", 
+      "name": "Adi Polak",
+      "author": {
+        "@type": "Person",
+        "name": "Adi Polak"
+      },
+      
+      "logo": "/assets/favicon/android-chrome-512x512.png",
+      
+      "description": "",
+      
+      "sameAs" : [
+        
+          "https://github.com/AdiPola",  
+        
+          "https://twitter.com/AdiPolak"
+        
+      ]
+      
+    }
+    </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.89.1" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.71c8038a0f492f699f286fcec63932467af8dfdf8542bee82a4d8365219ddb41.css" integrity="sha256-ccgDig9JL2mfKG/OxjkyRnr439&#43;FQr7oKk2DZSGd20E=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel="alternate" type="application/rss+xml" href="https://blog.adipolak.com/index.xml" title="Adi Polak" /><link rel=apple-touch-icon sizes=180x180 href=https://blog.adipolak.com//assets/favicon/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=https://blog.adipolak.com//assets/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=https://blog.adipolak.com//assets/favicon/favicon-16x16.png>
+<link rel=manifest href=https://blog.adipolak.com//assets/favicon/site.webmanifest>
+<link rel=mask-icon href=https://blog.adipolak.com//assets/favicon/safari-pinned-tab.svg color=#7817c4>
+<link rel=icon href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon>
+<link rel="shortcut icon" href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon>
+<meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme">
+<meta name=application-name content="Vibrant Shadows Theme">
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="https://blog.adipolak.com/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" height="32"></img>&nbsp;&nbsp;&nbsp;Adi Polak</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/"><i class='fa fa-user'></i> about</a>
+                </li>
+              
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/presentations/"><i class='fa fa-road'></i> presentations</a>
+                </li>
+              
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/subscribe/"><i class='fa fa-heart'></i> subscribe</a>
+                </li>
+              
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/contact-me/"><i class='fa fa-address-card'></i> contact</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+
+
+
+<div class="jumbotron jumbotron-fluid text-center d-flex flex-column mb-0 text-light hero-gradient">
+  <div style="height:3.5rem;"></div>
+  <div class="container-fluid">
+    
+      <h1 class="d-inline-block">Data, ML &amp; Open Source</h1>
+    
+    
+  </div>
+
+</div>
+<div class="container-fluid bg-mat py-3">
+  <div class="container-fluid bg-mat py-3" >
+    
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/data_and_ai_summit2021/"><span class="card-title text-reset"> Data&#43;AI Summit 2021 is Coming</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 4 min read &#183; <span class=''>Last updated: April 11, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/conference"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">CONFERENCE</span></a><a href="/tags/apache-spark"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">APACHE SPARK</span></a></div>
+            
+            
+            <p>It&rsquo;s almost been half a year since the last summit.
+Data+AI Summit 2021 starts on Monday, May 24 till Friday, May 28. The training will be held on May 24-25 and will cater to a large set of practitioners, definitely more extensive than previous times: Data Analyst, Data Engineer, Data Scientist, ML Engineer, Partner Data Engineer, Platform Engineer, Technical. The wide range of roles makes me curious about the various technical personas in the Data and AI space.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/data_and_ai_summit2021/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/machine-learning-in-production-concepts-you-should-know/"><span class="card-title text-reset"> Machine Learning in Production - Concepts you should know</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 3 min read &#183; <span class=''>Last updated: March 4, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/data-science"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DATA SCIENCE</span></a><a href="/tags/machine-learning"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">MACHINE LEARNING</span></a><a href="/tags/terminology"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">TERMINOLOGY</span></a></div>
+            
+            
+            <p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.
+Here is a list of concepts for you to get started:
+ML Algorithm ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.
+ML Model ML model is the ML algorithm process outcome; It often contains a statistical representation of the data ingested into the algorithm.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/machine-learning-in-production-concepts-you-should-know/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-part-4/"><span class="card-title text-reset"> Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 8 min read &#183; <span class=''>Last updated: February 22, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/open-source"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">OPEN SOURCE</span></a><a href="/tags/apache-spark"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">APACHE SPARK</span></a><a href="/tags/delta-lake"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DELTA LAKE</span></a><a href="/tags/beginner"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">BEGINNER</span></a><a href="/tags/scenarios"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">SCENARIOS</span></a></div>
+            
+            
+            <p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉
+There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.
+Let&rsquo;s discuss two common data pipelines patterns and solutions:
+Spark Structured Streaming ETL with DeltaLake that serves multiple Users Spark Structured Streaming- Apache Spark structured steaming are essentially unbounded tables of information.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-part-4/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-part-3/"><span class="card-title text-reset"> Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 5 min read &#183; <span class=''>Last updated: February 15, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/open-source"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">OPEN SOURCE</span></a><a href="/tags/apache-spark"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">APACHE SPARK</span></a><a href="/tags/delta-lake"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DELTA LAKE</span></a><a href="/tags/beginner"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">BEGINNER</span></a><a href="/tags/deltalog"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DELTA LOG</span></a></div>
+            
+            
+            <p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.
+Checkpoint There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:
+Spark RDD Checkpoint Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-part-3/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-the-deltalog/"><span class="card-title text-reset"> Delta Lake essential Fundamentals: Part 2 - The DeltaLog</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 10 min read &#183; <span class=''>Last updated: February 11, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/open-source"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">OPEN SOURCE</span></a><a href="/tags/apache-spark"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">APACHE SPARK</span></a><a href="/tags/delta-lake"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DELTA LAKE</span></a><a href="/tags/beginner"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">BEGINNER</span></a><a href="/tags/deltalog"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DELTA LOG</span></a></div>
+            
+            
+            <p>In the previous part, you learned what ACID transactions are.
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.
+Transaction Log A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee ACID properties over a crash.
+DeltaLake transaction log - DetlaLog DeltaLog is a transaction log directory that holds an ordered record of every transaction committed on a Delta Lake table since it was created.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-the-deltalog/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/"><span class="card-title text-reset"> Delta Lake essential Fundamentals: Part 1 - ACID</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 4 min read &#183; <span class=''>Last updated: February 4, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/open-source"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">OPEN SOURCE</span></a><a href="/tags/apache-spark"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">APACHE SPARK</span></a><a href="/tags/delta-lake"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DELTA LAKE</span></a><a href="/tags/beginner"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">BEGINNER</span></a><a href="/tags/acid"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">ACID</span></a></div>
+            
+            
+            <p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
+What is Delta Lake ?  Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads.  DeltaLake open source consists of 3 projects:
+ detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/apache-spark-ecosystem/"><span class="card-title text-reset"> Apache Spark Ecosystem, Jan 2021 Highlights</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 5 min read &#183; <span class=''>Last updated: January 12, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/open-source"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">OPEN SOURCE</span></a><a href="/tags/apache-spark"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">APACHE SPARK</span></a><a href="/tags/koalas"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">KOALAS</span></a><a href="/tags/pandas"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">PANDAS</span></a><a href="/tags/delta-lake"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DELTA LAKE</span></a><a href="/tags/ray"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">RAY</span></a><a href="/tags/ray-on-spark"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">RAY ON SPARK</span></a><a href="/tags/analytic-zoo"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">ANALYTIC ZOO</span></a></div>
+            
+            
+            <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.
+Apache Spark is continually growing. It started as part of the Hadoop family,
+but with the slow death of hadoop and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.
+Let&rsquo;s take a look at three exciting open sources:</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/apache-spark-ecosystem/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/"><span class="card-title text-reset"> Kubernetes and Virtual Kubelet in a nutshell</span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta"></span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Adi Polak &#183; 15 min read &#183; <span class=''>Last updated: January 10, 2021</div>
+            
+            
+            
+              <div class="pb-1 mt-1"><a href="/tags/beginners"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">BEGINNERS</span></a><a href="/tags/devops"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">DEVOPS</span></a><a href="/tags/tutorial"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">TUTORIAL</span></a><a href="/tags/kubernetes"><span class="badge badge-pill bg-clr2 text-nav mr-2 mb-1 py-2">KUBERNETES</span></a></div>
+            
+            
+            <p>Today, you will learn how to take a web app (it can be any programming language,
+we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).
+Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post here.
+So, you are probably asking yourself
+&ldquo;what is Kubernetes and what can I use it for?&quot;
+Just keep reading
+Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/recognize-as-an-expert-in-data_ai/"><span class="card-title text-reset"> </span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta">
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+              By Adi Polak &#183; 0 min read</div>
+            
+            
+            
+              <div class="pb-1 mt-1"></div>
+            
+            
+            <p>Timeline, class committee work in the lab transferring from mahout to apache spark implemented thesis algo in IBM Security lab
+Job Exporter helping move from MapReduce to Spark Score engine SDK - Accumulator, Cache, Broadcast, DataFrmes Connector to storage layter Seperation of HDFS environment (cluster resourcing) Build in house tools won the local hackathon twice in a row, projects were presented to the CEO.</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/recognize-as-an-expert-in-data_ai/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h2>
+            
+            <a class="text-reset" href="https://blog.adipolak.com/post/data-mash-impost-challange-for-machine-learning/"><span class="card-title text-reset"> </span></a>
+          </h2>
+          <div class="card-text">
+            <div class="font-weight-bold small post-meta">
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+              By Adi Polak &#183; 0 min read</div>
+            
+            
+            
+              <div class="pb-1 mt-1"></div>
+            
+            
+            <p>ToRead: https://learning.oreilly.com/library/view/data-management-at/9781492054771/
+Security in data management Machine learning workloads on all the data vs on a small chunks of the data
+Machine learning security and privacy
+Batch processing vs. stream processing.
+A thoughts that was running in my head for the last 6 months was - how can we run effective machine learning workloads in a secure manner and can data mesh architecture help us solve this problem?</p>
+            
+            
+            
+            <a class="font-weight-bold text-reset text-decoration-none" href="https://blog.adipolak.com/post/data-mash-impost-challange-for-machine-learning/"><nobr>Read more →</nobr></a>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/AdiPola"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/AdiPolak"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Adi Polak
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2021 Adi Polak <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.ff798fe8bbc88749c6f4c430cf209ef0cf00bc8a2b4d55339c3ec46f1437319c.js" integrity="sha256-/3mP6LvIh0nG9MQwzyCe8M8AvIorTVUznD7EbxQ3MZw=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.21d1b65b48adbed41de7ac42ee68e7f9e464985356770f7e0b877b89044eb469.js" integrity="sha256-IdG2W0itvtQd56xC7mjn&#43;eRkmFNWdw9&#43;C4d7iQROtGk=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>
