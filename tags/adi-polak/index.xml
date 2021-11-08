@@ -20,6 +20,18 @@ I am a frequent presenter at world-wide industry conferences and O’Reilly cour
     </item>
     
     <item>
+      <title>Blog Posts Bank</title>
+      <link>https://blog.adipolak.com/blog-posts-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/blog-posts-list/</guid>
+      <description>How Highly Available you are? Is it worth it? Many architects and Infra/Platform developers take great pride on developing highly available systems.
+We even invented code names for it like three nines or the nines of availability.
+Do we realy need it? is it all so necessary?
+There is a long list of requirments that comes with it. Every new logic developer needs to be aware that their code will run in multiple active-active cluster, even active-active-active.</description>
+    </item>
+    
+    <item>
       <title>Thank You</title>
       <link>https://blog.adipolak.com/thankyou/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

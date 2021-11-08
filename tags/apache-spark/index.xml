@@ -76,5 +76,17 @@ but with the slow death of hadoop and the fast growth of Kubernetes, many new to
 Let&amp;rsquo;s take a look at three exciting open sources:</description>
     </item>
     
+    <item>
+      <title>Koalas, Panda&#39;s Scalable Sibling</title>
+      <link>https://blog.adipolak.com/post/koalas-pandas-scalable-sibling/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adipolak.com/post/koalas-pandas-scalable-sibling/</guid>
+      <description>What is it all about? From the pandas docs: &amp;ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.&amp;quot;
+From the Koalas docs: &amp;ldquo;The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark.&amp;quot;
+First thing first,
+Setting up the environment You can use any Apache Spark environment that suits you.</description>
+    </item>
+    
   </channel>
 </rss>
