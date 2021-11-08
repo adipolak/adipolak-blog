@@ -1,4 +1,4 @@
-baseURL: "https://blog.adipolak.com/" # url address of the website | required
+baseURL: "https://adipolak.github.io/adipolak-blog-hugo/" # url address of the website | required
 title: "Adi Polak" # title of the site; usually same as brand name | required
 copyright: "Copyright &#169; 2020 Adi Polak. All rights reserved." # should match 'brand -> name', and 'contentLicense' under params below; used in default rss template: https://gohugo.io/templates/rss/#configure-rss | optional
 languageCode: "en-us" # recommended | no default
@@ -29,7 +29,7 @@ params:
     profiles: # social platforms you are present on. see supported ones here | highly recommended
       # facebook: "https://www.facebook.com/Softorage"
       twitter: "https://twitter.com/AdiPolak"
-      github: "https://github.com/AdiPola"
+      github: "https://github.com/AdiPolak"
       # gitlab: "https://gitlab.com/Softorage/"
       # instagram: "https://www.instagram.com/softorage/"
     share: ["facebook", "twitter", "linkedin", "telegram", "reddit", "email"] # accepts array of values: "facebook", "twitter", "linkedin", "whatsapp", "reddit", "email". just type the name of those you want you articles to be able to be shared on
