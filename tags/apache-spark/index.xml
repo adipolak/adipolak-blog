@@ -60,8 +60,8 @@ DeltaLake transaction log - DetlaLog DeltaLog is a transaction log directory tha
       
       <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</guid>
       <description>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
-What is Delta Lake ?  Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads.  DeltaLake open source consists of 3 projects:
- detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</description>
+What is Delta Lake ? Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads. DeltaLake open source consists of 3 projects:
+detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</description>
     </item>
     
     <item>

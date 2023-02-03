@@ -72,8 +72,8 @@ DeltaLake transaction log - DetlaLog DeltaLog is a transaction log directory tha
       
       <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</guid>
       <description>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
-What is Delta Lake ?  Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads.  DeltaLake open source consists of 3 projects:
- detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</description>
+What is Delta Lake ? Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads. DeltaLake open source consists of 3 projects:
+detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</description>
     </item>
     
     <item>
@@ -98,9 +98,8 @@ Let&amp;rsquo;s take a look at three exciting open sources:</description>
 we used Java &amp;amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).
 Well, if you don&amp;rsquo;t know yet why you should consider distributing your web app - read my post here.
 So, you are probably asking yourself
-&amp;ldquo;what is Kubernetes and what can I use it for?&amp;quot;
-Just keep reading
-Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.</description>
+&amp;ldquo;what is Kubernetes and what can I use it for?&amp;rdquo;
+Just keep reading</description>
     </item>
     
     <item>
@@ -122,8 +121,7 @@ I am a frequent presenter at world-wide industry conferences and O’Reilly cour
       
       <guid>https://blog.adipolak.com/contact-me/</guid>
       <description>You can contact me here!
-Name      Email      Message     Send   (Powered by Un-static Forms)
- </description>
+Name Email Message Send (Powered by Un-static Forms)</description>
     </item>
     
     <item>
@@ -133,7 +131,7 @@ Name      Email      Message     Send   (Powered by Un-static Forms)
       
       <guid>https://blog.adipolak.com/presentations/</guid>
       <description>Presentations You can find Adi Polak often presenting at different conferences around the world. Adi works closely with Data &amp;amp; ML Open Source technologies. As a Public Presenter Adi shares her expertise in building distributed computing systems, productizing machine learning, and more. If you want to have some references, check out a couple of events Adi Polak presented at:
- She Codes, 2015 BIPA, Munich, September 2016 Akamai Internal Conference, Jan 2017 Cloudera Meetup, Tel Aviv, July 2017 FlipCon, Tel Aviv, July 2018 Codmotion, Berlin, November 2018 Codemotion, Milan, November 2018 Microsoft Ignite the tour - Tel Aviv, April 2019 Microsoft Ignite the tour - Stockholm, April 2019 Voxxedday the tour Australia,Melbourne May 2019 Voxxedday the tour Australia,Sydney May 2019 Voxxedday, Athens, June 2019 Devoxx Krakow, Poland, June 2019 CloudBrow , Stockholm, August 2019 FooCaffe, Malmo , August 2019 Spark &amp;amp; AI Europe, Amsterdam, 2019 Microsoft Ignite, Orlando, Nov 2019 DataCouncil, NYC, Nov 2019 CloudBrew, Belgium, Dec 2019 UnVoxxed, Hawaii, Feb 2020 Microsoft Build, Online, May 2020 Women in Big Data, Online, July 2020 DevOps Kathmandu, Online, July 2020 GeekTime code, Online, August 2020 She Codes, Online, August 2020 Microsoft Developer Twitch, Online, September 2020 JFrog Meetup, Online, September 2020 Microsoft Ignite, Online, September 2020 University of British Columbia, Online, October 2020 ngChina, Online, November 2020 Data &amp;amp; AI ( Prev.</description>
+She Codes, 2015 BIPA, Munich, September 2016 Akamai Internal Conference, Jan 2017 Cloudera Meetup, Tel Aviv, July 2017 FlipCon, Tel Aviv, July 2018 Codmotion, Berlin, November 2018 Codemotion, Milan, November 2018 Microsoft Ignite the tour - Tel Aviv, April 2019 Microsoft Ignite the tour - Stockholm, April 2019 Voxxedday the tour Australia,Melbourne May 2019 Voxxedday the tour Australia,Sydney May 2019 Voxxedday, Athens, June 2019 Devoxx Krakow, Poland, June 2019 CloudBrow , Stockholm, August 2019 FooCaffe, Malmo , August 2019 Spark &amp;amp; AI Europe, Amsterdam, 2019 Microsoft Ignite, Orlando, Nov 2019 DataCouncil, NYC, Nov 2019 CloudBrew, Belgium, Dec 2019 UnVoxxed, Hawaii, Feb 2020 Microsoft Build, Online, May 2020 Women in Big Data, Online, July 2020 DevOps Kathmandu, Online, July 2020 GeekTime code, Online, August 2020 She Codes, Online, August 2020 Microsoft Developer Twitch, Online, September 2020 JFrog Meetup, Online, September 2020 Microsoft Ignite, Online, September 2020 University of British Columbia, Online, October 2020 ngChina, Online, November 2020 Data &amp;amp; AI ( Prev.</description>
     </item>
     
     <item>
@@ -146,7 +144,7 @@ Name      Email      Message     Send   (Powered by Un-static Forms)
 Subscribe on Twitter You can subscribe to the tweets of Adi Polak via Twitter.
 Follow @TwitterDev
 Subscribe on YouTube You can subscribe to the YouTube channel of Adi Polak.
-  Subscribe with Email To get posts and updates from this blog via email you can subscribe to Adi Polak Data &amp;amp; Open Source Updates here.</description>
+Subscribe with Email To get posts and updates from this blog via email you can subscribe to Adi Polak Data &amp;amp; Open Source Updates here.</description>
     </item>
     
     <item>

@@ -72,8 +72,8 @@ DeltaLake transaction log - DetlaLog DeltaLog is a transaction log directory tha
       
       <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</guid>
       <description>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
-What is Delta Lake ?  Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads.  DeltaLake open source consists of 3 projects:
- detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</description>
+What is Delta Lake ? Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark™ and big data workloads. DeltaLake open source consists of 3 projects:
+detla - Delta Lake core, written in Scala. delta-rs - Rust library for binding with Python and Ruby. connectors - Connectors to popular big data engines outside Spark, written mostly in Scala.</description>
     </item>
     
     <item>
@@ -98,9 +98,8 @@ Let&amp;rsquo;s take a look at three exciting open sources:</description>
 we used Java &amp;amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).
 Well, if you don&amp;rsquo;t know yet why you should consider distributing your web app - read my post here.
 So, you are probably asking yourself
-&amp;ldquo;what is Kubernetes and what can I use it for?&amp;quot;
-Just keep reading
-Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.</description>
+&amp;ldquo;what is Kubernetes and what can I use it for?&amp;rdquo;
+Just keep reading</description>
     </item>
     
   </channel>

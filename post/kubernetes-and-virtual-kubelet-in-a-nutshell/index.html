@@ -133,7 +133,7 @@ if (!doNotTrack) {
 
 
     
-    <meta name="generator" content="Hugo 0.89.1" />
+    <meta name="generator" content="Hugo 0.110.0">
   
   
   
@@ -144,17 +144,7 @@ if (!doNotTrack) {
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   
-  <link rel=apple-touch-icon sizes=180x180 href=https://blog.adipolak.com//assets/favicon/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=https://blog.adipolak.com//assets/favicon/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=https://blog.adipolak.com//assets/favicon/favicon-16x16.png>
-<link rel=manifest href=https://blog.adipolak.com//assets/favicon/site.webmanifest>
-<link rel=mask-icon href=https://blog.adipolak.com//assets/favicon/safari-pinned-tab.svg color=#7817c4>
-<link rel=icon href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon>
-<link rel="shortcut icon" href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon>
-<meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme">
-<meta name=application-name content="Vibrant Shadows Theme">
-<meta name=msapplication-TileColor content="#ffffff">
-<meta name=theme-color content="#ffffff">
+  <link rel=apple-touch-icon sizes=180x180 href=https://blog.adipolak.com//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://blog.adipolak.com//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://blog.adipolak.com//assets/favicon/favicon-16x16.png><link rel=manifest href=https://blog.adipolak.com//assets/favicon/site.webmanifest><link rel=mask-icon href=https://blog.adipolak.com//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=https://blog.adipolak.com//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
   
   
   
@@ -330,7 +320,7 @@ if (!doNotTrack) {
 we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
 <p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
 <p><span style="background-color: #FFFF00"><strong>So, you are probably asking yourself</strong></span><br>
-<span style="background-color: #FFFF00"><strong>&ldquo;what is Kubernetes and what can I use it for?&quot;</strong></span><br>
+<span style="background-color: #FFFF00"><strong>&ldquo;what is Kubernetes and what can I use it for?&rdquo;</strong></span><br>
 <span style="background-color: #FFFF00"><strong>Just keep reading</strong></span></p>
 <p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
 It is used to build distributed, scalable microservices.</p>
@@ -371,7 +361,7 @@ managed K8S service where we pay for the machines in use even if we end up not u
 <p>With Virtual Kubelet we don&rsquo;t see the actual node only one virtual node for each service used.<br>
 It acts as an abstraction for us and can spin as many pods as needed.<br>
 Behind the scene, we can have multiple VMs but we will see only one for the specific service that we are using.<br>
-We are not exposed to the VMs running in the managed service that<br>
+We are not exposed to the VMs running in the managed service that <br>
 we are using from the Virtual Kubelet.<br>
 <strong>Virtual Kubelet acts as a stand-in that help us proxy to other managed services</strong> with higher abstraction.</p>
 <p>Virtual Kubelet is an open-source implementation of Kubernetes kubelet<br>
@@ -433,44 +423,44 @@ We will use the next services: AKS, ACR and ACI.</p>
 For the second phase, we will need an ACI account, Docker registry to store our app image (we will use Azure container registry - <a href="%5Bhttps://azure.microsoft.com/en-in/services/container-registry?WT.mc_id=devto-blog-adpolak%5D">ACR</a></p>
 <p>Our demo app comes with a docker file that defines the app already, so we can push it to ACR.<br>
 Navigate in the terminal or CMD into your app directory and run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set ACR_NAME<span style="color:#f92672">={</span>acr name<span style="color:#f92672">}</span>
-az login
-az acr login --name $ACR_NAME
-docker build --no-cache -t demo .
-docker tag demo $ACR_NAME.azurecr.io/samples/demo
-docker push $ACR_NAME.azurecr.io/samples/demo
-</code></pre></div><p>This is the push process:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>set ACR_NAME<span style="color:#f92672">={</span>acr name<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>az login
+</span></span><span style="display:flex;"><span>az acr login --name $ACR_NAME
+</span></span><span style="display:flex;"><span>docker build --no-cache -t demo .
+</span></span><span style="display:flex;"><span>docker tag demo $ACR_NAME.azurecr.io/samples/demo
+</span></span><span style="display:flex;"><span>docker push $ACR_NAME.azurecr.io/samples/demo
+</span></span></code></pre></div><p>This is the push process:</p>
 <p><img class="responsive" src="/images/01-02-push_docker.png" alt="drawing"> \</p>
 <p>To test yourself - run your local docker with remote image</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -it --rm -p 8080:80 $ACR_NAME.azurecr.io/samples/demo
-</code></pre></div><p>The docker container will start running locally and you will see something like this:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it --rm -p 8080:80 $ACR_NAME.azurecr.io/samples/demo
+</span></span></code></pre></div><p>The docker container will start running locally and you will see something like this:
 <img src="https://github.com/adipola/my-posts/blob/master/pictures/01-01-spring.png?raw=true" alt="">
 you can stop it with <em>ctrl+C</em>.</p>
 <p>Now let&rsquo;s connect to our AKS cluster, for that we will need our resource group name and our AKS cluster name:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set RES_GROUP<span style="color:#f92672">={</span>resource group name<span style="color:#f92672">}</span>
-set AKS_NAME<span style="color:#f92672">={</span>AKS name<span style="color:#f92672">}</span>
-az aks get-credentials --resource-group $RES_GROUP --name $AKS_NAME
-</code></pre></div><p><em>Verify the connection to the cluster</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl get nodes
-</code></pre></div><p>we will get the list of our nodes, version, status and more.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>set RES_GROUP<span style="color:#f92672">={</span>resource group name<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>set AKS_NAME<span style="color:#f92672">={</span>AKS name<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>az aks get-credentials --resource-group $RES_GROUP --name $AKS_NAME
+</span></span></code></pre></div><p><em>Verify the connection to the cluster</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl get nodes
+</span></span></code></pre></div><p>we will get the list of our nodes, version, status and more.</p>
 <p>Next we will create the authentication between the container registry (ACR) and AKS,<br>
 this is an important step, without it, AKS cluster will not be able to pull the image from the registry.
 We will do it using secret - follow <a href="https://docs.microsoft.com/bs-latn-ba/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret?WT.mc_id=devto-blog-adpolak">this</a></p>
 <p>in the tutorial you are running this - remember to <strong>take a note</strong> of them both!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Output used when creating Kubernetes secret.</span>
-echo <span style="color:#e6db74">&#34;Service principal ID: </span>$CLIENT_ID<span style="color:#e6db74">&#34;</span>
-echo <span style="color:#e6db74">&#34;Service principal password: </span>$SP_PASSWD<span style="color:#e6db74">&#34;</span>
-</code></pre></div><p>Validate your connection and secret with logging into docker -</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker login $ACR_LOGIN_SERVER --username $CLIENT_ID --password $SP_PASSWD
-</code></pre></div><p>If this is failing, AKS will not be able to pull the image, and later in the tutorial you will get this error <code>got HTTP response status code 400 error code “InaccessibleImage”</code>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Output used when creating Kubernetes secret.</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Service principal ID: </span>$CLIENT_ID<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Service principal password: </span>$SP_PASSWD<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>Validate your connection and secret with logging into docker -</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker login $ACR_LOGIN_SERVER --username $CLIENT_ID --password $SP_PASSWD
+</span></span></code></pre></div><p>If this is failing, AKS will not be able to pull the image, and later in the tutorial you will get this error <code>got HTTP response status code 400 error code “InaccessibleImage”</code>.
 Make sure to follow the tutorial in the <a href="https://docs.microsoft.com/bs-latn-ba/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret?WT.mc_id=devto-blog-adpolak">link</a> step by step.</p>
 <h3 id="install-connector">Install connector:</h3>
 <p>For installing the connector and the ability to use virtual nodes, we will create a subnet in our network and will install an AKS cluster there with add-ons for virtual node.
 This is a more secure way since we create an internal network that is isolated from our bigger K8s cluster.<br>
 Follow the step-by-step <a href="https://docs.microsoft.com/en-us/azure/aks/virtual-nodes-cli?WT.mc_id=devto-blog-adpolak">here</a> but don&rsquo;t deploy the app - we will deploy our app instead.</p>
 <p>For deploying the app run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f kotlin-spring-virtual-kublet-linux.yaml
-</code></pre></div><p>This YAML file describes to K8s, pods and kubelet how we want our app to run,<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f kotlin-spring-virtual-kublet-linux.yaml
+</span></span></code></pre></div><p>This YAML file describes to K8s, pods and kubelet how we want our app to run,<br>
 what is the deployments and the services in use. Each deploy component in our file<br>
 starts with <code>apiVersion</code> followed by <code>kind</code>, <code>metadata</code> and <code>spec</code> In our file we have one service named- <code>azure-spring-kotlin-front-virtual-service</code>
 and one deployment named: <code>azure-spring-kotlin-front-virtual</code>.
@@ -482,20 +472,20 @@ This specifies the pods and kubelet that we will deploy this app only on this sp
 <p>Our second component is of <code>kind</code> <code>service</code> , it&rsquo;s spec type is <code>loadBalancer</code> and<br>
 it will have an <code>External API</code> for the app so we can load it in our browser.<br>
 For doing it, we need to expose it first - notice that we are exposing the app and not the LoadBalancer itself since we can expose a deployment:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl expose deployment azure-spring-kotlin-front-virtual --type<span style="color:#f92672">=</span>LoadBalancer --port <span style="color:#ae81ff">80</span> --target-port <span style="color:#ae81ff">8080</span>
-</code></pre></div><p>To find the <code>External API</code> run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl get services
-</code></pre></div><p>And search for <code>External API</code> at <strong>azure-spring-kotlin-front-virtual</strong> entry.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl expose deployment azure-spring-kotlin-front-virtual --type<span style="color:#f92672">=</span>LoadBalancer --port <span style="color:#ae81ff">80</span> --target-port <span style="color:#ae81ff">8080</span>
+</span></span></code></pre></div><p>To find the <code>External API</code> run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl get services
+</span></span></code></pre></div><p>And search for <code>External API</code> at <strong>azure-spring-kotlin-front-virtual</strong> entry.</p>
 <h3 id="how-to-debug">How to debug:</h3>
 <p>Use the next commands to debug and get a hold of what is happening in the cluster:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl get services
-kubectl get pods
-kubectl get deployment
-</code></pre></div><p>From the commands above we will get the data and first statuses of the various component, after figuring out what failed we can run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl describe <span style="color:#f92672">{</span>pod/service/node<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>name of pod/service/node<span style="color:#f92672">}</span>
-</code></pre></div><p>This will give us a JSON back with information like events, under event we will see what failed, it can be - <code>FailedSynch</code> app status <code>Terminated</code> - which usually reflects that the app crashed and we should check the node logs using</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl logs <span style="color:#f92672">{</span>name of node<span style="color:#f92672">}</span>
-</code></pre></div><p>There are many more commands to debug K8s cluster and this was just the tip of the iceberg. Feel free to play and investigate the API.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl get services
+</span></span><span style="display:flex;"><span>kubectl get pods
+</span></span><span style="display:flex;"><span>kubectl get deployment
+</span></span></code></pre></div><p>From the commands above we will get the data and first statuses of the various component, after figuring out what failed we can run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl describe <span style="color:#f92672">{</span>pod/service/node<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>name of pod/service/node<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>This will give us a JSON back with information like events, under event we will see what failed, it can be - <code>FailedSynch</code> app status <code>Terminated</code> - which usually reflects that the app crashed and we should check the node logs using</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl logs <span style="color:#f92672">{</span>name of node<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>There are many more commands to debug K8s cluster and this was just the tip of the iceberg. Feel free to play and investigate the API.</p>
 <p>Have something to add that I forgot to mention? want to discuss more options? write in comments or send a DM on <a href="https://twitter.com/AdiPolak">twitter</a>.</p>
 <h2 id="learn-more-">Learn more 💡</h2>
 <p>👉🏼  Watch this <a href="https://azure.microsoft.com/en-us/resources/videos/azure-friday-virtual-kubelet-introduction?WT.mc_id=devto-blog-adpolak">video</a> on Virtual Kubelet by Ria Bhatia and Scott Hanselman</p>
@@ -562,14 +552,14 @@ kubectl get deployment
     </div>
 
   <div class="py-2 copyright">
-    <small>Copyright &#169; 2021 Adi Polak <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+    <small>Copyright &#169; 2023 Adi Polak <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
   </div>
 </footer>
 
     
     
     
-    <script src="/assets/js/main.min.ff798fe8bbc88749c6f4c430cf209ef0cf00bc8a2b4d55339c3ec46f1437319c.js" integrity="sha256-/3mP6LvIh0nG9MQwzyCe8M8AvIorTVUznD7EbxQ3MZw=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.min.77838d21b7cc69ac1156e27d3703139dadd6a286e57dabc1f3b2c6d294a81e92.js" integrity="sha256-d4ONIbfMaawRVuJ9NwMTna3WooblfavB87LG0pSoHpI=" crossorigin="anonymous"></script>
     <script src="/assets/js/custom.min.21d1b65b48adbed41de7ac42ee68e7f9e464985356770f7e0b877b89044eb469.js" integrity="sha256-IdG2W0itvtQd56xC7mjn&#43;eRkmFNWdw9&#43;C4d7iQROtGk=" crossorigin="anonymous"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
