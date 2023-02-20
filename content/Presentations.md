@@ -56,6 +56,7 @@ If you want to have some references, check out a couple of events Adi Polak pres
 * O'Reilly Strata Data & AI day, Online, October 2021
 * KubeCon NA, Los Angeles, October 2021
 * GOTO meetup, Online, November 2021
+* many more... 
 
 
 
