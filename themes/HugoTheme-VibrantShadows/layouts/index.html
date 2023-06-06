@@ -1,5 +1,20 @@
 {{ define "main" }}
 
+<!-- Begin Linktree conversion tracking code -->
+<script>
+(function (l, i, n, k, t, r, ee) {
+  l[t] = l[t] || function () { (l[t].q = l[t].q || []).push(arguments) },
+  l[t].l = 1 * new Date(); r = i.createElement(n); ee = i.getElementsByTagName(n)[0];
+  r.async = 1; r.src = k; ee.parentNode.insertBefore(r, ee)
+})
+(window, document, 'script', 'https://assets.production.linktr.ee/ltpixel/ltpix.min.js?t=' + 864e5*Math.ceil(new Date/864e5), 'lti')
+</script>
+<script>
+  lti('init', 'LTU-60e1e8c8-1a4e-49f8-8731-98c2ef26d4b0')
+  lti('pageloaded')
+</script>
+<!-- End Linktree conversion tracking code -->
+
 {{/* This code prints all taxonomies (including custom ones specified by the user) along with terms in each taxonomy.
 We donno how to have access to a specific page's taxonomies yet. Having that would allow to display via a single.html layout, a post's taxonomies including custom ones.
 
