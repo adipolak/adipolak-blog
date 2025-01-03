@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="/css/custom.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Adi Polak  | Blog Posts Bank</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.140.2">
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/blog-posts-list/">
+  <meta property="og:site_name" content="Adi Polak">
+  <meta property="og:title" content="Blog Posts Bank">
+  <meta property="og:description" content="How Highly Available you are? Is it worth it? Many architects and Infra/Platform developers take great pride on developing highly available systems.
+We even invented code names for it like three nines or the nines of availability.
+Do we realy need it? is it all so necessary?
+There is a long list of requirments that comes with it. Every new logic developer needs to be aware that their code will run in multiple active-active cluster, even active-active-active. As you can imagine, sometimes too active.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="1970-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="1970-12-30T00:00:00+00:00">
+    <meta property="article:tag" content="Adi Polak">
+
+  <meta itemprop="name" content="Blog Posts Bank">
+  <meta itemprop="description" content="How Highly Available you are? Is it worth it? Many architects and Infra/Platform developers take great pride on developing highly available systems.
+We even invented code names for it like three nines or the nines of availability.
+Do we realy need it? is it all so necessary?
+There is a long list of requirments that comes with it. Every new logic developer needs to be aware that their code will run in multiple active-active cluster, even active-active-active. As you can imagine, sometimes too active.">
+  <meta itemprop="datePublished" content="1970-12-30T00:00:00+00:00">
+  <meta itemprop="dateModified" content="1970-12-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="388">
+  <meta itemprop="keywords" content="Adi Polak">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog Posts Bank">
+  <meta name="twitter:description" content="How Highly Available you are? Is it worth it? Many architects and Infra/Platform developers take great pride on developing highly available systems.
+We even invented code names for it like three nines or the nines of availability.
+Do we realy need it? is it all so necessary?
+There is a long list of requirments that comes with it. Every new logic developer needs to be aware that their code will run in multiple active-active cluster, even active-active-active. As you can imagine, sometimes too active.">
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://localhost:1313/" class="f3 fw2 hover-white no-underline white-90 dib header-logo-wrapper">
+      <img src="/assets/favicon/favicon-32x32.png" class="header-logo" />
+      Adi Polak
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3 header-nav">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/about/" title="about page">
+              about
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/presentations/" title="presentations page">
+              presentations
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/subscribe/" title="subscribe page">
+              subscribe
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/contact-me/" title="contact page">
+              contact
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        <h1 id="how-highly-available-you-are-is-it-worth-it">How Highly Available you are? Is it worth it?</h1>
+<p>Many architects and Infra/Platform developers take great pride on developing highly available systems.</p>
+<p>We even invented code names for it like three nines or the nines of availability.</p>
+<p>Do we realy need it? is it all so necessary?</p>
+<p>There is a long list of requirments that comes with it.
+Every new logic developer needs to be aware that their code will run in multiple active-active cluster, even active-active-active. As you can imagine, sometimes too active.</p>
+<p>And the question is, is it necessary? Do we realy need to have active-active-active architecture?</p>
+<p>In the past, I had the privilege of onboarding one more active to the active game. It wasn&rsquo;t taken lightly.</p>
+<h1 id="hive---what-are-you-hiving-about">Hive - What are you Hiving about?</h1>
+<p>A bedtime story for Hive and Spark enthusiast.</p>
+<ol>
+<li>Delta Lake
+Keywords:
+fundamentals of delta lake</li>
+</ol>
+<p>Headline:
+- Delta Lake essential Fundamentals</p>
+<p>Outline:</p>
+<h2 id="what-is-delta-lake">What is Delta Lake</h2>
+<pre><code>### ACID
+### Time Travel
+### Transaction Log
+### Metadata handling
+### Unify stream and batch data processing
+https://docs.microsoft.com/en-us/azure/databricks/delta/#:~:text=Delta%20Lake%20is%20an%20open,compatible%20with%20Apache%20Spark%20APIs.
+</code></pre>
+<h2 id="delta-lake-high-level-architecture">Delta Lake high level architecture</h2>
+<h2 id="using-delta-lake-with-spark">Using Delta Lake with Spark</h2>
+<h2 id="delta-lake-with-the-cloud">Delta Lake with the Cloud</h2>
+<h2 id="learn-more">Learn more</h2>
+<ol start="2">
+<li>Koalas</li>
+</ol>
+<p>Keywords:
+koalas pandas pyspark</p>
+<p>Headline:
+- Tutorial: How to use Koalas, Pandas scalable sibling, with PySpark</p>
+<p>Outline:</p>
+<h2 id="what-is-koalas">What is Koalas</h2>
+<h2 id="koalas-with-pyspark">Koalas with PySpark</h2>
+<pre><code>### Setup your environment
+### Import the libraries
+### Koalas in Python with PySpark API
+</code></pre>
+<h2 id="high-level-koalas-spark-components">High Level Koalas Spark components</h2>
+<h2 id="learn-more-1">Learn more</h2>
+<ol start="3">
+<li>cheatsheet list with download PDF files
+can be created using Miro.
+Check here how it looks like: <a href="https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-science-pdf-f22dc900d2d7">https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-science-pdf-f22dc900d2d7</a>
+signin/ provide an email for downloading - <a href="https://www.becominghumanai.com/">https://www.becominghumanai.com/</a></li>
+</ol>
+<p>File protocol that give
+Transaction log in DB
+transaction log in delta lake
+file protocol built on transaction log who gives schema enforcment, automated file managment
+Everything is built on top of the transaction log</p>
+<h2 id="delta-lake-high-level-architecture-1">Delta Lake high level architecture</h2>
+<h2 id="using-delta-lake-with-spark-1">Using Delta Lake with Spark</h2>
+<h2 id="delta-lake-with-the-cloud-1">Delta Lake with the Cloud</h2>
+<h2 id="learn-more-2">Learn more</h2>
+<p>Outline:</p>
+<h2 id="what-is-delta-lake-1">What is Delta Lake</h2>
+<p>File protocol that give
+Transaction log in DB
+transaction log in delta lake
+file protocol built on transaction log who gives schema enforcment, automated file managment
+Everything is built on top of the transaction log</p>
+<pre><code>### ACIDdsa
+### Time Travel
+### Transaction Log
+### Metadata handling
+### Unify stream and batch data processing
+https://docs.microsoft.com/en-us/azure/databricks/delta/#:~:text=Delta%20Lake%20is%20an%20open,compatible%20with%20Apache%20Spark%20APIs.
+</code></pre>
+<h2 id="delta-lake-high-level-architecture-2">Delta Lake high level architecture</h2>
+<h2 id="using-delta-lake-with-spark-2">Using Delta Lake with Spark</h2>
+<h2 id="delta-lake-with-the-cloud-2">Delta Lake with the Cloud</h2>
+<h2 id="learn-more-3">Learn more</h2>
+
+      </div>
+    </article>
+  </div>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <span class="f4 fw4 white-70 dn dib-ns pv2 ph3">
+    Made with 😀 and ❤️ on 🌏. You can edit
+    <a class="f4 fw4 hover-white white-70" href="https://www.github.com/crisisfighters/crisisfighters.org" target="_blank">edit every page on this website on GitHub!</a>
+  </span>  
+  <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

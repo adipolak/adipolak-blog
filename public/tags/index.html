@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="/css/custom.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -12,7 +13,7 @@
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
 
-    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
 
     
     
@@ -49,13 +50,12 @@
   <body class="ma0 avenir bg-near-white">
 
     
-
   <header>
     <div class="pb3-m pb6-l bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="http://localhost:1313/" class="f3 fw2 hover-white no-underline white-90 dib header-logo-wrapper">
-      <img src="/images/favicon.png" class="header-logo" />
+      <img src="/assets/favicon/favicon-32x32.png" class="header-logo" />
       Adi Polak
     </a>
     <div class="flex-l items-center">
@@ -107,9 +107,10 @@
 </nav>
 
       <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          <span class="header-title-inner">Tags</span>
-        </h1>
+        
+        <h2 class="f2 f-subheadline-s fw2 white-90 mb0 lh-title">
+          <span class="header-subtitle-inner">distributed systems, AI/ML, and bold tech opinions</span>
+        </h2>
         
       </div>
     </div>
@@ -134,29 +135,22 @@
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 1 - ACID
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
 <h2 id="what-is-delta-lake-">What is Delta Lake ?</h2>
 <blockquote>
-<p>Delta Lake is an open-source storage layer that brings ACID
-transactions to Apache Spark™ and big data workloads. </p>
-</blockquote>
-<p>DeltaLake open source consists of 3 projects:</p>
-<ol>
-<li><a href="https://github.com/delta-io/delta">detla</a> - Delta Lake core, written in Scala.</li>
-<li><a href="https://github.com/delta-io/delta-rs">delta-rs</a> - Rust library for binding with Python and Ruby.</li>
-<li><a href="https://github.com/delta-io/connectors">connectors</a> - Connectors to popular big data engines outside Spark, written mostly in Scala.</li>
-</ol>
-<p>Delta provides us the ability to <u>&ldquo;travel back in time&rdquo;</u> into previous versions of our data, <u>scalable metadata</u> - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to <u>unify streaming and batch data</u>.<br>
-<u>Schema enforcement</u> - handle schema variations to prevent insertion of bad/non-compliant records, and <u>ACID transactions</u> to ensure that the users/readers never see inconsistent data.</p>
+<p>Delta Lake is an open-source storage layer that brings ACID …</p></blockquote>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -169,39 +163,60 @@ transactions to Apache Spark™ and big data workloads. </p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db"></span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/about/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/about/" class="link black dim hover-dark-gray">
         About
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <img style="float: right;width:150px;" src="https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg;" alt="drawing">
-<p>I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities.</p>
-<p>I am a frequent presenter at worldwide industry conferences and an O&rsquo;Reilly book author and course instructor.
-I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.</p>
-<p>When I&rsquo;m not building Machine Learning Pipelines or thinking up new software architecture,
-You can find me hiking and camping in the countryside.</p>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <img style="float: right;width:150px;" src="https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg" alt="drawing">
+<p>I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at …</p>
     </div>
+    <a href="http://localhost:1313/about/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db"></span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/thankyou/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/blog-posts-list/" class="link black dim hover-dark-gray">
+        Blog Posts Bank
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <h1 id="how-highly-available-you-are-is-it-worth-it">How Highly Available you are? Is it worth it?</h1>
+<p>Many architects and Infra/Platform developers take great pride on developing highly available systems. …</p>
+    </div>
+    <a href="http://localhost:1313/blog-posts-list/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/thankyou/" class="link black dim hover-dark-gray">
         Thank You
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Thank you for your message.<br>
 <br>
 If I won&rsquo;t get back to you within a week, please know that my <a href="https://twitter.com/AdiPolak">twitter</a> direct messages are always open.</p>
 <iframe src="https://giphy.com/embed/wIVA0zh5pt0G5YtcAL" width="480" height="316" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     </div>
+    <a href="http://localhost:1313/thankyou/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -214,19 +229,20 @@ If I won&rsquo;t get back to you within a week, please know that my <a href="htt
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -239,128 +255,138 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/data_and_ai_summit2021/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/data_and_ai_summit2021/" class="link black dim hover-dark-gray">
         Data&#43;AI Summit 2021 is Coming
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>It&rsquo;s almost been half a year since the last summit.</p>
 <p>Data+AI Summit 2021 starts on Monday, May 24 till Friday, May 28.
-The training will be held on May 24-25 and will cater to a large set of practitioners, definitely more extensive than previous times:
-Data Analyst, Data Engineer, Data Scientist, ML Engineer, Partner Data Engineer, Platform Engineer, Technical. The wide range of roles makes me curious about the various technical personas in the Data and AI space. It&rsquo;s not only Data Engineers and Data Scientists. There is a wide range of people who can benefit from attending the summit.</p>
+The training will be held …</p>
     </div>
+    <a href="http://localhost:1313/post/data_and_ai_summit2021/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 4 - Practical Scenarios
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
-<p>There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.</p>
-<p>Let&rsquo;s discuss two common data pipelines patterns and solutions:</p>
-<h2 id="spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users">Spark Structured Streaming ETL with DeltaLake that serves multiple Users</h2>
-<p><strong>Spark Structured Streaming</strong>-
-Apache Spark structured steaming are essentially unbounded tables of information. There is a continuous stream of data ingested into the system. As developers, we write the code to process the data continuously.
-<strong>ETL</strong> stands for <strong>E</strong>xtract, <strong>T</strong>ransform and <strong>L</strong>oad.</p>
+<p>There are many great features that you can leverage in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
 <h2 id="checkpoint">Checkpoint</h2>
-<p>There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:</p>
-<h3 id="spark-rdd-checkpoint">Spark RDD Checkpoint</h3>
-<p>Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.
-This operation, by default, breaks data lineage when used without auditing.</p>
+<p>There are two known checkpoints mechanism in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 2 - The DeltaLog
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
-In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
-<h2 id="transaction-log">Transaction Log</h2>
-<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
-<h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
-<p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
-The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.
-This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p>
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 1 - ACID
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
 <h2 id="what-is-delta-lake-">What is Delta Lake ?</h2>
 <blockquote>
-<p>Delta Lake is an open-source storage layer that brings ACID
-transactions to Apache Spark™ and big data workloads. </p>
-</blockquote>
-<p>DeltaLake open source consists of 3 projects:</p>
-<ol>
-<li><a href="https://github.com/delta-io/delta">detla</a> - Delta Lake core, written in Scala.</li>
-<li><a href="https://github.com/delta-io/delta-rs">delta-rs</a> - Rust library for binding with Python and Ruby.</li>
-<li><a href="https://github.com/delta-io/connectors">connectors</a> - Connectors to popular big data engines outside Spark, written mostly in Scala.</li>
-</ol>
-<p>Delta provides us the ability to <u>&ldquo;travel back in time&rdquo;</u> into previous versions of our data, <u>scalable metadata</u> - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to <u>unify streaming and batch data</u>.<br>
-<u>Schema enforcement</u> - handle schema variations to prevent insertion of bad/non-compliant records, and <u>ACID transactions</u> to ensure that the users/readers never see inconsistent data.</p>
+<p>Delta Lake is an open-source storage layer that brings ACID …</p></blockquote>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="link black dim hover-dark-gray">
+        Koalas, Panda&#39;s Scalable Sibling
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data …</em></p>
+    </div>
+    <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -373,92 +399,80 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 4 - Practical Scenarios
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
-<p>There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.</p>
-<p>Let&rsquo;s discuss two common data pipelines patterns and solutions:</p>
-<h2 id="spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users">Spark Structured Streaming ETL with DeltaLake that serves multiple Users</h2>
-<p><strong>Spark Structured Streaming</strong>-
-Apache Spark structured steaming are essentially unbounded tables of information. There is a continuous stream of data ingested into the system. As developers, we write the code to process the data continuously.
-<strong>ETL</strong> stands for <strong>E</strong>xtract, <strong>T</strong>ransform and <strong>L</strong>oad.</p>
+<p>There are many great features that you can leverage in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
 <h2 id="checkpoint">Checkpoint</h2>
-<p>There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:</p>
-<h3 id="spark-rdd-checkpoint">Spark RDD Checkpoint</h3>
-<p>Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.
-This operation, by default, breaks data lineage when used without auditing.</p>
+<p>There are two known checkpoints mechanism in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 2 - The DeltaLog
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
-In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
-<h2 id="transaction-log">Transaction Log</h2>
-<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
-<h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
-<p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
-The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.
-This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p>
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 1 - ACID
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
 <h2 id="what-is-delta-lake-">What is Delta Lake ?</h2>
 <blockquote>
-<p>Delta Lake is an open-source storage layer that brings ACID
-transactions to Apache Spark™ and big data workloads. </p>
-</blockquote>
-<p>DeltaLake open source consists of 3 projects:</p>
-<ol>
-<li><a href="https://github.com/delta-io/delta">detla</a> - Delta Lake core, written in Scala.</li>
-<li><a href="https://github.com/delta-io/delta-rs">delta-rs</a> - Rust library for binding with Python and Ruby.</li>
-<li><a href="https://github.com/delta-io/connectors">connectors</a> - Connectors to popular big data engines outside Spark, written mostly in Scala.</li>
-</ol>
-<p>Delta provides us the ability to <u>&ldquo;travel back in time&rdquo;</u> into previous versions of our data, <u>scalable metadata</u> - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to <u>unify streaming and batch data</u>.<br>
-<u>Schema enforcement</u> - handle schema variations to prevent insertion of bad/non-compliant records, and <u>ACID transactions</u> to ensure that the users/readers never see inconsistent data.</p>
+<p>Delta Lake is an open-source storage layer that brings ACID …</p></blockquote>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -471,24 +485,40 @@ transactions to Apache Spark™ and big data workloads. </p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="link black dim hover-dark-gray">
+        Koalas, Panda&#39;s Scalable Sibling
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data …</em></p>
+    </div>
+    <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim hover-dark-gray">
         Kubernetes and Virtual Kubelet in a nutshell
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
 <p>Today, you will learn how to take a web app (it can be any programming language,<br>
-we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
-<p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
-<p><span style="background-color: #FFFF00"><strong>So, you are probably asking yourself</strong></span><br>
-<span style="background-color: #FFFF00"><strong>&ldquo;what is Kubernetes and what can I use it for?&rdquo;</strong></span><br>
-<span style="background-color: #FFFF00"><strong>Just keep reading</strong></span></p>
-<p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
-It is used to build distributed, scalable microservices.</p>
+we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) …</p>
     </div>
+    <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -501,19 +531,21 @@ It is used to build distributed, scalable microservices.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/data_and_ai_summit2021/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/data_and_ai_summit2021/" class="link black dim hover-dark-gray">
         Data&#43;AI Summit 2021 is Coming
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>It&rsquo;s almost been half a year since the last summit.</p>
 <p>Data+AI Summit 2021 starts on Monday, May 24 till Friday, May 28.
-The training will be held on May 24-25 and will cater to a large set of practitioners, definitely more extensive than previous times:
-Data Analyst, Data Engineer, Data Scientist, ML Engineer, Partner Data Engineer, Platform Engineer, Technical. The wide range of roles makes me curious about the various technical personas in the Data and AI space. It&rsquo;s not only Data Engineers and Data Scientists. There is a wide range of people who can benefit from attending the summit.</p>
+The training will be held …</p>
     </div>
+    <a href="http://localhost:1313/post/data_and_ai_summit2021/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -526,69 +558,179 @@ Data Analyst, Data Engineer, Data Scientist, ML Engineer, Partner Data Engineer,
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db"></span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/presentations/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/presentations/" class="link black dim hover-dark-gray">
         Presentations
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p><img src="/images/sparkaisummit.jpeg" alt=""></p>
 <p>You can find Adi Polak often presenting at different conferences around the world. Adi works closely with Data &amp; ML Open Source technologies.
-As a Public Presenter Adi shares her expertise in building distributed computing systems, productizing machine learning, and more.
-If you want to have some references, check out a couple of events Adi Polak presented at:</p>
-<ul>
-<li>She Codes, 2015</li>
-<li>BIPA, Munich, September 2016</li>
-<li>Akamai Internal Conference, Jan 2017</li>
-<li>Cloudera Meetup, Tel Aviv, July 2017</li>
-<li>FlipCon, Tel Aviv, July 2018</li>
-<li>Codmotion, Berlin, November 2018</li>
-<li>Codemotion, Milan, November 2018</li>
-<li>Microsoft Ignite the tour - Tel Aviv, April 2019</li>
-<li>Microsoft Ignite the tour - Stockholm, April 2019</li>
-<li>Voxxedday the tour Australia,Melbourne May  2019</li>
-<li>Voxxedday the tour Australia,Sydney May  2019</li>
-<li>Voxxedday, Athens, June  2019</li>
-<li>Devoxx Krakow, Poland, June 2019</li>
-<li>CloudBrow , Stockholm, August 2019</li>
-<li>FooCaffe, Malmo , August 2019</li>
-<li>Spark &amp; AI Europe, Amsterdam, 2019</li>
-<li>Microsoft Ignite, Orlando, Nov 2019</li>
-<li>DataCouncil, NYC, Nov 2019</li>
-<li>CloudBrew, Belgium, Dec 2019</li>
-<li>UnVoxxed, Hawaii, Feb 2020</li>
-<li>Microsoft Build, Online, May 2020</li>
-<li>Women in Big Data, Online, July 2020</li>
-<li>DevOps Kathmandu, Online, July 2020</li>
-<li>GeekTime code, Online, August 2020</li>
-<li>She Codes, Online, August 2020</li>
-<li>Microsoft Developer Twitch, Online, September 2020</li>
-<li>JFrog Meetup, Online, September 2020</li>
-<li>Microsoft Ignite, Online, September 2020</li>
-<li>University of British Columbia, Online, October 2020</li>
-<li>ngChina, Online, November 2020</li>
-<li>Data &amp; AI ( Prev. Spark Summit Europe), Online, November 2020</li>
-<li>Create: Data, Online, December 2020</li>
-<li>Data Week, Online, December 2020</li>
-<li>Microsoft Build, Online, May 2021</li>
-<li>Data &amp; AI ( Prev. Spark Summit NA), Online, May 2021</li>
-<li>O&rsquo;Reilly Strata Data &amp; AI day, Online, October 2021</li>
-<li>KubeCon NA, Los Angeles, October 2021</li>
-<li>GOTO meetup, Online, November 2021</li>
-<li>many more&hellip;</li>
-</ul>
-<img href="{{ site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
-<img href="{{ site.BaseURL }}/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
-<img href="{{ site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
-<img href="{{ site.BaseURL }}/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/adi_spark.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/security.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/sparkaisummit2.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/ignite_sweeden.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/voxxed_autralia2.jpeg" alt="drawing" style="width:350px;"/>
+As …</p>
     </div>
+    <a href="http://localhost:1313/presentations/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
+          <a href="/tags/configuration" class="link blue hover-black">
+            Tag: configuration
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/hugos-built-in-global-configuration/" class="link black dim hover-dark-gray">
+        Hugo&#39;s built-in global configurations
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>Options that Hugo has built-in and are relevant to this theme. If something is not covered here (or elsewhere in this file), there&rsquo;s a good …</p>
+    </div>
+    <a href="http://localhost:1313/post/hugos-built-in-global-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/themes-custom-global-configuration/" class="link black dim hover-dark-gray">
+        Custom configuration options in the theme
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>Here, we will mainly see settings that are unique to this theme. If something is not covered here (or elsewhere in this file), there&rsquo;s a good …</p>
+    </div>
+    <a href="http://localhost:1313/post/themes-custom-global-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/page-configuration/" class="link black dim hover-dark-gray">
+        Page configuration options in the theme
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>&lsquo;Page paremeters&rsquo; relate to the particular content file in whose front-matter they are defined.</p>
+    </div>
+    <a href="http://localhost:1313/post/page-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/example-config-yaml/" class="link black dim hover-dark-gray">
+        Example config.yaml
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>An example configuration file (config.yaml), which shows all the configuration options supported by &lsquo;Vibrant Shadows&rsquo; theme by Softorage, …</p>
+    </div>
+    <a href="http://localhost:1313/post/example-config-yaml/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
+          <a href="/tags/customize" class="link blue hover-black">
+            Tag: customize
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/hugos-built-in-global-configuration/" class="link black dim hover-dark-gray">
+        Hugo&#39;s built-in global configurations
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>Options that Hugo has built-in and are relevant to this theme. If something is not covered here (or elsewhere in this file), there&rsquo;s a good …</p>
+    </div>
+    <a href="http://localhost:1313/post/hugos-built-in-global-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/themes-custom-global-configuration/" class="link black dim hover-dark-gray">
+        Custom configuration options in the theme
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>Here, we will mainly see settings that are unique to this theme. If something is not covered here (or elsewhere in this file), there&rsquo;s a good …</p>
+    </div>
+    <a href="http://localhost:1313/post/themes-custom-global-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/page-configuration/" class="link black dim hover-dark-gray">
+        Page configuration options in the theme
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>&lsquo;Page paremeters&rsquo; relate to the particular content file in whose front-matter they are defined.</p>
+    </div>
+    <a href="http://localhost:1313/post/page-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/example-config-yaml/" class="link black dim hover-dark-gray">
+        Example config.yaml
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>An example configuration file (config.yaml), which shows all the configuration options supported by &lsquo;Vibrant Shadows&rsquo; theme by Softorage, …</p>
+    </div>
+    <a href="http://localhost:1313/post/example-config-yaml/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -601,21 +743,20 @@ If you want to have some references, check out a couple of events Adi Polak pres
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="link black dim hover-dark-gray">
         Machine Learning in Production - Concepts you should know
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
-<p>Here is a list of concepts for you to get started:</p>
-<h2 id="ml-algorithm">ML Algorithm</h2>
-<p>ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.</p>
-<h2 id="ml-model">ML Model</h2>
-<p>ML model is the ML algorithm process outcome; It often contains a statistical representation of the data ingested into the algorithm. ML model input is data, and the output is either a prediction, decision, or classification.</p>
+<p>Here is …</p>
     </div>
+    <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -628,110 +769,99 @@ If you want to have some references, check out a couple of events Adi Polak pres
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 4 - Practical Scenarios
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
-<p>There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.</p>
-<p>Let&rsquo;s discuss two common data pipelines patterns and solutions:</p>
-<h2 id="spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users">Spark Structured Streaming ETL with DeltaLake that serves multiple Users</h2>
-<p><strong>Spark Structured Streaming</strong>-
-Apache Spark structured steaming are essentially unbounded tables of information. There is a continuous stream of data ingested into the system. As developers, we write the code to process the data continuously.
-<strong>ETL</strong> stands for <strong>E</strong>xtract, <strong>T</strong>ransform and <strong>L</strong>oad.</p>
+<p>There are many great features that you can leverage in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
 <h2 id="checkpoint">Checkpoint</h2>
-<p>There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:</p>
-<h3 id="spark-rdd-checkpoint">Spark RDD Checkpoint</h3>
-<p>Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.
-This operation, by default, breaks data lineage when used without auditing.</p>
+<p>There are two known checkpoints mechanism in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 2 - The DeltaLog
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
-In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
-<h2 id="transaction-log">Transaction Log</h2>
-<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
-<h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
-<p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
-The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.
-This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p>
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 1 - ACID
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
 <h2 id="what-is-delta-lake-">What is Delta Lake ?</h2>
 <blockquote>
-<p>Delta Lake is an open-source storage layer that brings ACID
-transactions to Apache Spark™ and big data workloads. </p>
-</blockquote>
-<p>DeltaLake open source consists of 3 projects:</p>
-<ol>
-<li><a href="https://github.com/delta-io/delta">detla</a> - Delta Lake core, written in Scala.</li>
-<li><a href="https://github.com/delta-io/delta-rs">delta-rs</a> - Rust library for binding with Python and Ruby.</li>
-<li><a href="https://github.com/delta-io/connectors">connectors</a> - Connectors to popular big data engines outside Spark, written mostly in Scala.</li>
-</ol>
-<p>Delta provides us the ability to <u>&ldquo;travel back in time&rdquo;</u> into previous versions of our data, <u>scalable metadata</u> - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to <u>unify streaming and batch data</u>.<br>
-<u>Schema enforcement</u> - handle schema variations to prevent insertion of bad/non-compliant records, and <u>ACID transactions</u> to ensure that the users/readers never see inconsistent data.</p>
+<p>Delta Lake is an open-source storage layer that brings ACID …</p></blockquote>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -744,43 +874,40 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
 <h2 id="checkpoint">Checkpoint</h2>
-<p>There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:</p>
-<h3 id="spark-rdd-checkpoint">Spark RDD Checkpoint</h3>
-<p>Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.
-This operation, by default, breaks data lineage when used without auditing.</p>
+<p>There are two known checkpoints mechanism in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 2 - The DeltaLog
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
-In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
-<h2 id="transaction-log">Transaction Log</h2>
-<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
-<h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
-<p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
-The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.
-This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p>
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -793,24 +920,71 @@ This is achieved by tracking all the changes that users do: read, delete, update
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim hover-dark-gray">
         Kubernetes and Virtual Kubelet in a nutshell
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
 <p>Today, you will learn how to take a web app (it can be any programming language,<br>
-we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
-<p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
-<p><span style="background-color: #FFFF00"><strong>So, you are probably asking yourself</strong></span><br>
-<span style="background-color: #FFFF00"><strong>&ldquo;what is Kubernetes and what can I use it for?&rdquo;</strong></span><br>
-<span style="background-color: #FFFF00"><strong>Just keep reading</strong></span></p>
-<p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
-It is used to build distributed, scalable microservices.</p>
+we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) …</p>
     </div>
+    <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
+          <a href="/tags/get-started" class="link blue hover-black">
+            Tag: get started
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/getting-started/" class="link black dim hover-dark-gray">
+        Getting started with Vibrant Shadows
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>It&rsquo;s very easy to get started with Vibrant Shadows. How? Read on.</p>
+    </div>
+    <a href="http://localhost:1313/post/getting-started/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
+          <a href="/tags/guide" class="link blue hover-black">
+            Tag: guide
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/getting-started/" class="link black dim hover-dark-gray">
+        Getting started with Vibrant Shadows
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>It&rsquo;s very easy to get started with Vibrant Shadows. How? Read on.</p>
+    </div>
+    <a href="http://localhost:1313/post/getting-started/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -823,19 +997,39 @@ It is used to build distributed, scalable microservices.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="link black dim hover-dark-gray">
+        Koalas, Panda&#39;s Scalable Sibling
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data …</em></p>
+    </div>
+    <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -848,24 +1042,65 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="link black dim hover-dark-gray">
+        Koalas, Panda&#39;s Scalable Sibling
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data …</em></p>
+    </div>
+    <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim hover-dark-gray">
         Kubernetes and Virtual Kubelet in a nutshell
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
 <p>Today, you will learn how to take a web app (it can be any programming language,<br>
-we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
-<p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
-<p><span style="background-color: #FFFF00"><strong>So, you are probably asking yourself</strong></span><br>
-<span style="background-color: #FFFF00"><strong>&ldquo;what is Kubernetes and what can I use it for?&rdquo;</strong></span><br>
-<span style="background-color: #FFFF00"><strong>Just keep reading</strong></span></p>
-<p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
-It is used to build distributed, scalable microservices.</p>
+we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) …</p>
     </div>
+    <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
+          <a href="/tags/license" class="link blue hover-black">
+            Tag: license
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/additional-info/" class="link black dim hover-dark-gray">
+        Additional information about the theme
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>We share some additional information about this theme, that may be relevant.</p>
+    </div>
+    <a href="http://localhost:1313/post/additional-info/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -878,21 +1113,20 @@ It is used to build distributed, scalable microservices.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="link black dim hover-dark-gray">
         Machine Learning in Production - Concepts you should know
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
-<p>Here is a list of concepts for you to get started:</p>
-<h2 id="ml-algorithm">ML Algorithm</h2>
-<p>ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.</p>
-<h2 id="ml-model">ML Model</h2>
-<p>ML model is the ML algorithm process outcome; It often contains a statistical representation of the data ingested into the algorithm. ML model input is data, and the output is either a prediction, decision, or classification.</p>
+<p>Here is …</p>
     </div>
+    <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -905,110 +1139,99 @@ It is used to build distributed, scalable microservices.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 4 - Practical Scenarios
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
-<p>There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.</p>
-<p>Let&rsquo;s discuss two common data pipelines patterns and solutions:</p>
-<h2 id="spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users">Spark Structured Streaming ETL with DeltaLake that serves multiple Users</h2>
-<p><strong>Spark Structured Streaming</strong>-
-Apache Spark structured steaming are essentially unbounded tables of information. There is a continuous stream of data ingested into the system. As developers, we write the code to process the data continuously.
-<strong>ETL</strong> stands for <strong>E</strong>xtract, <strong>T</strong>ransform and <strong>L</strong>oad.</p>
+<p>There are many great features that you can leverage in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
 <h2 id="checkpoint">Checkpoint</h2>
-<p>There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:</p>
-<h3 id="spark-rdd-checkpoint">Spark RDD Checkpoint</h3>
-<p>Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.
-This operation, by default, breaks data lineage when used without auditing.</p>
+<p>There are two known checkpoints mechanism in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 2 - The DeltaLog
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
-In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
-<h2 id="transaction-log">Transaction Log</h2>
-<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
-<h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
-<p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
-The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.
-This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p>
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 1 - ACID
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
 <h2 id="what-is-delta-lake-">What is Delta Lake ?</h2>
 <blockquote>
-<p>Delta Lake is an open-source storage layer that brings ACID
-transactions to Apache Spark™ and big data workloads. </p>
-</blockquote>
-<p>DeltaLake open source consists of 3 projects:</p>
-<ol>
-<li><a href="https://github.com/delta-io/delta">detla</a> - Delta Lake core, written in Scala.</li>
-<li><a href="https://github.com/delta-io/delta-rs">delta-rs</a> - Rust library for binding with Python and Ruby.</li>
-<li><a href="https://github.com/delta-io/connectors">connectors</a> - Connectors to popular big data engines outside Spark, written mostly in Scala.</li>
-</ol>
-<p>Delta provides us the ability to <u>&ldquo;travel back in time&rdquo;</u> into previous versions of our data, <u>scalable metadata</u> - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to <u>unify streaming and batch data</u>.<br>
-<u>Schema enforcement</u> - handle schema variations to prevent insertion of bad/non-compliant records, and <u>ACID transactions</u> to ensure that the users/readers never see inconsistent data.</p>
+<p>Delta Lake is an open-source storage layer that brings ACID …</p></blockquote>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1021,19 +1244,39 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="link black dim hover-dark-gray">
+        Koalas, Panda&#39;s Scalable Sibling
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data …</em></p>
+    </div>
+    <a href="http://localhost:1313/post/koalas-pandas-scalable-sibling/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1046,19 +1289,20 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1071,19 +1315,20 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="link black dim hover-dark-gray">
         Apache Spark Ecosystem, Jan 2021 Highlights
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
-Apache Spark is continually growing. It started as part of the Hadoop family,<br>
-but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
-<p>Let&rsquo;s take a look at three exciting open sources:</p>
+Apache …</p>
     </div>
+    <a href="http://localhost:1313/post/apache-spark-ecosystem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1096,22 +1341,99 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="link black dim hover-dark-gray">
         Delta Lake essential Fundamentals: Part 4 - Practical Scenarios
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
-<p>There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.</p>
-<p>Let&rsquo;s discuss two common data pipelines patterns and solutions:</p>
-<h2 id="spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users">Spark Structured Streaming ETL with DeltaLake that serves multiple Users</h2>
-<p><strong>Spark Structured Streaming</strong>-
-Apache Spark structured steaming are essentially unbounded tables of information. There is a continuous stream of data ingested into the system. As developers, we write the code to process the data continuously.
-<strong>ETL</strong> stands for <strong>E</strong>xtract, <strong>T</strong>ransform and <strong>L</strong>oad.</p>
+<p>There are many great features that you can leverage in …</p>
     </div>
+    <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
+          <a href="/tags/settings" class="link blue hover-black">
+            Tag: settings
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/hugos-built-in-global-configuration/" class="link black dim hover-dark-gray">
+        Hugo&#39;s built-in global configurations
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>Options that Hugo has built-in and are relevant to this theme. If something is not covered here (or elsewhere in this file), there&rsquo;s a good …</p>
+    </div>
+    <a href="http://localhost:1313/post/hugos-built-in-global-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/themes-custom-global-configuration/" class="link black dim hover-dark-gray">
+        Custom configuration options in the theme
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>Here, we will mainly see settings that are unique to this theme. If something is not covered here (or elsewhere in this file), there&rsquo;s a good …</p>
+    </div>
+    <a href="http://localhost:1313/post/themes-custom-global-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/page-configuration/" class="link black dim hover-dark-gray">
+        Page configuration options in the theme
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>&lsquo;Page paremeters&rsquo; relate to the particular content file in whose front-matter they are defined.</p>
+    </div>
+    <a href="http://localhost:1313/post/page-configuration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/example-config-yaml/" class="link black dim hover-dark-gray">
+        Example config.yaml
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
+      <p>An example configuration file (config.yaml), which shows all the configuration options supported by &lsquo;Vibrant Shadows&rsquo; theme by Softorage, …</p>
+    </div>
+    <a href="http://localhost:1313/post/example-config-yaml/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1124,69 +1446,21 @@ Apache Spark structured steaming are essentially unbounded tables of information
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db"></span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/presentations/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/presentations/" class="link black dim hover-dark-gray">
         Presentations
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p><img src="/images/sparkaisummit.jpeg" alt=""></p>
 <p>You can find Adi Polak often presenting at different conferences around the world. Adi works closely with Data &amp; ML Open Source technologies.
-As a Public Presenter Adi shares her expertise in building distributed computing systems, productizing machine learning, and more.
-If you want to have some references, check out a couple of events Adi Polak presented at:</p>
-<ul>
-<li>She Codes, 2015</li>
-<li>BIPA, Munich, September 2016</li>
-<li>Akamai Internal Conference, Jan 2017</li>
-<li>Cloudera Meetup, Tel Aviv, July 2017</li>
-<li>FlipCon, Tel Aviv, July 2018</li>
-<li>Codmotion, Berlin, November 2018</li>
-<li>Codemotion, Milan, November 2018</li>
-<li>Microsoft Ignite the tour - Tel Aviv, April 2019</li>
-<li>Microsoft Ignite the tour - Stockholm, April 2019</li>
-<li>Voxxedday the tour Australia,Melbourne May  2019</li>
-<li>Voxxedday the tour Australia,Sydney May  2019</li>
-<li>Voxxedday, Athens, June  2019</li>
-<li>Devoxx Krakow, Poland, June 2019</li>
-<li>CloudBrow , Stockholm, August 2019</li>
-<li>FooCaffe, Malmo , August 2019</li>
-<li>Spark &amp; AI Europe, Amsterdam, 2019</li>
-<li>Microsoft Ignite, Orlando, Nov 2019</li>
-<li>DataCouncil, NYC, Nov 2019</li>
-<li>CloudBrew, Belgium, Dec 2019</li>
-<li>UnVoxxed, Hawaii, Feb 2020</li>
-<li>Microsoft Build, Online, May 2020</li>
-<li>Women in Big Data, Online, July 2020</li>
-<li>DevOps Kathmandu, Online, July 2020</li>
-<li>GeekTime code, Online, August 2020</li>
-<li>She Codes, Online, August 2020</li>
-<li>Microsoft Developer Twitch, Online, September 2020</li>
-<li>JFrog Meetup, Online, September 2020</li>
-<li>Microsoft Ignite, Online, September 2020</li>
-<li>University of British Columbia, Online, October 2020</li>
-<li>ngChina, Online, November 2020</li>
-<li>Data &amp; AI ( Prev. Spark Summit Europe), Online, November 2020</li>
-<li>Create: Data, Online, December 2020</li>
-<li>Data Week, Online, December 2020</li>
-<li>Microsoft Build, Online, May 2021</li>
-<li>Data &amp; AI ( Prev. Spark Summit NA), Online, May 2021</li>
-<li>O&rsquo;Reilly Strata Data &amp; AI day, Online, October 2021</li>
-<li>KubeCon NA, Los Angeles, October 2021</li>
-<li>GOTO meetup, Online, November 2021</li>
-<li>many more&hellip;</li>
-</ul>
-<img href="{{ site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
-<img href="{{ site.BaseURL }}/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
-<img href="{{ site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
-<img href="{{ site.BaseURL }}/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/adi_spark.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/security.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/sparkaisummit2.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/ignite_sweeden.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/voxxed_autralia2.jpeg" alt="drawing" style="width:350px;"/>
+As …</p>
     </div>
+    <a href="http://localhost:1313/presentations/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1199,23 +1473,21 @@ If you want to have some references, check out a couple of events Adi Polak pres
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db"></span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/subscribe/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/subscribe/" class="link black dim hover-dark-gray">
         Subscribe
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>To stay up to date with the latest news and updates from this blog, you can subscribe in various ways:</p>
 <h1 id="substack">Substack</h1>
-<p>To get posts and updates from this blog via email you can subscribe to Adi Polak Data &amp; Open Source Updates <a href="https://adipolak.substack.com/?utm_source=substack&amp;utm_medium=web&amp;utm_campaign=substack_profile">here</a>.
-No ads or spam; I&rsquo;m not too fond of that stuff myself.</p>
-<h1 id="linkedin">Linkedin</h1>
-<p>Catch-up on what I am up to over <a href="https://www.linkedin.com/in/polak-adi/">Linkedin</a>.</p>
-<h1 id="youtube">YouTube</h1>
-<p>You can subscribe to the YouTube channel of <a href="http://www.youtube.com/channel/UCN3hX3Ie1kZ3L0KZ5sCTsxw?sub_confirmation=1">Adi Polak</a>.</p>
+<p>To get posts and updates from this …</p>
     </div>
+    <a href="http://localhost:1313/subscribe/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1228,21 +1500,20 @@ No ads or spam; I&rsquo;m not too fond of that stuff myself.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="link black dim hover-dark-gray">
         Machine Learning in Production - Concepts you should know
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
-<p>Here is a list of concepts for you to get started:</p>
-<h2 id="ml-algorithm">ML Algorithm</h2>
-<p>ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.</p>
-<h2 id="ml-model">ML Model</h2>
-<p>ML model is the ML algorithm process outcome; It often contains a statistical representation of the data ingested into the algorithm. ML model input is data, and the output is either a prediction, decision, or classification.</p>
+<p>Here is …</p>
     </div>
+    <a href="http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1255,24 +1526,21 @@ No ads or spam; I&rsquo;m not too fond of that stuff myself.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray">Post</span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="link black dim hover-dark-gray">
         Kubernetes and Virtual Kubelet in a nutshell
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
 <p>Today, you will learn how to take a web app (it can be any programming language,<br>
-we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
-<p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
-<p><span style="background-color: #FFFF00"><strong>So, you are probably asking yourself</strong></span><br>
-<span style="background-color: #FFFF00"><strong>&ldquo;what is Kubernetes and what can I use it for?&rdquo;</strong></span><br>
-<span style="background-color: #FFFF00"><strong>Just keep reading</strong></span></p>
-<p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
-It is used to build distributed, scalable microservices.</p>
+we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) …</p>
     </div>
+    <a href="http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1285,23 +1553,21 @@ It is used to build distributed, scalable microservices.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db"></span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/subscribe/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/subscribe/" class="link black dim hover-dark-gray">
         Subscribe
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>To stay up to date with the latest news and updates from this blog, you can subscribe in various ways:</p>
 <h1 id="substack">Substack</h1>
-<p>To get posts and updates from this blog via email you can subscribe to Adi Polak Data &amp; Open Source Updates <a href="https://adipolak.substack.com/?utm_source=substack&amp;utm_medium=web&amp;utm_campaign=substack_profile">here</a>.
-No ads or spam; I&rsquo;m not too fond of that stuff myself.</p>
-<h1 id="linkedin">Linkedin</h1>
-<p>Catch-up on what I am up to over <a href="https://www.linkedin.com/in/polak-adi/">Linkedin</a>.</p>
-<h1 id="youtube">YouTube</h1>
-<p>You can subscribe to the YouTube channel of <a href="http://www.youtube.com/channel/UCN3hX3Ie1kZ3L0KZ5sCTsxw?sub_confirmation=1">Adi Polak</a>.</p>
+<p>To get posts and updates from this …</p>
     </div>
+    <a href="http://localhost:1313/subscribe/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 
@@ -1314,23 +1580,21 @@ No ads or spam; I&rsquo;m not too fond of that stuff myself.</p>
         </h2>
         
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db"></span>
-    <h1 class="f3 near-black">
-      <a href="http://localhost:1313/subscribe/" class="link black dim">
+  <div class="bg-white mb3 pa4 gray overflow-hidden br3 shadow-1">
+    <span class="f5 db mb2 gray"></span>
+    <h1 class="f3 near-black mb3">
+      <a href="http://localhost:1313/subscribe/" class="link black dim hover-dark-gray">
         Subscribe
       </a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    <div class="nested-links f5 lh-copy nested-copy-line-height mb3">
       <p>To stay up to date with the latest news and updates from this blog, you can subscribe in various ways:</p>
 <h1 id="substack">Substack</h1>
-<p>To get posts and updates from this blog via email you can subscribe to Adi Polak Data &amp; Open Source Updates <a href="https://adipolak.substack.com/?utm_source=substack&amp;utm_medium=web&amp;utm_campaign=substack_profile">here</a>.
-No ads or spam; I&rsquo;m not too fond of that stuff myself.</p>
-<h1 id="linkedin">Linkedin</h1>
-<p>Catch-up on what I am up to over <a href="https://www.linkedin.com/in/polak-adi/">Linkedin</a>.</p>
-<h1 id="youtube">YouTube</h1>
-<p>You can subscribe to the YouTube channel of <a href="http://www.youtube.com/channel/UCN3hX3Ie1kZ3L0KZ5sCTsxw?sub_confirmation=1">Adi Polak</a>.</p>
+<p>To get posts and updates from this …</p>
     </div>
+    <a href="http://localhost:1313/subscribe/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-dark-gray link mt2 ph3 pv2">
+      read more
+    </a>
   </div>
 </div>
 

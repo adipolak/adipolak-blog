@@ -37,7 +37,7 @@ params:
   meta:
     author: "Adi Polak" # website-wide author | required
     footerMessage: "Adi Polak" # text shown in footer above footer links | optional
-    tagline: "Data, ML & Open Source" # shown in website title on homepage and also used in seo | required
+    tagline: "distributed systems, AI/ML, and bold tech opinions" # shown in website title on homepage and also used in seo | required
     description: "Sharing insights on data, AI, and tech" # should include brand name | character length: 50 to 160 characters
     contentLicense: "CC-BY-SA-3.0" # cc-by-3.0, etc or 'All right reserved.' should also be same as the one in copyright above
     titleSeparator: " | " # used in website/blog title, to separate (say) page title from website/blog title | default: " | "
