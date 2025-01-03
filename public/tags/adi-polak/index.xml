@@ -14,7 +14,14 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;img style=&#34;float: right;width:150px;&#34; src=&#34;https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg;&#34; alt=&#34;drawing&#34;&gt;&#xA;&lt;p&gt;I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities.&lt;/p&gt;&#xA;&lt;p&gt;I am a frequent presenter at worldwide industry conferences and an O&amp;rsquo;Reilly book author and course instructor.&#xA;I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.&lt;/p&gt;&#xA;&lt;p&gt;When I&amp;rsquo;m not building Machine Learning Pipelines or thinking up new software architecture,&#xA;You can find me hiking and camping in the countryside.&lt;/p&gt;</description>
+      <description>&lt;img style=&#34;float: right;width:150px;&#34; src=&#34;https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg&#34; alt=&#34;drawing&#34;&gt;&#xA;&lt;p&gt;I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities.&lt;/p&gt;&#xA;&lt;p&gt;I am a frequent presenter at worldwide industry conferences and an O&amp;rsquo;Reilly book author and course instructor.&#xA;I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.&lt;/p&gt;&#xA;&lt;p&gt;When I&amp;rsquo;m not building Machine Learning Pipelines or thinking up new software architecture,&#xA;You can find me hiking and camping in the countryside.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blog Posts Bank</title>
+      <link>http://localhost:1313/blog-posts-list/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog-posts-list/</guid>
+      <description>&lt;h1 id=&#34;how-highly-available-you-are-is-it-worth-it&#34;&gt;How Highly Available you are? Is it worth it?&lt;/h1&gt;&#xA;&lt;p&gt;Many architects and Infra/Platform developers take great pride on developing highly available systems.&lt;/p&gt;&#xA;&lt;p&gt;We even invented code names for it like three nines or the nines of availability.&lt;/p&gt;&#xA;&lt;p&gt;Do we realy need it? is it all so necessary?&lt;/p&gt;&#xA;&lt;p&gt;There is a long list of requirments that comes with it.&#xA;Every new logic developer needs to be aware that their code will run in multiple active-active cluster, even active-active-active. As you can imagine, sometimes too active.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thank You</title>

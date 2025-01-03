@@ -10,6 +10,13 @@
     <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Koalas, Panda&#39;s Scalable Sibling</title>
+      <link>http://localhost:1313/post/koalas-pandas-scalable-sibling/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/koalas-pandas-scalable-sibling/</guid>
+      <description>&lt;h2 id=&#34;what-is-it-all-about&#34;&gt;What is it all about?&lt;/h2&gt;&#xA;&lt;p&gt;From the &lt;a href=&#34;https://pandas.pydata.org/docs/&#34;&gt;pandas&lt;/a&gt; docs: &lt;em&gt;&amp;ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;From the &lt;a href=&#34;https://koalas.readthedocs.io/en/latest/&#34;&gt;Koalas&lt;/a&gt; docs: &lt;em&gt;&amp;ldquo;The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;First thing first,&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-up-the-environment&#34;&gt;Setting up the environment&lt;/h2&gt;&#xA;&lt;p&gt;You can use any Apache Spark environment that suits you. I often work with Azure Databricks or Synapse as I know both well. \&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Kubernetes and Virtual Kubelet in a nutshell</title>
       <link>http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
