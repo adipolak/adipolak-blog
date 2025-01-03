@@ -58,13 +58,30 @@ If you want to have some references, check out a couple of events Adi Polak pres
 * many more... 
 
 
+![](/images/cloud-burst.jpg)
+![](/images/scala_zen.jpeg)
+![](/images/kotlin_conncurency.jpeg)
 
-<img href="{{ site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
+![](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2024/11/effective-data-stream-processing/en/resources/3IMG_2585-1732693057933.jpg)
+
+![](/images/blogging.jpeg)
+![](/images/adi_spark.jpeg)
+![](/images/security.jpeg)
+
+![](/images/sparkaisummit2.jpeg)
+![](/images/ignite_sweeden.jpeg)
+![](/images/voxxed_autralia2.jpeg)
+
+
+
+<!-- <img href="{{ site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
 <img href="{{ site.BaseURL }}/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
-<img href="{{ site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
+<img href="{{ site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;">
+
 <img href="{{ site.BaseURL }}/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
 <img src="{{ site.BaseURL }}/images/adi_spark.jpeg" alt="drawing" style="width:350px;"/>
 <img src="{{ site.BaseURL }}/images/security.jpeg" alt="drawing" style="width:350px;"/>
+
 <img src="{{ site.BaseURL }}/images/sparkaisummit2.jpeg" alt="drawing" style="width:350px;"/>
 <img src="{{ site.BaseURL }}/images/ignite_sweeden.jpeg" alt="drawing" style="width:350px;"/>
-<img src="{{ site.BaseURL }}/images/voxxed_autralia2.jpeg" alt="drawing" style="width:350px;"/>
+<img src="{{ site.BaseURL }}/images/voxxed_autralia2.jpeg" alt="drawing" style="width:350px;"/> -->
