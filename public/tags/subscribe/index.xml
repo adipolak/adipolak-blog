@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subscribe on Adi Polak</title>
+    <link>http://localhost:1313/tags/subscribe/</link>
+    <description>Recent content in Subscribe on Adi Polak</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 30 Dec 1970 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/subscribe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Subscribe</title>
+      <link>http://localhost:1313/subscribe/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subscribe/</guid>
+      <description>&lt;p&gt;To stay up to date with the latest news and updates from this blog, you can subscribe in various ways:&lt;/p&gt;&#xA;&lt;h1 id=&#34;substack&#34;&gt;Substack&lt;/h1&gt;&#xA;&lt;p&gt;To get posts and updates from this blog via email you can subscribe to Adi Polak Data &amp;amp; Open Source Updates &lt;a href=&#34;https://adipolak.substack.com/?utm_source=substack&amp;amp;utm_medium=web&amp;amp;utm_campaign=substack_profile&#34;&gt;here&lt;/a&gt;.&#xA;No ads or spam; I&amp;rsquo;m not too fond of that stuff myself.&lt;/p&gt;&#xA;&lt;h1 id=&#34;linkedin&#34;&gt;Linkedin&lt;/h1&gt;&#xA;&lt;p&gt;Catch-up on what I am up to over &lt;a href=&#34;https://www.linkedin.com/in/polak-adi/&#34;&gt;Linkedin&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;youtube&#34;&gt;YouTube&lt;/h1&gt;&#xA;&lt;p&gt;You can subscribe to the YouTube channel of &lt;a href=&#34;http://www.youtube.com/channel/UCN3hX3Ie1kZ3L0KZ5sCTsxw?sub_confirmation=1&#34;&gt;Adi Polak&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

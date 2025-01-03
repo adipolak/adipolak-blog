@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Adi Polak</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Adi Polak</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark</title>
+      <link>http://localhost:1313/tags/apache-spark/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conference</title>
+      <link>http://localhost:1313/tags/conference/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/conference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science</title>
+      <link>http://localhost:1313/tags/data-science/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminology</title>
+      <link>http://localhost:1313/tags/terminology/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/terminology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginner</title>
+      <link>http://localhost:1313/tags/beginner/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/beginner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Delta Lake</title>
+      <link>http://localhost:1313/tags/delta-lake/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/delta-lake/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Source</title>
+      <link>http://localhost:1313/tags/open-source/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scenarios</title>
+      <link>http://localhost:1313/tags/scenarios/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scenarios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DeltaLog</title>
+      <link>http://localhost:1313/tags/deltalog/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/deltalog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ACID</title>
+      <link>http://localhost:1313/tags/acid/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/acid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Analytic Zoo</title>
+      <link>http://localhost:1313/tags/analytic-zoo/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/analytic-zoo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Koalas</title>
+      <link>http://localhost:1313/tags/koalas/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/koalas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pandas</title>
+      <link>http://localhost:1313/tags/pandas/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pandas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ray</title>
+      <link>http://localhost:1313/tags/ray/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ray/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ray on Spark</title>
+      <link>http://localhost:1313/tags/ray-on-spark/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ray-on-spark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginners</title>
+      <link>http://localhost:1313/tags/beginners/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/beginners/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devops</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>http://localhost:1313/tags/kubernetes/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/tags/tutorial/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adi Polak</title>
+      <link>http://localhost:1313/tags/adi-polak/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/adi-polak/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conferences</title>
+      <link>http://localhost:1313/tags/conferences/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/conferences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Speaking</title>
+      <link>http://localhost:1313/tags/speaking/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/speaking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Subscribe</title>
+      <link>http://localhost:1313/tags/subscribe/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/subscribe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Twitter</title>
+      <link>http://localhost:1313/tags/twitter/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/twitter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Youtube</title>
+      <link>http://localhost:1313/tags/youtube/</link>
+      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/youtube/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

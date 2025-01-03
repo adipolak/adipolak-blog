@@ -2,7 +2,7 @@
 title: "Blog Posts Bank"
 author: "Adi Polak"
 tags: ["adi polak"]
-date: "1970-30-30"
+date: "1970-12-30"
 draft: true
 toc: "false"
 hidden: true
