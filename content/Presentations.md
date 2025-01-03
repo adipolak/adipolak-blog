@@ -2,7 +2,7 @@
 title: "Presentations"
 author: "Adi Polak"
 tags: ["speaking", "conferences"]
-date: "1970-30-30"
+date: "1970-12-30"
 author_twitter: "adipolak"
 # draft: true
 toc: false
@@ -10,7 +10,6 @@ hidden: true
 url: "/presentations/"
 ---
 
-# Presentations
 ![](/images/sparkaisummit.jpeg)
 
 You can find Adi Polak often presenting at different conferences around the world. Adi works closely with Data & ML Open Source technologies.

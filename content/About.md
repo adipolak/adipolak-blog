@@ -2,7 +2,7 @@
 title: "About"
 author: "Adi Polak"
 tags: ["adi polak"]
-date: "1970-30-30"
+date: "1970-12-30"
 author_twitter: "adipolak"
 draft: false
 toc: "false"
@@ -10,10 +10,8 @@ hidden: true
 url: "/about/"
 ---
 
-# About
 
-<img style="float: right;width:150px;" src="https://databricks.com/wp-content/uploads/2020/11/Adi-Polak.jpg;" alt="drawing">
-
+<img style="float: right;width:150px;" src="https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg;" alt="drawing">
 
 
 I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities. 

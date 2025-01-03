@@ -2,7 +2,7 @@
 title: "Thank You"
 author: "Adi Polak"
 tags: ["adi polak"]
-date: "1970-30-30"
+date: "1970-12-30"
 author_twitter: "adipolak"
 draft: false
 toc: "false"

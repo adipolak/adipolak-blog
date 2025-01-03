@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandas on Adi Polak</title>
+    <link>http://localhost:1313/tags/pandas/</link>
+    <description>Recent content in Pandas on Adi Polak</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
+      <link>http://localhost:1313/post/apache-spark-ecosystem/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/apache-spark-ecosystem/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve been reading here for a while, you know that I&amp;rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.&lt;br&gt;&#xA;Apache Spark is continually growing. It started as part of the Hadoop family,&lt;br&gt;&#xA;but with &lt;a href=&#34;https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac&#34;&gt;the slow death of hadoop&lt;/a&gt; and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a look at three exciting open sources:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
