@@ -16,17 +16,15 @@ url: "/about/"
 
 
 
-I am a Sr. Software Engineer and Developer Advocate in the Azure Engineering organization at Microsoft.
+I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities. 
 
-My work focuses on distributed systems, big data analysis, and machine learning pipelines.
 
-In my advocacy work, I bring my vast industry research & engineering experience to bear in educating and helping teams design, architect, and build cost-effective software and infrastructure solutions that emphasize scalability, team expertise, and business goals.
-
-I am a frequent presenter at world-wide industry conferences and O’Reilly courses instructor.
+I am a frequent presenter at worldwide industry conferences and an O'Reilly book author and course instructor.
 I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.
 
 When I'm not building Machine Learning Pipelines or thinking up new software architecture,
-you can find me hiking and camping in nature.
+You can find me hiking and camping in the countryside.
+
 
 Opinions are my own.
 
