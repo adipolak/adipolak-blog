@@ -134,15 +134,9 @@ If you want to have some references, check out a couple of events Adi Polak pres
 &lt;li>GOTO meetup, Online, November 2021&lt;/li>
 &lt;li>many more&amp;hellip;&lt;/li>
 &lt;/ul>
-&lt;img href="{{ site.BaseURL }}/images/cloud-burst.jpg" alt="drawing" style="width:350px;"/>
-&lt;img href="{{ site.BaseURL }}/images/scala_zen.jpeg" alt="drawing" style="width:350px;"/>
-&lt;img href="{{ site.BaseURL }}/images/kotlin_conncurency.jpeg" alt="drawing" style="width:350px;"/>
-&lt;img href="{{ site.BaseURL }}/images/blogging.jpeg" alt="drawing" style="width:350px;"/>
-&lt;img src="{{ site.BaseURL }}/images/adi_spark.jpeg" alt="drawing" style="width:350px;"/>
-&lt;img src="{{ site.BaseURL }}/images/security.jpeg" alt="drawing" style="width:350px;"/>
-&lt;img src="{{ site.BaseURL }}/images/sparkaisummit2.jpeg" alt="drawing" style="width:350px;"/>
-&lt;img src="{{ site.BaseURL }}/images/ignite_sweeden.jpeg" alt="drawing" style="width:350px;"/>
-&lt;img src="{{ site.BaseURL }}/images/voxxed_autralia2.jpeg" alt="drawing" style="width:350px;"/></description></item><item><title>Subscribe</title><link>https://blog.adipolak.com/subscribe/</link><pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate><guid>https://blog.adipolak.com/subscribe/</guid><description>&lt;p>To stay up to date with the latest news and updates from this blog, you can subscribe in various ways:&lt;/p>
+&lt;p>&lt;img src="https://blog.adipolak.com/images/cloud-burst.jpg" alt="">
+&lt;img src="https://blog.adipolak.com/images/scala_zen.jpeg" alt="">
+&lt;img src="https://blog.adipolak.com/images/kotlin_conncurency.jpeg" alt="">&lt;/p></description></item><item><title>Subscribe</title><link>https://blog.adipolak.com/subscribe/</link><pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate><guid>https://blog.adipolak.com/subscribe/</guid><description>&lt;p>To stay up to date with the latest news and updates from this blog, you can subscribe in various ways:&lt;/p>
 &lt;h1 id="substack">Substack&lt;/h1>
 &lt;p>To get posts and updates from this blog via email you can subscribe to Adi Polak Data &amp;amp; Open Source Updates &lt;a href="https://adipolak.substack.com/?utm_source=substack&amp;amp;utm_medium=web&amp;amp;utm_campaign=substack_profile">here&lt;/a>.
 No ads or spam; I&amp;rsquo;m not too fond of that stuff myself.&lt;/p>
