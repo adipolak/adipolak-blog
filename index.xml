@@ -48,12 +48,10 @@ we used Java &amp;amp; Kotlin) and distribute it using Kubernetes (K8s) and Virt
 &lt;span style="background-color: #FFFF00">&lt;strong>&amp;ldquo;what is Kubernetes and what can I use it for?&amp;rdquo;&lt;/strong>&lt;/span>&lt;br>
 &lt;span style="background-color: #FFFF00">&lt;strong>Just keep reading&lt;/strong>&lt;/span>&lt;/p>
 &lt;p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
-It is used to build distributed, scalable microservices.&lt;/p></description></item><item><title>About</title><link>https://blog.adipolak.com/about/</link><pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate><guid>https://blog.adipolak.com/about/</guid><description>&lt;img style="float: right;width:150px;" src="https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg;" alt="drawing">
+It is used to build distributed, scalable microservices.&lt;/p></description></item><item><title>About</title><link>https://blog.adipolak.com/about/</link><pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate><guid>https://blog.adipolak.com/about/</guid><description>&lt;img style="float: right; width: 150px;" src="https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg" alt="drawing">
 &lt;p>I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities.&lt;/p>
 &lt;p>I am a frequent presenter at worldwide industry conferences and an O&amp;rsquo;Reilly book author and course instructor.
-I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.&lt;/p>
-&lt;p>When I&amp;rsquo;m not building Machine Learning Pipelines or thinking up new software architecture,
-You can find me hiking and camping in the countryside.&lt;/p></description></item><item><title>Contact Me</title><link>https://blog.adipolak.com/contact-me/</link><pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate><guid>https://blog.adipolak.com/contact-me/</guid><description>&lt;p>You can contact me here!&lt;/p>
+I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.&lt;/p></description></item><item><title>Contact Me</title><link>https://blog.adipolak.com/contact-me/</link><pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate><guid>https://blog.adipolak.com/contact-me/</guid><description>&lt;p>You can contact me here!&lt;/p>
 &lt;form method="post" action="https://forms.un-static.com/forms/e75827379966a45e1efa50c63e3a52f55b43889a">
  &lt;div class="form-group row">
  &lt;div class="col-8">
