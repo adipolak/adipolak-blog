@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="/css/custom.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog | Adi Polak</title>
+    <title>Adi Polak  | Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Multi-part series that will take you from beginner to expert in Delta Lake">
     <meta name="generator" content="Hugo 0.140.2">
     
     
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-    
-      <meta name="author" content = "Adi Polak">
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
 
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+
     
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
-
-
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
 
     
 
     
       
-
     
 
     
-
     
-      <link rel="canonical" href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/">
-    
-
     <meta property="og:url" content="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/">
   <meta property="og:site_name" content="Adi Polak">
   <meta property="og:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog">
@@ -60,89 +53,104 @@
   <meta name="twitter:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog">
   <meta name="twitter:description" content="Multi-part series that will take you from beginner to expert in Delta Lake">
 
-	
-  </head><body class="ma0 avenir bg-near-white development">
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
 
     
-   
-  
-
   <header>
-    <div class="bg-black">
+    <div class="pb3-m pb6-l bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        Adi Polak
-      
+    <a href="http://localhost:1313/" class="f3 fw2 hover-white no-underline white-90 dib header-logo-wrapper">
+      <img src="/assets/favicon/favicon-32x32.png" class="header-logo" />
+      Adi Polak
     </a>
     <div class="flex-l items-center">
       
 
       
-        <ul class="pl0 mr3">
+        <ul class="pl0 mr3 header-nav">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/" title="about page">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/about/" title="about page">
               about
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/presentations/" title="presentations page">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/presentations/" title="presentations page">
               presentations
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/subscribe/" title="subscribe page">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/subscribe/" title="subscribe page">
               subscribe
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/contact-me/" title="contact page">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/contact-me/" title="contact page">
               contact
             </a>
           </li>
           
         </ul>
       
-      <div class="ananke-socials"></div>
+      
+
+
+
+
+
+
+
+
+
+
 
     </div>
   </div>
 </nav>
 
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+        <h2 class="f2 f-subheadline-s fw2 white-90 mb0 lh-title">
+          <span class="header-subtitle-inner">distributed systems, AI/ML, and bold tech opinions</span>
+        </h2>
+        
+      </div>
     </div>
   </header>
 
 
-
-    <main class="pb7" role="main">
+    <main role="main">
       
+<div class="layout mw8 center ph3 flex-l">
   
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</h1>
-      
-      <p class="tracked">
-        By <strong>Adi Polak</strong>
-      </p>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2021-02-11T00:00:00Z">February 11, 2021</time>
-      
+  
 
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
+  
+  <div class="content flex-auto">
+    <article class="flex-l flex-wrap justify-between">
+      <header class="mt4 w-100">
+        <aside class="instapaper_ignoref b helvetica tracked ttu">
+          Posts
+        </aside>
+        <h1 class="f1 athelas mt3 mb1">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</h1>
+        
+        <p class="tracked">
+           <strong>Adi Polak
+          </strong>
+        </p>
+        
+        
+        <time class="f6 mv4 dib tracked" datetime="2021-02-11T00:00:00Z">February 11, 2021</time>
+        
+      </header>
+
+      <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l"><p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
 In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
 <h2 id="transaction-log">Transaction Log</h2>
 <p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
@@ -238,67 +246,58 @@ That means that if there is a request to delete a file that at the same time is 
 <p>If you would like to get monthly updates, consider <a href="https://sub.adipolak.com/subscribe">subscribing</a>.</p>
 <ul class="pa0">
   
-   <li class="list di">
-     <a href="/tags/open-source/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Open-Source</a>
+   <li class="list">
+     <a href="/tags/open-source" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">open-source</a>
    </li>
   
-   <li class="list di">
-     <a href="/tags/apache-spark/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
+   <li class="list">
+     <a href="/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">apache spark</a>
    </li>
   
-   <li class="list di">
-     <a href="/tags/delta-lake/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Delta Lake</a>
+   <li class="list">
+     <a href="/tags/delta-lake" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">delta lake</a>
    </li>
   
-   <li class="list di">
-     <a href="/tags/beginner/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Beginner</a>
+   <li class="list">
+     <a href="/tags/beginner" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">beginner</a>
    </li>
   
-   <li class="list di">
-     <a href="/tags/deltalog/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">DeltaLog</a>
+   <li class="list">
+     <a href="/tags/deltalog" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">DeltaLog</a>
    </li>
   
 </ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
-    <p class="f5 b mb3">Related</p>
-    <ul class="pa0 list">
-	   
-	     <li  class="mb2">
-          <a href="/post/delta-lake-essential-fundamentals/">Delta Lake essential Fundamentals: Part 1 - ACID</a>
-        </li>
-	    
-	     <li  class="mb2">
-          <a href="/post/apache-spark-ecosystem/">Apache Spark Ecosystem, Jan 2021 Highlights</a>
-        </li>
-	    
-    </ul>
 </div>
-
-</aside>
-
-  </article>
+    </article>
+  </div>
+</div>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
-    &copy;  Copyright &#169; 2020 Adi Polak. All rights reserved. 2025 
-  </a>
-    <div><div class="ananke-socials"></div>
+  <span class="f4 fw4 white-70 dn dib-ns pv2 ph3">
+    Made with 😀 and ❤️ on 🌏. You can edit
+    <a class="f4 fw4 hover-white white-70" href="https://www.github.com/crisisfighters/crisisfighters.org" target="_blank">edit every page on this website on GitHub!</a>
+  </span>  
+  <div>
+
+
+
+
+
+
+
+
+
+
 </div>
   </div>
 </footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
 
   </body>
 </html>
