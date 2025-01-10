@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Adi Polak</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://blog.adipolak.com/post/</link>
     <description>Recent content in Posts on Adi Polak</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
     <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.adipolak.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data&#43;AI Summit 2021 is Coming</title>
-      <link>http://localhost:1313/post/data_and_ai_summit2021/</link>
+      <link>https://blog.adipolak.com/post/data_and_ai_summit2021/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/data_and_ai_summit2021/</guid>
+      <guid>https://blog.adipolak.com/post/data_and_ai_summit2021/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s almost been half a year since the last summit.&lt;/p&gt;&#xA;&lt;p&gt;Data+AI Summit 2021 starts on Monday, May 24 till Friday, May 28.&#xA;The training will be held on May 24-25 and will cater to a large set of practitioners, definitely more extensive than previous times:&#xA;Data Analyst, Data Engineer, Data Scientist, ML Engineer, Partner Data Engineer, Platform Engineer, Technical. The wide range of roles makes me curious about the various technical personas in the Data and AI space. It&amp;rsquo;s not only Data Engineers and Data Scientists. There is a wide range of people who can benefit from attending the summit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Machine Learning in Production - Concepts you should know</title>
-      <link>http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/</link>
+      <link>https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/machine-learning-in-production---concepts-you-should-know/</guid>
+      <guid>https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/</guid>
       <description>&lt;p&gt;Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of concepts for you to get started:&lt;/p&gt;&#xA;&lt;h2 id=&#34;ml-algorithm&#34;&gt;ML Algorithm&lt;/h2&gt;&#xA;&lt;p&gt;ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ml-model&#34;&gt;ML Model&lt;/h2&gt;&#xA;&lt;p&gt;ML model is the ML algorithm process outcome; It often contains a statistical representation of the data ingested into the algorithm. ML model input is data, and the output is either a prediction, decision, or classification.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/</guid>
       <description>&lt;p&gt;🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉&lt;/p&gt;&#xA;&lt;p&gt;There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s discuss two common data pipelines patterns and solutions:&lt;/p&gt;&#xA;&lt;h2 id=&#34;spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users&#34;&gt;Spark Structured Streaming ETL with DeltaLake that serves multiple Users&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Spark Structured Streaming&lt;/strong&gt;-&#xA;Apache Spark structured steaming are essentially unbounded tables of information. There is a continuous stream of data ingested into the system. As developers, we write the code to process the data continuously.&#xA;&lt;strong&gt;ETL&lt;/strong&gt; stands for &lt;strong&gt;E&lt;/strong&gt;xtract, &lt;strong&gt;T&lt;/strong&gt;ransform and &lt;strong&gt;L&lt;/strong&gt;oad.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.&lt;/p&gt;&#xA;&lt;h2 id=&#34;checkpoint&#34;&gt;Checkpoint&lt;/h2&gt;&#xA;&lt;p&gt;There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&amp;rsquo;s understand them and how they differ from each other:&lt;/p&gt;&#xA;&lt;h3 id=&#34;spark-rdd-checkpoint&#34;&gt;Spark RDD Checkpoint&lt;/h3&gt;&#xA;&lt;p&gt;Checkpoint in Spark RDD is a mechanism to persist current RDD to a file in a dedicated checkpoint directory while all references to its parent RDDs are removed.&#xA;This operation, by default, breaks data lineage when used without auditing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
       <description>&lt;p&gt;In the previous part, you learned what &lt;a href=&#34;https://blog.adipolak.com/post/delta-lake-essential-fundamentals&#34;&gt;ACID transactions&lt;/a&gt; are.&lt;br&gt;&#xA;In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.&lt;/p&gt;&#xA;&lt;h2 id=&#34;transaction-log&#34;&gt;Transaction Log&lt;/h2&gt;&#xA;&lt;p&gt;A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee &lt;a href=&#34;https://blog.adipolak.com/post/delta-lake-essential-fundamentals/&#34;&gt;ACID properties&lt;/a&gt; over a crash.&lt;/p&gt;&#xA;&lt;h2 id=&#34;deltalake-transaction-log---detlalog&#34;&gt;DeltaLake transaction log - DetlaLog&lt;/h2&gt;&#xA;&lt;p&gt;DeltaLog is a transaction log directory that holds an &lt;strong&gt;ordered&lt;/strong&gt; record of every transaction committed on a Delta Lake table since it was created.&#xA;The goal of DeltaLog is to be the &lt;strong&gt;single&lt;/strong&gt; source of truth for readers who read from the same table at the same time. That means, parallel readers read the &lt;strong&gt;exact&lt;/strong&gt; same data.&#xA;This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</guid>
       <description>&lt;p&gt;🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-delta-lake-&#34;&gt;What is Delta Lake ?&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Delta Lake is an open-source storage layer that brings ACID&#xA;transactions to Apache Spark™ and big data workloads. &lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;DeltaLake open source consists of 3 projects:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/delta-io/delta&#34;&gt;detla&lt;/a&gt; - Delta Lake core, written in Scala.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/delta-io/delta-rs&#34;&gt;delta-rs&lt;/a&gt; - Rust library for binding with Python and Ruby.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/delta-io/connectors&#34;&gt;connectors&lt;/a&gt; - Connectors to popular big data engines outside Spark, written mostly in Scala.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Delta provides us the ability to &lt;u&gt;&amp;ldquo;travel back in time&amp;rdquo;&lt;/u&gt; into previous versions of our data, &lt;u&gt;scalable metadata&lt;/u&gt; - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to &lt;u&gt;unify streaming and batch data&lt;/u&gt;.&lt;br&gt;&#xA;&lt;u&gt;Schema enforcement&lt;/u&gt; - handle schema variations to prevent insertion of bad/non-compliant records, and &lt;u&gt;ACID transactions&lt;/u&gt; to ensure that the users/readers never see inconsistent data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
-      <link>http://localhost:1313/post/apache-spark-ecosystem/</link>
+      <link>https://blog.adipolak.com/post/apache-spark-ecosystem/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/apache-spark-ecosystem/</guid>
+      <guid>https://blog.adipolak.com/post/apache-spark-ecosystem/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve been reading here for a while, you know that I&amp;rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.&lt;br&gt;&#xA;Apache Spark is continually growing. It started as part of the Hadoop family,&lt;br&gt;&#xA;but with &lt;a href=&#34;https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac&#34;&gt;the slow death of hadoop&lt;/a&gt; and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a look at three exciting open sources:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes and Virtual Kubelet in a nutshell</title>
-      <link>http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <link>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
+      <guid>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
       <description>&lt;img class=&#34;responsive&#34; src=&#34;https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80;&#34; alt=&#34;drawing&#34;&gt;&#xA;&lt;p&gt;Today, you will learn how to take a web app (it can be any programming language,&lt;br&gt;&#xA;we used Java &amp;amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).&lt;/p&gt;&#xA;&lt;p&gt;Well, if you don&amp;rsquo;t know yet why you should consider distributing your web app - read my post &lt;a href=&#34;https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&#34;background-color: #FFFF00&#34;&gt;&lt;strong&gt;So, you are probably asking yourself&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;background-color: #FFFF00&#34;&gt;&lt;strong&gt;&amp;ldquo;what is Kubernetes and what can I use it for?&amp;rdquo;&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;background-color: #FFFF00&#34;&gt;&lt;strong&gt;Just keep reading&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.&#xA;It is used to build distributed, scalable microservices.&lt;/p&gt;</description>
     </item>
   </channel>
