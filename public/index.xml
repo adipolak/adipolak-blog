@@ -59,13 +59,6 @@
       <description>&lt;p&gt;If you&amp;rsquo;ve been reading here for a while, you know that I&amp;rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.&lt;br&gt;&#xA;Apache Spark is continually growing. It started as part of the Hadoop family,&lt;br&gt;&#xA;but with &lt;a href=&#34;https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac&#34;&gt;the slow death of hadoop&lt;/a&gt; and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a look at three exciting open sources:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Koalas, Panda&#39;s Scalable Sibling</title>
-      <link>http://localhost:1313/post/koalas-pandas-scalable-sibling/</link>
-      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/koalas-pandas-scalable-sibling/</guid>
-      <description>&lt;h2 id=&#34;what-is-it-all-about&#34;&gt;What is it all about?&lt;/h2&gt;&#xA;&lt;p&gt;From the &lt;a href=&#34;https://pandas.pydata.org/docs/&#34;&gt;pandas&lt;/a&gt; docs: &lt;em&gt;&amp;ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;From the &lt;a href=&#34;https://koalas.readthedocs.io/en/latest/&#34;&gt;Koalas&lt;/a&gt; docs: &lt;em&gt;&amp;ldquo;The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;First thing first,&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-up-the-environment&#34;&gt;Setting up the environment&lt;/h2&gt;&#xA;&lt;p&gt;You can use any Apache Spark environment that suits you. I often work with Azure Databricks or Synapse as I know both well. \&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Kubernetes and Virtual Kubelet in a nutshell</title>
       <link>http://localhost:1313/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
@@ -73,39 +66,11 @@
       <description>&lt;img class=&#34;responsive&#34; src=&#34;https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80;&#34; alt=&#34;drawing&#34;&gt;&#xA;&lt;p&gt;Today, you will learn how to take a web app (it can be any programming language,&lt;br&gt;&#xA;we used Java &amp;amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).&lt;/p&gt;&#xA;&lt;p&gt;Well, if you don&amp;rsquo;t know yet why you should consider distributing your web app - read my post &lt;a href=&#34;https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&#34;background-color: #FFFF00&#34;&gt;&lt;strong&gt;So, you are probably asking yourself&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;background-color: #FFFF00&#34;&gt;&lt;strong&gt;&amp;ldquo;what is Kubernetes and what can I use it for?&amp;rdquo;&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;background-color: #FFFF00&#34;&gt;&lt;strong&gt;Just keep reading&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.&#xA;It is used to build distributed, scalable microservices.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Getting started with Vibrant Shadows</title>
-      <link>http://localhost:1313/post/getting-started/</link>
-      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/getting-started/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s very easy to get started with Vibrant Shadows. How? Read on.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Example config.yaml</title>
-      <link>http://localhost:1313/post/example-config-yaml/</link>
-      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/example-config-yaml/</guid>
-      <description>&lt;p&gt;An example configuration file (config.yaml), which shows all the configuration options supported by &amp;lsquo;Vibrant Shadows&amp;rsquo; theme by Softorage, with explaining comments.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Additional information about the theme</title>
-      <link>http://localhost:1313/post/additional-info/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/additional-info/</guid>
-      <description>&lt;p&gt;We share some additional information about this theme, that may be relevant.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;img style=&#34;float: right;width:150px;&#34; src=&#34;https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg&#34; alt=&#34;drawing&#34;&gt;&#xA;&lt;p&gt;I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities.&lt;/p&gt;&#xA;&lt;p&gt;I am a frequent presenter at worldwide industry conferences and an O&amp;rsquo;Reilly book author and course instructor.&#xA;I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.&lt;/p&gt;&#xA;&lt;p&gt;When I&amp;rsquo;m not building Machine Learning Pipelines or thinking up new software architecture,&#xA;You can find me hiking and camping in the countryside.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Blog Posts Bank</title>
-      <link>http://localhost:1313/blog-posts-list/</link>
-      <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog-posts-list/</guid>
-      <description>&lt;h1 id=&#34;how-highly-available-you-are-is-it-worth-it&#34;&gt;How Highly Available you are? Is it worth it?&lt;/h1&gt;&#xA;&lt;p&gt;Many architects and Infra/Platform developers take great pride on developing highly available systems.&lt;/p&gt;&#xA;&lt;p&gt;We even invented code names for it like three nines or the nines of availability.&lt;/p&gt;&#xA;&lt;p&gt;Do we realy need it? is it all so necessary?&lt;/p&gt;&#xA;&lt;p&gt;There is a long list of requirments that comes with it.&#xA;Every new logic developer needs to be aware that their code will run in multiple active-active cluster, even active-active-active. As you can imagine, sometimes too active.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact Me</title>

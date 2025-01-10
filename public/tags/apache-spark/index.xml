@@ -51,12 +51,5 @@
       <guid>http://localhost:1313/post/apache-spark-ecosystem/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve been reading here for a while, you know that I&amp;rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.&lt;br&gt;&#xA;Apache Spark is continually growing. It started as part of the Hadoop family,&lt;br&gt;&#xA;but with &lt;a href=&#34;https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac&#34;&gt;the slow death of hadoop&lt;/a&gt; and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a look at three exciting open sources:&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Koalas, Panda&#39;s Scalable Sibling</title>
-      <link>http://localhost:1313/post/koalas-pandas-scalable-sibling/</link>
-      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/koalas-pandas-scalable-sibling/</guid>
-      <description>&lt;h2 id=&#34;what-is-it-all-about&#34;&gt;What is it all about?&lt;/h2&gt;&#xA;&lt;p&gt;From the &lt;a href=&#34;https://pandas.pydata.org/docs/&#34;&gt;pandas&lt;/a&gt; docs: &lt;em&gt;&amp;ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;From the &lt;a href=&#34;https://koalas.readthedocs.io/en/latest/&#34;&gt;Koalas&lt;/a&gt; docs: &lt;em&gt;&amp;ldquo;The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;First thing first,&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-up-the-environment&#34;&gt;Setting up the environment&lt;/h2&gt;&#xA;&lt;p&gt;You can use any Apache Spark environment that suits you. I often work with Azure Databricks or Synapse as I know both well. \&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
