@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adi Polak</title>
-    <link>https://blog.adipolak.com/tags/adi-polak/</link>
+    <link>http://localhost:1313/tags/adi-polak/</link>
     <description>Recent content on Adi Polak</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
     <lastBuildDate>Wed, 30 Dec 1970 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.adipolak.com/tags/adi-polak/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/adi-polak/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://blog.adipolak.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
-      <guid>https://blog.adipolak.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;img style=&#34;float: right;width:150px;&#34; src=&#34;https://pbs.twimg.com/profile_images/1336592211149000704/dOTfYYHf_400x400.jpg&#34; alt=&#34;drawing&#34;&gt;&#xA;&lt;p&gt;I worked at many companies at the intersection of distributed systems, big data analysis, and machine learning pipelines. Today, I am a Director at Confluent, focusing on Data Streaming and GenAI/ML capabilities.&lt;/p&gt;&#xA;&lt;p&gt;I am a frequent presenter at worldwide industry conferences and an O&amp;rsquo;Reilly book author and course instructor.&#xA;I mentor and volunteer with underrepresented tech communities to help them find tech jobs and continue growing their career.&lt;/p&gt;&#xA;&lt;p&gt;When I&amp;rsquo;m not building Machine Learning Pipelines or thinking up new software architecture,&#xA;You can find me hiking and camping in the countryside.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thank You</title>
-      <link>https://blog.adipolak.com/thankyou/</link>
+      <link>http://localhost:1313/thankyou/</link>
       <pubDate>Wed, 30 Dec 1970 00:00:00 +0000</pubDate>
-      <guid>https://blog.adipolak.com/thankyou/</guid>
+      <guid>http://localhost:1313/thankyou/</guid>
       <description>&lt;p&gt;Thank you for your message.&lt;br&gt;&#xA;&lt;br&gt;&#xA;If I won&amp;rsquo;t get back to you within a week, please know that my &lt;a href=&#34;https://twitter.com/AdiPolak&#34;&gt;twitter&lt;/a&gt; direct messages are always open.&lt;/p&gt;&#xA;&lt;iframe src=&#34;https://giphy.com/embed/wIVA0zh5pt0G5YtcAL&#34; width=&#34;480&#34; height=&#34;316&#34; frameBorder=&#34;0&#34; class=&#34;giphy-embed&#34; allowFullScreen&gt;&lt;/iframe&gt;</description>
     </item>
   </channel>
