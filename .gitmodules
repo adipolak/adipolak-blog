@@ -1,6 +1,0 @@
-[submodule "themes/hyde"]
-	path = themes/hyde
-	url = https://github.com/spf13/hyde.git
-[submodule "themes/hugo-theme-chunky-poster"]
-	path = themes/hugo-theme-chunky-poster
-	url = https://github.com/puresyntax71/hugo-theme-chunky-poster.git

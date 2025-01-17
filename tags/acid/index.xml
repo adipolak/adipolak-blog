@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ACID on Adi Polak</title><link>https://blog.adipolak.com/tags/acid/</link><description>Recent content in ACID on Adi Polak</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/tags/acid/index.xml" rel="self" type="application/rss+xml"/><item><title>Delta Lake essential Fundamentals: Part 1 - ACID</title><link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</link><pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate><guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</guid><description>&lt;p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉&lt;/p>
+&lt;h2 id="what-is-delta-lake-">What is Delta Lake ?&lt;/h2>
+&lt;blockquote>
+&lt;p>Delta Lake is an open-source storage layer that brings ACID
+transactions to Apache Spark™ and big data workloads. &lt;/p>
+&lt;/blockquote>
+&lt;p>DeltaLake open source consists of 3 projects:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://github.com/delta-io/delta">detla&lt;/a> - Delta Lake core, written in Scala.&lt;/li>
+&lt;li>&lt;a href="https://github.com/delta-io/delta-rs">delta-rs&lt;/a> - Rust library for binding with Python and Ruby.&lt;/li>
+&lt;li>&lt;a href="https://github.com/delta-io/connectors">connectors&lt;/a> - Connectors to popular big data engines outside Spark, written mostly in Scala.&lt;/li>
+&lt;/ol>
+&lt;p>Delta provides us the ability to &lt;u>&amp;ldquo;travel back in time&amp;rdquo;&lt;/u> into previous versions of our data, &lt;u>scalable metadata&lt;/u> - that means if we have a large set of raw data stored in a data lake, having metadata provides us with the flexibility needed for analytics and exploration of the data. It also provides a mechanism to &lt;u>unify streaming and batch data&lt;/u>.&lt;br>
+&lt;u>Schema enforcement&lt;/u> - handle schema variations to prevent insertion of bad/non-compliant records, and &lt;u>ACID transactions&lt;/u> to ensure that the users/readers never see inconsistent data.&lt;/p></description></item></channel></rss>
