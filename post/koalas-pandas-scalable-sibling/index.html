@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="/css/custom.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Adi Polak  | Koalas, Panda&#39;s Scalable Sibling</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.140.2">
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/post/koalas-pandas-scalable-sibling/">
+  <meta property="og:site_name" content="Adi Polak">
+  <meta property="og:title" content="Koalas, Panda&#39;s Scalable Sibling">
+  <meta property="og:description" content="Gental introduction to Koalas">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-01-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-01-10T00:00:00+00:00">
+    <meta property="article:tag" content="Beginners">
+    <meta property="article:tag" content="Apache Spark">
+    <meta property="article:tag" content="Koalas">
+    <meta property="article:tag" content="Pandas">
+    <meta property="article:tag" content="Kubernetes">
+
+  <meta itemprop="name" content="Koalas, Panda&#39;s Scalable Sibling">
+  <meta itemprop="description" content="Gental introduction to Koalas">
+  <meta itemprop="datePublished" content="2021-01-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-01-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="500">
+  <meta itemprop="keywords" content="Beginners,Apache Spark,Koalas,Pandas,Kubernetes">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Koalas, Panda&#39;s Scalable Sibling">
+  <meta name="twitter:description" content="Gental introduction to Koalas">
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://localhost:1313/" class="f3 fw2 hover-white no-underline white-90 dib header-logo-wrapper">
+      
+      
+      
+      
+      <img src="/assets/favicon/favicon-32x32.png" class="header-logo" />
+      Adi Polak
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3 header-nav">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/about/" title="about page">
+              about
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/presentations/" title="presentations page">
+              presentations
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/subscribe/" title="subscribe page">
+              subscribe
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90 header-nav-link" href="/contact-me/" title="contact page">
+              contact
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+        <h2 class="f2 f-subheadline-s fw2 white-90 mb0 lh-title">
+          <span class="header-subtitle-inner">distributed systems, AI/ML, and bold tech opinions</span>
+        </h2>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main role="main">
+      
+<div class="layout mw8 center ph3 flex-l">
+  
+  
+
+  
+  <div class="content flex-auto">
+    <article class="flex-l flex-wrap justify-between">
+      <header class="mt4 w-100">
+        <aside class="instapaper_ignoref b helvetica tracked ttu">
+          Posts
+        </aside>
+        <h1 class="f1 athelas mt3 mb1">Koalas, Panda&#39;s Scalable Sibling</h1>
+        
+        <p class="tracked">
+           <strong>Adi Polak
+          </strong>
+        </p>
+        
+        
+        <time class="f6 mv4 dib tracked" datetime="2021-01-10T00:00:00Z">January 10, 2021</time>
+        
+      </header>
+
+      <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l"><h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.&rdquo;</em></p>
+<p>From the <a href="https://koalas.readthedocs.io/en/latest/">Koalas</a> docs: <em>&ldquo;The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark.&rdquo;</em></p>
+<p>First thing first,</p>
+<h2 id="setting-up-the-environment">Setting up the environment</h2>
+<p>You can use any Apache Spark environment that suits you. I often work with Azure Databricks or Synapse as I know both well. \</p>
+<p>With <a href="https://docs.microsoft.com/en-us/azure/databricks/languages/koalas?WT.mc_id=spark-12578-adpolak">Databricks</a>, Koalas is pre-installed in Runtime 7.1 and above. With Datrbirkcs Runtime below, checkup <a href="https://docs.microsoft.com/en-us/azure/databricks/languages/koalas?WT.mc_id=spark-12578-adpolak">this tutorial</a>.</p>
+<p>With <a href="https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-overview?WT.mc_id=spark-12578-adpolak">Synapse</a>, you need to provide a <code>.txt</code> configuration file that can be used with the command <code>pip freeze</code>. The file staractire looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>{PyPI package name}=={desired version}
+</span></span><span style="display:flex;"><span>{PyPI second package name}=={desired version}
+</span></span></code></pre></div><p>Let&rsquo;s see how to get it done:</p>
+<h2 id="how-to-start-spark-pool-with-koalas-with-synapse">How to start Spark pool with Koalas with Synapse:</h2>
+<p>First, create your Spark pool.
+From the Synapse Studio workspace nevigate to <code>manage</code> -&gt; <code>Analytics pools</code> -&gt; <code>Apache Spark pools</code> and click on <code>+ New</code> button.</p>
+<p>A new UI will menu will pop on the right side of the screen enables you to add information such as size of cluster, auto-scale, name, number of nodes, etc. <br>
+On the additional setting you can config Spark version, and see the libraries versions that comes built in with the Synapse Spark pool. <br>
+Such as .NET for Apache Spark.\</p>
+<p>👉 .Net for Apache Spark is a library that developed by Microsoft to enable .NET developers easy way to work with Spark.<br>
+Read about it <a href="https://docs.microsoft.com/en-us/dotnet/spark/what-is-apache-spark-dotnet?WT.mc_id=spark-12578-adpolak">here</a>.</p>
+<p><img class="responsive" src="/images/pandas-synapse-post/create-spark-pool.png" alt="drawing"> \</p>
+<p>Right from the <code>Additional Settings</code> tab, you can add the <code>.txt</code> configuration file.</p>
+<p>Create a text file, and copy this line into it:</p>
+<pre tabindex="0"><code>pandas==1.2.0
+</code></pre><p>You can upload it while creating the cluster, or add it to an existing cluster.</p>
+<p>If you have an existing cluster, from the same <code>Apache Spark Pools</code> you can add a new packages. <br>
+Clicking on the <code>...</code> 3 dots next to your cluster name will open a menu bar for you, inside there is a Packages option, click on it:</p>
+<p><img class="responsive" src="/images/pandas-synapse-post/manage-packaging-synapse-ui.png" alt="drawing"> \</p>
+<p>It will prompt you to a right side bar where you can upload your text file.</p>
+<p><img class="responsive" src="/images/pandas-synapse-post/upload-config-file.png" alt="drawing"> \</p>
+<p>Click the Upload button at the top and choose the file you would like to upload.<br>
+Now a new Upload blue button will appear at the bottom, click this too.</p>
+<p>The UI will show you the configuration file name and size, all you have to do is to click the blue Apply button at the buttom.<br>
+<img class="responsive" src="/images/pandas-synapse-post/apply.png" alt="drawing"> \</p>
+<p>That&rsquo;s it, all set to start coding!</p>
+<h2 id="coding">Coding</h2>
+<p>Nevigate to <code>Develop</code> -&gt; <code>+</code> buttong and create a new Notebook, for <code>Attach to</code> choose your spark pool.</p>
+<p>We will write our code right here in the notebook so we can run it in an interactive manner and see the results of every operation live.</p>
+<p>Setting and importing Koalas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> databricks.koalas <span style="color:#66d9ef">as</span> ks
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> SparkSession
+</span></span></code></pre></div><ul class="pa0">
+  
+   <div class="list">
+     <span href="/tags/beginners" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">beginners</span>
+   </div>
+  
+   <div class="list">
+     <span href="/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">apache spark</span>
+   </div>
+  
+   <div class="list">
+     <span href="/tags/koalas" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">koalas</span>
+   </div>
+  
+   <div class="list">
+     <span href="/tags/pandas" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">pandas</span>
+   </div>
+  
+   <div class="list">
+     <span href="/tags/kubernetes" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Kubernetes</span>
+   </div>
+  
+</ul>
+</div>
+    </article>
+  </div>
+</div>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <span class="f4 fw4 white-70 dn dib-ns pv2 ph3">
+    Made with ❤️ on 🌎.
+    
+  </span>  
+  <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
