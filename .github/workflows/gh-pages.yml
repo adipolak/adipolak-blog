@@ -22,7 +22,7 @@ jobs:
 
     # Step 3: Build the Hugo site
     - name: Build Site
-      run: hugo --minify --baseURL "https://blog.adipolak.com/"
+      run: hugo --minify --baseURL https://blog.adipolak.com/
 
     # Step 4: Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
