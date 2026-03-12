@@ -1,0 +1,125 @@
+{{ define "main" }}
+
+<!-- Page Header -->
+<section style="background: var(--warm-black); padding: var(--space-3xl) var(--space-md); text-align: center;">
+  <div style="max-width: 720px; margin: 0 auto;">
+    <h1 style="font-family: var(--font-serif); font-size: var(--text-3xl); font-weight: 400; color: var(--warm-white); margin: 0 0 var(--space-md); line-height: 1.2;">
+      Writing
+    </h1>
+    <p style="font-size: var(--text-lg); color: var(--color-text-muted); margin: 0; line-height: 1.6; font-weight: 300;">
+      {{ .Content | plainify }}
+    </p>
+  </div>
+</section>
+
+<!-- Main Content with Sidebar -->
+<section style="padding: var(--space-3xl) var(--space-md);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: 1fr 280px; gap: var(--space-3xl);">
+
+      <!-- Main Content -->
+      <div>
+        {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
+        {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+        {{ $section = where $section "Draft" "ne" true }}
+
+        {{ if ge (len $section) 1 }}
+          <div class="blog-grid">
+            {{ range $section }}
+              <article class="blog-card">
+                {{ $hasValidDate := and .Date (gt .Date.Year 1971) }}
+                {{ if $hasValidDate }}
+                <div class="post-meta">
+                  <time datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "January 2, 2006" }}
+                  </time>
+                  {{ with .ReadingTime }}
+                    <span class="separator">·</span>
+                    <span>{{ . }} min read</span>
+                  {{ end }}
+                </div>
+                {{ end }}
+
+                <h2>
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+
+                {{ with .Params.tags }}
+                  <div class="post-tags">
+                    {{ range first 2 . }}
+                      <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+                    {{ end }}
+                  </div>
+                {{ end }}
+
+                <a href="{{ .Permalink }}" class="read-more">Read article →</a>
+              </article>
+            {{ end }}
+          </div>
+        {{ else }}
+          <p class="text-center text-muted">No articles yet.</p>
+        {{ end }}
+      </div>
+
+      <!-- Sidebar -->
+      <aside style="position: sticky; top: var(--space-xl); align-self: start;">
+        <!-- Tags Section -->
+        <div style="margin-bottom: var(--space-2xl);">
+          <h3 style="margin: 0 0 var(--space-sm); font-family: var(--font-serif); font-size: var(--text-md); font-weight: 600; color: var(--color-text);">
+            Tags
+          </h3>
+          {{ $tags := .Site.Taxonomies.tags }}
+          {{ $excludeTags := slice "adi polak" "conference" "conferences" "customize" }}
+          {{ if $tags }}
+            <div style="font-size: var(--text-sm); line-height: 1.8;">
+              {{ $tagCount := 0 }}
+              {{ range $name, $taxonomy := $tags }}
+                {{ $nameLower := lower $name }}
+                {{ if not (in $excludeTags $nameLower) }}
+                  {{ if gt $tagCount 0 }}, {{ end }}
+                  <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">{{ $name }}</a>
+                  {{ $tagCount = add $tagCount 1 }}
+                {{ end }}
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- Responsive: Hide sidebar on mobile -->
+<style>
+@media (max-width: 768px) {
+  section > div > div {
+    grid-template-columns: 1fr !important;
+  }
+  aside {
+    display: none;
+  }
+}
+</style>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+<script>
+(function() {
+  const btn = document.getElementById('dark-mode-btn');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    btn.textContent = '☀️';
+  }
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    btn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+})();
+</script>
+
+{{ end }}

@@ -1,0 +1,10 @@
+<!-- Load theme toggle script -->
+<script src="{{ "js/theme-toggle.js" | relURL }}"></script>
+
+<!-- Load accessibility scripts -->
+{{ partial "accessibility-scripts.html" . }}
+
+{{ $webpack_js := .Site.Data.webpack_assets.app }}
+{{ with $webpack_js.js }}
+  <script src="{{ relURL (printf "%s%s" "dist/" .) }}"></script>
+{{ end }}

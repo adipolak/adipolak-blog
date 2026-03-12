@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="section-header">
+    <h1 class="section-title" style="font-size: var(--text-3xl);">{{ .Title }}</h1>
+    <p class="section-subtitle">
+      {{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }} on this topic
+    </p>
+  </div>
+
+  <div class="blog-grid">
+    {{ range .Pages }}
+      <article class="blog-card">
+        {{ $hasValidDate := and .Date (gt .Date.Year 1971) }}
+        {{ if $hasValidDate }}
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+          {{ with .ReadingTime }}
+            <span class="separator">·</span>
+            <span>{{ . }} min read</span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <h2>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+
+        {{ with .Params.tags }}
+          <div class="post-tags">
+            {{ range first 3 . }}
+              <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+
+        <p>{{ .Summary }}</p>
+
+        <a href="{{ .Permalink }}" class="read-more">Read article →</a>
+      </article>
+    {{ end }}
+  </div>
+
+  <!-- View all topics link -->
+  <div style="text-align: center; margin-top: var(--space-xl);">
+    <a href="{{ "/tags/" | relURL }}" class="btn-secondary btn">← View all topics</a>
+  </div>
+</section>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+<script>
+(function() {
+  const btn = document.getElementById('dark-mode-btn');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    btn.textContent = '☀️';
+  }
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    btn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+})();
+</script>
+
+{{ end }}

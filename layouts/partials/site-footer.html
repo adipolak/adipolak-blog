@@ -1,0 +1,56 @@
+<footer style="background: var(--warm-black); color: var(--color-text); padding: var(--space-2xl) var(--space-md); margin-top: var(--space-3xl);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <!-- Footer Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-2xl);">
+
+      <!-- About -->
+      <div>
+        <h3 style="font-family: var(--font-serif); font-size: var(--text-lg); margin: 0 0 var(--space-md); color: var(--warm-white);">{{ .Site.Title }}</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.6; margin: 0;">
+          {{ .Site.Params.meta.description }}
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          {{ range .Site.Menus.main }}
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="{{ .URL }}" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Stay Updated</h4>
+        <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+          <a href="https://adipolak.substack.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link);">Substack Newsletter</a>
+          <a href="/feed.xml" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link); display: flex; align-items: center; gap: var(--space-xs);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9"></path>
+              <path d="M4 4a16 16 0 0 1 16 16"></path>
+              <circle cx="5" cy="19" r="1"></circle>
+            </svg>
+            RSS Feed
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div style="border-top: 1px solid var(--color-border-subtle); padding-top: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <p style="color: var(--color-text-muted); font-size: var(--text-xs); margin: 0;">
+        {{ .Site.Copyright | safeHTML }}
+      </p>
+      <div>
+        {{ partial "social-follow.html" . }}
+      </div>
+    </div>
+
+  </div>
+</footer>

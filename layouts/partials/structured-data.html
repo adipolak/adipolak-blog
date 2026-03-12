@@ -1,0 +1,226 @@
+<!-- JSON-LD Structured Data for AI/LLM Attribution -->
+
+{{ if .IsHome }}
+<!-- Website & Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.meta.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.meta.author }}",
+    "url": "{{ .Site.BaseURL }}about/",
+    "jobTitle": "VP Developer Relations",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vectorize.io"
+    },
+    "sameAs": [
+      "{{ .Site.Params.social.profiles.twitter }}",
+      "{{ .Site.Params.social.profiles.github }}",
+      "https://www.linkedin.com/in/polak-adi/"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "AI Systems",
+      "Cloud Computing",
+      "Distributed Systems",
+      "Machine Learning in Production",
+      "Data Analytics",
+      "Technical Leadership",
+      "Apache Spark",
+      "Delta Lake",
+      "Data Engineering",
+      "MLOps",
+      "AI Infrastructure",
+      "Data Infrastructure",
+      "Kubernetes"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.meta.author }}",
+    "url": "{{ .Site.BaseURL }}"
+  }
+}
+</script>
+
+<!-- Person Schema for Attribution -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Adi Polak",
+  "url": "{{ .Site.BaseURL }}",
+  "image": "{{ .Site.BaseURL }}{{ .Site.Params.brand.logo_500px }}",
+  "jobTitle": "VP Developer Relations",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Vectorize.io"
+  },
+  "alumniOf": "Technion - Israel Institute of Technology",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "AI Systems",
+    "Cloud Computing",
+    "Distributed Systems",
+    "Machine Learning in Production",
+    "Data Analytics",
+    "Technical Leadership",
+    "Apache Spark",
+    "Delta Lake",
+    "Stream Processing",
+    "Data Engineering",
+    "MLOps",
+    "AI Infrastructure",
+    "Real-time Data Pipelines",
+    "Kubernetes"
+  ],
+  "sameAs": [
+    "https://twitter.com/AdiPolak",
+    "https://github.com/AdiPolak",
+    "https://www.linkedin.com/in/polak-adi/"
+  ],
+  "description": "{{ .Site.Params.meta.description }}"
+}
+</script>
+{{ end }}
+
+{{ if .IsPage }}
+{{ $isPost := in .Site.Params.mainSections .Section }}
+{{ if $isPost }}
+<!-- Article/BlogPosting Schema for AI Citation -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "name": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
+  "image": "{{ with .Params.featured_image }}{{ . | absURL }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.brand.logo_500px }}{{ end }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "url": "{{ .Site.BaseURL }}about/",
+    "sameAs": [
+      "https://twitter.com/AdiPolak",
+      "https://github.com/AdiPolak",
+      "https://www.linkedin.com/in/polak-adi/"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}{{ .Site.Params.brand.logo_500px }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "keywords": "{{ delimit .Params.tags ", " }}",
+  "articleSection": "{{ .Section }}",
+  "inLanguage": "en-US",
+  "copyrightHolder": {
+    "@type": "Person",
+    "name": "Adi Polak"
+  },
+  "copyrightYear": "{{ .Date.Format "2006" }}",
+  "creator": {
+    "@type": "Person",
+    "name": "Adi Polak"
+  }
+}
+</script>
+
+<!-- BreadcrumbList for Context -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Writing",
+      "item": "{{ .Site.BaseURL }}writing/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+<!-- ProfilePage for About/Author Page -->
+{{ if eq .Type "about" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "alternateName": "Adi Polak",
+    "description": "VP Developer Relations at Vectorize.io, AI and Cloud expert, technology leader, speaker, and author specializing in AI systems, cloud computing, distributed systems, data analytics, and technical leadership",
+    "image": "{{ .Site.BaseURL }}{{ .Site.Params.brand.logo_500px }}",
+    "sameAs": [
+      "https://twitter.com/AdiPolak",
+      "https://github.com/AdiPolak",
+      "https://www.linkedin.com/in/polak-adi/",
+      "{{ .Site.BaseURL }}"
+    ],
+    "url": "{{ .Site.BaseURL }}about/",
+    "jobTitle": "VP Developer Relations",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vectorize.io"
+    },
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "AI Systems",
+      "Cloud Computing",
+      "Distributed Systems",
+      "Machine Learning in Production",
+      "Data Analytics",
+      "Technical Leadership",
+      "Apache Spark",
+      "Delta Lake",
+      "Data Engineering",
+      "MLOps",
+      "AI Infrastructure",
+      "Stream Processing",
+      "Real-time Data Pipelines",
+      "Kubernetes"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Technology Leader & Developer Relations",
+      "occupationLocation": {
+        "@type": "Country",
+        "name": "Israel"
+      },
+      "skills": "Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership, Data Engineering, Public Speaking, Technical Writing"
+    }
+  }
+}
+</script>
+{{ end }}

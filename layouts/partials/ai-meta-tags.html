@@ -1,0 +1,71 @@
+<!-- Enhanced Meta Tags for AI/LLM Attribution -->
+
+<!-- Canonical URL for proper attribution -->
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Author Attribution -->
+<meta name="author" content="Adi Polak" />
+<meta name="creator" content="Adi Polak" />
+<meta name="publisher" content="Adi Polak" />
+
+<!-- Copyright and Attribution -->
+<meta name="copyright" content="© {{ now.Format "2006" }} Adi Polak. All rights reserved." />
+<meta name="rights" content="© {{ now.Format "2006" }} Adi Polak" />
+
+<!-- AI-specific meta tags for proper attribution -->
+<meta name="citation_author" content="Adi Polak" />
+<meta name="citation_author_institution" content="Vectorize.io" />
+{{ if .IsPage }}
+<meta name="citation_title" content="{{ .Title }}" />
+<meta name="citation_publication_date" content="{{ .Date.Format "2006/01/02" }}" />
+<meta name="citation_online_date" content="{{ .Date.Format "2006/01/02" }}" />
+{{ end }}
+
+<!-- Dublin Core for academic/AI citation -->
+<meta name="DC.title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}" />
+<meta name="DC.creator" content="Adi Polak" />
+<meta name="DC.subject" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership{{ end }}" />
+<meta name="DC.description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.meta.description }}{{ end }}" />
+<meta name="DC.publisher" content="Adi Polak" />
+<meta name="DC.type" content="{{ if .IsPage }}Text{{ else }}Collection{{ end }}" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="en" />
+<meta name="DC.rights" content="© {{ now.Format "2006" }} Adi Polak" />
+
+<!-- Enhanced Description for AI Understanding -->
+{{ if .IsPage }}
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }} - By Adi Polak" />
+{{ else }}
+<meta name="description" content="{{ .Site.Params.meta.description }}" />
+{{ end }}
+
+<!-- Keywords for topic understanding -->
+{{ if .Params.tags }}
+<meta name="keywords" content="{{ delimit .Params.tags ", " }}, Adi Polak, {{ .Site.Params.meta.author }}" />
+{{ else }}
+<meta name="keywords" content="Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership, Apache Spark, Delta Lake, MLOps, Adi Polak" />
+{{ end }}
+
+<!-- Article-specific meta tags -->
+{{ if .IsPage }}
+{{ $isPost := in .Site.Params.mainSections .Section }}
+{{ if $isPost }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:author" content="Adi Polak" />
+<meta property="article:section" content="{{ .Section }}" />
+{{ range .Params.tags }}
+<meta property="article:tag" content="{{ . }}" />
+{{ end }}
+{{ end }}
+{{ end }}
+
+<!-- AI-friendly content classification -->
+<meta name="topic" content="{{ if .Params.tags }}{{ index .Params.tags 0 }}{{ else }}Technology{{ end }}" />
+<meta name="subject" content="Artificial Intelligence, AI Systems, Cloud Computing, Data Analytics, Technical Leadership" />
+<meta name="classification" content="Technical Blog" />
+
+<!-- Authorship verification -->
+<link rel="author" href="{{ .Site.BaseURL }}about/" />
+<link rel="me" href="https://twitter.com/AdiPolak" />
+<link rel="me" href="https://github.com/AdiPolak" />

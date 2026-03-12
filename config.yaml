@@ -3,12 +3,34 @@ title: "Adi Polak" # title of the site; usually same as brand name | required
 subtitle: "Sharing insights on data, AI, and tech" # subtitle
 copyright: "Copyright &#169; 2020 Adi Polak. All rights reserved." # should match 'brand -> name', and 'contentLicense' under params below; used in default rss template: https://gohugo.io/templates/rss/#configure-rss | optional
 languageCode: "en-us" # recommended | no default
+enableRobotsTXT: true # Generate robots.txt
 theme: "blog-theme"
 googleAnalytics: "UA-187000172-1" # Respecting your preference from 'privacy', and 'params' -> 'user_experience' below, if you set this value, Google Analytics code will be included. Google Analytics included only when serving the website on 'production' environment (i.e. website built with `hugo` command and not `hugo serve`)
 # disqusShortname: "yourdiscussshortname" # Respecting your preference from 'privacy', if you set this value, Disqus comments code will be included at the end of the blog posts. Disqus comments are shown only when serving the website on 'production' environment (i.e. website built with `hugo` command and not `hugo serve`)
 
 taxonomies:
   tag: "tags"
+
+# Output formats for search and RSS
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Media types and output formats
+mediaTypes:
+  application/rss+xml:
+    suffixes:
+      - xml
+
+outputFormats:
+  RSS:
+    mediaType: application/rss+xml
+    baseName: feed
+    isPlainText: false
+    rel: alternate
+    isHTML: false
 
 # Allow HTML in markdown to be rendered, for social platform list in configuration options
 markup:
@@ -37,8 +59,8 @@ params:
   meta:
     author: "Adi Polak" # website-wide author | required
     footerMessage: "Adi Polak" # text shown in footer above footer links | optional
-    tagline: "distributed systems, AI/ML, and bold tech opinions" # shown in website title on homepage and also used in seo | required
-    description: "Sharing insights on data, AI, and tech" # should include brand name | character length: 50 to 160 characters
+    tagline: "AI systems, cloud computing, and technical leadership" # shown in website title on homepage and also used in seo | required
+    description: "AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership" # should include brand name | character length: 50 to 160 characters
     contentLicense: "CC-BY-SA-3.0" # cc-by-3.0, etc or 'All right reserved.' should also be same as the one in copyright above
     titleSeparator: " | " # used in website/blog title, to separate (say) page title from website/blog title | default: " | "
     attribution: "enable" # attribute Hugo team for awesome software and Softorage for great theme | default: "enable"
@@ -153,24 +175,32 @@ menu:
   #   pre: <i class='fa fa-home'></i>
   #   url: /
   #   weight: -110
+  - identifier: writing
+    name: writing
+    pre: <i class='fa fa-pencil'></i>
+    url: /writing/
+    weight: 1
+  - identifier: external-writing
+    name: published elsewhere
+    pre: <i class='fa fa-external-link'></i>
+    url: /external-writing/
+    weight: 2
   - identifier: about
     name: about
     pre: <i class='fa fa-user'></i>
     url: /about/
-    weight: 1
+    weight: 3
   - identifier: presentations
     name: presentations
     pre: <i class='fa fa-road'></i>
     url: /presentations/
-    weight: 2
-  - identifier: subscribe
-    post: <span class='alert'>New!</span>
-    name: subscribe
-    pre: <i class='fa fa-heart'></i>
-    url: /subscribe/
-    weight: 3
+    weight: 4
+  - identifier: search
+    name: search
+    pre: <i class='fa fa-search'></i>
+    url: /search/
+    weight: 5
   - name: contact
-    post: <span class='alert'>New!</span>
     pre: <i class='fa fa-address-card'></i>
     url: /contact-me/
-    weight: 4
+    weight: 6

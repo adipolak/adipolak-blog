@@ -1,0 +1,30 @@
+<!-- Accessibility enhancements -->
+<script>
+(function() {
+  // Add main landmark if not present
+  const main = document.querySelector('main');
+  if (main && !main.id) {
+    main.id = 'main-content';
+  }
+
+  // Ensure all images have alt text
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img:not([alt])');
+    images.forEach(function(img) {
+      console.warn('Image missing alt text:', img.src);
+      img.setAttribute('alt', '');
+    });
+
+    // Add aria-current to current nav item
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav a[href]');
+    navLinks.forEach(function(link) {
+      const linkPath = new URL(link.href, window.location.origin).pathname;
+      if (linkPath === currentPath ||
+          (currentPath !== '/' && linkPath !== '/' && currentPath.startsWith(linkPath))) {
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+  });
+})();
+</script>

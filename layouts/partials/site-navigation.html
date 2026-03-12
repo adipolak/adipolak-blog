@@ -1,0 +1,31 @@
+<nav class="site-nav" role="navigation">
+  <div class="nav-container">
+    <a href="/" class="site-logo">
+      <img src="/assets/favicon/favicon-32x32.png" alt="{{ .Site.Title }} logo" class="logo-icon" />
+      <span class="logo-text">{{ .Site.Title }}</span>
+    </a>
+    <div class="nav-menu">
+      {{ if .Site.Menus.main }}
+        <ul class="nav-links">
+          {{ range .Site.Menus.main }}
+            {{ if ne .Name "Subscribe" }}
+              <li>
+                <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
+          <li>
+            <a href="/feed.xml" title="RSS Feed" aria-label="Subscribe via RSS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      {{ end }}
+      <a href="/subscribe/" class="nav-cta">Subscribe</a>
+    </div>
+  </div>
+</nav>

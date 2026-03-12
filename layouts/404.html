@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<div class="section" style="text-align: center; padding: var(--space-2xl) var(--space-md);">
+  <div style="font-size: 4rem; margin-bottom: var(--space-md); opacity: 0.3;">404</div>
+
+  <h1 style="font-size: var(--text-3xl); margin-bottom: var(--space-md);">
+    Page Not Found
+  </h1>
+
+  <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 500px; margin-left: auto; margin-right: auto;">
+    The page you're looking for doesn't exist or has been moved.
+  </p>
+
+  <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+    <a href="/" class="btn">Go Home</a>
+    <a href="/search/" class="btn-secondary btn">Search</a>
+    <a href="/tags/" class="btn-secondary btn">Browse Topics</a>
+  </div>
+</div>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+<script>
+(function() {
+  const btn = document.getElementById('dark-mode-btn');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    btn.textContent = '☀️';
+  }
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    btn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+})();
+</script>
+
+{{ end }}

@@ -1,0 +1,15 @@
+<!-- RSS Feed Links -->
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<!-- Additional RSS feeds -->
+{{ if .IsHome }}
+  {{ range .Site.Pages }}
+    {{ if eq .Type "post" }}
+      {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s - Posts" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+      {{ end -}}
+    {{ end }}
+  {{ end }}
+{{ end }}

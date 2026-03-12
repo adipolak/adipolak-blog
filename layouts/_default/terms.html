@@ -1,0 +1,81 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="section-header">
+    <h1 class="section-title" style="font-size: var(--text-3xl);">Topics</h1>
+    <p class="section-subtitle">Explore articles by topic</p>
+  </div>
+
+  <!-- Tag Cloud -->
+  <div class="tag-cloud" style="max-width: 900px; margin: 0 auto var(--space-2xl);">
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      {{ $count := len $taxonomy }}
+      {{ $fontSize := "var(--text-sm)" }}
+      {{ if gt $count 10 }}
+        {{ $fontSize = "var(--text-lg)" }}
+      {{ else if gt $count 5 }}
+        {{ $fontSize = "var(--text-base)" }}
+      {{ end }}
+      <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" class="tag" style="font-size: {{ $fontSize }};">
+        {{ $name }} <span style="opacity: 0.5; font-size: var(--text-xs);">({{ $count }})</span>
+      </a>
+    {{ end }}
+  </div>
+
+  <!-- All Topics List -->
+  <div style="max-width: 900px; margin: 0 auto;">
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <div style="margin-bottom: var(--space-xl); padding: var(--space-lg); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md);">
+        <h2 style="margin-top: 0; margin-bottom: var(--space-sm); font-size: var(--text-xl);">
+          <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" style="color: var(--color-text); border: none;">
+            {{ $name }}
+          </a>
+          <span style="color: var(--color-text-muted); font-size: var(--text-sm); font-weight: normal; margin-left: var(--space-xs);">({{ len $taxonomy }} {{ if eq (len $taxonomy) 1 }}article{{ else }}articles{{ end }})</span>
+        </h2>
+
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          {{ range first 5 $taxonomy.Pages }}
+            {{ $hasValidDate := and .Date (gt .Date.Year 1971) }}
+            <li style="margin-bottom: var(--space-sm); padding-bottom: var(--space-sm); border-bottom: 1px solid var(--color-border-subtle); display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-md);">
+              <a href="{{ .Permalink }}" style="color: var(--color-text); flex-grow: 1;">{{ .Title }}</a>
+              {{ if $hasValidDate }}
+              <time datetime="{{ .Date.Format "2006-01-02" }}" style="color: var(--color-text-muted); font-size: var(--text-xs); white-space: nowrap; text-transform: uppercase; letter-spacing: 0.05em;">
+                {{ .Date.Format "Jan 2006" }}
+              </time>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+
+        {{ if gt (len $taxonomy.Pages) 5 }}
+          <div style="margin-top: var(--space-md);">
+            <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" style="font-size: var(--text-sm); color: var(--color-primary);">
+              View all {{ len $taxonomy.Pages }} articles →
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+<script>
+(function() {
+  const btn = document.getElementById('dark-mode-btn');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    btn.textContent = '☀️';
+  }
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    btn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+})();
+</script>
+
+{{ end }}

@@ -1,0 +1,87 @@
+# External Writing & Publications
+#
+# Articles published on other platforms and publications
+# This file can be updated manually or synced from a spreadsheet
+
+articles:
+  # 2026
+  - title: "The Head Chef Model for AI-Assisted Development"
+    publication: "The New Stack"
+    date: "2026-01-22"
+    url: "https://thenewstack.io/the-head-chef-model-for-ai-assisted-development/"
+    description: "Redefining the developer's role as an orchestrator of AI 'sous chefs' to focus on system design and quality control."
+    tags: ["AI", "Developer Tools", "Software Development", "AI-Assisted Development"]
+
+  # 2025
+  - title: "QCon London 2025: Achieving AI Precision through Intelligent Data Retrieval"
+    publication: "InfoQ"
+    date: "2025-04-11"
+    url: "https://www.infoq.com/news/2025/04/ai-precision-intelligent-rag/"
+    description: "Overcoming AI precision challenges through agentic RAG systems. How intelligent agents can decompose complex tasks to deliver more accurate data retrieval for production AI applications."
+    tags: ["AI", "RAG", "Agentic AI", "QCon"]
+
+  - title: "Agentic AI: The Top Challenges and How to Overcome Them"
+    publication: "InfoWorld"
+    date: "2025-01-07"
+    url: "https://www.infoworld.com/article/3631197/agentic-ai-the-top-challenges-and-how-to-overcome-them.html"
+    description: "Key obstacles enterprises face when deploying agentic AI systems, including model logic, reliability, data privacy, and data quality, with practical solutions for building trustworthy autonomous AI agents."
+    tags: ["AI Agents", "Enterprise AI", "Data Privacy", "AI Reliability"]
+
+  # 2024
+  - title: "Stream All the Things: Patterns of Effective Data Stream Processing"
+    publication: "InfoQ"
+    date: "2024-11-29"
+    url: "https://www.infoq.com/news/2024/11/effective-data-stream-processing/"
+    description: "Key design patterns for managing data streaming challenges. Covers exactly-once semantics, complex join operations between streams, and error management strategies for data integrity."
+    tags: ["Kafka", "Stream Processing", "QCon", "Design Patterns"]
+
+  - title: "3 Data Engineering Trends Riding Kafka, Flink, and Iceberg"
+    publication: "InfoWorld"
+    date: "2024-11-25"
+    url: "https://www.infoworld.com/article/3607370/3-data-engineering-trends-riding-kafka-flink-and-iceberg.html"
+    description: "Emerging trends in the Apache Kafka, Flink, and Iceberg communities. Explores reimagining microservices with Flink streaming, leveraging SQL for real-time AI, and community-driven Iceberg innovations."
+    tags: ["Kafka", "Flink", "Iceberg", "Data Engineering"]
+
+  - title: "Introducing Confluent Extension for VS Code"
+    publication: "Confluent Blog"
+    date: "2024-08-15"
+    url: "https://www.confluent.io/blog/introducing-confluent-extension-for-vs-code/"
+    description: "Announcing the new Confluent extension for Visual Studio Code, bringing Kafka development tools directly into your IDE for enhanced developer experience."
+    tags: ["Confluent", "VS Code", "Developer Tools", "Kafka"]
+
+  # 2023
+  - title: "Implementing Data Fabric for Enhanced Business Operations: Step by Step"
+    publication: "Forbes Tech Council"
+    date: "2023-05-08"
+    url: "https://www.forbes.com/councils/forbestechcouncil/2023/05/08/implementing-data-fabric-for-enhanced-business-operations-step-by-step/"
+    description: "A comprehensive guide to implementing data fabric architecture to streamline business operations and enable better data integration across the enterprise."
+    tags: ["Data Fabric", "Data Architecture", "Enterprise"]
+
+  - title: "Data Version Control: The Enabler of Data Engineering Best Practices"
+    publication: "Forbes Tech Council"
+    date: "2023-02-09"
+    url: "https://www.forbes.com/councils/forbestechcouncil/2023/02/09/data-version-control-the-enabler-of-data-engineering-best-practices/"
+    description: "How data version control systems enable reproducibility, collaboration, and best practices in modern data engineering workflows."
+    tags: ["Data Engineering", "Version Control", "Best Practices"]
+
+  - title: "How to Build Sales Excellence Through Internal Champions with DevEx"
+    publication: "Forbes Tech Council"
+    date: "2023-01-18"
+    url: "https://www.forbes.com/councils/forbestechcouncil/2023/01/18/how-to-build-sales-excellence-through-internal-champions-with-devex/"
+    description: "Leveraging developer experience (DevEx) and internal champions to drive sales excellence and create advocates within your organization."
+    tags: ["Developer Relations", "DevEx", "Sales Strategy"]
+
+  # 2022
+  - title: "How to Build a Data Strategy That Can Help Deliver Value Fast"
+    publication: "Forbes Tech Council"
+    date: "2022-12-05"
+    url: "https://www.forbes.com/councils/forbestechcouncil/2022/12/05/how-to-build-a-data-strategy-that-can-help-deliver-value-fast/"
+    description: "Practical approaches to building a data strategy that delivers business value quickly while establishing a foundation for long-term success."
+    tags: ["Data Strategy", "Business Value", "Leadership"]
+
+  - title: "Tech Leaders Talk About Their Biggest Challenges in 2022"
+    publication: "Forbes Tech Council"
+    date: "2022-08-11"
+    url: "https://www.forbes.com/councils/forbestechcouncil/2022/08/11/tech-leaders-talk-about-their-biggest-challenges-in-2022/"
+    description: "Insights from technology leaders on the most pressing challenges facing the industry, from talent acquisition to rapid technological change."
+    tags: ["Leadership", "Tech Trends", "Challenges"]
