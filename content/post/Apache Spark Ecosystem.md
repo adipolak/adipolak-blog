@@ -70,7 +70,7 @@ To learn more about it, checkout [Tim Hunter talk on Koalas](https://databricks.
 Detla Lake is an open source storage layer that brings ACID (atomicity, consistency,
  isolation, and durability) transactions to Apache Spark and Big data workloads but is not a DB! Just like [Azure Blog storage](https://docs.microsoft.com/en-us/learn/paths/store-data-in-azure/?WT.mc_id=blog-00000-adpolak) and [AWS S3](https://aws.amazon.com/s3/) are not acting as databases, they are defined as storage.\
 Delta helps with ACID that is hard to achieve and a great pain point with distributed storage.
-It provides scalable metadata handling on the data itself.  
+It provides scalable metadata handling on the data itself.
 When combined with Spark this is highly useful due to the nature of Spark SQL engine
 the catalyst which uses this metadata to better plan and executed big data queries.
 

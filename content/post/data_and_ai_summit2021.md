@@ -1,7 +1,7 @@
 ---
 title: "Data+AI Summit 2021 is Coming"
 author: "Adi Polak"
-description: "Knock Knock! Who's there? It's me, Summit.  Summit who? Data + AI Summit"
+description: "Knock Knock! Who's there? It's me, Summit. Summit who? Data + AI Summit"
 tags: ["conference", "apache spark"]
 date: "2021-04-11"
 draft: false
@@ -18,7 +18,6 @@ Interestingly, Monday training starts at 6 am PT, allowing European timezone fol
 
 
 The pass for the summit is free upon [registration](https://databricks.cventevents.com/event/45414668-315b-4f08-b539-d9269a28d939/regProcessStep1:699bc051-23ea-466e-991b-2be0ed69ee5c?_ga=2.119768332.560979754.1618133304-1179355131.1607861196&RefId=General%20Attendee&rp=1e9c37cb-3d4a-44ed-9736-1a5ce56f7f05).
-
 
 The agenda is somewhat missing from the main page, but trying out multiple URLs brought me to the whole [agenda on the site](https://databricks.com/dataaisummit/north-america-2021/agenda).
 
@@ -37,8 +36,8 @@ But, let's assume we can attend only three. Which 3 will you choose?
 <ins>Here are my top picks:</ins>
 
 ### **1st:** From the machine learning space - [Strategies for Debugging Machine Learning Systems](https://databricks.com/session_na21/real-world-strategies-for-debugging-machine-learning-systems)
- 
- This session is interesting since there are many ways to build machine learning models, from centralized distributed machine learning to decentralized distributed like Federated Learning. Of course, many places where things can go wrong when training on one machine or multiple machines. The space of security and adversaries in machine learning training is a magical one. Like a rare diamond, you don't know its worth until carefully examined.
+
+This session is interesting since there are many ways to build machine learning models, from centralized distributed machine learning to decentralized distributed like Federated Learning. Of course, many places where things can go wrong when training on one machine or multiple machines. The space of security and adversaries in machine learning training is a magical one. Like a rare diamond, you don't know its worth until carefully examined.
 For example, in federated learning, each device is training a model locally on its data and shares the model summary. Assuming one of the devices is an adversary, an attacker who wants to change the model's overall result can share a false summary with the rest of the group and impact the model's overall behavior.
 In some cases, that means smaller revenue, but when we use machine learning to save lives like healthcare usabilities, that's more complicated.
 
