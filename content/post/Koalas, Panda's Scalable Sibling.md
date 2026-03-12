@@ -13,9 +13,6 @@ From the [pandas](https://pandas.pydata.org/docs/) docs: _"pandas is an open sou
 
 From the [Koalas](https://koalas.readthedocs.io/en/latest/) docs: _"The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark."_
 
-
-
-
 First thing first,
 ## Setting up the environment
 You can use any Apache Spark environment that suits you. I often work with Azure Databricks or Synapse as I know both well. \

@@ -45,27 +45,16 @@ In some cases, that means smaller revenue, but when we use machine learning to s
 ### **2nd** From the Databricks Experience space - [Video Analytics At Scale: DL, CV, ML On Databricks Platform](https://databricks.com/session_na21/video-analytics-at-scale-dl-cv-ml-on-databricks-platform)
 The future of data is complex data. And complex data for is sound and video. Let me bottom-line this for you; video is here to stay, may it be social media, Netflix, or Autonomous drowns/cars/... The ability to process complex data at scale and enabling machine learning at scale is the future.
 
+And lastly, from the Technical Deep Dives:
+### **3rd** [Becoming a Data-Driven Organization with Modern Lakehouse](https://databricks.com/session_na21/becoming-a-data-driven-organization-with-modern-lakehouse)
 
-
- And lastly, from the Technical Deep Dives:
-###  **3rd** [Becoming a Data-Driven Organization with Modern Lakehouse](https://databricks.com/session_na21/becoming-a-data-driven-organization-with-modern-lakehouse)
-
-Understanding the Modern lakehouse is one thing, but knowing how to rally all the stakeholders and build a robust one is a different challenge. 
-
-
-
+Understanding the Modern lakehouse is one thing, but knowing how to rally all the stakeholders and build a robust one is a different challenge.
 
 <iframe src="https://giphy.com/embed/4JVTF9zR9BicshFAb7" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
 
 -------------------------------
 
-
-
 I'm going to let you in on a secret, all sessions are going to be recorded and shared after the summit. But there is some magic in attending, asking questions and participating in Twitter and Chat with like minded who came to learn, exchange ideas and network.
-
-
-
-
 
 ### Links:
 * [Registration](https://databricks.cventevents.com/event/45414668-315b-4f08-b539-d9269a28d939/regProcessStep1:699bc051-23ea-466e-991b-2be0ed69ee5c?_ga=2.119768332.560979754.1618133304-1179355131.1607861196&RefId=General%20Attendee&rp=1e9c37cb-3d4a-44ed-9736-1a5ce56f7f05)

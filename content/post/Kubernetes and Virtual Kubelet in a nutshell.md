@@ -1,5 +1,5 @@
 ---
-title: Kubernetes and Virtual Kubelet in a nutshell 
+title: "Kubernetes and Virtual Kubelet in a nutshell"
 author: "Adi Polak"
 description: "Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet"
 tags: ["beginners", "devops", "tutorial", "Kubernetes"]
@@ -27,7 +27,7 @@ It brings many new concepts and terminology we need to familiarize ourselves wit
 ## Basic Glossary:
 <span style="background-color: #FFFF00">**Node**</span> - Hardware component. Often a VM hosted on a cloud and provide CPU and RAM resources to be used by the Kubernetes cluster.\
 <span style="background-color: #FFFF00">**Kubernetes Master**</span> - A node or nodes that are in charge of managing the Kubernetes cluster state.\
-<span style="background-color: #FFFF00">**Kubelet**</span> - Primary "node agents" that runs on each node. It manages the containers that were created by Kubernetes and runs on the node it manages.\ 
+<span style="background-color: #FFFF00">**Kubelet**</span> - Primary "node agents" that runs on each node. It manages the containers that were created by Kubernetes and runs on the node it manages.\
 It communicates with the K8S master.\
 <span style="background-color: #FFFF00">**Pod**</span> - hold one or more containers. Containers that share the same pod also share resources and network.\
 Pod can be in charge of containers on different nodes- different physical machines or virtual machine(VM).\

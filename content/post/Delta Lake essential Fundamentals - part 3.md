@@ -7,8 +7,6 @@ date: "2021-02-15"
 draft: false
 ---
 
-
-
 Let's understand what are Delta Lake compact and checkpoint and why they are important.
 
 ## Checkpoint

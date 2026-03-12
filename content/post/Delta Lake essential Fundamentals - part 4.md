@@ -7,9 +7,7 @@ date: "2021-02-22"
 draft: false
 ---
 
-
 🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉
-
 
 There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.
 
@@ -34,7 +32,6 @@ Let's assume we have these system requirements: <br><br>
 
 ### High-level Pipeline Architecture
 <img class="responsive" src="/images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
-
 
 ### Advantages
 In our scenario, we have multiple users that query the data on the fly and should see the same data - *single source of truth*. In distributed steaming, when we query the data, it might be that from two identical queries that ran at the same time, we will get different results. This is why we introduce DeltaLake into the pipeline. We save the streaming tabular data in DeltaLake, which in practice means that the user read operations take place on the DeltaTable snapshot, which guarantees consistency of the data. At the same time, the table is continuously being written.<br>

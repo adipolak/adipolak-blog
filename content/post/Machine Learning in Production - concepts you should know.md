@@ -7,8 +7,6 @@ date: "2021-03-04"
 draft: false
 ---
 
-
-
 Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.
 
 Here is a list of concepts for you to get started:
@@ -27,8 +25,6 @@ The testing set is the dataset we test the ml model with. To test the ML model's
 
 
 <iframe src="https://giphy.com/embed/HUplkVCPY7jTW" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
-
-
 
 ## Machine Learning pipeline
 The machine learning pipeline is an automation process of the machine learning workflow. It includes data transformation and correlation to fit the ML algorithm, running the algorithm to produce a model, and testing it with a test set.
@@ -49,7 +45,6 @@ You can detect concept drift by measuring the statistical properties of the targ
 Machine learning's actual target variable can change over time in unforeseen ways and presents a challenge since the predictions become less accurate as time passes.
 
 ------------------------------------
-
 
 <iframe src="https://giphy.com/embed/EXFAJtutz5Ig8" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
 
