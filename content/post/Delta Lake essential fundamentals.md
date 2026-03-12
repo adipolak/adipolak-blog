@@ -6,8 +6,8 @@ tags: ["open-source", "apache spark", "delta lake","beginner","ACID"]
 date: "2021-02-04"
 draft: false
 ---
-🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
 
+🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉
 
 ## What is Delta Lake ?
 <blockquote>

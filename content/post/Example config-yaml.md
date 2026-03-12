@@ -6,6 +6,7 @@ tags: ["configuration", "customize", "settings"]
 date: "2020-10-02"
 draft: true
 ---
+
 An example configuration file (config.yaml), which shows all the configuration options supported by 'Vibrant Shadows' theme by Softorage, with explaining comments.
 
 <!--more-->

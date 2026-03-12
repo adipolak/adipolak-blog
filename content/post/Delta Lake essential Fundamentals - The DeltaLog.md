@@ -7,7 +7,6 @@ date: "2021-02-11"
 draft: false
 ---
 
-
 In the previous part, you learned what [ACID transactions](https://blog.adipolak.com/post/delta-lake-essential-fundamentals) are.<br>
 In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.
 
