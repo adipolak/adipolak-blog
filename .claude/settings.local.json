@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo:*)",
+      "Bash(brew list:*)",
+      "Bash(/opt/homebrew/bin/hugo version:*)",
+      "Bash(export:*)",
+      "Bash(python3:*)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(/opt/homebrew/bin/hugo:*)",
+      "Bash(killall hugo:*)",
+      "WebFetch(domain:speaking.gamov.io)",
+      "Bash(/Users/adipolak/open-source/adipolak-blog/AI-CITATION-EXAMPLES.md:*)",
+      "Bash(echo:*)",
+      "Bash(ls:*)",
+      "WebSearch",
+      "WebFetch(domain:ai.qconferences.com)",
+      "WebFetch(domain:qconlondon.com)",
+      "WebFetch(domain:qconsf.com)",
+      "WebFetch(domain:www.forbes.com)",
+      "WebFetch(domain:www.infoq.com)",
+      "WebFetch(domain:www.confluent.io)",
+      "WebFetch(domain:www.infoworld.com)",
+      "Bash(chmod +x:*)",
+      "Bash(grep:*)",
+      "Bash(kill 49752:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Bash(git push-external:*)"
+    ]
+  }
+}

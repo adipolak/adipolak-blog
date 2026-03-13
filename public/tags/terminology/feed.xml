@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Terminology - Adi Polak</title>
+    <link>https://blog.adipolak.com/tags/terminology/</link>
+    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>Adi Polak</managingEditor>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/tags/terminology/feed.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Machine Learning in Production - Concepts you should know</title>
+      <link>https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/</guid>
+      <description>To productionize machine learning, know the concepts first</description>
+      
+      <content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
+<p>Here is a list of concepts for you to get started:</p>
+<h2 id="ml-algorithm">ML Algorithm</h2>
+<p>ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.</p>
+<h2 id="ml-model">ML Model</h2>
+<p>ML model is the ML algorithm process outcome; It often contains a statistical representation of the data ingested into the algorithm. ML model input is data, and the output is either a prediction, decision, or classification.</p>
+<h2 id="training-set">Training set</h2>
+<p>The training set is the data ingested into the machine learning algorithm; it trains the ML model.</p>
+<h2 id="testing-set">Testing set</h2>
+<p>The testing set is the dataset we test the ml model with. To test the ML model&rsquo;s accuracy, we ingest the data into the model and measure the accuracy level of the outcome. It helps us reason about the quality of the machine learning model.</p>
+<iframe src="https://giphy.com/embed/HUplkVCPY7jTW" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
+<h2 id="machine-learning-pipeline">Machine Learning pipeline</h2>
+<p>The machine learning pipeline is an automation process of the machine learning workflow. It includes data transformation and correlation to fit the ML algorithm, running the algorithm to produce a model, and testing it with a test set.</p>
+<h2 id="model-interpretability">Model interpretability</h2>
+<p>ML Model interpretability is the degree to which a human can reason the machine learning model&rsquo;s output. The higher the degree, the easier it is for a human to understand the model&rsquo;s decision or prediction.</p>
+<h2 id="data-quality">Data Quality</h2>
+<p>Data quality measures the data&rsquo;s condition based on accuracy, precision, legitimacy, validity, reliability, consistency, completeness, and more. In machine learning, data quality is important for producing high-quality, non-bias machine learning models.</p>
+<h2 id="data-drifts">Data drifts</h2>
+<p>Data drift is unexpected and undocumented changes to the data structure, semantics. Data drift can result in corrupted data and data low quality. Lack of awareness of data drift can result in a lesser quality of ML models.</p>
+<h2 id="concept-drift">Concept drift</h2>
+<p>Concept drift refers to the changes in target variables.
+Target variables are the outcomes of the prediction process you do with machine learning models.
+You can detect concept drift by measuring the statistical properties of the target variables.
+Machine learning&rsquo;s actual target variable can change over time in unforeseen ways and presents a challenge since the predictions become less accurate as time passes.</p>
+<hr>
+<iframe src="https://giphy.com/embed/EXFAJtutz5Ig8" width="480" height="360" frameBorder="0" class="responsive" allowFullScreen></iframe>
+<p>I hope it was helpful for you and gave you more clarity about the concepts.</p>
+<h2 id="-curious-to-learn-more">💡 Curious to learn more?</h2>
+<p>Read here about how to create <a href="https://docs.microsoft.com/en-us/learn/paths/create-machine-learn-models/?WT.mc_id=social-00000-adpolak">machine learning models with python</a>.</p>
+]]></content:encoded>
+      
+      
+      <category>data science</category>
+      
+      <category>machine learning</category>
+      
+      <category>terminology</category>
+      
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link rel="stylesheet" href="/css/custom.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Adi Polak  | Writing</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.157.0">
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:url" content="https://blog.adipolak.com/writing/">
+  <meta property="og:site_name" content="Adi Polak">
+  <meta property="og:title" content="Writing">
+  <meta property="og:description" content="Insights on distributed systems, machine learning in production, and technical leadership.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+
+  <meta itemprop="name" content="Writing">
+  <meta itemprop="description" content="Insights on distributed systems, machine learning in production, and technical leadership.">
+  <meta itemprop="wordCount" content="11">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Writing">
+  <meta name="twitter:description" content="Insights on distributed systems, machine learning in production, and technical leadership.">
+
+    
+
+
+<link rel="canonical" href="https://blog.adipolak.com/writing/" />
+
+
+<meta name="author" content="Adi Polak" />
+<meta name="creator" content="Adi Polak" />
+<meta name="publisher" content="Adi Polak" />
+
+
+<meta name="copyright" content="© 2026 Adi Polak. All rights reserved." />
+<meta name="rights" content="© 2026 Adi Polak" />
+
+
+<meta name="citation_author" content="Adi Polak" />
+<meta name="citation_author_institution" content="Vectorize.io" />
+
+<meta name="citation_title" content="Writing" />
+<meta name="citation_publication_date" content="0001/01/01" />
+<meta name="citation_online_date" content="0001/01/01" />
+
+
+
+<meta name="DC.title" content="Writing - Adi Polak" />
+<meta name="DC.creator" content="Adi Polak" />
+<meta name="DC.subject" content="Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership" />
+<meta name="DC.description" content="AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership" />
+<meta name="DC.publisher" content="Adi Polak" />
+<meta name="DC.type" content="Text" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="en" />
+<meta name="DC.rights" content="© 2026 Adi Polak" />
+
+
+
+<meta name="description" content="Insights on distributed systems, machine learning in production, and technical leadership.
+ - By Adi Polak" />
+
+
+
+
+<meta name="keywords" content="Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership, Apache Spark, Delta Lake, MLOps, Adi Polak" />
+
+
+
+
+
+
+
+
+
+<meta name="topic" content="Technology" />
+<meta name="subject" content="Artificial Intelligence, AI Systems, Cloud Computing, Data Analytics, Technical Leadership" />
+<meta name="classification" content="Technical Blog" />
+
+
+<link rel="author" href="https://blog.adipolak.com/about/" />
+<link rel="me" href="https://twitter.com/AdiPolak" />
+<link rel="me" href="https://github.com/AdiPolak" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </head>
+
+  <body style="margin: 0; padding: 0; background-color: #11100F;">
+
+    <header>
+  <nav class="site-nav" role="navigation">
+  <div class="nav-container">
+    <a href="/" class="site-logo">
+      <img src="/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" class="logo-icon" />
+      <span class="logo-text">Adi Polak</span>
+    </a>
+    <div class="nav-menu">
+      
+        <ul class="nav-links">
+          
+            
+              <li>
+                <a href="/writing/" title="writing">writing</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/external-writing/" title="published elsewhere">published elsewhere</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/about/" title="about">about</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/presentations/" title="presentations">presentations</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/search/" title="search">search</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/contact-me/" title="contact">contact</a>
+              </li>
+            
+          
+          <li>
+            <a href="/feed.xml" title="RSS Feed" aria-label="Subscribe via RSS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      
+      <a href="/subscribe/" class="nav-cta">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+    <main role="main">
+      
+
+
+<section style="background: var(--warm-black); padding: var(--space-3xl) var(--space-md); text-align: center;">
+  <div style="max-width: 720px; margin: 0 auto;">
+    <h1 style="font-family: var(--font-serif); font-size: var(--text-3xl); font-weight: 400; color: var(--warm-white); margin: 0 0 var(--space-md); line-height: 1.2;">
+      Writing
+    </h1>
+    <p style="font-size: var(--text-lg); color: var(--color-text-muted); margin: 0; line-height: 1.6; font-weight: 300;">
+      Insights on distributed systems, machine learning in production, and technical leadership.
+
+    </p>
+  </div>
+</section>
+
+
+<section style="padding: var(--space-3xl) var(--space-md);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: 1fr 280px; gap: var(--space-3xl);">
+
+      
+      <div>
+        
+        
+        
+
+        
+          <div class="blog-grid">
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-04-11">
+                    April 11, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>3 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/data_and_ai_summit2021/">Data&#43;AI Summit 2021 is Coming</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/conference" class="tag">conference</a>
+                    
+                      <a href="/tags/apache-spark" class="tag">apache spark</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/data_and_ai_summit2021/" class="read-more">Read article →</a>
+              </article>
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-03-04">
+                    March 4, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>2 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/">Machine Learning in Production - Concepts you should know</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/data-science" class="tag">data science</a>
+                    
+                      <a href="/tags/machine-learning" class="tag">machine learning</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/" class="read-more">Read article →</a>
+              </article>
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-02-22">
+                    February 22, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>6 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/">Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/open-source" class="tag">open-source</a>
+                    
+                      <a href="/tags/apache-spark" class="tag">apache spark</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/" class="read-more">Read article →</a>
+              </article>
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-02-15">
+                    February 15, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>4 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/">Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/open-source" class="tag">open-source</a>
+                    
+                      <a href="/tags/apache-spark" class="tag">apache spark</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/" class="read-more">Read article →</a>
+              </article>
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-02-11">
+                    February 11, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>7 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/open-source" class="tag">open-source</a>
+                    
+                      <a href="/tags/apache-spark" class="tag">apache spark</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/" class="read-more">Read article →</a>
+              </article>
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-02-04">
+                    February 4, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>3 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">Delta Lake essential Fundamentals: Part 1 - ACID</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/open-source" class="tag">open-source</a>
+                    
+                      <a href="/tags/apache-spark" class="tag">apache spark</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/" class="read-more">Read article →</a>
+              </article>
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-01-12">
+                    January 12, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>4 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/apache-spark-ecosystem/">Apache Spark Ecosystem, Jan 2021 Highlights</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/open-source" class="tag">open-source</a>
+                    
+                      <a href="/tags/apache-spark" class="tag">apache spark</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/apache-spark-ecosystem/" class="read-more">Read article →</a>
+              </article>
+            
+              <article class="blog-card">
+                
+                
+                <div class="post-meta">
+                  <time datetime="2021-01-10">
+                    January 10, 2021
+                  </time>
+                  
+                    <span class="separator">·</span>
+                    <span>10 min read</span>
+                  
+                </div>
+                
+
+                <h2>
+                  <a href="https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/">Kubernetes and Virtual Kubelet in a nutshell</a>
+                </h2>
+
+                
+                  <div class="post-tags">
+                    
+                      <a href="/tags/beginners" class="tag">beginners</a>
+                    
+                      <a href="/tags/devops" class="tag">devops</a>
+                    
+                  </div>
+                
+
+                <a href="https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" class="read-more">Read article →</a>
+              </article>
+            
+          </div>
+        
+      </div>
+
+      
+      <aside style="position: sticky; top: var(--space-xl); align-self: start;">
+        
+        <div style="margin-bottom: var(--space-2xl);">
+          <h3 style="margin: 0 0 var(--space-sm); font-family: var(--font-serif); font-size: var(--text-md); font-weight: 600; color: var(--color-text);">
+            Tags
+          </h3>
+          
+          
+          
+            <div style="font-size: var(--text-sm); line-height: 1.8;">
+              
+              
+                
+                
+                  
+                  <a href="/tags/acid" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">acid</a>
+                  
+                
+              
+                
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/analytic-zoo" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">analytic zoo</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/apache-spark" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">apache spark</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/beginner" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">beginner</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/beginners" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">beginners</a>
+                  
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/data-science" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">data science</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/delta-lake" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">delta lake</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/deltalog" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">deltalog</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/devops" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">devops</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/koalas" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">koalas</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/kubernetes" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">kubernetes</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/machine-learning" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">machine learning</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/open-source" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">open-source</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/pandas" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">pandas</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/ray" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">ray</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/ray-on-spark" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">ray on spark</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/scenarios" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">scenarios</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/speaking" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">speaking</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/subscribe" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">subscribe</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/terminology" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">terminology</a>
+                  
+                
+              
+                
+                
+                  , 
+                  <a href="/tags/tutorial" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">tutorial</a>
+                  
+                
+              
+            </div>
+          
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+@media (max-width: 768px) {
+  section > div > div {
+    grid-template-columns: 1fr !important;
+  }
+  aside {
+    display: none;
+  }
+}
+</style>
+
+
+<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+<script>
+(function() {
+  const btn = document.getElementById('dark-mode-btn');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    btn.textContent = '☀️';
+  }
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    btn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+})();
+</script>
+
+
+    </main>
+    <footer style="background: var(--warm-black); color: var(--color-text); padding: var(--space-2xl) var(--space-md); margin-top: var(--space-3xl);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-2xl);">
+
+      
+      <div>
+        <h3 style="font-family: var(--font-serif); font-size: var(--text-lg); margin: 0 0 var(--space-md); color: var(--warm-white);">Adi Polak</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.6; margin: 0;">
+          AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership
+        </p>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">writing</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/external-writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">published elsewhere</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/about/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">about</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/presentations/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">presentations</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/search/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">search</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/contact-me/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">contact</a>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Stay Updated</h4>
+        <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+          <a href="https://adipolak.substack.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link);">Substack Newsletter</a>
+          <a href="/feed.xml" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link); display: flex; align-items: center; gap: var(--space-xs);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9"></path>
+              <path d="M4 4a16 16 0 0 1 16 16"></path>
+              <circle cx="5" cy="19" r="1"></circle>
+            </svg>
+            RSS Feed
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div style="border-top: 1px solid var(--color-border-subtle); padding-top: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <p style="color: var(--color-text-muted); font-size: var(--text-xs); margin: 0;">
+        Copyright &#169; 2020 Adi Polak. All rights reserved.
+      </p>
+      <div>
+        
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    
+<script src="/js/theme-toggle.js"></script>
+
+
+
+<script>
+(function() {
+  
+  const main = document.querySelector('main');
+  if (main && !main.id) {
+    main.id = 'main-content';
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img:not([alt])');
+    images.forEach(function(img) {
+      console.warn('Image missing alt text:', img.src);
+      img.setAttribute('alt', '');
+    });
+
+    
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav a[href]');
+    navLinks.forEach(function(link) {
+      const linkPath = new URL(link.href, window.location.origin).pathname;
+      if (linkPath === currentPath ||
+          (currentPath !== '/' && linkPath !== '/' && currentPath.startsWith(linkPath))) {
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+  });
+})();
+</script>
+
+
+
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
