@@ -2,145 +2,181 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.adipolak.com/</loc>
+    <loc>http://localhost:61307/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/test-dark-mode/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/tags/apache-spark/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/apache-spark/</loc>
+    <loc>http://localhost:61307/tags/conference/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/conference/</loc>
+    <loc>http://localhost:61307/post/data_and_ai_summit2021/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/data_and_ai_summit2021/</loc>
+    <loc>http://localhost:61307/tags/distributed-systems/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/distributed-systems/</loc>
+    <loc>http://localhost:61307/post/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/</loc>
+    <loc>http://localhost:61307/tags/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/</loc>
-    <lastmod>2021-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.adipolak.com/tags/ai/</loc>
+    <loc>http://localhost:61307/tags/ai/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/data-science/</loc>
+    <loc>http://localhost:61307/tags/data-science/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/machine-learning/</loc>
+    <loc>http://localhost:61307/tags/machine-learning/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/</loc>
+    <loc>http://localhost:61307/post/machine-learning-in-production---concepts-you-should-know/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/terminology/</loc>
+    <loc>http://localhost:61307/tags/terminology/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/beginner/</loc>
+    <loc>http://localhost:61307/tags/beginner/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/delta-lake/</loc>
+    <loc>http://localhost:61307/tags/delta-lake/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/</loc>
+    <loc>http://localhost:61307/post/delta-lake-essential-fundamentals---part-4/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/open-source/</loc>
+    <loc>http://localhost:61307/tags/open-source/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/scenarios/</loc>
+    <loc>http://localhost:61307/tags/scenarios/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/</loc>
+    <loc>http://localhost:61307/post/delta-lake-essential-fundamentals---part-3/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/deltalog/</loc>
+    <loc>http://localhost:61307/tags/deltalog/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/</loc>
+    <loc>http://localhost:61307/post/delta-lake-essential-fundamentals---the-deltalog/</loc>
     <lastmod>2021-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/acid/</loc>
+    <loc>http://localhost:61307/tags/acid/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</loc>
+    <loc>http://localhost:61307/post/delta-lake-essential-fundamentals/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/analytic-zoo/</loc>
+    <loc>http://localhost:61307/tags/analytic-zoo/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/apache-spark-ecosystem/</loc>
+    <loc>http://localhost:61307/post/apache-spark-ecosystem/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/koalas/</loc>
+    <loc>http://localhost:61307/tags/koalas/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/pandas/</loc>
+    <loc>http://localhost:61307/tags/pandas/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/ray/</loc>
+    <loc>http://localhost:61307/tags/ray/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/ray-on-spark/</loc>
+    <loc>http://localhost:61307/tags/ray-on-spark/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/beginners/</loc>
+    <loc>http://localhost:61307/tags/beginners/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/devops/</loc>
+    <loc>http://localhost:61307/tags/devops/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/kubernetes/</loc>
+    <loc>http://localhost:61307/post/koalas-pandas-scalable-sibling/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</loc>
+    <loc>http://localhost:61307/tags/kubernetes/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/tutorial/</loc>
+    <loc>http://localhost:61307/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/hidden/ai-placeholder/</loc>
+    <loc>http://localhost:61307/tags/tutorial/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/tags/get-started/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/post/getting-started/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/tags/guide/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/tags/configuration/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/tags/customize/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/post/example-config-yaml/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/tags/settings/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/post/additional-info/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/tags/license/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61307/hidden/ai-placeholder/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/leadership/</loc>
+    <loc>http://localhost:61307/tags/leadership/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/hidden/leadership-placeholder/</loc>
+    <loc>http://localhost:61307/hidden/leadership-placeholder/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/about/</loc>
+    <loc>http://localhost:61307/about/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/adi-polak/</loc>
+    <loc>http://localhost:61307/tags/adi-polak/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/conferences/</loc>
+    <loc>http://localhost:61307/blog-posts-list/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/contact-me/</loc>
+    <loc>http://localhost:61307/tags/conferences/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/presentations/</loc>
+    <loc>http://localhost:61307/contact-me/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/speaking/</loc>
+    <loc>http://localhost:61307/presentations/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/thankyou/</loc>
+    <loc>http://localhost:61307/tags/speaking/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/search/</loc>
+    <loc>http://localhost:61307/thankyou/</loc>
+    <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.adipolak.com/presentations/</loc>
+    <loc>http://localhost:61307/search/</loc>
   </url><url>
-    <loc>https://blog.adipolak.com/subscribe/</loc>
+    <loc>http://localhost:61307/presentations/</loc>
   </url><url>
-    <loc>https://blog.adipolak.com/tags/subscribe/</loc>
+    <loc>http://localhost:61307/subscribe/</loc>
   </url><url>
-    <loc>https://blog.adipolak.com/writing/</loc>
+    <loc>http://localhost:61307/tags/subscribe/</loc>
   </url><url>
-    <loc>https://blog.adipolak.com/external-writing/</loc>
+    <loc>http://localhost:61307/writing/</loc>
+  </url><url>
+    <loc>http://localhost:61307/external-writing/</loc>
   </url>
 </urlset>

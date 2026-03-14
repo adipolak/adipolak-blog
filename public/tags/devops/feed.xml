@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Devops - Adi Polak</title>
-    <link>https://blog.adipolak.com/tags/devops/</link>
+    <link>http://localhost:61307/tags/devops/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/tags/devops/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:61307/tags/devops/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Kubernetes and Virtual Kubelet in a nutshell</title>
-      <link>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <link>http://localhost:61307/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
+      <guid>http://localhost:61307/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
       <description>Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</description>
       
       <content:encoded><![CDATA[<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">

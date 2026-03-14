@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts - Adi Polak</title>
-    <link>https://blog.adipolak.com/post/</link>
+    <link>http://localhost:61307/post/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/post/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:61307/post/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Data&#43;AI Summit 2021 is Coming</title>
-      <link>https://blog.adipolak.com/post/data_and_ai_summit2021/</link>
+      <link>http://localhost:61307/post/data_and_ai_summit2021/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/data_and_ai_summit2021/</guid>
+      <guid>http://localhost:61307/post/data_and_ai_summit2021/</guid>
       <description>Knock Knock! Who&#39;s there? It&#39;s me, Summit. Summit who? Data &#43; AI Summit</description>
       
       <content:encoded><![CDATA[<p>It&rsquo;s almost been half a year since the last summit.</p>
@@ -62,10 +62,10 @@ In some cases, that means smaller revenue, but when we use machine learning to s
       
     </item><item>
       <title>Machine Learning in Production - Concepts you should know</title>
-      <link>https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/</link>
+      <link>http://localhost:61307/post/machine-learning-in-production---concepts-you-should-know/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/machine-learning-in-production---concepts-you-should-know/</guid>
+      <guid>http://localhost:61307/post/machine-learning-in-production---concepts-you-should-know/</guid>
       <description>To productionize machine learning, know the concepts first</description>
       
       <content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
@@ -110,10 +110,10 @@ Machine learning&rsquo;s actual target variable can change over time in unforese
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/</link>
+      <link>http://localhost:61307/post/delta-lake-essential-fundamentals---part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals---part-4/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
@@ -203,10 +203,10 @@ I will continue to share scenarios, insights, and code samples throughout the bl
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
-      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/</link>
+      <link>http://localhost:61307/post/delta-lake-essential-fundamentals---part-3/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/</guid>
+      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals---part-3/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
@@ -268,10 +268,10 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
-      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/</link>
+      <link>http://localhost:61307/post/delta-lake-essential-fundamentals---the-deltalog/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
+      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
@@ -384,10 +384,10 @@ That means that if there is a request to delete a file that at the same time is 
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</link>
+      <link>http://localhost:61307/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</guid>
+      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
@@ -443,10 +443,10 @@ But it's not.</p>
       
     </item><item>
       <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
-      <link>https://blog.adipolak.com/post/apache-spark-ecosystem/</link>
+      <link>http://localhost:61307/post/apache-spark-ecosystem/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/apache-spark-ecosystem/</guid>
+      <guid>http://localhost:61307/post/apache-spark-ecosystem/</guid>
       <description>The ever growing Open Source Ecosystem</description>
       
       <content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
@@ -525,11 +525,76 @@ If you are interested in learning more and getting updates, follow <a href="http
       <category>analytic zoo</category>
       
     </item><item>
-      <title>Kubernetes and Virtual Kubelet in a nutshell</title>
-      <link>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <title>Koalas, Panda&#39;s Scalable Sibling</title>
+      <link>http://localhost:61307/post/koalas-pandas-scalable-sibling/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
+      <guid>http://localhost:61307/post/koalas-pandas-scalable-sibling/</guid>
+      <description>Gental introduction to Koalas</description>
+      
+      <content:encoded><![CDATA[<h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.&rdquo;</em></p>
+<p>From the <a href="https://koalas.readthedocs.io/en/latest/">Koalas</a> docs: <em>&ldquo;The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark.&rdquo;</em></p>
+<p>First thing first,</p>
+<h2 id="setting-up-the-environment">Setting up the environment</h2>
+<p>You can use any Apache Spark environment that suits you. I often work with Azure Databricks or Synapse as I know both well. \</p>
+<p>With <a href="https://docs.microsoft.com/en-us/azure/databricks/languages/koalas?WT.mc_id=spark-12578-adpolak">Databricks</a>, Koalas is pre-installed in Runtime 7.1 and above. With Datrbirkcs Runtime below, checkup <a href="https://docs.microsoft.com/en-us/azure/databricks/languages/koalas?WT.mc_id=spark-12578-adpolak">this tutorial</a>.</p>
+<p>With <a href="https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-overview?WT.mc_id=spark-12578-adpolak">Synapse</a>, you need to provide a <code>.txt</code> configuration file that can be used with the command <code>pip freeze</code>. The file staractire looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>{PyPI package name}=={desired version}
+</span></span><span style="display:flex;"><span>{PyPI second package name}=={desired version}
+</span></span></code></pre></div><p>Let&rsquo;s see how to get it done:</p>
+<h2 id="how-to-start-spark-pool-with-koalas-with-synapse">How to start Spark pool with Koalas with Synapse:</h2>
+<p>First, create your Spark pool.
+From the Synapse Studio workspace nevigate to <code>manage</code> -&gt; <code>Analytics pools</code> -&gt; <code>Apache Spark pools</code> and click on <code>+ New</code> button.</p>
+<p>A new UI will menu will pop on the right side of the screen enables you to add information such as size of cluster, auto-scale, name, number of nodes, etc. <br>
+On the additional setting you can config Spark version, and see the libraries versions that comes built in with the Synapse Spark pool. <br>
+Such as .NET for Apache Spark.\</p>
+<p>👉 .Net for Apache Spark is a library that developed by Microsoft to enable .NET developers easy way to work with Spark.<br>
+Read about it <a href="https://docs.microsoft.com/en-us/dotnet/spark/what-is-apache-spark-dotnet?WT.mc_id=spark-12578-adpolak">here</a>.</p>
+<p><img class="responsive" src="/images/pandas-synapse-post/create-spark-pool.png" alt="drawing"> \</p>
+<p>Right from the <code>Additional Settings</code> tab, you can add the <code>.txt</code> configuration file.</p>
+<p>Create a text file, and copy this line into it:</p>
+<pre tabindex="0"><code>pandas==1.2.0
+</code></pre><p>You can upload it while creating the cluster, or add it to an existing cluster.</p>
+<p>If you have an existing cluster, from the same <code>Apache Spark Pools</code> you can add a new packages. <br>
+Clicking on the <code>...</code> 3 dots next to your cluster name will open a menu bar for you, inside there is a Packages option, click on it:</p>
+<p><img class="responsive" src="/images/pandas-synapse-post/manage-packaging-synapse-ui.png" alt="drawing"> \</p>
+<p>It will prompt you to a right side bar where you can upload your text file.</p>
+<p><img class="responsive" src="/images/pandas-synapse-post/upload-config-file.png" alt="drawing"> \</p>
+<p>Click the Upload button at the top and choose the file you would like to upload.<br>
+Now a new Upload blue button will appear at the bottom, click this too.</p>
+<p>The UI will show you the configuration file name and size, all you have to do is to click the blue Apply button at the buttom.<br>
+<img class="responsive" src="/images/pandas-synapse-post/apply.png" alt="drawing"> \</p>
+<p>That&rsquo;s it, all set to start coding!</p>
+<h2 id="coding">Coding</h2>
+<p>Nevigate to <code>Develop</code> -&gt; <code>+</code> buttong and create a new Notebook, for <code>Attach to</code> choose your spark pool.</p>
+<p>We will write our code right here in the notebook so we can run it in an interactive manner and see the results of every operation live.</p>
+<p>Setting and importing Koalas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> databricks.koalas <span style="color:#66d9ef">as</span> ks
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> SparkSession
+</span></span></code></pre></div>]]></content:encoded>
+      
+      
+      <category>beginners</category>
+      
+      <category>apache spark</category>
+      
+      <category>koalas</category>
+      
+      <category>pandas</category>
+      
+      <category>distributed-systems</category>
+      
+      <category>kubernetes</category>
+      
+    </item><item>
+      <title>Kubernetes and Virtual Kubelet in a nutshell</title>
+      <link>http://localhost:61307/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:61307/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
       <description>Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</description>
       
       <content:encoded><![CDATA[<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
@@ -723,11 +788,319 @@ For doing it, we need to expose it first - notice that we are exposing the app a
       <category>kubernetes</category>
       
     </item><item>
+      <title>Getting started with Vibrant Shadows</title>
+      <link>http://localhost:61307/post/getting-started/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:61307/post/getting-started/</guid>
+      <description>Read the full post to easily get started with Vibrant Shadows Hugo theme.</description>
+      
+      <content:encoded><![CDATA[<p>It&rsquo;s very easy to get started with Vibrant Shadows. How? Read on.</p>
+<h2 id="trying-out-images">Trying out images</h2>
+<p><img src="/images/image.jpg" alt="image alt text"></p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Firstly, <em>ensure you have installed the latest (min v0.75.1) <a href="https://github.com/gohugoio/hugo/releases">extended version of Hugo</a></em>. You may need to scroll down a bit to see extended versions. Alternatively, you may see installation steps from <a href="https://gohugo.io/getting-started/installing/">Hugo&rsquo;s official docs</a>.</p>
+<p>If you don&rsquo;t have or can&rsquo;t have extended version of Hugo installed, copy the resources folder from theme to root of your Hugo website directory. Hugo autodetects required files, and uses them. Note that it might make your website slightly slow to load.</p>
+<h2 id="getting-up-and-running">Getting up and running</h2>
+<p>Read the <a href="#prerequisites">prerequisites</a> above and verify you&rsquo;re using the extended version of Hugo. There are at least two ways of quickly getting started with Hugo and the Vibrant Shadows theme:</p>
+<h3 id="setting-up-new-hugo-website">Setting up new Hugo website</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site yourSiteName <span style="color:#75715e"># generate a new Hugo site if you don&#39;t already have one</span>
+</span></span><span style="display:flex;"><span>cd yourSiteName <span style="color:#75715e"># move in to the Hugo website&#39;s directory</span>
+</span></span></code></pre></div><h4 id="1-as-a-hugo-theme-recommended">1. As a Hugo theme (recommended)</h4>
+<ol>
+<li>
+<p>Download the repo on your machine</p>
+</li>
+<li>
+<p>Extract the zip file and rename the folder from <code>HugoTheme-VibrantShadows-master</code> to <code>HugoTheme-VibrantShadows</code>.</p>
+</li>
+<li>
+<p>Copy this folder and paste it into you Hugo Website directory.</p>
+</li>
+<li>
+<p>Simply add the repo to your theme option in <code>config.yaml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;HugoTheme-VibrantShadows&#34;</span>
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="2-as-git-submodule">2. As Git Submodule</h4>
+<p>Inside the folder of your Hugo site run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init <span style="color:#75715e"># to initiate git if it isn&#39;t already</span>
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/Softorage/HugoTheme-VibrantShadows.git themes/HugoTheme-VibrantShadows <span style="color:#75715e"># add theme as a git submodule</span>
+</span></span><span style="display:flex;"><span>cp -a themes/HugoTheme-VibrantShadows/exampleSite/* . <span style="color:#75715e"># start with the boilerplate by copying it into current directory</span>
+</span></span></code></pre></div><p>Then run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>And, we&rsquo;re done!</p>
+<p>If you have extended version of Hugo installed, copy the <code>postcss.config.js</code> file to the root of your Hugo Website directory after setting up the theme. We also recommend creating a <code>package.json</code> file in your Hugo Website directory.</p>
+<h3 id="using-boilerplate-provided">Using boilerplate provided</h3>
+<ol>
+<li>Copy exampleSite folder provided, and move into this folder (open this folder).</li>
+<li>Then run <code>hugo server</code> in terminal.</li>
+</ol>
+<p>And, we&rsquo;re done!</p>
+<p>Once set, jump over to the <code>config.yaml</code> file and start <a href="/post/configuration">configuring</a> your site.</p>]]></content:encoded>
+      
+      
+      <category>get started</category>
+      
+      <category>guide</category>
+      
+    </item><item>
+      <title>Example config.yaml</title>
+      <link>http://localhost:61307/post/example-config-yaml/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:61307/post/example-config-yaml/</guid>
+      <description>An example config.yaml file relevant to Vibrant Shadows Hugo theme.</description>
+      
+      <content:encoded><![CDATA[<p>An example configuration file (config.yaml), which shows all the configuration options supported by &lsquo;Vibrant Shadows&rsquo; theme by Softorage, with explaining comments.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># this configuration file shows all the configuration options supported by &#39;Vibrant Shadows&#39; theme by Softorage, with explaining comments.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">baseURL</span>: <span style="color:#e6db74">&#34;https://example.com/&#34;</span> <span style="color:#75715e"># url address of the website | required</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;ExampleBlog&#34;</span> <span style="color:#75715e"># title of the site; usually same as brand name | required</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># author: &#34;The Great Authors&#34; # we won&#39;t be using site.Authors till this parameter is finalised. see: https://github.com/gohugoio/hugo/issues/3088</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">copyright</span>: <span style="color:#e6db74">&#34;Copyright &amp;#169; 2020 ExampleBlog. All rights reserved.&#34;</span> <span style="color:#75715e"># should match &#39;brand -&gt; name&#39;, and &#39;contentLicense&#39; under params below; used in default rss template: https://gohugo.io/templates/rss/#configure-rss | optional</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">languageCode</span>: <span style="color:#e6db74">&#34;en-us&#34;</span> <span style="color:#75715e"># recommended | no default</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;HugoTheme-VibrantShadows&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># googleAnalytics: &#34;UA-123456789-0&#34; # Respecting your preference from &#39;privacy&#39;, and &#39;params&#39; -&gt; &#39;user_experience&#39; below, if you set this value, Google Analytics code will be included. Google Analytics included only when serving the website on &#39;production&#39; environment (i.e. website built with `hugo` command and not `hugo serve`)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># disqusShortname: &#34;yourdiscussshortname&#34; # Respecting your preference from &#39;privacy&#39;, if you set this value, Disqus comments code will be included at the end of the blog posts. Disqus comments are shown only when serving the website on &#39;production&#39; environment (i.e. website built with `hugo` command and not `hugo serve`)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># taxonomies as per Hugo&#39;s taxonomy feature</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">taxonomies</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tag</span>: <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">category</span>: <span style="color:#e6db74">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">series</span>: <span style="color:#e6db74">&#34;series&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># menu as per Hugo&#39;s menu feature</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">menu</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">main</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">identifier</span>: <span style="color:#e6db74">&#34;about&#34;</span> <span style="color:#75715e"># different for all menu entries, useful especially when menu name coincides</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;About&#34;</span> <span style="color:#75715e"># shown on website/blog</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;/about/&#34;</span> <span style="color:#75715e"># user is taken to this url when user clicks on menu item</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">10</span> <span style="color:#75715e"># used to sort menu items by weight</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">identifier</span>: <span style="color:#e6db74">&#34;sub-about&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Sub About&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;/sub-about/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">parent</span>: <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># with this, Hugo notes some stats about website, which are then used by CSS processors, like PostCSS</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">writeStats</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># All privacy settings: https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Explanations to all privacy settings: https://gohugo.io/about/hugo-and-gdpr/#the-privacy-settings-explained</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">privacy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">disqus</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">disable</span>: <span style="color:#e6db74">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">googleAnalytics</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">anonymizeIP</span>: <span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#75715e"># &#39;true&#39; makes it so the users&#39; IP addresses are anonymized within Google Analytics</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">disable</span>: <span style="color:#e6db74">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">respectDoNotTrack</span>: <span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#75715e"># &#39;true&#39; makes the GA templates respect the “Do Not Track” HTTP header</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">useSessionStorage</span>: <span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#75715e"># &#39;true&#39; disables the use of Cookies and use Session Storage to Store the GA Client ID</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Here starts our customization</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">social</span>: 
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">profiles</span>: <span style="color:#75715e"># social platforms you are present on. see supported ones here | highly recommended</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">facebook</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">twitter</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">github</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">gitlab</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">steam</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">instagram</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">youtube</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">pinterest</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">linkedin</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">reddit</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">flickr</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">deviantart</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">vk</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">mastodon</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">bandcamp</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">tumblr</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">medium</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">wikipedia</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">telegram</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># coming soon:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">paypal</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">slack</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">twitch</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">stackoverflow</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">shutterstock</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">soundcloud</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">codepen</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">share</span>: [<span style="color:#e6db74">&#34;facebook&#34;</span>, <span style="color:#e6db74">&#34;twitter&#34;</span>, <span style="color:#e6db74">&#34;linkedin&#34;</span>, <span style="color:#e6db74">&#34;telegram&#34;</span>, <span style="color:#e6db74">&#34;whatsapp&#34;</span>, <span style="color:#e6db74">&#34;reddit&#34;</span>, <span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">] # accepts array of values</span>: <span style="color:#e6db74">&#34;facebook&#34;</span>, <span style="color:#e6db74">&#34;twitter&#34;</span>, <span style="color:#e6db74">&#34;linkedin&#34;</span>, <span style="color:#e6db74">&#34;whatsapp&#34;</span>, <span style="color:#e6db74">&#34;reddit&#34;</span>, <span style="color:#e6db74">&#34;email&#34;</span><span style="color:#ae81ff">. just type the name of those you want you articles to be able to be shared on</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">meta</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">author</span>: <span style="color:#e6db74">&#34;The Great Authors&#34;</span> <span style="color:#75715e"># website-wide author | required</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">footerMessage</span>: <span style="color:#e6db74">&#34;Awesome footer message&#34;</span> <span style="color:#75715e"># text (HTML supported) shown in footer above footer links | optional</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">tagline</span>: <span style="color:#e6db74">&#34;A Really Catchy Tagline&#34;</span> <span style="color:#75715e"># shown in website title on homepage and also used in seo | required</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;A really great description!&#34;</span> <span style="color:#75715e"># should include brand name | character length: 50 to 160 characters</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">contentLicense</span>: <span style="color:#e6db74">&#34;CC-BY-SA-3.0&#34;</span> <span style="color:#75715e"># cc-by-3.0, etc or &#39;All right reserved.&#39; should also be same as the one in copyright above</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">titleSeparator</span>: <span style="color:#e6db74">&#34; | &#34;</span> <span style="color:#75715e"># used in website/blog title, to separate (say) page title from website/blog title | default: &#34; | &#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">attribution</span>: <span style="color:#e6db74">&#34;enable&#34;</span> <span style="color:#75715e"># attribute Hugo team for awesome software and Softorage for great theme | default: &#34;enable&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">brand</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;ExampleBlog&#34;</span> <span style="color:#75715e"># brand name (Samy&#39;s blog), usually just one word that is name of the brand | required | no default</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">logo</span>: <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># path (preferably relative path) to brand&#39;s good resolution logo | required | no default</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">color</span>: <span style="color:#e6db74">&#34;#7d1fa5&#34;</span> <span style="color:#75715e"># color to be shown for brand name on navbar on scroll | required | no default</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">navbar</span>: [<span style="color:#e6db74">&#34;logo&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">] # accepts array of values</span>: <span style="color:#e6db74">&#34;logo&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#f92672">| this configuration shows brand &#39;log&#39; &amp; brand &#39;name&#39; on navbar | optional | default</span>: [<span style="color:#e6db74">&#34;logo&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">theme</span>: <span style="color:#75715e"># optional</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">nav</span>: <span style="color:#e6db74">&#34;#ffffff&#34;</span> <span style="color:#75715e"># navbar&#39;s background color | optional | default: &#34;#ffffff&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">antinav</span>: <span style="color:#e6db74">&#34;#000000&#34;</span> <span style="color:#75715e"># a color in good contrast to nav | optional | default: &#34;#000000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mat</span>: <span style="color:#e6db74">&#34;#f9f9f9&#34;</span> <span style="color:#75715e"># background color forcards (not of cards) | optional | default: &#34;#f9f9f9&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">clr1</span>: <span style="color:#e6db74">&#34;#7d1fa5&#34;</span> <span style="color:#75715e"># color-1 of gradient | optional | default: &#34;#7d1fa5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">clr2</span>: <span style="color:#e6db74">&#34;#6d19fc&#34;</span> <span style="color:#75715e"># color-2 of gradient | optional | default: &#34;#6d19fc&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">borders</span>: <span style="color:#e6db74">&#34;rounded&#34;</span> <span style="color:#75715e"># accepts value: rounded/square | what kind of borders do you like for elements, like buttons | default: &#34;rounded&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">position</span>: <span style="color:#75715e"># optional</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">social</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">profiles</span>: <span style="color:#e6db74">&#34;footer&#34;</span> <span style="color:#75715e"># accepts value: navbar/footer | may use &#39;navbar&#39; if number of items in main menu and social profiles are minimal, otherwise &#39;footer&#39; is recommended | default: &#34;footer&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">share</span>: <span style="color:#e6db74">&#34;bottom&#34;</span> <span style="color:#75715e"># top/bottom | no default</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">navbarMenu</span>: <span style="color:#e6db74">&#34;right&#34;</span> <span style="color:#75715e"># accepts value: right/left | decides the position of main menu on navbar | default: &#34;right&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">postMeta</span>: <span style="color:#75715e"># </span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">readingTime</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># values: top/bottom, no default</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">content</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># accepts array of values: &#34;summary&#34;, &#34;content&#34; | determines 1. where should &#39;reading time for a post&#39; appear: wherever summary of post is shown eg, homepage; on the post itself. 2. how should it appaer: at top or at bottom. this configuration shows &#34;reading time&#34; when &#39;summary&#39; is shown &amp; in &#39;blog post&#39; | optional | no default</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">wordCount</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># values: top/bottom, no default</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">content</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># accepts array of values: &#34;summary&#34;, &#34;content&#34; | this configuration shows &#34;word count&#34; when &#39;summary&#39; is shown &amp; in &#39;blog post&#39; | optional | no default</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">author</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># values: top/bottom, no default</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">content</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># accepts array of values: &#34;summary&#34;, &#34;content&#34; | this configuration shows &#34;author&#34; when &#39;summary&#39; is shown &amp; in &#39;blog post&#39; | optional | no default</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lastUpdated</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># values: top/bottom, no default</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">content</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># accepts array of values: &#34;summary&#34;, &#34;content&#34; | this configuration shows &#34;last updated date&#34; when &#39;summary&#39; is shown &amp; in &#39;blog post&#39; | optional | no default</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">tags</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#75715e"># values: top/bottom, no default</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">content</span>: <span style="color:#e6db74">&#34;bottom&#34;</span> <span style="color:#75715e"># accepts array of values: &#34;summary&#34;, &#34;content&#34; | this configuration shows &#34;tags&#34; when &#39;summary&#39; is shown &amp; in &#39;blog post&#39; | optional | no default</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">general</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">family</span>: <span style="color:#e6db74">&#34;Lato&#34;</span> <span style="color:#75715e"># must match to a css font-family | default: &#34;Lato&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#cdnLink: &#34;&#34; # a link tag for font other than Lato and Roboto | recommended</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">heading</span>: 
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">list</span>: [<span style="color:#e6db74">&#34;h1&#34;</span><span style="color:#f92672">] # accepts array of values</span>: <span style="color:#e6db74">&#34;h1&#34;</span>, <span style="color:#e6db74">&#34;h2&#34;</span>, <span style="color:#e6db74">&#34;h3&#34;</span>, <span style="color:#e6db74">&#34;h4&#34;</span>, <span style="color:#e6db74">&#34;h5&#34;</span>, <span style="color:#e6db74">&#34;h6&#34;</span> <span style="color:#f92672">| default</span>: [<span style="color:#e6db74">&#34;h1&#34;</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">family</span>: <span style="color:#e6db74">&#34;Lato&#34;</span> <span style="color:#75715e"># must match to a css font-family | default: &#34;Lato&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#cdnLink: &#34;&#34; # a link tag for font other than Lato and Roboto | recommended</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">family</span>: <span style="color:#e6db74">&#34;Lato&#34;</span> <span style="color:#75715e"># must match to a css font-family | default: &#34;Lato&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#cdnLink: &#34;&#34; # a link tag for font other than Lato and Roboto | recommended</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">brand</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">family</span>: <span style="color:#e6db74">&#34;Lato&#34;</span> <span style="color:#75715e"># must match to a css font-family | default: &#34;Lato&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#cdnLink: &#34;&#34; # a link tag for font other than Lato and Roboto | recommended</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">footer</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">family</span>: <span style="color:#e6db74">&#34;Lato&#34;</span> <span style="color:#75715e"># must match to a css font-family | default: &#34;Lato&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#cdnLink: &#34;&#34; # a link tag for font other than Lato and Roboto | recommended</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">copyright</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">family</span>: <span style="color:#e6db74">&#34;Lato&#34;</span> <span style="color:#75715e"># must match to a css font-family | default: &#34;Lato&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#cdnLink: &#34;&#34; # a link tag for font other than Lato and Roboto | recommended</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">postMeta</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">family</span>: <span style="color:#e6db74">&#34;Lato&#34;</span> <span style="color:#75715e"># must match to a css font-family | default: &#34;Lato&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#cdnLink: &#34;&#34; # a link tag for font other than Lato and Roboto | recommended</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">faviconTags</span>: <span style="color:#ae81ff">|</span> <span style="color:#75715e"># just copy paste all the tags here (Hugo templating supported). Also, ensure that you have &#34;purpose&#34;: &#34;maskable&#34; set for one icon in your site.webmanifest file (helps for pwa). Use https://realfavicongenerator.net, it&#39;s great</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;link rel=&#34;apple-touch-icon&#34; sizes=&#34;180x180&#34; href=&#34;{{ site.BaseURL }}/assets/favicon/apple-touch-icon.png&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;link rel=&#34;icon&#34; type=&#34;image/png&#34; sizes=&#34;32x32&#34; href=&#34;{{ site.BaseURL }}/assets/favicon/favicon-32x32.png&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;link rel=&#34;icon&#34; type=&#34;image/png&#34; sizes=&#34;16x16&#34; href=&#34;{{ site.BaseURL }}/assets/favicon/favicon-16x16.png&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;link rel=&#34;manifest&#34; href=&#34;{{ site.BaseURL }}/assets/favicon/site.webmanifest&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;link rel=&#34;mask-icon&#34; href=&#34;{{ site.BaseURL }}/assets/favicon/safari-pinned-tab.svg&#34; color=&#34;#7817c4&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;link rel=&#34;icon&#34; href=&#34;{{ site.BaseURL }}/assets/favicon/favicon.ico&#34; type=&#34;image/x-icon&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;link rel=&#34;shortcut icon&#34; href=&#34;{{ site.BaseURL }}/assets/favicon/favicon.ico&#34; type=&#34;image/x-icon&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;meta name=&#34;apple-mobile-web-app-title&#34; content=&#34;Vibrant Shadows Theme&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;meta name=&#34;application-name&#34; content=&#34;Vibrant Shadows Theme&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;meta name=&#34;msapplication-TileColor&#34; content=&#34;#ffffff&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">&lt;meta name=&#34;theme-color&#34; content=&#34;#ffffff&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">seo</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">switch</span>: <span style="color:#e6db74">&#34;on&#34;</span> <span style="color:#75715e"># accepts value: on/off | decide whether you want all the good seo meta tags | default: on</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">twitter</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">card</span>: <span style="color:#e6db74">&#34;enable&#34;</span> <span style="color:#75715e"># accepts value: enable/disable | good for seo | default: enable</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">handle</span>: <span style="color:#e6db74">&#34;Great&#34;</span> <span style="color:#75715e">#twitter handle website-wide author, without @</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">facebook</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">openGraph</span>: <span style="color:#e6db74">&#34;enable&#34;</span> <span style="color:#75715e"># accepts value: enable/disable | good for seo | default: enable</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">#appID: &#34;&#34; # facebook App ID</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">jsonLD</span>: <span style="color:#e6db74">&#34;enable&#34;</span> <span style="color:#75715e"># accepts value: enable/disable | good for seo | default: enable</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">speedMode</span>: <span style="color:#e6db74">&#34;disable&#34;</span> <span style="color:#75715e"># accepts value: enable/disable | enabling &#34;Speed Mode&#34; would make the website/blog extremely fast and lightweight, providing a snappy experience to website/blog visitors. &#34;Speed Mode&#34; utilises *PostCSS* via *Hugo&#39;s Asset Pipeline*. note that, &#34;Speed Mode&#34; works in *production environment* only. since many Hugo users do not have Hugo&#39;s extended version, this option is disabled by default. | default: disable</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cookieConsent</span>: <span style="color:#75715e"># we use OSANO Cookie Consent solution</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">switch</span>: <span style="color:#e6db74">&#34;off&#34;</span> <span style="color:#75715e"># accepts: on/off | decide whether you want to show a cookie consent dialog to your users | default: &#34;off&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#e6db74">&#34;opt-in&#34;</span> <span style="color:#75715e"># accepts: opt-in/opt-out/none | In opt-in, website doesn&#39;t employ cookies to user&#39;s computer unless user gives cosent to opt in. In opt-out, cookies are employed on user&#39;s computer and the user is given the choice to opt out of cookies. In none, cookies are employed on the user&#39;s computer and user is not given a choice in that regard. Refrain from using none, unless you have zero customers from EU or similar countries with privacy protecting laws. | no default</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">revokable: true # a button to revoke cookie consent appears when user hover in bottom area of the screen, regardless whether user&#39;s country requires revertable cookie consent | default</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">colors</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">banner</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">background</span>: <span style="color:#e6db74">&#34;#ffffff&#34;</span> <span style="color:#75715e"># HEX | default: theme.nav</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">text</span>: <span style="color:#e6db74">&#34;#000000&#34;</span> <span style="color:#75715e"># HEX | default: theme.antinav</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">button</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">background</span>: <span style="color:#e6db74">&#34;#6d19fc&#34;</span> <span style="color:#75715e"># HEX | default: theme.clr2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">text</span>: <span style="color:#e6db74">&#34;#ffffff&#34;</span> <span style="color:#75715e"># HEX | default: theme.nav</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">content</span>: <span style="color:#75715e"># change the links below to appropriate url addresses</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">message</span>: <span style="color:#ae81ff">|</span> <span style="color:#75715e"># no default</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">By continuing to use this website, you agree to our &lt;a href=&#39;http://localhost:61307/legal/privacy-policy/&#39;&gt;Privacy Policy&lt;/a&gt;, &lt;a href=&#39;http://localhost:61307/legal/cookie-policy/&#39;&gt;Cookie Policy&lt;/a&gt; and our &lt;a href=&#39;http://localhost:61307/legal/terms-and-conditions/&#39;&gt;Terms and Conditions&lt;/a&gt; for your use of this website.</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">dismiss</span>: <span style="color:#e6db74">&#34;Close&#34;</span> <span style="color:#75715e"># text on the button that dismisses the popup/banner | default: &#34;Close&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">linkText</span>: <span style="color:#e6db74">&#34;Learn more&#34;</span> <span style="color:#75715e"># this text appears after the message and is hyperlinked | default: &#34;Learn more&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">linkURL</span>: <span style="color:#e6db74">&#34;/legal/privacy-policy/&#34;</span> <span style="color:#75715e"># url of location where user should be directed when they click &#34;Learn more&#34;.</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">allow</span>: <span style="color:#e6db74">&#34;Allow&#34;</span> <span style="color:#75715e"># text on the button that allows cookies | default: &#34;Allow&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">deny</span>: <span style="color:#e6db74">&#34;Decline&#34;</span> <span style="color:#75715e"># text on the button that denies cookies | default: &#34;Decline&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">policy</span>: <span style="color:#e6db74">&#34;Cookie Consent&#34;</span> <span style="color:#75715e"># text that appears on the button, when user&#39;s country requires revokable cookie consent | default: &#34;Cookie Consent&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">userExperience</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">googleAnalyticsLoading</span>: <span style="color:#e6db74">&#34;sync&#34;</span> <span style="color:#75715e"># accepts value: sync/async | determines whether Google Analytics JavaScript file loads &#39;Synchronously&#39; or &#39;Asynchronously&#39; | optional | default: &#34;sync&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mainSections</span>: [<span style="color:#e6db74">&#34;post&#34;</span>] <span style="color:#75715e"># required, https://gohugo.io/functions/where/#mainsections</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#customVerification:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#myWOT: &#34;ba8579f668r8w3g62503&#34; # content for meta tag to verify your website on &#39;Web Of Trust&#39;</span>
+</span></span></code></pre></div>]]></content:encoded>
+      
+      
+      <category>configuration</category>
+      
+      <category>customize</category>
+      
+      <category>settings</category>
+      
+    </item><item>
+      <title>Additional information about the theme</title>
+      <link>http://localhost:61307/post/additional-info/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:61307/post/additional-info/</guid>
+      <description>Additional info about the theme, like &#39;Built with&#39;, &#39;Contributing&#39;, and &#39;License&#39;.</description>
+      
+      <content:encoded><![CDATA[<p>We share some additional information about this theme, that may be relevant.</p>
+<h2 id="built-with">Built with</h2>
+<ul>
+<li>Hugo</li>
+<li>Twitter Bootstrap</li>
+<li>Font Awesome</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Anyone contributing, benefits equally from others&rsquo; contributions.</p>
+<p>If you have a tip, feedback or issues, please <a href="https://github.com/Softorage/HugoTheme-VibrantShadows/issues">open an issue here</a>. If you think &lsquo;Vibrant Shadows&rsquo; theme could benefit from some features, or there is something that needs to be fixed, please open an issue at least 2-3 days prior to <a href="https://github.com/Softorage/HugoTheme-VibrantShadows/pulls">opening a PR</a>. If you think there is something that needs to be fixed and which isn&rsquo;t of much significance (say a typo), you may open a PR directly.</p>
+<p>If you like our work &amp; find it useful, consider to star on GitHub. We are on <a href="https://www.facebook.com/Softorage/">Facebook</a>, <a href="https://twitter.com/Softorage">Twitter</a> and <a href="https://www.instagram.com/softorage/">Instagram</a>, you can follow us there too! It really motivates us!</p>
+<h2 id="license">License</h2>
+<pre tabindex="0"><code>The MIT License (MIT)
+
+Copyright (c) 2020 Softorage
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &#34;Software&#34;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre><p>License can be viewed <a href="https://github.com/Softorage/HugoTheme-VibrantShadows/blob/master/LICENSE">here</a>.</p>]]></content:encoded>
+      
+      
+      <category>license</category>
+      
+    </item><item>
       <title>AI Systems and Applications</title>
-      <link>https://blog.adipolak.com/hidden/ai-placeholder/</link>
+      <link>http://localhost:61307/hidden/ai-placeholder/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/hidden/ai-placeholder/</guid>
+      <guid>http://localhost:61307/hidden/ai-placeholder/</guid>
       <description>Collection of insights on AI systems</description>
       
       
@@ -735,10 +1108,10 @@ For doing it, we need to expose it first - notice that we are exposing the app a
       
     </item><item>
       <title>Technical Leadership Insights</title>
-      <link>https://blog.adipolak.com/hidden/leadership-placeholder/</link>
+      <link>http://localhost:61307/hidden/leadership-placeholder/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://blog.adipolak.com/hidden/leadership-placeholder/</guid>
+      <guid>http://localhost:61307/hidden/leadership-placeholder/</guid>
       <description>Collection of insights on technical leadership</description>
       
       
