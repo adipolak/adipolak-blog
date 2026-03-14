@@ -2,7 +2,7 @@
 title: "Data+AI Summit 2021 is Coming"
 author: "Adi Polak"
 description: "Knock Knock! Who's there? It's me, Summit. Summit who? Data + AI Summit"
-tags: ["conference", "apache spark"]
+tags: ["conference", "apache spark", "distributed-systems"]
 date: "2021-04-11"
 draft: false
 ---

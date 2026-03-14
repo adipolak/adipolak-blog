@@ -2,7 +2,7 @@
 title: "Delta Lake essential Fundamentals: Part 4 - Practical Scenarios"
 author: "Adi Polak"
 description: "Multi-part series that will take you from beginner to expert in Delta Lake"
-tags: ["open-source", "apache spark", "delta lake","beginner", "scenarios"]
+tags: ["open-source", "apache spark", "delta lake", "distributed-systems", "beginner", "scenarios"]
 date: "2021-02-22"
 draft: false
 ---

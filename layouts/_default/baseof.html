@@ -26,9 +26,6 @@
       <link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}">
     {{ end }}
 
-    {{ block "favicon" . }}
-      {{ partialCached "site-favicon.html" . }}
-    {{ end }}
 
     {{ if .OutputFormats.Get "RSS" }}
     {{ with .OutputFormats.Get "RSS" }}
@@ -46,9 +43,9 @@
     {{ partial "ai-meta-tags.html" . }}
     {{ partial "structured-data.html" . }}
 
-    <!-- {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+    {{/* {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
       {{ template "_internal/google_analytics_async.html" . }}
-    {{ end }} -->
+    {{ end }} */}}
   </head>
 
   <body style="margin: 0; padding: 0; background-color: #11100F;">

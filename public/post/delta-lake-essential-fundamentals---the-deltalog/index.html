@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <link rel="stylesheet" href="/css/custom.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,18 +17,13 @@
 
     
     
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
-    
 
     
 
-    
-      
-    
 
     
 
-    <meta property="og:url" content="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/">
+    <meta property="og:url" content="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/">
   <meta property="og:site_name" content="Adi Polak">
   <meta property="og:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog">
   <meta property="og:description" content="Multi-part series that will take you from beginner to expert in Delta Lake">
@@ -40,6 +35,7 @@
     <meta property="article:tag" content="Open-Source">
     <meta property="article:tag" content="Apache Spark">
     <meta property="article:tag" content="Delta Lake">
+    <meta property="article:tag" content="Distributed-Systems">
     <meta property="article:tag" content="Beginner">
     <meta property="article:tag" content="DeltaLog">
 
@@ -48,7 +44,7 @@
   <meta itemprop="datePublished" content="2021-02-11T00:00:00+00:00">
   <meta itemprop="dateModified" content="2021-02-11T00:00:00+00:00">
   <meta itemprop="wordCount" content="1390">
-  <meta itemprop="keywords" content="Open-Source,Apache Spark,Delta Lake,Beginner,DeltaLog">
+  <meta itemprop="keywords" content="Open-Source,Apache Spark,Delta Lake,Distributed-Systems,Beginner,DeltaLog">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog">
   <meta name="twitter:description" content="Multi-part series that will take you from beginner to expert in Delta Lake">
@@ -56,7 +52,7 @@
     
 
 
-<link rel="canonical" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/" />
+<link rel="canonical" href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" />
 
 
 <meta name="author" content="Adi Polak" />
@@ -79,7 +75,7 @@
 
 <meta name="DC.title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog - Adi Polak" />
 <meta name="DC.creator" content="Adi Polak" />
-<meta name="DC.subject" content="open-source, apache spark, delta lake, beginner, DeltaLog" />
+<meta name="DC.subject" content="open-source, apache spark, delta lake, distributed-systems, beginner, deltalog" />
 <meta name="DC.description" content="Multi-part series that will take you from beginner to expert in Delta Lake" />
 <meta name="DC.publisher" content="Adi Polak" />
 <meta name="DC.type" content="Text" />
@@ -94,7 +90,7 @@
 
 
 
-<meta name="keywords" content="open-source, apache spark, delta lake, beginner, DeltaLog, Adi Polak, Adi Polak" />
+<meta name="keywords" content="open-source, apache spark, delta lake, distributed-systems, beginner, deltalog, Adi Polak, Adi Polak" />
 
 
 
@@ -112,9 +108,11 @@
 
 <meta property="article:tag" content="delta lake" />
 
+<meta property="article:tag" content="distributed-systems" />
+
 <meta property="article:tag" content="beginner" />
 
-<meta property="article:tag" content="DeltaLog" />
+<meta property="article:tag" content="deltalog" />
 
 
 
@@ -125,7 +123,7 @@
 <meta name="classification" content="Technical Blog" />
 
 
-<link rel="author" href="https://blog.adipolak.com/about/" />
+<link rel="author" href="http://localhost:1313/about/" />
 <link rel="me" href="https://twitter.com/AdiPolak" />
 <link rel="me" href="https://github.com/AdiPolak" />
 
@@ -144,13 +142,13 @@
   "headline": "Delta Lake essential Fundamentals: Part 2 - The DeltaLog",
   "name": "Delta Lake essential Fundamentals: Part 2 - The DeltaLog",
   "description": "Multi-part series that will take you from beginner to expert in Delta Lake",
-  "image": "https:\/\/blog.adipolak.com\/\/assets\/favicon\/android-chrome-512x512.png",
+  "image": "http:\/\/localhost:1313\/\/assets\/favicon\/android-chrome-512x512.png",
   "datePublished": "2021-02-11T00:00:00Z",
   "dateModified": "2021-02-11T00:00:00Z",
   "author": {
     "@type": "Person",
     "name": "Adi Polak",
-    "url": "https:\/\/blog.adipolak.com\/about/",
+    "url": "http:\/\/localhost:1313\/about/",
     "sameAs": [
       "https://twitter.com/AdiPolak",
       "https://github.com/AdiPolak",
@@ -162,14 +160,14 @@
     "name": "Adi Polak",
     "logo": {
       "@type": "ImageObject",
-      "url": "https:\/\/blog.adipolak.com\/\/assets\/favicon\/android-chrome-512x512.png"
+      "url": "http:\/\/localhost:1313\/\/assets\/favicon\/android-chrome-512x512.png"
     }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https:\/\/blog.adipolak.com\/post\/delta-lake-essential-fundamentals---the-deltalog\/"
+    "@id": "http:\/\/localhost:1313\/post\/delta-lake-essential-fundamentals---the-deltalog\/"
   },
-  "keywords": "open-source, apache spark, delta lake, beginner, DeltaLog",
+  "keywords": "open-source, apache spark, delta lake, distributed-systems, beginner, deltalog",
   "articleSection": "post",
   "inLanguage": "en-US",
   "copyrightHolder": {
@@ -194,19 +192,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https:\/\/blog.adipolak.com\/"
+      "item": "http:\/\/localhost:1313\/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Writing",
-      "item": "https:\/\/blog.adipolak.com\/writing/"
+      "item": "http:\/\/localhost:1313\/writing/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Delta Lake essential Fundamentals: Part 2 - The DeltaLog",
-      "item": "https:\/\/blog.adipolak.com\/post\/delta-lake-essential-fundamentals---the-deltalog\/"
+      "item": "http:\/\/localhost:1313\/post\/delta-lake-essential-fundamentals---the-deltalog\/"
     }
   ]
 }
@@ -303,7 +301,7 @@
   
   <div style="margin-bottom: var(--space-md); color: var(--color-text-muted); font-size: var(--text-sm);">
     <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-      By <a href="https://blog.adipolak.com/about/" itemprop="url" style="color: var(--color-link); font-weight: 600;">
+      By <a href="http://localhost:1313/about/" itemprop="url" style="color: var(--color-link); font-weight: 600;">
         <span itemprop="name">Adi Polak</span>
       </a>
     </span>
@@ -343,17 +341,19 @@
       
         <a href="/tags/delta-lake" class="tag">delta lake</a>
       
+        <a href="/tags/distributed-systems" class="tag">distributed-systems</a>
+      
         <a href="/tags/beginner" class="tag">beginner</a>
       
-        <a href="/tags/deltalog" class="tag">DeltaLog</a>
+        <a href="/tags/deltalog" class="tag">deltalog</a>
       
     </div>
   
 
   
   <meta itemprop="inLanguage" content="en-US" />
-  <link itemprop="url" href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/" />
-  <meta itemprop="image" content="https://blog.adipolak.com//assets/favicon/android-chrome-512x512.png" />
+  <link itemprop="url" href="http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/" />
+  <meta itemprop="image" content="http://localhost:1313//assets/favicon/android-chrome-512x512.png" />
 
 </header>
 
@@ -471,9 +471,11 @@ That means that if there is a request to delete a file that at the same time is 
           
             <a href="/tags/delta-lake" class="tag">delta lake</a>
           
+            <a href="/tags/distributed-systems" class="tag">distributed-systems</a>
+          
             <a href="/tags/beginner" class="tag">beginner</a>
           
-            <a href="/tags/deltalog" class="tag">DeltaLog</a>
+            <a href="/tags/deltalog" class="tag">deltalog</a>
           
         </div>
       </div>
@@ -483,7 +485,7 @@ That means that if there is a request to delete a file that at the same time is 
     <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
       
         
-        <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
+        <a href="http://localhost:1313/post/delta-lake-essential-fundamentals/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
           <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
           <div style="color: var(--color-text); font-weight: 500;">Delta Lake essential Fundamentals: Part 1 - ACID</div>
         </a>
@@ -491,7 +493,7 @@ That means that if there is a request to delete a file that at the same time is 
       
       
         
-        <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
+        <a href="http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
           <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Next</div>
           <div style="color: var(--color-text); font-weight: 500;">Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</div>
         </a>
@@ -594,15 +596,23 @@ That means that if there is a request to delete a file that at the same time is 
       </p>
       <div>
         
-
-
-
-
-
-
-
-
-
+<div style="display: flex; gap: var(--space-md); align-items: center;">
+  
+  <a href="https://twitter.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+    </svg>
+  </a>
+  
+  
+  <a href="https://github.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg>
+  </a>
+  
+  
+</div>
 
 
       </div>
@@ -648,8 +658,6 @@ That means that if there is a request to delete a file that at the same time is 
 
 
 
-
-  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
 
 
   </body>

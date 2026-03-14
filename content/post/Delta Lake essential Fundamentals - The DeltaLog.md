@@ -2,7 +2,7 @@
 title: "Delta Lake essential Fundamentals: Part 2 - The DeltaLog"
 author: "Adi Polak"
 description: "Multi-part series that will take you from beginner to expert in Delta Lake"
-tags: ["open-source", "apache spark", "delta lake","beginner", "DeltaLog"]
+tags: ["open-source", "apache spark", "delta lake", "distributed-systems", "beginner", "deltalog"]
 date: "2021-02-11"
 draft: false
 ---

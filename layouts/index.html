@@ -1,5 +1,27 @@
 {{ define "main" }}
 
+<style>
+  .focus-card {
+    text-decoration: none;
+    padding: 32px;
+    background: #181512;
+    border-radius: 10px;
+    border: 2px solid #3D342E;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .focus-card:hover {
+    border-color: #D7B9A8;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(215, 185, 168, 0.2);
+  }
+</style>
+
 {{ partial "skip-to-main.html" . }}
 
 <!-- Hero Section -->
@@ -10,7 +32,7 @@
 
   <div style="max-width: 760px; margin: 0 auto; position: relative; z-index: 1;">
     <p style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.6; color: #C7BBB0; margin: 0;">
-      Technical leader building production AI systems and cloud infrastructure at scale
+      Helping teams build reliable AI systems and cloud infrastructure
     </p>
   </div>
 </section>
@@ -23,25 +45,21 @@
 
   <div class="expertise-grid" style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
 
-    <div style="padding: 32px; background: #181512; border-radius: 10px; border: 2px solid #3D342E; display: flex; flex-direction: column; min-height: 180px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">
-      <h3 style="margin-top: 0; font-size: 20px; margin-bottom: 16px; color: #D7B9A8; font-family: 'Lora', serif;">Distributed Systems</h3>
-      <p style="color: #C7BBB0; font-size: 15px; margin-bottom: 0; line-height: 1.6; flex-grow: 1;">Apache Spark, Delta Lake, streaming architectures, and scalable data infrastructure</p>
-    </div>
+    <a href="/tags/distributed-systems/" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Distributed Systems</h3>
+    </a>
 
-    <div style="padding: 32px; background: #181512; border-radius: 10px; border: 2px solid #3D342E; display: flex; flex-direction: column; min-height: 180px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">
-      <h3 style="margin-top: 0; font-size: 20px; margin-bottom: 16px; color: #D7B9A8; font-family: 'Lora', serif;">ML in Production</h3>
-      <p style="color: #C7BBB0; font-size: 15px; margin-bottom: 0; line-height: 1.6; flex-grow: 1;">Machine learning systems, model deployment, and data quality for AI applications</p>
-    </div>
+    <a href="/tags/machine-learning/" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">ML in Production</h3>
+    </a>
 
-    <div style="padding: 32px; background: #181512; border-radius: 10px; border: 2px solid #3D342E; display: flex; flex-direction: column; min-height: 180px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">
-      <h3 style="margin-top: 0; font-size: 20px; margin-bottom: 16px; color: #D7B9A8; font-family: 'Lora', serif;">Technical Leadership</h3>
-      <p style="color: #C7BBB0; font-size: 15px; margin-bottom: 0; line-height: 1.6; flex-grow: 1;">Building teams, platform strategy, and navigating the evolving data landscape</p>
-    </div>
+    <a href="/tags/leadership/" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Technical Leadership</h3>
+    </a>
 
-    <div style="padding: 32px; background: #181512; border-radius: 10px; border: 2px solid #3D342E; display: flex; flex-direction: column; min-height: 180px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">
-      <h3 style="margin-top: 0; font-size: 20px; margin-bottom: 16px; color: #D7B9A8; font-family: 'Lora', serif;">Embedding AI</h3>
-      <p style="color: #C7BBB0; font-size: 15px; margin-bottom: 0; line-height: 1.6; flex-grow: 1;">Embedding AI into your products, services and organizations</p>
-    </div>
+    <a href="/tags/ai/" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Embedding AI</h3>
+    </a>
 
   </div>
 </section>

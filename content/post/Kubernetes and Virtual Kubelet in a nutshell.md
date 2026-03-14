@@ -2,7 +2,7 @@
 title: "Kubernetes and Virtual Kubelet in a nutshell"
 author: "Adi Polak"
 description: "Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet"
-tags: ["beginners", "devops", "tutorial", "Kubernetes"]
+tags: ["beginners", "devops", "tutorial", "kubernetes"]
 date: "2021-01-10"
 draft: false
 ---

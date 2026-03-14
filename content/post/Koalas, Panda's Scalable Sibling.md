@@ -2,7 +2,7 @@
 title: Koalas, Panda's Scalable Sibling
 author: "Adi Polak"
 description: "Gental introduction to Koalas"
-tags: ["beginners", "apache spark", "koalas","pandas","Kubernetes"]
+tags: ["beginners", "apache spark", "koalas", "pandas", "distributed-systems", "kubernetes"]
 date: "2021-01-10"
 draft: true
 ---

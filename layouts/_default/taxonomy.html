@@ -1,10 +1,26 @@
 {{ define "main" }}
 
 <section class="section">
+  {{ $currentTag := .Title | lower | urlize }}
+  {{ $externalArticles := .Site.Data.external_writing.articles }}
+  {{ $matchingExternal := slice }}
+  {{ range $externalArticles }}
+    {{ $found := false }}
+    {{ range .tags }}
+      {{ if eq (. | urlize) $currentTag }}
+        {{ $found = true }}
+      {{ end }}
+    {{ end }}
+    {{ if $found }}
+      {{ $matchingExternal = $matchingExternal | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $totalCount := add (len .Pages) (len $matchingExternal) }}
+
   <div class="section-header">
     <h1 class="section-title" style="font-size: var(--text-3xl);">{{ .Title }}</h1>
     <p class="section-subtitle">
-      {{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }} on this topic
+      {{ $totalCount }} {{ if eq $totalCount 1 }}article{{ else }}articles{{ end }} on this topic
     </p>
   </div>
 
@@ -39,6 +55,39 @@
         <p>{{ .Summary }}</p>
 
         <a href="{{ .Permalink }}" class="read-more">Read article →</a>
+      </article>
+    {{ end }}
+
+    {{ range $matchingExternal }}
+      <article class="blog-card">
+        <div class="post-meta">
+          <time datetime="{{ .date }}">
+            {{ dateFormat "January 2, 2006" .date }}
+          </time>
+          <span class="separator">·</span>
+          <span>{{ .publication }}</span>
+        </div>
+
+        <h2>
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+        </h2>
+
+        {{ with .tags }}
+          <div class="post-tags">
+            {{ range first 3 . }}
+              <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+
+        <p>{{ .description }}</p>
+
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="read-more" style="display: inline-flex; align-items: center; gap: 8px;">
+          Read on {{ .publication }}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.7;">
+            <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4M10.5 1.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </article>
     {{ end }}
   </div>

@@ -2,7 +2,7 @@
 title: Apache Spark Ecosystem, Jan 2021 Highlights
 author: "Adi Polak"
 description: "The ever growing Open Source Ecosystem"
-tags: ["open-source", "apache spark", "koalas","pandas","delta lake","ray","ray on spark","analytic zoo"]
+tags: ["open-source", "apache spark", "koalas", "pandas", "delta lake", "distributed-systems", "ray", "ray on spark", "analytic zoo"]
 date: "2021-01-12"
 draft: false
 ---

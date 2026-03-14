@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Adi Polak</title>
-    <link>https://blog.adipolak.com/tags/adi-polak/</link>
+    <link>http://localhost:1313/tags/adi-polak/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 30 Dec 1970 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/tags/adi-polak/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 1970 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/adi-polak/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

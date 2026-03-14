@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>License - Adi Polak</title>
+    <link>http://localhost:1313/tags/license/</link>
+    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>Adi Polak</managingEditor>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/license/feed.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Additional information about the theme</title>
+      <link>http://localhost:1313/post/additional-info/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1313/post/additional-info/</guid>
+      <description>Additional info about the theme, like &#39;Built with&#39;, &#39;Contributing&#39;, and &#39;License&#39;.</description>
+      
+      <content:encoded><![CDATA[<p>We share some additional information about this theme, that may be relevant.</p>
+<h2 id="built-with">Built with</h2>
+<ul>
+<li>Hugo</li>
+<li>Twitter Bootstrap</li>
+<li>Font Awesome</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Anyone contributing, benefits equally from others&rsquo; contributions.</p>
+<p>If you have a tip, feedback or issues, please <a href="https://github.com/Softorage/HugoTheme-VibrantShadows/issues">open an issue here</a>. If you think &lsquo;Vibrant Shadows&rsquo; theme could benefit from some features, or there is something that needs to be fixed, please open an issue at least 2-3 days prior to <a href="https://github.com/Softorage/HugoTheme-VibrantShadows/pulls">opening a PR</a>. If you think there is something that needs to be fixed and which isn&rsquo;t of much significance (say a typo), you may open a PR directly.</p>
+<p>If you like our work &amp; find it useful, consider to star on GitHub. We are on <a href="https://www.facebook.com/Softorage/">Facebook</a>, <a href="https://twitter.com/Softorage">Twitter</a> and <a href="https://www.instagram.com/softorage/">Instagram</a>, you can follow us there too! It really motivates us!</p>
+<h2 id="license">License</h2>
+<pre tabindex="0"><code>The MIT License (MIT)
+
+Copyright (c) 2020 Softorage
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &#34;Software&#34;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre><p>License can be viewed <a href="https://github.com/Softorage/HugoTheme-VibrantShadows/blob/master/LICENSE">here</a>.</p>]]></content:encoded>
+      
+      
+      <category>license</category>
+      
+    </item>
+  </channel>
+</rss>
