@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Beginner - Adi Polak</title>
-    <link>http://localhost:1313/tags/beginner/</link>
+    <link>https://blog.adipolak.com/tags/beginner/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/beginner/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adipolak.com/tags/beginner/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-4/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
@@ -95,16 +95,18 @@ I will continue to share scenarios, insights, and code samples throughout the bl
       
       <category>delta lake</category>
       
+      <category>distributed-systems</category>
+      
       <category>beginner</category>
       
       <category>scenarios</category>
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals---part-3/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---part-3/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
@@ -158,16 +160,18 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
       
       <category>delta lake</category>
       
+      <category>distributed-systems</category>
+      
       <category>beginner</category>
       
-      <category>DeltaLog</category>
+      <category>deltalog</category>
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
@@ -272,16 +276,18 @@ That means that if there is a request to delete a file that at the same time is 
       
       <category>delta lake</category>
       
+      <category>distributed-systems</category>
+      
       <category>beginner</category>
       
-      <category>DeltaLog</category>
+      <category>deltalog</category>
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>http://localhost:1313/post/delta-lake-essential-fundamentals/</link>
+      <link>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1313/post/delta-lake-essential-fundamentals/</guid>
+      <guid>https://blog.adipolak.com/post/delta-lake-essential-fundamentals/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
@@ -329,9 +335,11 @@ But it's not.</p>
       
       <category>delta lake</category>
       
+      <category>distributed-systems</category>
+      
       <category>beginner</category>
       
-      <category>ACID</category>
+      <category>acid</category>
       
     </item>
   </channel>
