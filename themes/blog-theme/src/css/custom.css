@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4; /* Soft light gray for background */
+  color: #333; /* Dark gray text for readability */
+}
+
+a {
+  color: #4a90e2; /* Muted blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2a6f9e; /* Slightly darker blue on hover */
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.content {
+  flex: 1; /* Content takes up the remaining space */
+  padding: 2rem;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 25%; /* Sidebar takes up 25% of the width */
+  background-color: #ffffff; /* White background for sidebar */
+  padding: 1.5rem;
+  border-right: 1px solid #ddd; /* Subtle gray border */
+  position: sticky; /* Makes it stick while scrolling */
+  top: 0; /* Start at the top of the viewport */
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a; /* Darker gray for section headers */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #4a90e2; /* Muted blue for sidebar links */
+  display: block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #e1e8f0; /* Lighter gray-blue on hover */
+  transform: scale(1.05);
+}
+
+/* Blog List Section */
+.blog-list {
+  padding: 2rem 1rem;
+  background-color: #ffffff; /* White background for the list */
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+}
+
+/* Blog Card Styles */
+.blog-card {
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12); /* Elevated shadow on hover */
+}
+
+.blog-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333; /* Dark gray text */
+}
+
+.blog-card p {
+  margin: 0.5rem 0;
+  color: #666; /* Slightly lighter gray for text */
+}
+
+.blog-card a {
+  color: #4a90e2; /* Muted blue for links */
+}
+
+.blog-card a:hover {
+  text-decoration: underline;
+  color: #2a6f9e; /* Darker blue on hover */
+}
+
+/* Read More Button */
+.btn-read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem; /* Adjust padding to make the button larger */
+  background-color: #2a6f9e; /* Deep blue background for elegance */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 1rem; /* Standard button text size */
+  font-weight: 600; /* Bold text for the button */
+  text-align: center;
+  border: 2px solid #2a6f9e; /* Solid border color around the button */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add the box around the button using box-shadow */
+.btn-read-more::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 8px; /* Slightly more rounded corners for the box */
+  border: 2px solid #2a6f9e; /* Border color for the box */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect for the button */
+.btn-read-more:hover {
+  background-color: #1a4d6c; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  border-color: #1a4d6c; /* Darker border on hover */
+}
+
+/* Display the box on hover */
+.btn-read-more:hover::before {
+  opacity: 1; /* Make the box visible on hover */
+}
+
+/* Focus effect for accessibility */
+.btn-read-more:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #1a4d6c; /* Darker border on focus for accessibility */
+  box-shadow: 0 0 5px rgba(42, 111, 158, 0.7); /* Soft focus glow */
+}
+
+/* Active effect when button is clicked */
+.btn-read-more:active {
+  transform: translateY(0); /* Removes the lift effect when clicked */
+  background-color: #164a66; /* Even darker blue on active */
+  border-color: #164a66; /* Darker border on active */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; /* Stacks sidebar and content vertically */
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar takes full width */
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .blog-card {
+    padding: 1rem;
+  }
+
+  .blog-card h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Tag List Styles */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows tags to wrap to the next line if there's not enough space */
+  gap: 1rem; /* Space between tags */
+  margin-top: 1rem; /* Space between tags and content */
+}
+
+.tag-item {
+  background-color: #e1e8f0; /* Light gray background for each tag */
+  color: #333; /* Dark text for readability */
+  border-radius: 20px; /* Rounded corners for each tag */
+  padding: 0.5rem 1rem; /* Padding inside each tag */
+  font-size: 0.9rem; /* Smaller font size for tags */
+  font-weight: 600; /* Bold text for tags */
+  text-transform: capitalize; /* Capitalize tag text */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tag-item:hover {
+  background-color: #2a6f9e; /* Darker blue when hovered */
+  color: white; /* White text on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+img,
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Optional: Set max-width for responsiveness */
+img,
+iframe {
+    max-width: 100%;
+    height: auto; /* For images */
+}
+
+/* Optional: Add padding for better spacing */
+img,
+iframe {
+    padding: 10px;
+}

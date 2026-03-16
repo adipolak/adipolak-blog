@@ -1,0 +1,34 @@
+{{ define "main" }}
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy">
+    {{ .Content }}
+  </article>
+
+  <!-- Fetch and Display Posts -->
+  {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
+  {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+  {{ $section = where $section "Draft" "ne" true }} <!-- Exclude draft posts -->
+  {{ $section_count := len $section }}
+  {{ if ge $section_count 1 }}
+    <div class="blog-list pa3 pa4-ns w-100 center">
+      <section class="blog-grid mw8 center">
+        <!-- Loop through all posts -->
+        {{ range  $section }}
+          <div class="blog-card">
+            <h2 class="f4">
+              <a href="{{ .Permalink }}" class="link dim">{{ .Title }}</a>
+            </h2>
+            <p class="f6 mv2 text-gray">{{ .Date.Format "January 2, 2006" }}</p>
+            <p>{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Read More</a>
+          <a></a>
+          <a></a>
+          <a></a>
+
+          </div>
+        {{ end }}
+      </section>
+    </div>
+  {{ else }}
+    <p class="tc">No posts found.</p>
+  {{ end }}
+{{ end }}

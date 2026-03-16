@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="layout mw8 center ph3 flex-l">
+  <!-- Sidebar -->
+  <!-- <aside class="sidebar bg-light-gray pa3 w-25-l">
+    <nav>
+      <h2 class="f4">Blog Navigator</h2>
+      <ul class="list pl0">
+        {{ range .Site.RegularPages }}
+        <li class="mb2">
+          <a href="{{ .Permalink }}" class="link dim blue">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </aside> -->
+
+  <!-- Main Content -->
+  <div class="content flex-auto">
+    <section class="blog-list">
+  <h1 class="f3 tc">Latest Blogs</h1>
+  <div class="blog-container">
+    {{ range .Pages }}
+    <div class="blog-entry">
+      <h2 class="f4">
+        <a href="{{ .Permalink }}" class="link dim">{{ .Title }}</a>
+      </h2>
+      <p class="f6 mv2">{{ .Date.Format "January 2, 2006" }}</p>
+      <p>{{ .Summary | truncate 150 }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+  </div>
+</div>
+{{ end }}
