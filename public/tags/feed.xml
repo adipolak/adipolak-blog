@@ -2,270 +2,270 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags - Adi Polak</title>
-    <link>http://localhost:62547/tags/</link>
+    <link>http://localhost:1313/adipolak-blog/tags/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:62547/tags/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/adipolak-blog/tags/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Apache Spark</title>
-      <link>http://localhost:62547/tags/apache-spark/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/apache-spark/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/apache-spark/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/apache-spark/</guid>
       <description></description>
       
       
     </item><item>
       <title>Conference</title>
-      <link>http://localhost:62547/tags/conference/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/conference/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/conference/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/conference/</guid>
       <description></description>
       
       
     </item><item>
       <title>Distributed-Systems</title>
-      <link>http://localhost:62547/tags/distributed-systems/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/distributed-systems/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/distributed-systems/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/distributed-systems/</guid>
       <description></description>
       
       
     </item><item>
       <title>Ai</title>
-      <link>http://localhost:62547/tags/ai/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/ai/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/ai/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/ai/</guid>
       <description></description>
       
       
     </item><item>
       <title>Data Science</title>
-      <link>http://localhost:62547/tags/data-science/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/data-science/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/data-science/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/data-science/</guid>
       <description></description>
       
       
     </item><item>
       <title>Machine Learning</title>
-      <link>http://localhost:62547/tags/machine-learning/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/machine-learning/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/machine-learning/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/machine-learning/</guid>
       <description></description>
       
       
     </item><item>
       <title>Terminology</title>
-      <link>http://localhost:62547/tags/terminology/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/terminology/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/terminology/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/terminology/</guid>
       <description></description>
       
       
     </item><item>
       <title>Beginner</title>
-      <link>http://localhost:62547/tags/beginner/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/beginner/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/beginner/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/beginner/</guid>
       <description></description>
       
       
     </item><item>
       <title>Delta Lake</title>
-      <link>http://localhost:62547/tags/delta-lake/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/delta-lake/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/delta-lake/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/delta-lake/</guid>
       <description></description>
       
       
     </item><item>
       <title>Open-Source</title>
-      <link>http://localhost:62547/tags/open-source/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/open-source/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/open-source/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/open-source/</guid>
       <description></description>
       
       
     </item><item>
       <title>Scenarios</title>
-      <link>http://localhost:62547/tags/scenarios/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/scenarios/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/scenarios/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/scenarios/</guid>
       <description></description>
       
       
     </item><item>
       <title>Deltalog</title>
-      <link>http://localhost:62547/tags/deltalog/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/deltalog/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/deltalog/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/deltalog/</guid>
       <description></description>
       
       
     </item><item>
       <title>Acid</title>
-      <link>http://localhost:62547/tags/acid/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/acid/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/acid/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/acid/</guid>
       <description></description>
       
       
     </item><item>
       <title>Analytic Zoo</title>
-      <link>http://localhost:62547/tags/analytic-zoo/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/analytic-zoo/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/analytic-zoo/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/analytic-zoo/</guid>
       <description></description>
       
       
     </item><item>
       <title>Koalas</title>
-      <link>http://localhost:62547/tags/koalas/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/koalas/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/koalas/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/koalas/</guid>
       <description></description>
       
       
     </item><item>
       <title>Pandas</title>
-      <link>http://localhost:62547/tags/pandas/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/pandas/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/pandas/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/pandas/</guid>
       <description></description>
       
       
     </item><item>
       <title>Ray</title>
-      <link>http://localhost:62547/tags/ray/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/ray/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/ray/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/ray/</guid>
       <description></description>
       
       
     </item><item>
       <title>Ray on Spark</title>
-      <link>http://localhost:62547/tags/ray-on-spark/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/ray-on-spark/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/ray-on-spark/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/ray-on-spark/</guid>
       <description></description>
       
       
     </item><item>
       <title>Beginners</title>
-      <link>http://localhost:62547/tags/beginners/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/beginners/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/beginners/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/beginners/</guid>
       <description></description>
       
       
     </item><item>
       <title>Devops</title>
-      <link>http://localhost:62547/tags/devops/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/devops/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/devops/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/devops/</guid>
       <description></description>
       
       
     </item><item>
       <title>Kubernetes</title>
-      <link>http://localhost:62547/tags/kubernetes/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/kubernetes/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/kubernetes/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/kubernetes/</guid>
       <description></description>
       
       
     </item><item>
       <title>Tutorial</title>
-      <link>http://localhost:62547/tags/tutorial/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/tutorial/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/tutorial/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/tutorial/</guid>
       <description></description>
       
       
     </item><item>
       <title>Get Started</title>
-      <link>http://localhost:62547/tags/get-started/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/get-started/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/get-started/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/get-started/</guid>
       <description></description>
       
       
     </item><item>
       <title>Guide</title>
-      <link>http://localhost:62547/tags/guide/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/guide/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/guide/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/guide/</guid>
       <description></description>
       
       
     </item><item>
       <title>Configuration</title>
-      <link>http://localhost:62547/tags/configuration/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/configuration/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/configuration/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/configuration/</guid>
       <description></description>
       
       
     </item><item>
       <title>Customize</title>
-      <link>http://localhost:62547/tags/customize/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/customize/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/customize/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/customize/</guid>
       <description></description>
       
       
     </item><item>
       <title>Settings</title>
-      <link>http://localhost:62547/tags/settings/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/settings/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/settings/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/settings/</guid>
       <description></description>
       
       
     </item><item>
       <title>License</title>
-      <link>http://localhost:62547/tags/license/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/license/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/license/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/license/</guid>
       <description></description>
       
       
     </item><item>
       <title>Leadership</title>
-      <link>http://localhost:62547/tags/leadership/</link>
+      <link>http://localhost:1313/adipolak-blog/tags/leadership/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/tags/leadership/</guid>
+      <guid>http://localhost:1313/adipolak-blog/tags/leadership/</guid>
       <description></description>
       
       

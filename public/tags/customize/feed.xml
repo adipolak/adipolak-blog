@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Customize - Adi Polak</title>
-    <link>http://localhost:62547/tags/customize/</link>
+    <link>http://localhost:1313/adipolak-blog/tags/customize/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:62547/tags/customize/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/adipolak-blog/tags/customize/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Example config.yaml</title>
-      <link>http://localhost:62547/post/example-config-yaml/</link>
+      <link>http://localhost:1313/adipolak-blog/post/example-config-yaml/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:62547/post/example-config-yaml/</guid>
+      <guid>http://localhost:1313/adipolak-blog/post/example-config-yaml/</guid>
       <description>An example config.yaml file relevant to Vibrant Shadows Hugo theme.</description>
       
       <content:encoded><![CDATA[<p>An example configuration file (config.yaml), which shows all the configuration options supported by &lsquo;Vibrant Shadows&rsquo; theme by Softorage, with explaining comments.</p>
@@ -193,7 +193,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">text</span>: <span style="color:#e6db74">&#34;#ffffff&#34;</span> <span style="color:#75715e"># HEX | default: theme.nav</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">content</span>: <span style="color:#75715e"># change the links below to appropriate url addresses</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">message</span>: <span style="color:#ae81ff">|</span> <span style="color:#75715e"># no default</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">By continuing to use this website, you agree to our &lt;a href=&#39;http://localhost:62547/legal/privacy-policy/&#39;&gt;Privacy Policy&lt;/a&gt;, &lt;a href=&#39;http://localhost:62547/legal/cookie-policy/&#39;&gt;Cookie Policy&lt;/a&gt; and our &lt;a href=&#39;http://localhost:62547/legal/terms-and-conditions/&#39;&gt;Terms and Conditions&lt;/a&gt; for your use of this website.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">By continuing to use this website, you agree to our &lt;a href=&#39;http://localhost:1313/adipolak-blog/legal/privacy-policy/&#39;&gt;Privacy Policy&lt;/a&gt;, &lt;a href=&#39;http://localhost:1313/adipolak-blog/legal/cookie-policy/&#39;&gt;Cookie Policy&lt;/a&gt; and our &lt;a href=&#39;http://localhost:1313/adipolak-blog/legal/terms-and-conditions/&#39;&gt;Terms and Conditions&lt;/a&gt; for your use of this website.</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">dismiss</span>: <span style="color:#e6db74">&#34;Close&#34;</span> <span style="color:#75715e"># text on the button that dismisses the popup/banner | default: &#34;Close&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">linkText</span>: <span style="color:#e6db74">&#34;Learn more&#34;</span> <span style="color:#75715e"># this text appears after the message and is hyperlinked | default: &#34;Learn more&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">linkURL</span>: <span style="color:#e6db74">&#34;/legal/privacy-policy/&#34;</span> <span style="color:#75715e"># url of location where user should be directed when they click &#34;Learn more&#34;.</span>
