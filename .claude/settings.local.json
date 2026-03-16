@@ -44,7 +44,9 @@
       "Bash(curl -I \"http://blog.adipolak.com/presentations/\" 2>&1 | head -15)",
       "Bash(curl -I \"https://adipolak.github.io/subscribe/\" 2>&1 | head -10)",
       "Bash(curl -I \"https://adipolak.github.io/adipolak-blog/subscribe/\" 2>&1 | head -10)",
-      "Bash(grep -l \"blog.adipolak.com\" content/post/*.md)"
+      "Bash(grep -l \"blog.adipolak.com\" content/post/*.md)",
+      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/\" | grep -A5 \"site-logo\" | head -20)",
+      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/presentations/\" | head -1)"
     ]
   }
 }
