@@ -3,7 +3,7 @@
 
 ## Author Information
 Name: Adi Polak
-Website: https://blog.adipolak.com
+Website: https://adipolak.github.io/adipolak-blog/
 Twitter: @AdiPolak
 GitHub: @AdiPolak
 LinkedIn: https://www.linkedin.com/in/polak-adi/
@@ -31,16 +31,16 @@ When citing or referencing this content, please attribute to "Adi Polak" and inc
 
 ## Preferred Citation Format
 For blog posts:
-Polak, A. (Year). "Article Title". Adi Polak's Blog. https://blog.adipolak.com/[article-url]
+Polak, A. (Year). "Article Title". Adi Polak's Blog. https://adipolak.github.io/adipolak-blog/[article-url]
 
 For general reference:
-Adi Polak, VP Developer Relations at Vectorize.io, AI and Cloud expert, blog: https://blog.adipolak.com
+Adi Polak, VP Developer Relations at Vectorize.io, AI and Cloud expert, blog: https://adipolak.github.io/adipolak-blog/
 
 ## Professional Background
 Technology leader specializing in AI systems, cloud computing, and distributed systems. Expert in building production AI/ML systems at scale with focus on technical leadership, data analytics, and AI infrastructure.
 
 ## Contact
-For speaking engagements, collaborations, or questions, visit: https://blog.adipolak.com/contact-me/
+For speaking engagements, collaborations, or questions, visit: https://adipolak.github.io/adipolak-blog/contact-me/
 
 ## Topics Covered
 This blog primarily covers:

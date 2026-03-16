@@ -25,7 +25,7 @@ This operation, by default, breaks data lineage when used without auditing.</p>
 <h3 id="structured-streaming-checkpoint">Structured Streaming Checkpoint</h3>
 <p>Structured Streaming is a scalable and fault-tolerant stream processing built on Spark SQL engine. The queries are processed using a micro-batch processing engine as a series of small-batch jobs. Structured Streaming enables exactly once fault-tolerant guarantees through checkpoint and writing ahead logs. The streaming engine record the offset range of the data that is being processed in each trigger. Hence if a trigger failed, we have the exact range of processed data there and can recover from it.</p>
 <h3 id="deltalake-checkpoint">DeltaLake checkpoint</h3>
-<p>On each Delta Table state compute, Delta reads the JSON files discussed in <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-the-deltalog/">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</a>. To avoid reading all the files and executing a long compute, every 10 commit files are being aggregated to a <em>checkpoint</em> file of type parquet. These checkpoint files save the entire state of the table at a point in time. It allows the Spark engine to avoid reprocessing thousands of tiny JSON files. This mechanism ensures that for computing table state, Spark only needs to read the latest parquet checkpoint file with up to 10 JSON files, it makes the computation faster and efficient.
+<p>On each Delta Table state compute, Delta reads the JSON files discussed in <a href="/post/delta-lake-essential-fundamentals-the-deltalog/">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</a>. To avoid reading all the files and executing a long compute, every 10 commit files are being aggregated to a <em>checkpoint</em> file of type parquet. These checkpoint files save the entire state of the table at a point in time. It allows the Spark engine to avoid reprocessing thousands of tiny JSON files. This mechanism ensures that for computing table state, Spark only needs to read the latest parquet checkpoint file with up to 10 JSON files, it makes the computation faster and efficient.
 Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
 <img class="responsive" src="/images/Detla/checkpointfile.png" alt="drawing"></p>
 <p>checkpoint files can be a one file for a specific table version or multiple files, it depends on what it contains.</p>
@@ -81,10 +81,10 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
       <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
-      <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
+      <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
 In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
 <h2 id="transaction-log">Transaction Log</h2>
-<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
+<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
 <h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
 <p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
 The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.
@@ -111,7 +111,7 @@ Later we see two <em>remove</em> operations, followed by three <em>add</em> oper
 <p>This information is valuable for managing the table and avoiding redundant full scan on the storage.</p>
 <p>To simplify the connection between DeltaTable and DeltaLog, it&rsquo;s easier to think about DeltaTable as a direct result of a set of actions audited by the DeltaLog.</p>
 <h2 id="deltalog-and-atomicity">DeltaLog and Atomicity</h2>
-<p>From <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">part one</a>, you already know that atomicity means that a transaction, either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
+<p>From <a href="/post/delta-lake-essential-fundamentals">part one</a>, you already know that atomicity means that a transaction, either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
 The transactions that took place on the data can be broken into multiple components in which each one individually represents a commit in the DeltaLog. These breaking complex operations into small transactions help with ensuring atomicity.</p>
 <h2 id="deltalog-and-isolation">DeltaLog and Isolation</h2>
 <p>Operations such as Update, Delete, Add can harm isolation; Hence, since we want to guarantee isolation with DeltaTable, readers only get access to the table snapshot. This guarantees all parallel readers read the exact data. For handling deletion operations, Delta postpones the actual delete operation on the files; it first tags the files as deleted and later, remove them when considered safe (similar to Cassandra, and ElasticSearch delete operations with a tombstone).</p>

@@ -35,7 +35,7 @@ Note! The output of the solution/pipeline is used by real users and not a machin
 <img class="responsive" src="/images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
 <h3 id="advantages">Advantages</h3>
 <p>In our scenario, we have multiple users that query the data on the fly and should see the same data - <em>single source of truth</em>. In distributed steaming, when we query the data, it might be that from two identical queries that ran at the same time, we will get different results. This is why we introduce DeltaLake into the pipeline. We save the streaming tabular data in DeltaLake, which in practice means that the user read operations take place on the DeltaTable snapshot, which guarantees consistency of the data. At the same time, the table is continuously being written.<br>
-Simultaneously, the user can also run updates/deletes and fixes on the data when necessary, this is important for controlling incoming data that are bounded to GDPR or other compliances. The conflicts are resolved using Delta conflict resolution mechanism (Discussed in Part 2 - <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-the-deltalog/">the DeltaLog</a>).</p>
+Simultaneously, the user can also run updates/deletes and fixes on the data when necessary, this is important for controlling incoming data that are bounded to GDPR or other compliances. The conflicts are resolved using Delta conflict resolution mechanism (Discussed in Part 2 - <a href="/post/delta-lake-essential-fundamentals-the-deltalog/">the DeltaLog</a>).</p>
 <p>If you are using <a href="https://docs.microsoft.com/en-us/azure/databricks/delta/?WT.mc_id=delta-13569-adpolak">Databricks services</a>, you will get the Auto Optimize out of the box, which coalesces small files into larger files using <a href="https://docs.microsoft.com/en-us/azure/databricks/delta/optimizations/auto-optimize?WT.mc_id=delta-13569-adpolak">Auto Compaction</a>.</p>
 <h3 id="when-to-exclude-delta-lake">When to exclude Delta Lake</h3>
 <p>As much as it&rsquo;s important to know what are the advantages and when to use DeltaLake, it&rsquo;s important to understand when to exclude it. For example, when you want to have a latency of <strong>seconds</strong> to update a Key-Value output for lookup tables, you should probably avoid DeltaLake since it introduce the overhead of the optimistic concurrency and commits to the DeltaLog itself. But if your system can handle a couple minutes of latency, you should consider using it for enforcing data - <em>single source of truth</em> for your users.</p>
@@ -81,9 +81,9 @@ I will continue to share scenarios, insights, and code samples throughout the bl
 </ul>
 <p>If you didn&rsquo;t get a chance to read the previous posts, read here: <br></p>
 <ol>
-<li><a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">Delta Lake essential Fundamentals: Part 1 - ACID</a></li>
-<li><a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-the-deltalog/">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</a></li>
-<li><a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals-part-3/">Delta Lake essential Fundamentals: Part 3 - Compaction and Checkpoint</a></li>
+<li><a href="/post/delta-lake-essential-fundamentals/">Delta Lake essential Fundamentals: Part 1 - ACID</a></li>
+<li><a href="/post/delta-lake-essential-fundamentals-the-deltalog/">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</a></li>
+<li><a href="/post/delta-lake-essential-fundamentals-part-3/">Delta Lake essential Fundamentals: Part 3 - Compaction and Checkpoint</a></li>
 <li>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios (You are here)</li>
 </ol>
 ]]></content:encoded>

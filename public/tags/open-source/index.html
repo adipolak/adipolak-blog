@@ -459,10 +459,10 @@ This operation, by default, breaks data lineage when used without auditing.</p><
           </div>
         
 
-        <p><p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
+        <p><p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
 In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
 <h2 id="transaction-log">Transaction Log</h2>
-<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
+<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
 <h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
 <p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
 The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.

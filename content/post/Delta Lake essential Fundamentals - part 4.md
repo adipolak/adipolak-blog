@@ -35,7 +35,7 @@ Let's assume we have these system requirements: <br><br>
 
 ### Advantages
 In our scenario, we have multiple users that query the data on the fly and should see the same data - *single source of truth*. In distributed steaming, when we query the data, it might be that from two identical queries that ran at the same time, we will get different results. This is why we introduce DeltaLake into the pipeline. We save the streaming tabular data in DeltaLake, which in practice means that the user read operations take place on the DeltaTable snapshot, which guarantees consistency of the data. At the same time, the table is continuously being written.<br>
-Simultaneously, the user can also run updates/deletes and fixes on the data when necessary, this is important for controlling incoming data that are bounded to GDPR or other compliances. The conflicts are resolved using Delta conflict resolution mechanism (Discussed in Part 2 - [the DeltaLog](https://blog.adipolak.com/post/delta-lake-essential-fundamentals-the-deltalog/)).
+Simultaneously, the user can also run updates/deletes and fixes on the data when necessary, this is important for controlling incoming data that are bounded to GDPR or other compliances. The conflicts are resolved using Delta conflict resolution mechanism (Discussed in Part 2 - [the DeltaLog](/post/delta-lake-essential-fundamentals-the-deltalog/)).
 
 If you are using [Databricks services](https://docs.microsoft.com/en-us/azure/databricks/delta/?WT.mc_id=delta-13569-adpolak), you will get the Auto Optimize out of the box, which coalesces small files into larger files using [Auto Compaction](https://docs.microsoft.com/en-us/azure/databricks/delta/optimizations/auto-optimize?WT.mc_id=delta-13569-adpolak).
 
@@ -110,9 +110,9 @@ If you would like to get monthly updates, consider [subscribing](https://sub.adi
 
 If you didn't get a chance to read the previous posts, read here: <br>
 
-1. [Delta Lake essential Fundamentals: Part 1 - ACID](https://blog.adipolak.com/post/delta-lake-essential-fundamentals/)
-2. [Delta Lake essential Fundamentals: Part 2 - The DeltaLog](https://blog.adipolak.com/post/delta-lake-essential-fundamentals-the-deltalog/)
-3. [Delta Lake essential Fundamentals: Part 3 - Compaction and Checkpoint](https://blog.adipolak.com/post/delta-lake-essential-fundamentals-part-3/)
+1. [Delta Lake essential Fundamentals: Part 1 - ACID](/post/delta-lake-essential-fundamentals/)
+2. [Delta Lake essential Fundamentals: Part 2 - The DeltaLog](/post/delta-lake-essential-fundamentals-the-deltalog/)
+3. [Delta Lake essential Fundamentals: Part 3 - Compaction and Checkpoint](/post/delta-lake-essential-fundamentals-part-3/)
 4. Delta Lake essential Fundamentals: Part 4 - Practical Scenarios (You are here)
 
 

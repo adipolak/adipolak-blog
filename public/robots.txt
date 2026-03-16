@@ -1,5 +1,5 @@
 # Robots.txt - Optimized for AI Crawlers and Search Engines
-# Website: https://blog.adipolak.com
+# Website: https://adipolak.github.io/adipolak-blog/
 # Author: Adi Polak
 
 # Allow all good bots
@@ -67,4 +67,4 @@ Disallow: /admin/
 Disallow: /.git/
 
 # Sitemap location
-Sitemap: https://blog.adipolak.com/sitemap.xml
+Sitemap: https://adipolak.github.io/adipolak-blog/sitemap.xml
