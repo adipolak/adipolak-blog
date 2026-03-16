@@ -5,6 +5,10 @@
 	path = themes/hugo-theme-chunky-poster
 	url = https://github.com/puresyntax71/hugo-theme-chunky-poster.git
 
+[submodule "themes/blog-theme"]
+	path = themes/blog-theme
+	url = https://github.com/adipolak/blog-theme.git
+
 
 
 
