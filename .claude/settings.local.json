@@ -46,7 +46,10 @@
       "Bash(curl -I \"https://adipolak.github.io/adipolak-blog/subscribe/\" 2>&1 | head -10)",
       "Bash(grep -l \"blog.adipolak.com\" content/post/*.md)",
       "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/\" | grep -A5 \"site-logo\" | head -20)",
-      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/presentations/\" | head -1)"
+      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/presentations/\" | head -1)",
+      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/contact-me/\" | grep -A20 \"<form\" | head -30)",
+      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/contact-me/\" 2>&1 | head -50)",
+      "Bash(hugo --quiet && echo \"Build successful\")"
     ]
   }
 }
