@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Adi Polak</title>
-    <link>http://localhost:61307/</link>
+    <link>http://localhost:62547/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:61307/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:62547/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Test Dark Mode</title>
-      <link>http://localhost:61307/test-dark-mode/</link>
+      <link>http://localhost:62547/test-dark-mode/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/test-dark-mode/</guid>
+      <guid>http://localhost:62547/test-dark-mode/</guid>
       <description>&lt;h1 id=&#34;testing-dark-mode&#34;&gt;Testing Dark Mode&lt;/h1&gt;
 &lt;p&gt;Look for the floating button in the &lt;strong&gt;bottom-right corner&lt;/strong&gt; of the page.&lt;/p&gt;
 &lt;ul&gt;
@@ -50,10 +50,10 @@
       
     </item><item>
       <title>Data&#43;AI Summit 2021 is Coming</title>
-      <link>http://localhost:61307/post/data_and_ai_summit2021/</link>
+      <link>http://localhost:62547/post/data_and_ai_summit2021/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/data_and_ai_summit2021/</guid>
+      <guid>http://localhost:62547/post/data_and_ai_summit2021/</guid>
       <description>Knock Knock! Who&#39;s there? It&#39;s me, Summit. Summit who? Data &#43; AI Summit</description>
       
       <content:encoded><![CDATA[<p>It&rsquo;s almost been half a year since the last summit.</p>
@@ -102,10 +102,10 @@ In some cases, that means smaller revenue, but when we use machine learning to s
       
     </item><item>
       <title>Machine Learning in Production - Concepts you should know</title>
-      <link>http://localhost:61307/post/machine-learning-in-production---concepts-you-should-know/</link>
+      <link>http://localhost:62547/post/machine-learning-in-production---concepts-you-should-know/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/machine-learning-in-production---concepts-you-should-know/</guid>
+      <guid>http://localhost:62547/post/machine-learning-in-production---concepts-you-should-know/</guid>
       <description>To productionize machine learning, know the concepts first</description>
       
       <content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
@@ -150,10 +150,10 @@ Machine learning&rsquo;s actual target variable can change over time in unforese
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>http://localhost:61307/post/delta-lake-essential-fundamentals---part-4/</link>
+      <link>http://localhost:62547/post/delta-lake-essential-fundamentals---part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <guid>http://localhost:62547/post/delta-lake-essential-fundamentals---part-4/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
@@ -243,10 +243,10 @@ I will continue to share scenarios, insights, and code samples throughout the bl
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
-      <link>http://localhost:61307/post/delta-lake-essential-fundamentals---part-3/</link>
+      <link>http://localhost:62547/post/delta-lake-essential-fundamentals---part-3/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals---part-3/</guid>
+      <guid>http://localhost:62547/post/delta-lake-essential-fundamentals---part-3/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
@@ -308,10 +308,10 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
-      <link>http://localhost:61307/post/delta-lake-essential-fundamentals---the-deltalog/</link>
+      <link>http://localhost:62547/post/delta-lake-essential-fundamentals---the-deltalog/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
+      <guid>http://localhost:62547/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="https://blog.adipolak.com/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
@@ -424,10 +424,10 @@ That means that if there is a request to delete a file that at the same time is 
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>http://localhost:61307/post/delta-lake-essential-fundamentals/</link>
+      <link>http://localhost:62547/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/delta-lake-essential-fundamentals/</guid>
+      <guid>http://localhost:62547/post/delta-lake-essential-fundamentals/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
@@ -483,10 +483,10 @@ But it's not.</p>
       
     </item><item>
       <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
-      <link>http://localhost:61307/post/apache-spark-ecosystem/</link>
+      <link>http://localhost:62547/post/apache-spark-ecosystem/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/apache-spark-ecosystem/</guid>
+      <guid>http://localhost:62547/post/apache-spark-ecosystem/</guid>
       <description>The ever growing Open Source Ecosystem</description>
       
       <content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
@@ -566,10 +566,10 @@ If you are interested in learning more and getting updates, follow <a href="http
       
     </item><item>
       <title>Koalas, Panda&#39;s Scalable Sibling</title>
-      <link>http://localhost:61307/post/koalas-pandas-scalable-sibling/</link>
+      <link>http://localhost:62547/post/koalas-pandas-scalable-sibling/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/koalas-pandas-scalable-sibling/</guid>
+      <guid>http://localhost:62547/post/koalas-pandas-scalable-sibling/</guid>
       <description>Gental introduction to Koalas</description>
       
       <content:encoded><![CDATA[<h2 id="what-is-it-all-about">What is it all about?</h2>
@@ -631,10 +631,10 @@ Now a new Upload blue button will appear at the bottom, click this too.</p>
       
     </item><item>
       <title>Kubernetes and Virtual Kubelet in a nutshell</title>
-      <link>http://localhost:61307/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <link>http://localhost:62547/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
+      <guid>http://localhost:62547/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
       <description>Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</description>
       
       <content:encoded><![CDATA[<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
@@ -829,10 +829,10 @@ For doing it, we need to expose it first - notice that we are exposing the app a
       
     </item><item>
       <title>Getting started with Vibrant Shadows</title>
-      <link>http://localhost:61307/post/getting-started/</link>
+      <link>http://localhost:62547/post/getting-started/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/getting-started/</guid>
+      <guid>http://localhost:62547/post/getting-started/</guid>
       <description>Read the full post to easily get started with Vibrant Shadows Hugo theme.</description>
       
       <content:encoded><![CDATA[<p>It&rsquo;s very easy to get started with Vibrant Shadows. How? Read on.</p>
@@ -886,10 +886,10 @@ For doing it, we need to expose it first - notice that we are exposing the app a
       
     </item><item>
       <title>Example config.yaml</title>
-      <link>http://localhost:61307/post/example-config-yaml/</link>
+      <link>http://localhost:62547/post/example-config-yaml/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/example-config-yaml/</guid>
+      <guid>http://localhost:62547/post/example-config-yaml/</guid>
       <description>An example config.yaml file relevant to Vibrant Shadows Hugo theme.</description>
       
       <content:encoded><![CDATA[<p>An example configuration file (config.yaml), which shows all the configuration options supported by &lsquo;Vibrant Shadows&rsquo; theme by Softorage, with explaining comments.</p>
@@ -1069,7 +1069,7 @@ For doing it, we need to expose it first - notice that we are exposing the app a
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">text</span>: <span style="color:#e6db74">&#34;#ffffff&#34;</span> <span style="color:#75715e"># HEX | default: theme.nav</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">content</span>: <span style="color:#75715e"># change the links below to appropriate url addresses</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">message</span>: <span style="color:#ae81ff">|</span> <span style="color:#75715e"># no default</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">By continuing to use this website, you agree to our &lt;a href=&#39;http://localhost:61307/legal/privacy-policy/&#39;&gt;Privacy Policy&lt;/a&gt;, &lt;a href=&#39;http://localhost:61307/legal/cookie-policy/&#39;&gt;Cookie Policy&lt;/a&gt; and our &lt;a href=&#39;http://localhost:61307/legal/terms-and-conditions/&#39;&gt;Terms and Conditions&lt;/a&gt; for your use of this website.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">By continuing to use this website, you agree to our &lt;a href=&#39;http://localhost:62547/legal/privacy-policy/&#39;&gt;Privacy Policy&lt;/a&gt;, &lt;a href=&#39;http://localhost:62547/legal/cookie-policy/&#39;&gt;Cookie Policy&lt;/a&gt; and our &lt;a href=&#39;http://localhost:62547/legal/terms-and-conditions/&#39;&gt;Terms and Conditions&lt;/a&gt; for your use of this website.</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">dismiss</span>: <span style="color:#e6db74">&#34;Close&#34;</span> <span style="color:#75715e"># text on the button that dismisses the popup/banner | default: &#34;Close&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">linkText</span>: <span style="color:#e6db74">&#34;Learn more&#34;</span> <span style="color:#75715e"># this text appears after the message and is hyperlinked | default: &#34;Learn more&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">linkURL</span>: <span style="color:#e6db74">&#34;/legal/privacy-policy/&#34;</span> <span style="color:#75715e"># url of location where user should be directed when they click &#34;Learn more&#34;.</span>
@@ -1092,10 +1092,10 @@ For doing it, we need to expose it first - notice that we are exposing the app a
       
     </item><item>
       <title>Additional information about the theme</title>
-      <link>http://localhost:61307/post/additional-info/</link>
+      <link>http://localhost:62547/post/additional-info/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/additional-info/</guid>
+      <guid>http://localhost:62547/post/additional-info/</guid>
       <description>Additional info about the theme, like &#39;Built with&#39;, &#39;Contributing&#39;, and &#39;License&#39;.</description>
       
       <content:encoded><![CDATA[<p>We share some additional information about this theme, that may be relevant.</p>
@@ -1137,10 +1137,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       
     </item><item>
       <title>AI Systems and Applications</title>
-      <link>http://localhost:61307/hidden/ai-placeholder/</link>
+      <link>http://localhost:62547/hidden/ai-placeholder/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/hidden/ai-placeholder/</guid>
+      <guid>http://localhost:62547/hidden/ai-placeholder/</guid>
       <description>Collection of insights on AI systems</description>
       
       
@@ -1148,10 +1148,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       
     </item><item>
       <title>Technical Leadership Insights</title>
-      <link>http://localhost:61307/hidden/leadership-placeholder/</link>
+      <link>http://localhost:62547/hidden/leadership-placeholder/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/hidden/leadership-placeholder/</guid>
+      <guid>http://localhost:62547/hidden/leadership-placeholder/</guid>
       <description>Collection of insights on technical leadership</description>
       
       

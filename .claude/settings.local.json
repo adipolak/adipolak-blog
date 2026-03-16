@@ -30,7 +30,11 @@
       "Bash(git push:*)",
       "Bash(git remote:*)",
       "Bash(git push-external:*)",
-      "WebFetch(domain:talks.rmoff.net)"
+      "WebFetch(domain:talks.rmoff.net)",
+      "WebFetch(domain:venturebeat.com)",
+      "Bash(hugo --quiet 2>&1 | head -20)",
+      "Bash(grep -r \"external.writing\\\\|external_writing\" layouts/ --include=\"*.html\" 2>/dev/null | head -10)",
+      "Bash(find .claude -name \"*.md\" -type f 2>/dev/null | head -10)"
     ]
   }
 }

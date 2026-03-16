@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Machine Learning - Adi Polak</title>
-    <link>http://localhost:61307/tags/machine-learning/</link>
+    <link>http://localhost:62547/tags/machine-learning/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:61307/tags/machine-learning/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:62547/tags/machine-learning/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Machine Learning in Production - Concepts you should know</title>
-      <link>http://localhost:61307/post/machine-learning-in-production---concepts-you-should-know/</link>
+      <link>http://localhost:62547/post/machine-learning-in-production---concepts-you-should-know/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:61307/post/machine-learning-in-production---concepts-you-should-know/</guid>
+      <guid>http://localhost:62547/post/machine-learning-in-production---concepts-you-should-know/</guid>
       <description>To productionize machine learning, know the concepts first</description>
       
       <content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>

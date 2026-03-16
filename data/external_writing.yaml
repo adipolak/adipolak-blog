@@ -5,10 +5,19 @@
 
 articles:
   # 2026
+  - title: "Fixing AI failure: Three changes enterprises should make now"
+    publication: "VentureBeat"
+    date: "2026-03-15"
+    url: "https://venturebeat.com/technology/fixing-ai-failure-three-changes-enterprises-should-make-now"
+    image: "https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F7pQQUo80uOntCalTMvvk5u%2F3bb59dea39deda40e2411cfaa9b1da07%2FWhen_AI_fails.png%3Fw%3D1000%26q%3D100&w=3840&q=85"
+    description: "Practical guidance for enterprises struggling with AI implementation failures. Outlines three critical organizational changes needed to transform AI initiatives from failed experiments into successful production systems."
+    tags: ["ai", "leadership", "enterprise ai", "building"]
+
   - title: "The Head Chef Model for AI-Assisted Development"
     publication: "The New Stack"
     date: "2026-01-22"
     url: "https://thenewstack.io/the-head-chef-model-for-ai-assisted-development/"
+    image: "https://cdn.thenewstack.io/media/2026/01/b348d7d0-chef-1024x613.jpg"
     description: "Redefining the developer's role as an orchestrator of AI 'sous chefs' to focus on system design and quality control."
     tags: ["ai", "developer tools", "software development", "ai-assisted development"]
 
@@ -17,6 +26,7 @@ articles:
     publication: "InfoQ"
     date: "2025-04-11"
     url: "https://www.infoq.com/news/2025/04/ai-precision-intelligent-rag/"
+    image: "https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/ai-precision-intelligent-rag/en/resources/1Adi%20Polak%201-1744218739636.jpeg"
     description: "Overcoming AI precision challenges through agentic RAG systems. How intelligent agents can decompose complex tasks to deliver more accurate data retrieval for production AI applications."
     tags: ["ai", "rag", "agentic ai", "qcon", "machine-learning"]
 
@@ -24,6 +34,7 @@ articles:
     publication: "InfoWorld"
     date: "2025-01-07"
     url: "https://www.infoworld.com/article/3631197/agentic-ai-the-top-challenges-and-how-to-overcome-them.html"
+    image: "https://www.infoworld.com/wp-content/uploads/2025/04/3631197-0-40072700-1745211746-artificial-intelligence-ai-robot-hands_shutterstock_1864463521.jpg?resize=2048%2C1036&quality=50&strip=all"
     description: "Key obstacles enterprises face when deploying agentic AI systems, including model logic, reliability, data privacy, and data quality, with practical solutions for building trustworthy autonomous AI agents."
     tags: ["ai agents", "enterprise ai", "data privacy", "ai reliability", "ai", "machine-learning"]
 
@@ -32,6 +43,7 @@ articles:
     publication: "InfoQ"
     date: "2024-11-29"
     url: "https://www.infoq.com/news/2024/11/effective-data-stream-processing/"
+    image: "https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2024/11/effective-data-stream-processing/en/resources/1IMG_2578-1732693057933.jpg"
     description: "Key design patterns for managing data streaming challenges. Covers exactly-once semantics, complex join operations between streams, and error management strategies for data integrity."
     tags: ["kafka", "stream processing", "qcon", "design patterns", "distributed-systems"]
 
@@ -39,6 +51,7 @@ articles:
     publication: "InfoWorld"
     date: "2024-11-25"
     url: "https://www.infoworld.com/article/3607370/3-data-engineering-trends-riding-kafka-flink-and-iceberg.html"
+    image: "https://www.infoworld.com/wp-content/uploads/2025/05/3607370-0-29439800-1747370673-shutterstock_2078917666.jpg?resize=2048%2C1152&quality=50&strip=all"
     description: "Emerging trends in the Apache Kafka, Flink, and Iceberg communities. Explores reimagining microservices with Flink streaming, leveraging SQL for real-time AI, and community-driven Iceberg innovations."
     tags: ["kafka", "flink", "iceberg", "data engineering", "distributed-systems"]
 
@@ -46,6 +59,7 @@ articles:
     publication: "Confluent Blog"
     date: "2024-08-15"
     url: "https://www.confluent.io/blog/introducing-confluent-extension-for-vs-code/"
+    image: "https://images.ctfassets.net/8vofjvai1hpv/2kcVmDhGAMMCam9iNuPbdP/10f5f0c2ba67468356301963449a53b3/delete-topic-in-ide.png"
     description: "Announcing the new Confluent extension for Visual Studio Code, bringing Kafka development tools directly into your IDE for enhanced developer experience."
     tags: ["confluent", "vs code", "developer tools", "kafka", "distributed-systems"]
 
@@ -54,6 +68,7 @@ articles:
     publication: "Forbes Tech Council"
     date: "2023-05-08"
     url: "https://www.forbes.com/councils/forbestechcouncil/2023/05/08/implementing-data-fabric-for-enhanced-business-operations-step-by-step/"
+    image: "https://imageio.forbes.com/specials-images/imageserve/6455075378607a245e9c02fa//0x0.jpg?width=960&dpr=2"
     description: "A comprehensive guide to implementing data fabric architecture to streamline business operations and enable better data integration across the enterprise."
     tags: ["data fabric", "data architecture", "enterprise", "distributed-systems"]
 
@@ -61,6 +76,7 @@ articles:
     publication: "Forbes Tech Council"
     date: "2023-02-09"
     url: "https://www.forbes.com/councils/forbestechcouncil/2023/02/09/data-version-control-the-enabler-of-data-engineering-best-practices/"
+    image: "https://imageio.forbes.com/specials-images/imageserve/5eecb41c76f20100072f48aa//0x0.jpg?width=960&dpr=2"
     description: "How data version control systems enable reproducibility, collaboration, and best practices in modern data engineering workflows."
     tags: ["data engineering", "version control", "best practices", "distributed-systems"]
 
@@ -68,6 +84,7 @@ articles:
     publication: "Forbes Tech Council"
     date: "2023-01-18"
     url: "https://www.forbes.com/councils/forbestechcouncil/2023/01/18/how-to-build-sales-excellence-through-internal-champions-with-devex/"
+    image: "https://imageio.forbes.com/specials-images/imageserve/5f6bad35249b1616d2c4983c/Businesswomen-handshaking-in-auditorium-corridor/0x0.jpg?width=960&dpr=2"
     description: "Leveraging developer experience (DevEx) and internal champions to drive sales excellence and create advocates within your organization."
     tags: ["developer relations", "devex", "sales strategy", "leadership"]
 
@@ -76,6 +93,7 @@ articles:
     publication: "Forbes Tech Council"
     date: "2022-12-05"
     url: "https://www.forbes.com/councils/forbestechcouncil/2022/12/05/how-to-build-a-data-strategy-that-can-help-deliver-value-fast/"
+    image: "https://imageio.forbes.com/specials-images/imageserve/6308eb544f417368cd7d1ff3/Multi-racial-diverse-group-of-people-working-with-Paperwork-on-a-board-room-table-at/0x0.jpg?width=960&dpr=2"
     description: "Practical approaches to building a data strategy that delivers business value quickly while establishing a foundation for long-term success."
     tags: ["data strategy", "business value", "leadership"]
 
@@ -83,5 +101,6 @@ articles:
     publication: "Forbes Tech Council"
     date: "2022-08-11"
     url: "https://www.forbes.com/councils/forbestechcouncil/2022/08/11/tech-leaders-talk-about-their-biggest-challenges-in-2022/"
+    image: "https://imageio.forbes.com/specials-images/imageserve/62f503ea756b1518007ff4e0/Photos-of-featured-Forbes-Technology-Council-members-/0x0.jpg?width=960&dpr=2"
     description: "Insights from technology leaders on the most pressing challenges facing the industry, from talent acquisition to rapid technological change."
     tags: ["leadership", "tech trends", "challenges"]
