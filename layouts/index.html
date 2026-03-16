@@ -45,19 +45,19 @@
 
   <div class="expertise-grid" style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
 
-    <a href="/tags/distributed-systems/" class="focus-card">
+    <a href="{{ "tags/distributed-systems" | relURL }}" class="focus-card">
       <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Distributed Systems</h3>
     </a>
 
-    <a href="/tags/machine-learning/" class="focus-card">
+    <a href="{{ "tags/machine-learning" | relURL }}" class="focus-card">
       <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">ML in Production</h3>
     </a>
 
-    <a href="/tags/leadership/" class="focus-card">
+    <a href="{{ "tags/leadership" | relURL }}" class="focus-card">
       <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Technical Leadership</h3>
     </a>
 
-    <a href="/tags/ai/" class="focus-card">
+    <a href="{{ "tags/ai" | relURL }}" class="focus-card">
       <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Embedding AI</h3>
     </a>
 
@@ -71,8 +71,8 @@
     I'm always interested in conversations about building production systems, technical leadership, and the future of data infrastructure.
   </p>
   <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-    <a href="/subscribe/" class="btn" style="background: #D7B9A8; color: #171310; font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 600; padding: 16px 28px; border-radius: 10px; border: none;">Subscribe for Updates</a>
-    <a href="/contact-me/" class="btn-secondary btn" style="background: transparent; color: #F2ECE6; border: 1px solid #6E5C50; font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 600; padding: 16px 28px; border-radius: 10px;">Get in Touch</a>
+    <a href="{{ "subscribe" | relURL }}" class="btn" style="background: #D7B9A8; color: #171310; font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 600; padding: 16px 28px; border-radius: 10px; border: none;">Subscribe for Updates</a>
+    <a href="{{ "contact-me" | relURL }}" class="btn-secondary btn" style="background: transparent; color: #F2ECE6; border: 1px solid #6E5C50; font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 600; padding: 16px 28px; border-radius: 10px;">Get in Touch</a>
   </div>
 </section>
 
@@ -110,7 +110,7 @@
         <p style="color: #C7BBB0; margin-bottom: auto; line-height: 1.7; font-size: 16px; flex-grow: 1;">
           {{ .description }}
         </p>
-        <a href="/presentations/" style="color: #D7B9A8; font-size: 15px; font-weight: 600; border-bottom: 1px solid #D7B9A8; margin-top: 16px; display: inline-block;">View all presentations →</a>
+        <a href="{{ "presentations" | relURL }}" style="color: #D7B9A8; font-size: 15px; font-weight: 600; border-bottom: 1px solid #D7B9A8; margin-top: 16px; display: inline-block;">View all presentations →</a>
       </article>
       {{ end }}
 

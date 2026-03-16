@@ -1,7 +1,9 @@
 <nav class="site-nav" role="navigation">
   <div class="nav-container">
-    <a href="/" class="site-logo">
-      <img src="/assets/favicon/favicon-32x32.png" alt="{{ .Site.Title }} logo" class="logo-icon" />
+    <a href="{{ .Site.BaseURL }}" class="site-logo">
+      {{ if .Site.Params.brand.logo_32px }}
+      <img src="{{ .Site.Params.brand.logo_32px | relURL }}" alt="{{ .Site.Title }} logo" class="logo-icon" />
+      {{ end }}
       <span class="logo-text">{{ .Site.Title }}</span>
     </a>
     <div class="nav-menu">
@@ -15,7 +17,7 @@
             {{ end }}
           {{ end }}
           <li>
-            <a href="/feed.xml" title="RSS Feed" aria-label="Subscribe via RSS">
+            <a href="{{ "feed.xml" | relURL }}" title="RSS Feed" aria-label="Subscribe via RSS">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
                 <path d="M4 11a9 9 0 0 1 9 9"></path>
                 <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -25,7 +27,7 @@
           </li>
         </ul>
       {{ end }}
-      <a href="/subscribe/" class="nav-cta">Subscribe</a>
+      <a href="{{ "subscribe" | relURL }}" class="nav-cta">Subscribe</a>
     </div>
   </div>
 </nav>

@@ -15,7 +15,7 @@
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     {{ end }}
 
-    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+    <link rel="shortcut icon" type="image/png" href="{{ "/assets/favicon/favicon-32x32.png" | relURL }}"/>
 
     {{ $stylesheet := .Site.Data.webpack_assets.app }}
     {{ with $stylesheet.css }}

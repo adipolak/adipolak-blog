@@ -34,7 +34,16 @@
       "WebFetch(domain:venturebeat.com)",
       "Bash(hugo --quiet 2>&1 | head -20)",
       "Bash(grep -r \"external.writing\\\\|external_writing\" layouts/ --include=\"*.html\" 2>/dev/null | head -10)",
-      "Bash(find .claude -name \"*.md\" -type f 2>/dev/null | head -10)"
+      "Bash(find .claude -name \"*.md\" -type f 2>/dev/null | head -10)",
+      "Bash(git config:*)",
+      "Bash(git submodule:*)",
+      "Bash(git clone:*)",
+      "Bash(git reset:*)",
+      "Bash(curl -I \"https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F7pQQUo80uOntCalTMvvk5u%2F3bb59dea39deda40e2411cfaa9b1da07%2FWhen_AI_fails.png%3Fw%3D1000%26q%3D100&w=3840&q=85\" 2>&1 | head -10)",
+      "Bash(curl -I \"https://adipolak.github.io/adipolak-blog/assets/favicon/favicon-32x32.png\" 2>&1 | head -10)",
+      "Bash(curl -I \"http://blog.adipolak.com/presentations/\" 2>&1 | head -15)",
+      "Bash(curl -I \"https://adipolak.github.io/subscribe/\" 2>&1 | head -10)",
+      "Bash(curl -I \"https://adipolak.github.io/adipolak-blog/subscribe/\" 2>&1 | head -10)"
     ]
   }
 }

@@ -12,9 +12,9 @@
   </p>
 
   <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
-    <a href="/" class="btn">Go Home</a>
-    <a href="/search/" class="btn-secondary btn">Search</a>
-    <a href="/tags/" class="btn-secondary btn">Browse Topics</a>
+    <a href="{{ .Site.BaseURL }}" class="btn">Go Home</a>
+    <a href="{{ "search" | relURL }}" class="btn-secondary btn">Search</a>
+    <a href="{{ "tags" | relURL }}" class="btn-secondary btn">Browse Topics</a>
   </div>
 </div>
 
