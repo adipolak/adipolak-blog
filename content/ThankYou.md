@@ -7,7 +7,7 @@ author_twitter: "adipolak"
 draft: false
 toc: "false"
 hidden: true
-url: "/thankyou/"
+url: "thankyou/"
 ---
 
 
