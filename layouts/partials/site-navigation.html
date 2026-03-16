@@ -12,7 +12,7 @@
           {{ range .Site.Menus.main }}
             {{ if ne .Name "Subscribe" }}
               <li>
-                <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+                <a href="{{ .URL | relURL }}" title="{{ .Name }}">{{ .Name }}</a>
               </li>
             {{ end }}
           {{ end }}
