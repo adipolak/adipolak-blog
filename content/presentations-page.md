@@ -1,6 +1,6 @@
 ---
 title: "Speaking"
-layout: "presentations"
+type: "presentations"
 url: "presentations/"
 ---
 
