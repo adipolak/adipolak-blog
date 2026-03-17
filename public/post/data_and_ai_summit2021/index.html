@@ -424,26 +424,6 @@ In some cases, that means smaller revenue, but when we use machine learning to s
 </article>
 
 
-<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
-<script>
-(function() {
-  const btn = document.getElementById('dark-mode-btn');
-  if (!btn) return;
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    btn.textContent = '☀️';
-  }
-  btn.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    btn.textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-})();
-</script>
-
-
     </main>
     <footer style="background: var(--warm-black); color: var(--color-text); padding: var(--space-2xl) var(--space-md); margin-top: var(--space-3xl);">
   <div style="max-width: 1200px; margin: 0 auto;">
