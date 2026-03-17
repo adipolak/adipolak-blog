@@ -1,0 +1,139 @@
+{{ define "main" }}
+
+<style>
+  .book-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  @media (max-width: 768px) {
+    .book-card {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+</style>
+
+<!-- Page Header -->
+<section style="background: var(--warm-black); padding: var(--space-3xl) var(--space-md); text-align: center;">
+  <div style="max-width: 720px; margin: 0 auto;">
+    <h1 style="font-family: var(--font-serif); font-size: var(--text-3xl); font-weight: 400; color: var(--warm-white); margin: 0 0 var(--space-md); line-height: 1.2;">
+      Books
+    </h1>
+    <p style="font-size: var(--text-lg); color: var(--color-text-muted); margin: 0; line-height: 1.6; font-weight: 300;">
+      {{ .Content | plainify }}
+    </p>
+  </div>
+</section>
+
+<!-- Books Section -->
+<section style="padding: var(--space-3xl) var(--space-md); background: var(--warm-off-white);">
+  <div style="max-width: 1100px; margin: 0 auto;">
+
+    <!-- Scaling Machine Learning with Spark -->
+    <article class="book-card" style="background: var(--color-bg); border: 1px solid var(--color-border-subtle); border-radius: 10px; padding: 40px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); margin-bottom: 48px;">
+
+      <!-- Book Cover -->
+      <div style="position: relative;">
+        <a href="https://www.amazon.com/Scaling-Machine-Learning-Spark-Polak-ebook/dp/B0BXQTTJ3N" target="_blank" rel="noopener noreferrer" style="display: block; border: none;">
+          <img src="https://m.media-amazon.com/images/I/81cPZSOIKGL._SY522_.jpg"
+               alt="Scaling Machine Learning with Spark Book Cover"
+               style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;"
+               onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(215, 185, 168, 0.3)';"
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.4)';" />
+        </a>
+      </div>
+
+      <!-- Book Details -->
+      <div style="display: flex; flex-direction: column;">
+        <h2 style="margin: 0 0 16px; font-family: var(--font-serif); font-size: 28px; font-weight: 500; line-height: 1.3; color: var(--color-text);">
+          <a href="https://www.amazon.com/Scaling-Machine-Learning-Spark-Polak-ebook/dp/B0BXQTTJ3N" target="_blank" rel="noopener noreferrer" style="color: var(--color-text); text-decoration: none; border: none; transition: color 0.2s ease;" onmouseover="this.style.color='var(--color-link)';" onmouseout="this.style.color='var(--color-text)';">
+            Scaling Machine Learning with Spark: Distributed ML with MLlib, TensorFlow, and PyTorch
+          </a>
+        </h2>
+
+        <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 16px; margin: 0 0 20px;">
+          Learn how to build end-to-end scalable machine learning solutions with Apache Spark. With this practical guide, author Adi Polak introduces data and ML practitioners to creative solutions that supersede today's traditional methods. You'll learn a more holistic approach that takes you beyond specific requirements and organizational goals--allowing data and ML practitioners to collaborate and understand each other better.
+        </p>
+
+        <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 16px; margin: 0 0 20px;">
+          Scaling Machine Learning with Spark examines several technologies for building end-to-end distributed ML workflows based on the Apache Spark ecosystem with Spark MLlib, MLflow, TensorFlow, and PyTorch. If you're a data scientist who works with machine learning, this book shows you when and why to use each technology.
+        </p>
+
+        <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 15px; margin: 0;"><strong style="color: var(--color-text);">You will:</strong></p>
+        <ul style="color: var(--color-text-muted); line-height: 1.7; font-size: 15px; margin: 12px 0 24px 20px; padding: 0;">
+          <li style="margin-bottom: 8px;">Explore machine learning, including distributed computing concepts and terminology</li>
+          <li style="margin-bottom: 8px;">Manage the ML lifecycle with MLflow</li>
+          <li style="margin-bottom: 8px;">Ingest data and perform basic preprocessing with Spark</li>
+          <li style="margin-bottom: 8px;">Explore feature engineering, and use Spark to extract features</li>
+          <li style="margin-bottom: 8px;">Train a model with MLlib and build a pipeline to reproduce it</li>
+          <li style="margin-bottom: 8px;">Build a data system to combine the power of Spark with deep learning</li>
+          <li style="margin-bottom: 8px;">Get a step-by-step example of working with distributed TensorFlow</li>
+          <li>Use PyTorch to scale machine learning and its internal architecture</li>
+        </ul>
+
+        <a href="https://www.amazon.com/Scaling-Machine-Learning-Spark-Polak-ebook/dp/B0BXQTTJ3N" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; background: var(--color-link); color: var(--espresso); font-family: var(--font-sans); font-size: 16px; font-weight: 600; border-radius: 8px; text-decoration: none; border: none; transition: all 0.2s ease; align-self: flex-start;" onmouseover="this.style.background='var(--color-link-hover)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='var(--color-link)'; this.style.transform='translateY(0)';">
+          View on Amazon
+          <svg width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4M10.5 1.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- High Performance Spark -->
+    <article class="book-card" style="background: var(--color-bg); border: 1px solid var(--color-border-subtle); border-radius: 10px; padding: 40px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">
+
+      <!-- Book Cover -->
+      <div style="position: relative;">
+        <a href="https://www.amazon.com/High-Performance-Spark-Practices-Optimizing/dp/1098145852" target="_blank" rel="noopener noreferrer" style="display: block; border: none;">
+          <img src="https://m.media-amazon.com/images/I/81zEGpsYiaL._SY522_.jpg"
+               alt="High Performance Spark Book Cover"
+               style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;"
+               onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(215, 185, 168, 0.3)';"
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.4)';" />
+        </a>
+      </div>
+
+      <!-- Book Details -->
+      <div style="display: flex; flex-direction: column;">
+        <h2 style="margin: 0 0 16px; font-family: var(--font-serif); font-size: 28px; font-weight: 500; line-height: 1.3; color: var(--color-text);">
+          <a href="https://www.amazon.com/High-Performance-Spark-Practices-Optimizing/dp/1098145852" target="_blank" rel="noopener noreferrer" style="color: var(--color-text); text-decoration: none; border: none; transition: color 0.2s ease;" onmouseover="this.style.color='var(--color-link)';" onmouseout="this.style.color='var(--color-text)';">
+            High Performance Spark: Best Practices for Scaling and Optimizing Apache Spark
+          </a>
+        </h2>
+
+        <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 16px; margin: 0 0 20px;">
+          Apache Spark is amazing when everything clicks. But if you haven't seen the performance improvements you expected or still don't feel confident enough to use Spark in production, this practical book is for you. Authors Holden Karau, Rachel Warren, and Anya Bida walk you through the secrets of the Spark code base, and demonstrate performance optimizations that will help your data pipelines run faster, scale to larger datasets, and avoid costly antipatterns.
+        </p>
+
+        <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 16px; margin: 0 0 20px;">
+          Ideal for data engineers, software engineers, data scientists, and system administrators, the second edition of High Performance Spark presents new use cases, code examples, and best practices for Spark 3.x and beyond. This book gives you a fresh perspective on this continually evolving framework and shows you how to work around bumps on your Spark and PySpark journey.
+        </p>
+
+        <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 15px; margin: 0;"><strong style="color: var(--color-text);">With this book, you'll learn how to:</strong></p>
+        <ul style="color: var(--color-text-muted); line-height: 1.7; font-size: 15px; margin: 12px 0 24px 20px; padding: 0;">
+          <li style="margin-bottom: 8px;">Accelerate your ML workflows with integrations including PyTorch</li>
+          <li style="margin-bottom: 8px;">Handle key skew and take advantage of Spark's new dynamic partitioning</li>
+          <li style="margin-bottom: 8px;">Make your code reliable with scalable testing and validation techniques</li>
+          <li style="margin-bottom: 8px;">Deploy Spark on Kubernetes and similar environments</li>
+          <li style="margin-bottom: 8px;">Take advantage of GPU acceleration with RAPIDS and resource profiles</li>
+          <li style="margin-bottom: 8px;">Get your Spark jobs to run faster and handle even larger datasets</li>
+          <li>Gain faster insights by reducing pipeline running times</li>
+        </ul>
+
+        <a href="https://www.amazon.com/High-Performance-Spark-Practices-Optimizing/dp/1098145852" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; background: var(--color-link); color: var(--espresso); font-family: var(--font-sans); font-size: 16px; font-weight: 600; border-radius: 8px; text-decoration: none; border: none; transition: all 0.2s ease; align-self: flex-start;" onmouseover="this.style.background='var(--color-link-hover)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='var(--color-link)'; this.style.transform='translateY(0)';">
+          View on Amazon
+          <svg width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4M10.5 1.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+{{ end }}

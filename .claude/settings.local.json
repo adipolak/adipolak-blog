@@ -63,7 +63,10 @@
       "Bash(hugo serve:*)",
       "Bash(cd /Users/adipolak/open-source/adipolak-blog/content/post && find . -name \"*.md\" -exec grep -l 'src=\"/images/' {} \\\\; | while read file; do sed -i '' 's|src=\"/images/|src=\"../../images/|g' \"$file\"; done)",
       "Bash(HUGO_ENV=production hugo server --minify --environment production)",
-      "Bash(HUGO_ENV=production hugo server --minify --environment production --bind 127.0.0.1 --port 1313)"
+      "Bash(HUGO_ENV=production hugo server --minify --environment production --bind 127.0.0.1 --port 1313)",
+      "Bash(open:*)",
+      "Bash(find /Users/adipolak/open-source/adipolak-blog -name \"*presentation*\" -type f 2>/dev/null | grep -v \".git\" | head -10)",
+      "WebFetch(domain:www.amazon.com)"
     ]
   }
 }

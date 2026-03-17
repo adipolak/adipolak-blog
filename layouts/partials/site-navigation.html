@@ -1,6 +1,6 @@
 <nav class="site-nav" role="navigation">
   <div class="nav-container">
-    <a href="{{ .Site.BaseURL }}" class="site-logo">
+    <a href="{{ "" | relURL }}" class="site-logo">
       {{ if .Site.Params.brand.logo_32px }}
       <img src="{{ .Site.Params.brand.logo_32px | relURL }}" alt="{{ .Site.Title }} logo" class="logo-icon" />
       {{ end }}

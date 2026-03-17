@@ -40,7 +40,7 @@
 
         {{ if $firstImage }}
         <div class="post-image">
-          <a href="{{ .Permalink }}">
+          <a href="{{ .RelPermalink }}">
             <img src="{{ $firstImage | relURL }}" alt="{{ .Title }}" loading="lazy">
           </a>
         </div>
@@ -60,7 +60,7 @@
         {{ end }}
 
         <h2>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h2>
 
         {{ with .Params.tags }}
@@ -73,7 +73,7 @@
 
         <p>{{ .Summary }}</p>
 
-        <a href="{{ .Permalink }}" class="read-more">Read article →</a>
+        <a href="{{ .RelPermalink }}" class="read-more">Read article →</a>
       </article>
     {{ end }}
 

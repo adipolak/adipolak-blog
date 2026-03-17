@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/adipolak-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=adipolak-blog/livereload" data-no-instant defer></script>
+  <head><script src="/adipolak-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=adipolak-blog/livereload" data-no-instant defer></script>
     <link rel="stylesheet" href="/adipolak-blog/css/custom.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -25,7 +25,7 @@
 
     
 
-    <meta property="og:url" content="http://localhost:1314/adipolak-blog/search/">
+    <meta property="og:url" content="http://localhost:1313/adipolak-blog/search/">
   <meta property="og:site_name" content="Adi Polak">
   <meta property="og:title" content="Search">
   <meta property="og:locale" content="en_us">
@@ -38,7 +38,7 @@
     
 
 
-<link rel="canonical" href="http://localhost:1314/adipolak-blog/search/" />
+<link rel="canonical" href="http://localhost:1313/adipolak-blog/search/" />
 
 
 <meta name="author" content="Adi Polak" />
@@ -91,7 +91,7 @@
 <meta name="classification" content="Technical Blog" />
 
 
-<link rel="author" href="http://localhost:1314/adipolak-blog/about/" />
+<link rel="author" href="http://localhost:1313/adipolak-blog/about/" />
 <link rel="me" href="https://twitter.com/AdiPolak" />
 <link rel="me" href="https://github.com/AdiPolak" />
 
@@ -116,7 +116,7 @@
     <header>
   <nav class="site-nav" role="navigation">
   <div class="nav-container">
-    <a href="http://localhost:1314/adipolak-blog/" class="site-logo">
+    <a href="/adipolak-blog/" class="site-logo">
       
       <img src="/adipolak-blog/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" class="logo-icon" />
       
@@ -128,19 +128,25 @@
           
             
               <li>
-                <a href="/adipolak-blog/writing/" title="writing">writing</a>
+                <a href="/adipolak-blog/about/" title="about">about</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/books/" title="books">books</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/writing/" title="blog">blog</a>
               </li>
             
           
             
               <li>
                 <a href="/adipolak-blog/external-writing/" title="published elsewhere">published elsewhere</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/adipolak-blog/about/" title="about">about</a>
               </li>
             
           
@@ -284,7 +290,7 @@
         day: 'numeric'
       });
 
-      const baseURL = 'http:\/\/localhost:1314\/adipolak-blog\/';
+      const baseURL = 'http:\/\/localhost:1313\/adipolak-blog\/';
       const tags = item.tags ? item.tags.map(tag =>
         `<a href="${baseURL}tags/${tag.toLowerCase().replace(/\s+/g, '-')}" class="tag">${tag}</a>`
       ).join('') : '';
@@ -346,15 +352,19 @@
         <ul style="list-style: none; padding: 0; margin: 0;">
           
           <li style="margin-bottom: var(--space-xs);">
-            <a href="/adipolak-blog/writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">writing</a>
+            <a href="/adipolak-blog/about/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">about</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/books/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">books</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">blog</a>
           </li>
           
           <li style="margin-bottom: var(--space-xs);">
             <a href="/adipolak-blog/external-writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">published elsewhere</a>
-          </li>
-          
-          <li style="margin-bottom: var(--space-xs);">
-            <a href="/adipolak-blog/about/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">about</a>
           </li>
           
           <li style="margin-bottom: var(--space-xs);">

@@ -175,32 +175,37 @@ menu:
   #   pre: <i class='fa fa-home'></i>
   #   url: /
   #   weight: -110
-  - identifier: writing
-    name: writing
-    pre: <i class='fa fa-pencil'></i>
-    url: writing/
-    weight: 1
-  - identifier: external-writing
-    name: published elsewhere
-    pre: <i class='fa fa-external-link'></i>
-    url: external-writing/
-    weight: 2
   - identifier: about
     name: about
     pre: <i class='fa fa-user'></i>
     url: about/
+    weight: 1
+  - identifier: books
+    name: books
+    pre: <i class='fa fa-book'></i>
+    url: books/
+    weight: 2
+  - identifier: writing
+    name: blog
+    pre: <i class='fa fa-pencil'></i>
+    url: writing/
     weight: 3
+  - identifier: external-writing
+    name: published elsewhere
+    pre: <i class='fa fa-external-link'></i>
+    url: external-writing/
+    weight: 4
   - identifier: presentations
     name: presentations
     pre: <i class='fa fa-road'></i>
     url: presentations/
-    weight: 4
+    weight: 5
   - identifier: search
     name: search
     pre: <i class='fa fa-search'></i>
     url: search/
-    weight: 5
+    weight: 6
   - name: contact
     pre: <i class='fa fa-address-card'></i>
     url: contact-me/
-    weight: 6
+    weight: 7
