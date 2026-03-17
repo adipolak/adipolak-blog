@@ -16,7 +16,7 @@
         <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
         <div class="post-tags">
           {{ range . }}
-            <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+            <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
           {{ end }}
         </div>
       </div>

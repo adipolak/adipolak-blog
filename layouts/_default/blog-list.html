@@ -66,7 +66,7 @@
                 {{ with .Params.tags }}
                   <div class="post-tags">
                     {{ range first 2 . }}
-                      <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+                      <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
                     {{ end }}
                   </div>
                 {{ end }}
@@ -96,7 +96,7 @@
                 {{ $nameLower := lower $name }}
                 {{ if not (in $excludeTags $nameLower) }}
                   {{ if gt $tagCount 0 }}, {{ end }}
-                  <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">{{ $name }}</a>
+                  <a href="{{ "tags/" | relURL }}{{ $name | urlize }}" style="color: var(--color-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderBottomColor='var(--color-link)'" onmouseout="this.style.borderBottomColor='transparent'">{{ $name }}</a>
                   {{ $tagCount = add $tagCount 1 }}
                 {{ end }}
               {{ end }}
