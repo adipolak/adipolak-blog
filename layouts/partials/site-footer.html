@@ -18,7 +18,7 @@
         <ul style="list-style: none; padding: 0; margin: 0;">
           {{ range .Site.Menus.main }}
           <li style="margin-bottom: var(--space-xs);">
-            <a href="{{ .URL }}" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">{{ .Name }}</a>
+            <a href="{{ .URL | relLangURL }}" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">{{ .Name }}</a>
           </li>
           {{ end }}
         </ul>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Koalas - Adi Polak</title>
-    <link>https://adipolak.github.io/adipolak-blog/tags/koalas/</link>
+    <link>http://localhost:1314/adipolak-blog/tags/koalas/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog/tags/koalas/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/koalas/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
-      <link>https://adipolak.github.io/adipolak-blog/post/apache-spark-ecosystem/</link>
+      <link>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>https://adipolak.github.io/adipolak-blog/post/apache-spark-ecosystem/</guid>
+      <guid>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</guid>
       <description>The ever growing Open Source Ecosystem</description>
       
       <content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>

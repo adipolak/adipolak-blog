@@ -56,7 +56,11 @@
       "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/contact-me/\" | grep -o \"<form\" | wc -l)",
       "Bash(hugo --verbose 2>&1 | grep -i \"contact-me\" | head -20)",
       "Bash(hugo server:*)",
-      "Bash(lsof -ti:1313 | xargs kill -9 2>/dev/null || echo \"No process on port 1313\")"
+      "Bash(lsof -ti:1313 | xargs kill -9 2>/dev/null || echo \"No process on port 1313\")",
+      "Bash(hugo --quiet && echo \"Build successful - form now in content!\")",
+      "Bash(curl -s \"http://localhost:1314/adipolak-blog/search/\" | grep -o \"<input.*search\" | head -3)",
+      "Bash(hugo)",
+      "Bash(hugo serve:*)"
     ]
   }
 }
