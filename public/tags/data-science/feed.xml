@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Data Science - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/data-science/</link>
-    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>Adi Polak</managingEditor>
-    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/data-science/feed.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Machine Learning in Production - Concepts you should know</title>
-      <link>http://localhost:1314/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</link>
-      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
-      <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</guid>
-      <description>To productionize machine learning, know the concepts first</description>
-      
-      <content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Data Science - Adi Polak</title><link>http://localhost:57330/adipolak-blog/tags/data-science/</link><description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Adi Polak</managingEditor><copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:57330/adipolak-blog/tags/data-science/feed.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning in Production - Concepts you should know</title><link>http://localhost:57330/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</guid><description>To productionize machine learning, know the concepts first</description><content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
 <p>Here is a list of concepts for you to get started:</p>
 <h2 id="ml-algorithm">ML Algorithm</h2>
 <p>ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.</p>
@@ -45,17 +27,4 @@ Machine learning&rsquo;s actual target variable can change over time in unforese
 <p>I hope it was helpful for you and gave you more clarity about the concepts.</p>
 <h2 id="-curious-to-learn-more">💡 Curious to learn more?</h2>
 <p>Read here about how to create <a href="https://docs.microsoft.com/en-us/learn/paths/create-machine-learn-models/?WT.mc_id=social-00000-adpolak">machine learning models with python</a>.</p>
-]]></content:encoded>
-      
-      
-      <category>data science</category>
-      
-      <category>machine learning</category>
-      
-      <category>terminology</category>
-      
-      <category>ai</category>
-      
-    </item>
-  </channel>
-</rss>
+]]></content:encoded><category>data science</category><category>machine learning</category><category>terminology</category><category>ai</category></item></channel></rss>

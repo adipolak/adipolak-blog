@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Ray on Spark - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/ray-on-spark/</link>
-    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>Adi Polak</managingEditor>
-    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/ray-on-spark/feed.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
-      <link>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</guid>
-      <description>The ever growing Open Source Ecosystem</description>
-      
-      <content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ray on Spark - Adi Polak</title><link>http://localhost:57330/adipolak-blog/tags/ray-on-spark/</link><description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Adi Polak</managingEditor><copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:57330/adipolak-blog/tags/ray-on-spark/feed.xml" rel="self" type="application/rss+xml"/><item><title>Apache Spark Ecosystem, Jan 2021 Highlights</title><link>http://localhost:57330/adipolak-blog/post/apache-spark-ecosystem/</link><pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/apache-spark-ecosystem/</guid><description>The ever growing Open Source Ecosystem</description><content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
 Apache Spark is continually growing. It started as part of the Hadoop family,<br>
 but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
 <p>Let&rsquo;s take a look at three exciting open sources:</p>
@@ -70,27 +52,4 @@ I recommend being mindful with using this feature as saving snapshots and later 
 <h2 id="thats-it">That&rsquo;s it.</h2>
 <p>I hope you enjoyed reading this short recap on open sources for January 2021.<br>
 If you are interested in learning more and getting updates, follow <a href="https://twitter.com/AdiPolak">Adi Polak on Twitter.</a>.</p>
-]]></content:encoded>
-      
-      
-      <category>open-source</category>
-      
-      <category>apache spark</category>
-      
-      <category>koalas</category>
-      
-      <category>pandas</category>
-      
-      <category>delta lake</category>
-      
-      <category>distributed-systems</category>
-      
-      <category>ray</category>
-      
-      <category>ray on spark</category>
-      
-      <category>analytic zoo</category>
-      
-    </item>
-  </channel>
-</rss>
+]]></content:encoded><category>open-source</category><category>apache spark</category><category>koalas</category><category>pandas</category><category>delta lake</category><category>distributed-systems</category><category>ray</category><category>ray on spark</category><category>analytic zoo</category></item></channel></rss>

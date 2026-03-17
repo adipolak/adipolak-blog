@@ -61,7 +61,8 @@
       "Bash(curl -s \"http://localhost:1314/adipolak-blog/search/\" | grep -o \"<input.*search\" | head -3)",
       "Bash(hugo)",
       "Bash(hugo serve:*)",
-      "Bash(cd /Users/adipolak/open-source/adipolak-blog/content/post && find . -name \"*.md\" -exec grep -l 'src=\"/images/' {} \\\\; | while read file; do sed -i '' 's|src=\"/images/|src=\"../../images/|g' \"$file\"; done)"
+      "Bash(cd /Users/adipolak/open-source/adipolak-blog/content/post && find . -name \"*.md\" -exec grep -l 'src=\"/images/' {} \\\\; | while read file; do sed -i '' 's|src=\"/images/|src=\"../../images/|g' \"$file\"; done)",
+      "Bash(HUGO_ENV=production hugo server --minify --environment production)"
     ]
   }
 }

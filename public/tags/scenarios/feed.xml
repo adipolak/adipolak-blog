@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Scenarios - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/scenarios/</link>
-    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>Adi Polak</managingEditor>
-    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/scenarios/feed.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
-      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
-      <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
-      <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
-      
-      <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Scenarios - Adi Polak</title><link>http://localhost:57330/adipolak-blog/tags/scenarios/</link><description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Adi Polak</managingEditor><copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:57330/adipolak-blog/tags/scenarios/feed.xml" rel="self" type="application/rss+xml"/><item><title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title><link>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link><pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid><description>Multi-part series that will take you from beginner to expert in Delta Lake</description><content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
 <p>There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.</p>
 <p>Let&rsquo;s discuss two common data pipelines patterns and solutions:</p>
 <h2 id="spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users">Spark Structured Streaming ETL with DeltaLake that serves multiple Users</h2>
@@ -86,21 +68,4 @@ I will continue to share scenarios, insights, and code samples throughout the bl
 <li><a href="/post/delta-lake-essential-fundamentals-part-3/">Delta Lake essential Fundamentals: Part 3 - Compaction and Checkpoint</a></li>
 <li>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios (You are here)</li>
 </ol>
-]]></content:encoded>
-      
-      
-      <category>open-source</category>
-      
-      <category>apache spark</category>
-      
-      <category>delta lake</category>
-      
-      <category>distributed-systems</category>
-      
-      <category>beginner</category>
-      
-      <category>scenarios</category>
-      
-    </item>
-  </channel>
-</rss>
+]]></content:encoded><category>open-source</category><category>apache spark</category><category>delta lake</category><category>distributed-systems</category><category>beginner</category><category>scenarios</category></item></channel></rss>

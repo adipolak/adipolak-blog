@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Deltalog - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/deltalog/</link>
-    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>Adi Polak</managingEditor>
-    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/deltalog/feed.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid>
-      <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
-      
-      <content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Deltalog - Adi Polak</title><link>http://localhost:57330/adipolak-blog/tags/deltalog/</link><description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Adi Polak</managingEditor><copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:57330/adipolak-blog/tags/deltalog/feed.xml" rel="self" type="application/rss+xml"/><item><title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title><link>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid><description>Multi-part series that will take you from beginner to expert in Delta Lake</description><content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
 <h2 id="checkpoint">Checkpoint</h2>
 <p>There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:</p>
 <h3 id="spark-rdd-checkpoint">Spark RDD Checkpoint</h3>
@@ -58,30 +40,7 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
     </div>
 
 <p>If you would like to get monthly updates, consider <a href="https://sub.adipolak.com/subscribe">subscribing</a>.</p>
-]]></content:encoded>
-      
-      
-      <category>open-source</category>
-      
-      <category>apache spark</category>
-      
-      <category>delta lake</category>
-      
-      <category>distributed-systems</category>
-      
-      <category>beginner</category>
-      
-      <category>deltalog</category>
-      
-    </item><item>
-      <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link>
-      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
-      <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
-      <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
-      
-      <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
+]]></content:encoded><category>open-source</category><category>apache spark</category><category>delta lake</category><category>distributed-systems</category><category>beginner</category><category>deltalog</category></item><item><title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title><link>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link><pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid><description>Multi-part series that will take you from beginner to expert in Delta Lake</description><content:encoded><![CDATA[<p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
 In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
 <h2 id="transaction-log">Transaction Log</h2>
 <p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
@@ -174,21 +133,4 @@ That means that if there is a request to delete a file that at the same time is 
     </div>
 
 <p>If you would like to get monthly updates, consider <a href="https://sub.adipolak.com/subscribe">subscribing</a>.</p>
-]]></content:encoded>
-      
-      
-      <category>open-source</category>
-      
-      <category>apache spark</category>
-      
-      <category>delta lake</category>
-      
-      <category>distributed-systems</category>
-      
-      <category>beginner</category>
-      
-      <category>deltalog</category>
-      
-    </item>
-  </channel>
-</rss>
+]]></content:encoded><category>open-source</category><category>apache spark</category><category>delta lake</category><category>distributed-systems</category><category>beginner</category><category>deltalog</category></item></channel></rss>
