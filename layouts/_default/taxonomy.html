@@ -15,7 +15,26 @@
       {{ $matchingExternal = $matchingExternal | append . }}
     {{ end }}
   {{ end }}
-  {{ $totalCount := add (len .Pages) (len $matchingExternal) }}
+
+  <!-- Build combined list with dates for sorting -->
+  {{ $allArticles := slice }}
+
+  <!-- Add blog posts to the list -->
+  {{ range .Pages }}
+    {{ $article := dict "type" "blog" "date" .Date "page" . }}
+    {{ $allArticles = $allArticles | append $article }}
+  {{ end }}
+
+  <!-- Add external articles to the list -->
+  {{ range $matchingExternal }}
+    {{ $article := dict "type" "external" "date" .date "data" . }}
+    {{ $allArticles = $allArticles | append $article }}
+  {{ end }}
+
+  <!-- Sort all articles by date (newest first) -->
+  {{ $allArticles = sort $allArticles "date" "desc" }}
+
+  {{ $totalCount := len $allArticles }}
 
   <div class="section-header">
     <h1 class="section-title" style="font-size: var(--text-3xl);">{{ .Title }}</h1>
@@ -25,97 +44,99 @@
   </div>
 
   <div class="blog-grid">
-    {{ range .Pages }}
-      <article class="blog-card">
-        {{ $firstImage := "" }}
-        {{ $imgMatches := findRE `<img[^>]+src="([^"]+)"[^>]*>` .Content 1 }}
-        {{ if $imgMatches }}
-          {{ $srcMatches := findRE `src="([^"]+)"` (index $imgMatches 0) 1 }}
-          {{ if $srcMatches }}
-            {{ $imagePath := replaceRE `src="([^"]+)"` "$1" (index $srcMatches 0) }}
-            {{ $imagePath = replaceRE `^\.\.\/\.\.\/` "" $imagePath }}
-            {{ $firstImage = $imagePath }}
+    {{ range $allArticles }}
+      {{ if eq .type "blog" }}
+        {{ $page := .page }}
+        <article class="blog-card">
+          {{ $firstImage := "" }}
+          {{ $imgMatches := findRE `<img[^>]+src="([^"]+)"[^>]*>` $page.Content 1 }}
+          {{ if $imgMatches }}
+            {{ $srcMatches := findRE `src="([^"]+)"` (index $imgMatches 0) 1 }}
+            {{ if $srcMatches }}
+              {{ $imagePath := replaceRE `src="([^"]+)"` "$1" (index $srcMatches 0) }}
+              {{ $imagePath = replaceRE `^\.\.\/\.\.\/` "" $imagePath }}
+              {{ $firstImage = $imagePath }}
+            {{ end }}
           {{ end }}
-        {{ end }}
 
-        {{ if $firstImage }}
-        <div class="post-image">
-          <a href="{{ .RelPermalink }}">
-            <img src="{{ $firstImage | relURL }}" alt="{{ .Title }}" loading="lazy">
-          </a>
-        </div>
-        {{ end }}
+          {{ if $firstImage }}
+          <div class="post-image">
+            <a href="{{ $page.RelPermalink }}">
+              <img src="{{ $firstImage | relURL }}" alt="{{ $page.Title }}" loading="lazy">
+            </a>
+          </div>
+          {{ end }}
 
-        {{ $hasValidDate := and .Date (gt .Date.Year 1971) }}
-        {{ if $hasValidDate }}
-        <div class="post-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "January 2, 2006" }}
-          </time>
-          {{ with .ReadingTime }}
+          {{ $hasValidDate := and $page.Date (gt $page.Date.Year 1971) }}
+          {{ if $hasValidDate }}
+          <div class="post-meta">
+            <time datetime="{{ $page.Date.Format "2006-01-02" }}">
+              {{ $page.Date.Format "January 2, 2006" }}
+            </time>
+            {{ with $page.ReadingTime }}
+              <span class="separator">·</span>
+              <span>{{ . }} min read</span>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          <h2>
+            <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+          </h2>
+
+          {{ with $page.Params.tags }}
+            <div class="post-tags">
+              {{ range first 3 . }}
+                <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+
+          <p>{{ $page.Summary }}</p>
+
+          <a href="{{ $page.RelPermalink }}" class="read-more">Read article →</a>
+        </article>
+      {{ else }}
+        {{ $ext := .data }}
+        <article class="blog-card">
+          {{ if $ext.image }}
+          <div class="post-image">
+            <a href="{{ $ext.url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ $ext.image }}" alt="{{ $ext.title }}" loading="lazy">
+            </a>
+          </div>
+          {{ end }}
+
+          <div class="post-meta">
+            <time datetime="{{ $ext.date }}">
+              {{ dateFormat "January 2, 2006" $ext.date }}
+            </time>
             <span class="separator">·</span>
-            <span>{{ . }} min read</span>
+            <span>{{ $ext.publication }}</span>
+          </div>
+
+          <h2>
+            <a href="{{ $ext.url }}" target="_blank" rel="noopener noreferrer">{{ $ext.title }}</a>
+          </h2>
+
+          {{ with $ext.tags }}
+            <div class="post-tags">
+              {{ range first 3 . }}
+                <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+              {{ end }}
+            </div>
           {{ end }}
-        </div>
-        {{ end }}
 
-        <h2>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
+          <p>{{ $ext.description }}</p>
 
-        {{ with .Params.tags }}
-          <div class="post-tags">
-            {{ range first 3 . }}
-              <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
-            {{ end }}
-          </div>
-        {{ end }}
-
-        <p>{{ .Summary }}</p>
-
-        <a href="{{ .RelPermalink }}" class="read-more">Read article →</a>
-      </article>
-    {{ end }}
-
-    {{ range $matchingExternal }}
-      <article class="blog-card">
-        {{ if .image }}
-        <div class="post-image">
-          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
+          <a href="{{ $ext.url }}" target="_blank" rel="noopener noreferrer" class="read-more" style="display: inline-flex; align-items: center; gap: 8px;">
+            Read on {{ $ext.publication }}
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.7;">
+              <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4M10.5 1.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
-        </div>
-        {{ end }}
-
-        <div class="post-meta">
-          <time datetime="{{ .date }}">
-            {{ dateFormat "January 2, 2006" .date }}
-          </time>
-          <span class="separator">·</span>
-          <span>{{ .publication }}</span>
-        </div>
-
-        <h2>
-          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
-        </h2>
-
-        {{ with .tags }}
-          <div class="post-tags">
-            {{ range first 3 . }}
-              <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
-            {{ end }}
-          </div>
-        {{ end }}
-
-        <p>{{ .description }}</p>
-
-        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="read-more" style="display: inline-flex; align-items: center; gap: 8px;">
-          Read on {{ .publication }}
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.7;">
-            <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4M10.5 1.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </article>
+        </article>
+      {{ end }}
     {{ end }}
   </div>
 

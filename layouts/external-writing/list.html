@@ -19,6 +19,7 @@
   <div style="max-width: 1100px; margin: 0 auto;">
 
     {{ $articles := .Site.Data.external_writing.articles }}
+    {{ $articles = sort $articles "date" "desc" }}
 
     {{ if $articles }}
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-xl);">

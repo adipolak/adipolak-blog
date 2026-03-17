@@ -22,6 +22,7 @@
         {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
         {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
         {{ $section = where $section "Draft" "ne" true }}
+        {{ $section = $section.ByDate.Reverse }}
 
         {{ if ge (len $section) 1 }}
           <div class="blog-grid">
