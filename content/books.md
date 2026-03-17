@@ -1,6 +1,6 @@
 ---
 title: "Books"
-layout: "books"
+type: "books"
 url: "books/"
 draft: false
 description: "O'Reilly books on Apache Spark, machine learning, and distributed systems"
