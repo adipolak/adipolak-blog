@@ -1,0 +1,358 @@
+{{ define "main" }}
+
+<style>
+  .error-404-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl) var(--space-md);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0a0a0f 0%, #11100f 100%);
+  }
+
+  /* Animated grid background */
+  .grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(79, 70, 229, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(79, 70, 229, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridPulse 4s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes gridPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+  }
+
+  /* Floating particles */
+  .particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(139, 92, 246, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float linear infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) translateX(0);
+      opacity: 0;
+    }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% {
+      transform: translateY(-100px) translateX(100px);
+      opacity: 0;
+    }
+  }
+
+  .error-404-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .status-chip {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    color: #fca5a5;
+    font-size: 0.75rem;
+    font-family: 'Monaco', 'Menlo', monospace;
+    margin-bottom: var(--space-md);
+    animation: statusBlink 2s ease-in-out infinite;
+  }
+
+  @keyframes statusBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .error-code {
+    font-size: clamp(4rem, 15vw, 8rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+  }
+
+  .error-code::after {
+    content: '404';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: -1;
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.3;
+    filter: blur(8px);
+  }
+
+  .error-headline {
+    font-family: var(--font-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #f3f4f6;
+    margin: var(--space-lg) 0 var(--space-md);
+    font-weight: 600;
+  }
+
+  .error-description {
+    color: #9ca3af;
+    font-size: 1rem;
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+  }
+
+  /* Terminal card */
+  .terminal-card {
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    margin: var(--space-xl) 0;
+    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+  }
+
+  .terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ef4444;
+  }
+
+  .terminal-dot:nth-child(2) { background: #f59e0b; }
+  .terminal-dot:nth-child(3) { background: #10b981; }
+
+  .terminal-body {
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+    font-size: 0.875rem;
+    color: #10b981;
+  }
+
+  .terminal-line {
+    margin: 8px 0;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+
+  .terminal-line:nth-child(1) { animation-delay: 0.5s; }
+  .terminal-line:nth-child(2) { animation-delay: 1s; }
+  .terminal-line:nth-child(3) { animation-delay: 1.5s; }
+  .terminal-line:nth-child(4) { animation-delay: 2s; }
+  .terminal-line:nth-child(5) { animation-delay: 2.5s; }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  .terminal-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background: #10b981;
+    animation: cursorBlink 1s infinite;
+    margin-left: 2px;
+  }
+
+  @keyframes cursorBlink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+
+  .terminal-error { color: #ef4444; }
+  .terminal-warning { color: #f59e0b; }
+  .terminal-info { color: #60a5fa; }
+
+  /* Command buttons */
+  .command-buttons {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: var(--space-xl);
+  }
+
+  .cmd-btn {
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.875rem;
+    padding: 12px 24px;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    background: rgba(139, 92, 246, 0.1);
+    color: #c4b5fd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cmd-btn:hover {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+  }
+
+  .cmd-btn.primary {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    border-color: #8b5cf6;
+    color: white;
+  }
+
+  .cmd-btn.primary:hover {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+  }
+
+  /* Glitch effect */
+  .glitch {
+    position: relative;
+    animation: glitch 3s infinite;
+  }
+
+  @keyframes glitch {
+    0%, 90%, 100% { transform: translate(0); }
+    91% { transform: translate(-2px, 2px); }
+    92% { transform: translate(2px, -2px); }
+    93% { transform: translate(-2px, -2px); }
+    94% { transform: translate(2px, 2px); }
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .error-404-container {
+      min-height: 70vh;
+      padding: var(--space-lg) var(--space-md);
+    }
+
+    .command-buttons {
+      flex-direction: column;
+    }
+
+    .cmd-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
+
+<div class="error-404-container">
+  <!-- Animated grid background -->
+  <div class="grid-bg"></div>
+
+  <!-- Floating particles -->
+  <div class="particle" style="left: 10%; animation-duration: 15s; animation-delay: 0s;"></div>
+  <div class="particle" style="left: 30%; animation-duration: 20s; animation-delay: 2s;"></div>
+  <div class="particle" style="left: 50%; animation-duration: 18s; animation-delay: 4s;"></div>
+  <div class="particle" style="left: 70%; animation-duration: 22s; animation-delay: 1s;"></div>
+  <div class="particle" style="left: 90%; animation-duration: 16s; animation-delay: 3s;"></div>
+
+  <div class="error-404-content">
+    <div style="text-align: center;">
+      <div class="status-chip">ANOMALY DETECTED</div>
+
+      <h1 class="error-code glitch">404</h1>
+
+      <h2 class="error-headline">
+        This page drifted outside the context window.
+      </h2>
+
+      <p class="error-description">
+        We tried retrieval, ranking, and a light amount of panic. No match found.
+      </p>
+    </div>
+
+    <!-- Terminal -->
+    <div class="terminal-card">
+      <div class="terminal-header">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <span style="color: #6b7280; font-size: 0.75rem; margin-left: auto; font-family: monospace;">system.log</span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line terminal-info">&gt; initializing page retrieval...</div>
+        <div class="terminal-line">&gt; querying knowledge graph...</div>
+        <div class="terminal-line terminal-warning">&gt; warning: route not found in index</div>
+        <div class="terminal-line terminal-info">&gt; checking backup vectors...</div>
+        <div class="terminal-line terminal-error">&gt; ERROR: Page embedding returned NULL</div>
+        <div class="terminal-line" style="animation-delay: 3s;">&gt; possible causes: typo | moved route | cosmic bit flip<span class="terminal-cursor"></span></div>
+      </div>
+    </div>
+
+    <!-- Command buttons -->
+    <div class="command-buttons">
+      <a href="{{ .Site.BaseURL }}" class="cmd-btn primary">
+        <span>→</span> cd /home
+      </a>
+      <a href="{{ "writing" | relURL }}" class="cmd-btn">
+        <span>📝</span> explore --writing
+      </a>
+      <a href="{{ "presentations" | relURL }}" class="cmd-btn">
+        <span>🎤</span> list --talks
+      </a>
+      <a href="{{ "search" | relURL }}" class="cmd-btn">
+        <span>🔍</span> grep --site
+      </a>
+    </div>
+
+    <div style="text-align: center; margin-top: var(--space-xl); opacity: 0.5;">
+      <p style="font-family: monospace; font-size: 0.75rem; color: #6b7280;">
+        Status: mildly panicking | AI systems operational | quantum state: uncertain
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Add some random particles dynamically
+(function() {
+  const container = document.querySelector('.error-404-container');
+  const particleCount = 8;
+
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+    particle.style.animationDelay = Math.random() * 5 + 's';
+    container.appendChild(particle);
+  }
+
+  // Optional: Console easter egg
+  console.log('%c404 Error Handler', 'color: #8b5cf6; font-size: 20px; font-weight: bold;');
+  console.log('%cPage quantum state: superposition of exists and does not exist', 'color: #60a5fa; font-size: 12px;');
+  console.log('%cRecommendation: Try navigating home or use the search function', 'color: #10b981; font-size: 12px;');
+})();
+</script>
+
+{{ end }}
