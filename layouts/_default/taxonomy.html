@@ -21,18 +21,19 @@
 
   <!-- Add blog posts to the list -->
   {{ range .Pages }}
-    {{ $article := dict "type" "blog" "date" .Date "page" . }}
+    {{ $dateString := .Date.Format "2006-01-02" }}
+    {{ $article := dict "type" "blog" "dateSort" $dateString "page" . }}
     {{ $allArticles = $allArticles | append $article }}
   {{ end }}
 
   <!-- Add external articles to the list -->
   {{ range $matchingExternal }}
-    {{ $article := dict "type" "external" "date" .date "data" . }}
+    {{ $article := dict "type" "external" "dateSort" .date "data" . }}
     {{ $allArticles = $allArticles | append $article }}
   {{ end }}
 
   <!-- Sort all articles by date (newest first) -->
-  {{ $allArticles = sort $allArticles "date" "desc" }}
+  {{ $allArticles = sort $allArticles "dateSort" "desc" }}
 
   {{ $totalCount := len $allArticles }}
 
