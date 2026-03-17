@@ -68,7 +68,8 @@
       "Bash(find /Users/adipolak/open-source/adipolak-blog -name \"*presentation*\" -type f 2>/dev/null | grep -v \".git\" | head -10)",
       "WebFetch(domain:www.amazon.com)",
       "Bash(lsof -ti:1313)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(curl -I https://adipolak.github.io/adipolak-blog/css/custom.css)"
     ]
   }
 }
