@@ -40,7 +40,7 @@ A new UI will menu will pop on the right side of the screen enables you to add i
 Read about it [here](https://docs.microsoft.com/en-us/dotnet/spark/what-is-apache-spark-dotnet?WT.mc_id=spark-12578-adpolak). 
 
 
-<img class="responsive" src="/images/pandas-synapse-post/create-spark-pool.png" alt="drawing"> \
+<img class="responsive" src="../../images/pandas-synapse-post/create-spark-pool.png" alt="drawing"> \
 
 Right from the `Additional Settings` tab, you can add the `.txt` configuration file.
 
@@ -53,18 +53,18 @@ You can upload it while creating the cluster, or add it to an existing cluster.
 If you have an existing cluster, from the same `Apache Spark Pools` you can add a new packages. \
 Clicking on the `...` 3 dots next to your cluster name will open a menu bar for you, inside there is a Packages option, click on it:
 
-<img class="responsive" src="/images/pandas-synapse-post/manage-packaging-synapse-ui.png" alt="drawing"> \
+<img class="responsive" src="../../images/pandas-synapse-post/manage-packaging-synapse-ui.png" alt="drawing"> \
 
 
 It will prompt you to a right side bar where you can upload your text file.
 
-<img class="responsive" src="/images/pandas-synapse-post/upload-config-file.png" alt="drawing"> \
+<img class="responsive" src="../../images/pandas-synapse-post/upload-config-file.png" alt="drawing"> \
 
 Click the Upload button at the top and choose the file you would like to upload.\
 Now a new Upload blue button will appear at the bottom, click this too.
 
 The UI will show you the configuration file name and size, all you have to do is to click the blue Apply button at the buttom.\
-<img class="responsive" src="/images/pandas-synapse-post/apply.png" alt="drawing"> \
+<img class="responsive" src="../../images/pandas-synapse-post/apply.png" alt="drawing"> \
 
 That's it, all set to start coding!  
 

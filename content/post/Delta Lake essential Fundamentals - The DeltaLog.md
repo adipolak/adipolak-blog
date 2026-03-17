@@ -22,7 +22,7 @@ This is achieved by tracking all the changes that users do: read, delete, update
 DeltaLog can also contain statistics on the data; depending on the type of the data/field/column, each column can have min/max values. Having this extra metadata can help with faster querying. DeltaTable read mechanism uses a simplified [push down predict](https://medium.com/microsoftazure/data-at-scale-learn-how-predicate-pushdown-will-save-you-money-7063b80878d7).
 
 Here is a simplification of DeltaLog on the file systems from Databricks site: <br>
-<img class="responsive" src="/images/Detla/deltalake-deltalog.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/deltalake-deltalog.png" alt="drawing">
 
 The DeltaLog itself is a folder that consists of multiple JSON files. When it reaches 10 files, DeltaTable does a checkpoint and compaction operations (we will dive into it in the next chapter).
 
@@ -71,7 +71,7 @@ Operations such as Update, Delete, Add can harm isolation; Hence, since we want 
 
 In DeltaLake 0.8.1 source code, there is a comment saying that it's recommended to have the delete retention set to at least 2 weeks or longer than a duration of a job. <br>
 *Note:* This will impact streaming workload as well, because there will be a need to delete the actual files at some point, which might result in blocking the stream.
-<img class="responsive" src="/images/Detla/delta-tombston-retention.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delta-tombston-retention.png" alt="drawing">
 
 
 
@@ -80,14 +80,14 @@ Delta Lake solves the problem of consistency by solving conflicts with an optimi
 The class in charge of this algorithm is the OptimisticTransaction class. It achieves it by using [Java 8 ReentrantLock](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html) that is controlled from a DeltaLog instance. <br>
 Here is the code snippet: <br>
 
-<img class="responsive" src="/images/Detla/delta-log-optimistic-concurrency-algo.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delta-log-optimistic-concurrency-algo.png" alt="drawing">
 
 A DeltaTable instance actively uses the ReentrantLock in the OptimisticTransaction under the `doCommitRetryIteratively` function.
 The optimistic approach was chosen here because in the big data world there is a tendency to add more data than to update existing records.
 It's rare to find and update a specific record, it is usually done when there was some data corruption on necessary data.
 
 Here is the code snippet for the optimistic algorithm:
-<img class="responsive" src="/images/Detla/delta-log-OptimisticTransaction.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delta-log-OptimisticTransaction.png" alt="drawing">
 
 Notice that in line 572, the program records the attempted version as the `commitVersion` instance which is of type `var`.
 `var` in Scala represents a mutable object instance, which means we should expect its value to change.
@@ -119,7 +119,7 @@ end
 
 To support the users, DeltaLake introduces a set of conflict exceptions that provide more information about the data and the conflicts:
 
-<img class="responsive" src="/images/Detla/delte-concurrent-exceptions.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delte-concurrent-exceptions.png" alt="drawing">
 
 Let's look at some of the conflict scenarios.
 
@@ -131,7 +131,7 @@ This is the case of two writers who appends data to the same table simultaneousl
 In a more complex scenario like this one, there is no automated solution. For concurrent Delete-Read, there is a dedicated `ConcurentDeleteReadException`.
 That means that if there is a request to delete a file that at the same time is being used for a read, the program throws an exception.
 
-<img class="responsive" src="/images/Detla/ConcurrentDeleteReadException.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/ConcurrentDeleteReadException.png" alt="drawing">
 
 
 ### Delete and Delete:

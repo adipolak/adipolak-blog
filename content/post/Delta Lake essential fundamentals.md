@@ -41,7 +41,7 @@ Let's break it down to understand what each means and how it translates in Delta
    A transaction can only bring the DB from one state to another; data is valid according to all the rules, constraints, triggers, etc. The transaction itself can be consistent but incorrect. To achieve consistency, DeltaLake relay on the commit timestamp that comes from the storage system modification timestamps. If you are using cloud provider storage such as [Azure blob](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction?WT.mc_id=delta-13569-adpolak) or AWS S3, the timestamp will come from the storage server.
 #### Isolation
   Transactions taking place concurrently result in an equals state as if transactions would have been executed sequentially. This is the primary goal of Concurrency control strategies. In Delta, after 10 commits, there is a merging mechanism that merges these commits into a checkpoint file. The checkpoint file has a timestamp. 1 second is being added to the modification timestamp to avoid flakiness. This is how it looks in the code base of Delta: 
-  <img class="responsive" src="/images/delta-lake-avoid-flakiness-commit.png" alt="drawing">
+  <img class="responsive" src="../../images/delta-lake-avoid-flakiness-commit.png" alt="drawing">
 
 #### Durability
   Once a transaction has been committed, it will remain committed even if the system fails. Think about writing to disk vs. writing to Ram memory. A machine can fail, but if the commit data was written to disk, it could be restored. Delta writes all the commits in a JSON file directly to the storage; it is not left floating in RAM space for too long.

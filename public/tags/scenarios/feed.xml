@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Scenarios - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/scenarios/</link>
+    <link>https://adipolak.github.io/adipolak-blog/tags/scenarios/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/scenarios/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog/tags/scenarios/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
@@ -32,7 +32,7 @@ Note! The output of the solution/pipeline is used by real users and not a machin
 <strong>Latency:</strong> 5 minutes <br>
 <strong>Constraints:</strong> multiple users query the table at the same time</p>
 <h3 id="high-level-pipeline-architecture">High-level Pipeline Architecture</h3>
-<img class="responsive" src="/images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
 <h3 id="advantages">Advantages</h3>
 <p>In our scenario, we have multiple users that query the data on the fly and should see the same data - <em>single source of truth</em>. In distributed steaming, when we query the data, it might be that from two identical queries that ran at the same time, we will get different results. This is why we introduce DeltaLake into the pipeline. We save the streaming tabular data in DeltaLake, which in practice means that the user read operations take place on the DeltaTable snapshot, which guarantees consistency of the data. At the same time, the table is continuously being written.<br>
 Simultaneously, the user can also run updates/deletes and fixes on the data when necessary, this is important for controlling incoming data that are bounded to GDPR or other compliances. The conflicts are resolved using Delta conflict resolution mechanism (Discussed in Part 2 - <a href="/post/delta-lake-essential-fundamentals-the-deltalog/">the DeltaLog</a>).</p>
@@ -61,7 +61,7 @@ Simultaneously, the user can also run updates/deletes and fixes on the data when
 But, what if you are attempting to join two big tables that constantly change? This is when you need to understand how to leverage Delta Lake versioning capabilities.</p>
 <h3 id="high-level-pipeline-architecture-1">High-level Pipeline Architecture</h3>
 <p>In this high-level architecture diagram, we have 2 Spark workloads; the first one is a batch, reading data from MongoDB, processing it, and saving it to DetlaLake. The second one is the fast data, ingesting data from a Kafka topic directly into Spark Streaming and joining the fast data with the slow data saved in DeltaLake. After the join and further logic, the data is being kept in a tabular store for future use.</p>
-<img class="responsive" src="/images/Detla/azure-databricks-streaming-with-deltalake.jpg" alt="drawing">
+<img class="responsive" src="../../images/Detla/azure-databricks-streaming-with-deltalake.jpg" alt="drawing">
 <h3 id="advantages-1">Advantages</h3>
 <p>Without DetlaTable, Structured streaming will hold a static view of the first &ldquo;slow&rdquo; data, and it won&rsquo;t be updated until you restart the streaming query. But we already know that this data can be updated; think about the bank customer who changed their home address, and it needs to be updated in the system.
 Using DeltaLake helps introduce table versioning and allows you to control the changes and read/use the latest/most updated version inside the streaming query without restarting it.</p>

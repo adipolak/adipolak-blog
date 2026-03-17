@@ -23,7 +23,7 @@ Let's understand what are Delta Lake compact and checkpoint and why they are imp
   ### DeltaLake checkpoint
   On each Delta Table state compute, Delta reads the JSON files discussed in [Delta Lake essential Fundamentals: Part 2 - The DeltaLog](/post/delta-lake-essential-fundamentals-the-deltalog/). To avoid reading all the files and executing a long compute, every 10 commit files are being aggregated to a _checkpoint_ file of type parquet. These checkpoint files save the entire state of the table at a point in time. It allows the Spark engine to avoid reprocessing thousands of tiny JSON files. This mechanism ensures that for computing table state, Spark only needs to read the latest parquet checkpoint file with up to 10 JSON files, it makes the computation faster and efficient.
   Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
-  <img class="responsive" src="/images/Detla/checkpointfile.png" alt="drawing">
+  <img class="responsive" src="../../images/Detla/checkpointfile.png" alt="drawing">
 
   checkpoint files can be a one file for a specific table version or multiple files, it depends on what it contains.
 
@@ -42,8 +42,8 @@ In multi-part, table version(`n`) 10 the files name will be of a structure that 
 Snapshot of the function that is in charge of the writing the checkpoint files, the modulo operation is in charge of the checkpointInterval which can be updated in DeltaConfig.
 <br>
 
-<img class="responsive" src="/images/Detla/delta-lake-postcommit.png" alt="drawing">
-<img class="responsive" src="/images/Detla/deltalake-interval-config.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delta-lake-postcommit.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/deltalake-interval-config.png" alt="drawing">
 
 
 Delta Lake configuration can be set as a Spark Configuration property, or Hadoop configuration depends on the LogStore, the cloud used, etc.

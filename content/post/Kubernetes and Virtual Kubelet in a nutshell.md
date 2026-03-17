@@ -140,7 +140,7 @@ go to Spring initializer [site](https://start.spring.io/) and download a templat
 In this tutorial, we will deploy a kotlin-spring app to a Virtual Node on K8s cluster.
 We will use the next services: AKS, ACR and ACI.
 
-<img class="responsive" src="/images/k8s.png" alt="drawing">
+<img class="responsive" src="../../images/k8s.png" alt="drawing">
 
 
 
@@ -170,7 +170,7 @@ docker push $ACR_NAME.azurecr.io/samples/demo
 ```
 This is the push process:
 
-<img class="responsive" src="/images/01-02-push_docker.png" alt="drawing"> \
+<img class="responsive" src="../../images/01-02-push_docker.png" alt="drawing"> \
 
 To test yourself - run your local docker with remote image
 ```bash

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Acid - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/acid/</link>
+    <link>https://adipolak.github.io/adipolak-blog/tags/acid/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/acid/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog/tags/acid/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
@@ -44,7 +44,7 @@ But it's not.</p>
 <p>A transaction can only bring the DB from one state to another; data is valid according to all the rules, constraints, triggers, etc. The transaction itself can be consistent but incorrect. To achieve consistency, DeltaLake relay on the commit timestamp that comes from the storage system modification timestamps. If you are using cloud provider storage such as <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction?WT.mc_id=delta-13569-adpolak">Azure blob</a> or AWS S3, the timestamp will come from the storage server.</p>
 <h4 id="isolation">Isolation</h4>
 <p>Transactions taking place concurrently result in an equals state as if transactions would have been executed sequentially. This is the primary goal of Concurrency control strategies. In Delta, after 10 commits, there is a merging mechanism that merges these commits into a checkpoint file. The checkpoint file has a timestamp. 1 second is being added to the modification timestamp to avoid flakiness. This is how it looks in the code base of Delta:
-<img class="responsive" src="/images/delta-lake-avoid-flakiness-commit.png" alt="drawing"></p>
+<img class="responsive" src="../../images/delta-lake-avoid-flakiness-commit.png" alt="drawing"></p>
 <h4 id="durability">Durability</h4>
 <p>Once a transaction has been committed, it will remain committed even if the system fails. Think about writing to disk vs. writing to Ram memory. A machine can fail, but if the commit data was written to disk, it could be restored. Delta writes all the commits in a JSON file directly to the storage; it is not left floating in RAM space for too long.</p>
 <h2 id="whats-next">What&rsquo;s next?</h2>

@@ -31,7 +31,7 @@ Let's assume we have these system requirements: <br><br>
 
 
 ### High-level Pipeline Architecture
-<img class="responsive" src="/images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
 
 ### Advantages
 In our scenario, we have multiple users that query the data on the fly and should see the same data - *single source of truth*. In distributed steaming, when we query the data, it might be that from two identical queries that ran at the same time, we will get different results. This is why we introduce DeltaLake into the pipeline. We save the streaming tabular data in DeltaLake, which in practice means that the user read operations take place on the DeltaTable snapshot, which guarantees consistency of the data. At the same time, the table is continuously being written.<br>
@@ -78,7 +78,7 @@ But, what if you are attempting to join two big tables that constantly change? T
 ### High-level Pipeline Architecture
 In this high-level architecture diagram, we have 2 Spark workloads; the first one is a batch, reading data from MongoDB, processing it, and saving it to DetlaLake. The second one is the fast data, ingesting data from a Kafka topic directly into Spark Streaming and joining the fast data with the slow data saved in DeltaLake. After the join and further logic, the data is being kept in a tabular store for future use.
 
-<img class="responsive" src="/images/Detla/azure-databricks-streaming-with-deltalake.jpg" alt="drawing">
+<img class="responsive" src="../../images/Detla/azure-databricks-streaming-with-deltalake.jpg" alt="drawing">
 
 
 ### Advantages

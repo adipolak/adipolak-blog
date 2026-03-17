@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Open-Source - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/open-source/</link>
+    <link>https://adipolak.github.io/adipolak-blog/tags/open-source/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/open-source/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog/tags/open-source/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
@@ -32,7 +32,7 @@ Note! The output of the solution/pipeline is used by real users and not a machin
 <strong>Latency:</strong> 5 minutes <br>
 <strong>Constraints:</strong> multiple users query the table at the same time</p>
 <h3 id="high-level-pipeline-architecture">High-level Pipeline Architecture</h3>
-<img class="responsive" src="/images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/kafka-spark-streaming-delta-scenario.png" alt="drawing">
 <h3 id="advantages">Advantages</h3>
 <p>In our scenario, we have multiple users that query the data on the fly and should see the same data - <em>single source of truth</em>. In distributed steaming, when we query the data, it might be that from two identical queries that ran at the same time, we will get different results. This is why we introduce DeltaLake into the pipeline. We save the streaming tabular data in DeltaLake, which in practice means that the user read operations take place on the DeltaTable snapshot, which guarantees consistency of the data. At the same time, the table is continuously being written.<br>
 Simultaneously, the user can also run updates/deletes and fixes on the data when necessary, this is important for controlling incoming data that are bounded to GDPR or other compliances. The conflicts are resolved using Delta conflict resolution mechanism (Discussed in Part 2 - <a href="/post/delta-lake-essential-fundamentals-the-deltalog/">the DeltaLog</a>).</p>
@@ -61,7 +61,7 @@ Simultaneously, the user can also run updates/deletes and fixes on the data when
 But, what if you are attempting to join two big tables that constantly change? This is when you need to understand how to leverage Delta Lake versioning capabilities.</p>
 <h3 id="high-level-pipeline-architecture-1">High-level Pipeline Architecture</h3>
 <p>In this high-level architecture diagram, we have 2 Spark workloads; the first one is a batch, reading data from MongoDB, processing it, and saving it to DetlaLake. The second one is the fast data, ingesting data from a Kafka topic directly into Spark Streaming and joining the fast data with the slow data saved in DeltaLake. After the join and further logic, the data is being kept in a tabular store for future use.</p>
-<img class="responsive" src="/images/Detla/azure-databricks-streaming-with-deltalake.jpg" alt="drawing">
+<img class="responsive" src="../../images/Detla/azure-databricks-streaming-with-deltalake.jpg" alt="drawing">
 <h3 id="advantages-1">Advantages</h3>
 <p>Without DetlaTable, Structured streaming will hold a static view of the first &ldquo;slow&rdquo; data, and it won&rsquo;t be updated until you restart the streaming query. But we already know that this data can be updated; think about the bank customer who changed their home address, and it needs to be updated in the system.
 Using DeltaLake helps introduce table versioning and allows you to control the changes and read/use the latest/most updated version inside the streaming query without restarting it.</p>
@@ -103,10 +103,10 @@ I will continue to share scenarios, insights, and code samples throughout the bl
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
@@ -120,7 +120,7 @@ This operation, by default, breaks data lineage when used without auditing.</p>
 <h3 id="deltalake-checkpoint">DeltaLake checkpoint</h3>
 <p>On each Delta Table state compute, Delta reads the JSON files discussed in <a href="/post/delta-lake-essential-fundamentals-the-deltalog/">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</a>. To avoid reading all the files and executing a long compute, every 10 commit files are being aggregated to a <em>checkpoint</em> file of type parquet. These checkpoint files save the entire state of the table at a point in time. It allows the Spark engine to avoid reprocessing thousands of tiny JSON files. This mechanism ensures that for computing table state, Spark only needs to read the latest parquet checkpoint file with up to 10 JSON files, it makes the computation faster and efficient.
 Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
-<img class="responsive" src="/images/Detla/checkpointfile.png" alt="drawing"></p>
+<img class="responsive" src="../../images/Detla/checkpointfile.png" alt="drawing"></p>
 <p>checkpoint files can be a one file for a specific table version or multiple files, it depends on what it contains.</p>
 <p>In one part, table version(<code>n</code>) 10 the file name will be of the structure <code>n.checkpoint.parquet</code>:</p>
 <pre tabindex="0"><code>00000000000000000010.checkpoint.parquet
@@ -130,8 +130,8 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
 00000000000000000010.checkpoint.0000000003.0000000003.parquet
 </code></pre><p>Snapshot of the function that is in charge of the writing the checkpoint files, the modulo operation is in charge of the checkpointInterval which can be updated in DeltaConfig.
 <br></p>
-<img class="responsive" src="/images/Detla/delta-lake-postcommit.png" alt="drawing">
-<img class="responsive" src="/images/Detla/deltalake-interval-config.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delta-lake-postcommit.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/deltalake-interval-config.png" alt="drawing">
 <p>Delta Lake configuration can be set as a Spark Configuration property, or Hadoop configuration depends on the LogStore, the cloud used, etc.</p>
 <hr>
 <p>I hope this provides more clarity into the differences between the three checkpoint mechanisms and their usage.</p>
@@ -168,10 +168,10 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
@@ -184,7 +184,7 @@ The goal of DeltaLog is to be the <strong>single</strong> source of truth for re
 This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p>
 <p>DeltaLog can also contain statistics on the data; depending on the type of the data/field/column, each column can have min/max values. Having this extra metadata can help with faster querying. DeltaTable read mechanism uses a simplified <a href="https://medium.com/microsoftazure/data-at-scale-learn-how-predicate-pushdown-will-save-you-money-7063b80878d7">push down predict</a>.</p>
 <p>Here is a simplification of DeltaLog on the file systems from Databricks site: <br>
-<img class="responsive" src="/images/Detla/deltalake-deltalog.png" alt="drawing"></p>
+<img class="responsive" src="../../images/Detla/deltalake-deltalog.png" alt="drawing"></p>
 <p>The DeltaLog itself is a folder that consists of multiple JSON files. When it reaches 10 files, DeltaTable does a checkpoint and compaction operations (we will dive into it in the next chapter).</p>
 <p>Here is an example of a DeltaLog JSON file from the code source test resources, each entry in the file is on JSON:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;remove&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;part-00001-f1cb1cf9-7a73-439c-b0ea-dcba5c2280a6-c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
@@ -210,17 +210,17 @@ The transactions that took place on the data can be broken into multiple compone
 <p>Operations such as Update, Delete, Add can harm isolation; Hence, since we want to guarantee isolation with DeltaTable, readers only get access to the table snapshot. This guarantees all parallel readers read the exact data. For handling deletion operations, Delta postpones the actual delete operation on the files; it first tags the files as deleted and later, remove them when considered safe (similar to Cassandra, and ElasticSearch delete operations with a tombstone).</p>
 <p>In DeltaLake 0.8.1 source code, there is a comment saying that it&rsquo;s recommended to have the delete retention set to at least 2 weeks or longer than a duration of a job. <br>
 <em>Note:</em> This will impact streaming workload as well, because there will be a need to delete the actual files at some point, which might result in blocking the stream.
-<img class="responsive" src="/images/Detla/delta-tombston-retention.png" alt="drawing"></p>
+<img class="responsive" src="../../images/Detla/delta-tombston-retention.png" alt="drawing"></p>
 <h2 id="deltalog-and-consistency">DeltaLog and Consistency</h2>
 <p>Delta Lake solves the problem of consistency by solving conflicts with an optimistic concurrency algorithm.
 The class in charge of this algorithm is the OptimisticTransaction class. It achieves it by using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html">Java 8 ReentrantLock</a> that is controlled from a DeltaLog instance. <br>
 Here is the code snippet: <br></p>
-<img class="responsive" src="/images/Detla/delta-log-optimistic-concurrency-algo.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delta-log-optimistic-concurrency-algo.png" alt="drawing">
 <p>A DeltaTable instance actively uses the ReentrantLock in the OptimisticTransaction under the <code>doCommitRetryIteratively</code> function.
 The optimistic approach was chosen here because in the big data world there is a tendency to add more data than to update existing records.
 It&rsquo;s rare to find and update a specific record, it is usually done when there was some data corruption on necessary data.</p>
 <p>Here is the code snippet for the optimistic algorithm:
-<img class="responsive" src="/images/Detla/delta-log-OptimisticTransaction.png" alt="drawing"></p>
+<img class="responsive" src="../../images/Detla/delta-log-OptimisticTransaction.png" alt="drawing"></p>
 <p>Notice that in line 572, the program records the attempted version as the <code>commitVersion</code> instance which is of type <code>var</code>.
 <code>var</code> in Scala represents a mutable object instance, which means we should expect its value to change.</p>
 <p>In line 575, we start the algorithm:
@@ -244,14 +244,14 @@ Multiple scenarios can bring us to this state.</p>
     if no exception - end loop
 end     
 </code></pre><p>To support the users, DeltaLake introduces a set of conflict exceptions that provide more information about the data and the conflicts:</p>
-<img class="responsive" src="/images/Detla/delte-concurrent-exceptions.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/delte-concurrent-exceptions.png" alt="drawing">
 <p>Let&rsquo;s look at some of the conflict scenarios.</p>
 <h3 id="two-writers">Two Writers:</h3>
 <p>This is the case of two writers who appends data to the same table simultaneously, without reading anything. In this scenario, one writer will commit, and the second writer will read the first one&rsquo;s updates before adding their own updates. Suppose it was only an append operation, like a counter which both are incrementing. In that case, there is no need to redo all computations, and it will automatically commit; if that&rsquo;s not the case, writer number two will need to redo the computation given the new information from writer one.</p>
 <h3 id="delete-and-read">Delete and Read:</h3>
 <p>In a more complex scenario like this one, there is no automated solution. For concurrent Delete-Read, there is a dedicated <code>ConcurentDeleteReadException</code>.
 That means that if there is a request to delete a file that at the same time is being used for a read, the program throws an exception.</p>
-<img class="responsive" src="/images/Detla/ConcurrentDeleteReadException.png" alt="drawing">
+<img class="responsive" src="../../images/Detla/ConcurrentDeleteReadException.png" alt="drawing">
 <h3 id="delete-and-delete">Delete and Delete:</h3>
 <p>When two operations delete the same file, it might be due to a compaction mechanism or other operation, here too an exception will occur.</p>
 <h2 id="deltalog-and-durability">DeltaLog and Durability</h2>
@@ -284,10 +284,10 @@ That means that if there is a request to delete a file that at the same time is 
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
@@ -318,7 +318,7 @@ But it's not.</p>
 <p>A transaction can only bring the DB from one state to another; data is valid according to all the rules, constraints, triggers, etc. The transaction itself can be consistent but incorrect. To achieve consistency, DeltaLake relay on the commit timestamp that comes from the storage system modification timestamps. If you are using cloud provider storage such as <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction?WT.mc_id=delta-13569-adpolak">Azure blob</a> or AWS S3, the timestamp will come from the storage server.</p>
 <h4 id="isolation">Isolation</h4>
 <p>Transactions taking place concurrently result in an equals state as if transactions would have been executed sequentially. This is the primary goal of Concurrency control strategies. In Delta, after 10 commits, there is a merging mechanism that merges these commits into a checkpoint file. The checkpoint file has a timestamp. 1 second is being added to the modification timestamp to avoid flakiness. This is how it looks in the code base of Delta:
-<img class="responsive" src="/images/delta-lake-avoid-flakiness-commit.png" alt="drawing"></p>
+<img class="responsive" src="../../images/delta-lake-avoid-flakiness-commit.png" alt="drawing"></p>
 <h4 id="durability">Durability</h4>
 <p>Once a transaction has been committed, it will remain committed even if the system fails. Think about writing to disk vs. writing to Ram memory. A machine can fail, but if the commit data was written to disk, it could be restored. Delta writes all the commits in a JSON file directly to the storage; it is not left floating in RAM space for too long.</p>
 <h2 id="whats-next">What&rsquo;s next?</h2>
@@ -343,10 +343,10 @@ But it's not.</p>
       
     </item><item>
       <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
-      <link>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/apache-spark-ecosystem/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/apache-spark-ecosystem/</guid>
       <description>The ever growing Open Source Ecosystem</description>
       
       <content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>

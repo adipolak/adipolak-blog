@@ -26,7 +26,7 @@ There are 3 main focus areas:
 * Databricks Experience
 * Technical Deep Dives
 
-<img class="responsive" src="/images/summit2021/summit-focus.png" alt="drawing">
+<img class="responsive" src="../../images/summit2021/summit-focus.png" alt="drawing">
 
 As you know by now, I think all the sessions are great! Sessions were carefully picked out of hundreds to provide the maximum value to the summit participants.
 

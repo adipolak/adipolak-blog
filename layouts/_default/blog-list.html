@@ -27,6 +27,25 @@
           <div class="blog-grid">
             {{ range $section }}
               <article class="blog-card">
+                {{ $firstImage := "" }}
+                {{ $imgMatches := findRE `<img[^>]+src="([^"]+)"[^>]*>` .Content 1 }}
+                {{ if $imgMatches }}
+                  {{ $srcMatches := findRE `src="([^"]+)"` (index $imgMatches 0) 1 }}
+                  {{ if $srcMatches }}
+                    {{ $imagePath := replaceRE `src="([^"]+)"` "$1" (index $srcMatches 0) }}
+                    {{ $imagePath = replaceRE `^\.\.\/\.\.\/` "" $imagePath }}
+                    {{ $firstImage = $imagePath }}
+                  {{ end }}
+                {{ end }}
+
+                {{ if $firstImage }}
+                <div class="post-image">
+                  <a href="{{ .Permalink }}">
+                    <img src="{{ $firstImage | relURL }}" alt="{{ .Title }}" loading="lazy">
+                  </a>
+                </div>
+                {{ end }}
+
                 {{ $hasValidDate := and .Date (gt .Date.Year 1971) }}
                 {{ if $hasValidDate }}
                 <div class="post-meta">

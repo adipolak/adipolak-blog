@@ -22,7 +22,8 @@
       </div>
     {{ end }}
 
-    <!-- Post Navigation -->
+    <!-- Post Navigation (only for blog posts) -->
+    {{ if eq .Section "post" }}
     <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
       {{ with .PrevInSection }}
         {{ if not .Draft }}
@@ -41,6 +42,7 @@
         {{ end }}
       {{ end }}
     </nav>
+    {{ end }}
   </footer>
 </article>
 
