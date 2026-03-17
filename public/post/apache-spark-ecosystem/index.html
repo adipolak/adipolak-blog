@@ -299,9 +299,34 @@
     <main role="main">
       
 
-<article class="article-content" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  
+<div style="max-width: 1400px; margin: 0 auto; padding: var(--space-3xl) var(--space-md);">
+  <div style="display: grid; grid-template-columns: 250px 1fr; gap: var(--space-3xl); align-items: start;">
+
+    
+    
+    <aside class="toc-sidebar" style="position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto;">
+      <div style="padding: var(--space-lg); background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(124, 58, 237, 0.15);">
+        <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md); font-family: var(--font-sans);">
+          On This Page
+        </h3>
+        <nav class="toc-nav">
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#ray"><strong>Ray:</strong></a></li>
+    <li><a href="#koalas"><strong>Koalas:</strong></a></li>
+    <li><a href="#delta-lake"><strong>Delta Lake:</strong></a></li>
+    <li><a href="#thats-it">That&rsquo;s it.</a></li>
+  </ol>
+</nav>
+        </nav>
+      </div>
+    </aside>
+    
+
+    
+    <article class="article-content" itemscope itemtype="https://schema.org/BlogPosting" style="max-width: 100%; padding: 0;">
+      
+      
 
 
 
@@ -376,9 +401,9 @@
 
 
 
-  
-  <div class="post-body" itemprop="articleBody">
-    <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
+      
+      <div class="post-body" itemprop="articleBody">
+        <p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
 Apache Spark is continually growing. It started as part of the Hadoop family,<br>
 but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
 <p>Let&rsquo;s take a look at three exciting open sources:</p>
@@ -433,77 +458,206 @@ I recommend being mindful with using this feature as saving snapshots and later 
 <p>I hope you enjoyed reading this short recap on open sources for January 2021.<br>
 If you are interested in learning more and getting updates, follow <a href="https://twitter.com/AdiPolak">Adi Polak on Twitter.</a>.</p>
 
-  </div>
-
-  
-  <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
-    
-      <div style="margin-bottom: var(--space-lg);">
-        <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
-        <div class="post-tags">
-          
-            <a href="/adipolak-blog/tags/open-source" class="tag">open-source</a>
-          
-            <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
-          
-            <a href="/adipolak-blog/tags/koalas" class="tag">koalas</a>
-          
-            <a href="/adipolak-blog/tags/pandas" class="tag">pandas</a>
-          
-            <a href="/adipolak-blog/tags/delta-lake" class="tag">delta lake</a>
-          
-            <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
-          
-            <a href="/adipolak-blog/tags/ray" class="tag">ray</a>
-          
-            <a href="/adipolak-blog/tags/ray-on-spark" class="tag">ray on spark</a>
-          
-            <a href="/adipolak-blog/tags/analytic-zoo" class="tag">analytic zoo</a>
-          
-        </div>
       </div>
-    
 
-    
-    
-    <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
       
+      <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
         
-        <a href="http://localhost:1314/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
-          <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
-          <div style="color: var(--color-text); font-weight: 500;">Kubernetes and Virtual Kubelet in a nutshell</div>
-        </a>
+          <div style="margin-bottom: var(--space-lg);">
+            <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
+            <div class="post-tags">
+              
+                <a href="/adipolak-blog/tags/open-source" class="tag">open-source</a>
+              
+                <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
+              
+                <a href="/adipolak-blog/tags/koalas" class="tag">koalas</a>
+              
+                <a href="/adipolak-blog/tags/pandas" class="tag">pandas</a>
+              
+                <a href="/adipolak-blog/tags/delta-lake" class="tag">delta lake</a>
+              
+                <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
+              
+                <a href="/adipolak-blog/tags/ray" class="tag">ray</a>
+              
+                <a href="/adipolak-blog/tags/ray-on-spark" class="tag">ray on spark</a>
+              
+                <a href="/adipolak-blog/tags/analytic-zoo" class="tag">analytic zoo</a>
+              
+            </div>
+          </div>
         
-      
-      
-        
-        <a href="http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
-          <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Next</div>
-          <div style="color: var(--color-text); font-weight: 500;">Delta Lake essential Fundamentals: Part 1 - ACID</div>
-        </a>
-        
-      
-    </nav>
-    
-  </footer>
-</article>
 
+        
+        
+        <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
+          
+            
+            <a href="http://localhost:1314/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
+              <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
+              <div style="color: var(--color-text); font-weight: 500;">Kubernetes and Virtual Kubelet in a nutshell</div>
+            </a>
+            
+          
+          
+            
+            <a href="http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
+              <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Next</div>
+              <div style="color: var(--color-text); font-weight: 500;">Delta Lake essential Fundamentals: Part 1 - ACID</div>
+            </a>
+            
+          
+        </nav>
+        
+      </footer>
+    </article>
 
-<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</div>
+
+<style>
+   
+  .toc-nav {
+    font-size: var(--text-sm);
+  }
+
+  .toc-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-nav > ul {
+    margin: 0;
+  }
+
+  .toc-nav ul ul {
+    margin-left: var(--space-md);
+    margin-top: var(--space-xs);
+  }
+
+  .toc-nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc-nav a {
+    display: block;
+    padding: var(--space-xs) 0;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border: none;
+    border-left: 2px solid transparent;
+    padding-left: var(--space-sm);
+    margin-left: -var(--space-sm);
+    transition: all 0.2s ease;
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  .toc-nav a:hover {
+    color: var(--color-text);
+    border-left-color: var(--accent-primary);
+    background: rgba(215, 185, 168, 0.05);
+  }
+
+  .toc-nav a.active {
+    color: #7c3aed;
+    border-left-color: #7c3aed;
+    background: rgba(124, 58, 237, 0.08);
+    font-weight: 500;
+  }
+
+   
+  html {
+    scroll-behavior: smooth;
+  }
+
+   
+  .post-body h2,
+  .post-body h3,
+  .post-body h4 {
+    scroll-margin-top: 100px;
+  }
+
+   
+  @media (max-width: 1024px) {
+    .toc-sidebar {
+      display: none;
+    }
+
+    .article-content {
+      max-width: 680px !important;
+      margin: 0 auto;
+    }
+  }
+
+   
+  .toc-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 2px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+  }
+</style>
+
 <script>
 (function() {
-  const btn = document.getElementById('dark-mode-btn');
-  if (!btn) return;
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    btn.textContent = '☀️';
-  }
-  btn.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    btn.textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+      if (tocLink) {
+        if (entry.intersectionRatio > 0) {
+          
+          document.querySelectorAll('.toc-nav a').forEach(link => {
+            link.classList.remove('active');
+          });
+          
+          tocLink.classList.add('active');
+        }
+      }
+    });
+  }, {
+    rootMargin: '-100px 0px -66%',
+    threshold: 0
+  });
+
+  
+  document.querySelectorAll('.post-body h2[id], .post-body h3[id], .post-body h4[id]').forEach((heading) => {
+    observer.observe(heading);
+  });
+
+  
+  document.querySelectorAll('.toc-nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+
+        
+        history.pushState(null, null, `#${targetId}`);
+      }
+    });
   });
 })();
 </script>

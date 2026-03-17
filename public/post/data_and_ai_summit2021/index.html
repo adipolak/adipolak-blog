@@ -284,9 +284,38 @@
     <main role="main">
       
 
-<article class="article-content" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  
+<div style="max-width: 1400px; margin: 0 auto; padding: var(--space-3xl) var(--space-md);">
+  <div style="display: grid; grid-template-columns: 250px 1fr; gap: var(--space-3xl); align-items: start;">
+
+    
+    
+    <aside class="toc-sidebar" style="position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto;">
+      <div style="padding: var(--space-lg); background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(124, 58, 237, 0.15);">
+        <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md); font-family: var(--font-sans);">
+          On This Page
+        </h3>
+        <nav class="toc-nav">
+          <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#1st-from-the-machine-learning-space---strategies-for-debugging-machine-learning-systems"><strong>1st:</strong> From the machine learning space - Strategies for Debugging Machine Learning Systems</a></li>
+        <li><a href="#2nd-from-the-databricks-experience-space---video-analytics-at-scale-dl-cv-ml-on-databricks-platform"><strong>2nd</strong> From the Databricks Experience space - Video Analytics At Scale: DL, CV, ML On Databricks Platform</a></li>
+        <li><a href="#3rd-becoming-a-data-driven-organization-with-modern-lakehouse"><strong>3rd</strong> Becoming a Data-Driven Organization with Modern Lakehouse</a></li>
+        <li><a href="#links">Links:</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </nav>
+      </div>
+    </aside>
+    
+
+    
+    <article class="article-content" itemscope itemtype="https://schema.org/BlogPosting" style="max-width: 100%; padding: 0;">
+      
+      
 
 
 
@@ -349,9 +378,9 @@
 
 
 
-  
-  <div class="post-body" itemprop="articleBody">
-    <p>It&rsquo;s almost been half a year since the last summit.</p>
+      
+      <div class="post-body" itemprop="articleBody">
+        <p>It&rsquo;s almost been half a year since the last summit.</p>
 <p>Data+AI Summit 2021 starts on Monday, May 24 till Friday, May 28.
 The training will be held on May 24-25 and will cater to a large set of practitioners, definitely more extensive than previous times:
 Data Analyst, Data Engineer, Data Scientist, ML Engineer, Partner Data Engineer, Platform Engineer, Technical. The wide range of roles makes me curious about the various technical personas in the Data and AI space. It&rsquo;s not only Data Engineers and Data Scientists. There is a wide range of people who can benefit from attending the summit.</p>
@@ -387,41 +416,190 @@ In some cases, that means smaller revenue, but when we use machine learning to s
 <li>Learn about <a href="https://bit.ly/3uABica">Azure Databricks</a></li>
 </ul>
 
+      </div>
+
+      
+      <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
+        
+          <div style="margin-bottom: var(--space-lg);">
+            <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
+            <div class="post-tags">
+              
+                <a href="/adipolak-blog/tags/conference" class="tag">conference</a>
+              
+                <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
+              
+                <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
+              
+            </div>
+          </div>
+        
+
+        
+        
+        <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
+          
+            
+            <a href="http://localhost:1314/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
+              <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
+              <div style="color: var(--color-text); font-weight: 500;">Machine Learning in Production - Concepts you should know</div>
+            </a>
+            
+          
+          
+        </nav>
+        
+      </footer>
+    </article>
+
   </div>
+</div>
+
+<style>
+   
+  .toc-nav {
+    font-size: var(--text-sm);
+  }
+
+  .toc-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-nav > ul {
+    margin: 0;
+  }
+
+  .toc-nav ul ul {
+    margin-left: var(--space-md);
+    margin-top: var(--space-xs);
+  }
+
+  .toc-nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc-nav a {
+    display: block;
+    padding: var(--space-xs) 0;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border: none;
+    border-left: 2px solid transparent;
+    padding-left: var(--space-sm);
+    margin-left: -var(--space-sm);
+    transition: all 0.2s ease;
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  .toc-nav a:hover {
+    color: var(--color-text);
+    border-left-color: var(--accent-primary);
+    background: rgba(215, 185, 168, 0.05);
+  }
+
+  .toc-nav a.active {
+    color: #7c3aed;
+    border-left-color: #7c3aed;
+    background: rgba(124, 58, 237, 0.08);
+    font-weight: 500;
+  }
+
+   
+  html {
+    scroll-behavior: smooth;
+  }
+
+   
+  .post-body h2,
+  .post-body h3,
+  .post-body h4 {
+    scroll-margin-top: 100px;
+  }
+
+   
+  @media (max-width: 1024px) {
+    .toc-sidebar {
+      display: none;
+    }
+
+    .article-content {
+      max-width: 680px !important;
+      margin: 0 auto;
+    }
+  }
+
+   
+  .toc-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 2px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+  }
+</style>
+
+<script>
+(function() {
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+      if (tocLink) {
+        if (entry.intersectionRatio > 0) {
+          
+          document.querySelectorAll('.toc-nav a').forEach(link => {
+            link.classList.remove('active');
+          });
+          
+          tocLink.classList.add('active');
+        }
+      }
+    });
+  }, {
+    rootMargin: '-100px 0px -66%',
+    threshold: 0
+  });
 
   
-  <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
-    
-      <div style="margin-bottom: var(--space-lg);">
-        <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
-        <div class="post-tags">
-          
-            <a href="/adipolak-blog/tags/conference" class="tag">conference</a>
-          
-            <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
-          
-            <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
-          
-        </div>
-      </div>
-    
+  document.querySelectorAll('.post-body h2[id], .post-body h3[id], .post-body h4[id]').forEach((heading) => {
+    observer.observe(heading);
+  });
 
-    
-    
-    <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
-      
+  
+  document.querySelectorAll('.toc-nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+
         
-        <a href="http://localhost:1314/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
-          <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
-          <div style="color: var(--color-text); font-weight: 500;">Machine Learning in Production - Concepts you should know</div>
-        </a>
-        
-      
-      
-    </nav>
-    
-  </footer>
-</article>
+        history.pushState(null, null, `#${targetId}`);
+      }
+    });
+  });
+})();
+</script>
 
 
     </main>

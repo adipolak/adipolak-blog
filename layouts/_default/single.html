@@ -1,49 +1,216 @@
 {{ define "main" }}
 
-<article class="article-content" itemscope itemtype="https://schema.org/BlogPosting">
-  <!-- Article Header with Enhanced Attribution -->
-  {{ partial "article-header.html" . }}
+<div style="max-width: 1400px; margin: 0 auto; padding: var(--space-3xl) var(--space-md);">
+  <div style="display: grid; grid-template-columns: 250px 1fr; gap: var(--space-3xl); align-items: start;">
 
-  <!-- Article Body -->
-  <div class="post-body" itemprop="articleBody">
-    {{ .Content }}
-  </div>
-
-  <!-- Article Footer -->
-  <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
-    {{ with .Params.tags }}
-      <div style="margin-bottom: var(--space-lg);">
-        <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
-        <div class="post-tags">
-          {{ range . }}
-            <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
-          {{ end }}
-        </div>
+    <!-- Table of Contents Sidebar -->
+    {{ if .TableOfContents }}
+    <aside class="toc-sidebar" style="position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto;">
+      <div style="padding: var(--space-lg); background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(124, 58, 237, 0.15);">
+        <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md); font-family: var(--font-sans);">
+          On This Page
+        </h3>
+        <nav class="toc-nav">
+          {{ .TableOfContents }}
+        </nav>
       </div>
+    </aside>
     {{ end }}
 
-    <!-- Post Navigation (only for blog posts) -->
-    {{ if eq .Section "post" }}
-    <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
-      {{ with .PrevInSection }}
-        {{ if not .Draft }}
-        <a href="{{ .Permalink }}" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
-          <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
-          <div style="color: var(--color-text); font-weight: 500;">{{ .Title }}</div>
-        </a>
+    <!-- Main Article Content -->
+    <article class="article-content" itemscope itemtype="https://schema.org/BlogPosting" style="max-width: 100%; padding: 0;">
+      <!-- Article Header -->
+      {{ partial "article-header.html" . }}
+
+      <!-- Article Body -->
+      <div class="post-body" itemprop="articleBody">
+        {{ .Content }}
+      </div>
+
+      <!-- Article Footer -->
+      <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
+        {{ with .Params.tags }}
+          <div style="margin-bottom: var(--space-lg);">
+            <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
+            <div class="post-tags">
+              {{ range . }}
+                <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+              {{ end }}
+            </div>
+          </div>
         {{ end }}
-      {{ end }}
-      {{ with .NextInSection }}
-        {{ if not .Draft }}
-        <a href="{{ .Permalink }}" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
-          <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Next</div>
-          <div style="color: var(--color-text); font-weight: 500;">{{ .Title }}</div>
-        </a>
+
+        <!-- Post Navigation -->
+        {{ if eq .Section "post" }}
+        <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
+          {{ with .PrevInSection }}
+            {{ if not .Draft }}
+            <a href="{{ .Permalink }}" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
+              <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
+              <div style="color: var(--color-text); font-weight: 500;">{{ .Title }}</div>
+            </a>
+            {{ end }}
+          {{ end }}
+          {{ with .NextInSection }}
+            {{ if not .Draft }}
+            <a href="{{ .Permalink }}" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
+              <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Next</div>
+              <div style="color: var(--color-text); font-weight: 500;">{{ .Title }}</div>
+            </a>
+            {{ end }}
+          {{ end }}
+        </nav>
         {{ end }}
-      {{ end }}
-    </nav>
-    {{ end }}
-  </footer>
-</article>
+      </footer>
+    </article>
+
+  </div>
+</div>
+
+<style>
+  /* Table of Contents Styling */
+  .toc-nav {
+    font-size: var(--text-sm);
+  }
+
+  .toc-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-nav > ul {
+    margin: 0;
+  }
+
+  .toc-nav ul ul {
+    margin-left: var(--space-md);
+    margin-top: var(--space-xs);
+  }
+
+  .toc-nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc-nav a {
+    display: block;
+    padding: var(--space-xs) 0;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border: none;
+    border-left: 2px solid transparent;
+    padding-left: var(--space-sm);
+    margin-left: -var(--space-sm);
+    transition: all 0.2s ease;
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  .toc-nav a:hover {
+    color: var(--color-text);
+    border-left-color: var(--accent-primary);
+    background: rgba(215, 185, 168, 0.05);
+  }
+
+  .toc-nav a.active {
+    color: #7c3aed;
+    border-left-color: #7c3aed;
+    background: rgba(124, 58, 237, 0.08);
+    font-weight: 500;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Add offset for sticky header */
+  .post-body h2,
+  .post-body h3,
+  .post-body h4 {
+    scroll-margin-top: 100px;
+  }
+
+  /* Responsive - Hide TOC on mobile */
+  @media (max-width: 1024px) {
+    .toc-sidebar {
+      display: none;
+    }
+
+    .article-content {
+      max-width: 680px !important;
+      margin: 0 auto;
+    }
+  }
+
+  /* Custom scrollbar for TOC */
+  .toc-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 2px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+  }
+</style>
+
+<script>
+(function() {
+  // Highlight active section in TOC based on scroll position
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+      if (tocLink) {
+        if (entry.intersectionRatio > 0) {
+          // Remove active class from all links
+          document.querySelectorAll('.toc-nav a').forEach(link => {
+            link.classList.remove('active');
+          });
+          // Add active class to current link
+          tocLink.classList.add('active');
+        }
+      }
+    });
+  }, {
+    rootMargin: '-100px 0px -66%',
+    threshold: 0
+  });
+
+  // Observe all headings
+  document.querySelectorAll('.post-body h2[id], .post-body h3[id], .post-body h4[id]').forEach((heading) => {
+    observer.observe(heading);
+  });
+
+  // Smooth scroll for TOC links
+  document.querySelectorAll('.toc-nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+
+        // Update URL without jumping
+        history.pushState(null, null, `#${targetId}`);
+      }
+    });
+  });
+})();
+</script>
 
 {{ end }}

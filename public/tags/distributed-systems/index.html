@@ -37,8 +37,6 @@
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Distributed-Systems">
-  <meta itemprop="datePublished" content="2021-04-11T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2021-04-11T00:00:00+00:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Distributed-Systems">
 
@@ -953,25 +951,6 @@ but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f
     <a href="/adipolak-blog/tags/" class="btn-secondary btn">← View all topics</a>
   </div>
 </section>
-
-
-<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
-<script>
-(function() {
-  const btn = document.getElementById('dark-mode-btn');
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    btn.textContent = '☀️';
-  }
-  btn.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    btn.textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-})();
-</script>
 
 
     </main>
