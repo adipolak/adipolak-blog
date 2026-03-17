@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Get Started - Adi Polak</title>
+    <link>http://localhost:1313/adipolak-blog/tags/get-started/</link>
+    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>Adi Polak</managingEditor>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/adipolak-blog/tags/get-started/feed.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Getting started with Vibrant Shadows</title>
+      <link>http://localhost:1313/adipolak-blog/post/getting-started/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1313/adipolak-blog/post/getting-started/</guid>
+      <description>Read the full post to easily get started with Vibrant Shadows Hugo theme.</description>
+      
+      <content:encoded><![CDATA[<p>It&rsquo;s very easy to get started with Vibrant Shadows. How? Read on.</p>
+<h2 id="trying-out-images">Trying out images</h2>
+<p><img src="/images/image.jpg" alt="image alt text"></p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Firstly, <em>ensure you have installed the latest (min v0.75.1) <a href="https://github.com/gohugoio/hugo/releases">extended version of Hugo</a></em>. You may need to scroll down a bit to see extended versions. Alternatively, you may see installation steps from <a href="https://gohugo.io/getting-started/installing/">Hugo&rsquo;s official docs</a>.</p>
+<p>If you don&rsquo;t have or can&rsquo;t have extended version of Hugo installed, copy the resources folder from theme to root of your Hugo website directory. Hugo autodetects required files, and uses them. Note that it might make your website slightly slow to load.</p>
+<h2 id="getting-up-and-running">Getting up and running</h2>
+<p>Read the <a href="#prerequisites">prerequisites</a> above and verify you&rsquo;re using the extended version of Hugo. There are at least two ways of quickly getting started with Hugo and the Vibrant Shadows theme:</p>
+<h3 id="setting-up-new-hugo-website">Setting up new Hugo website</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site yourSiteName <span style="color:#75715e"># generate a new Hugo site if you don&#39;t already have one</span>
+</span></span><span style="display:flex;"><span>cd yourSiteName <span style="color:#75715e"># move in to the Hugo website&#39;s directory</span>
+</span></span></code></pre></div><h4 id="1-as-a-hugo-theme-recommended">1. As a Hugo theme (recommended)</h4>
+<ol>
+<li>
+<p>Download the repo on your machine</p>
+</li>
+<li>
+<p>Extract the zip file and rename the folder from <code>HugoTheme-VibrantShadows-master</code> to <code>HugoTheme-VibrantShadows</code>.</p>
+</li>
+<li>
+<p>Copy this folder and paste it into you Hugo Website directory.</p>
+</li>
+<li>
+<p>Simply add the repo to your theme option in <code>config.yaml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;HugoTheme-VibrantShadows&#34;</span>
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="2-as-git-submodule">2. As Git Submodule</h4>
+<p>Inside the folder of your Hugo site run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init <span style="color:#75715e"># to initiate git if it isn&#39;t already</span>
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/Softorage/HugoTheme-VibrantShadows.git themes/HugoTheme-VibrantShadows <span style="color:#75715e"># add theme as a git submodule</span>
+</span></span><span style="display:flex;"><span>cp -a themes/HugoTheme-VibrantShadows/exampleSite/* . <span style="color:#75715e"># start with the boilerplate by copying it into current directory</span>
+</span></span></code></pre></div><p>Then run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>And, we&rsquo;re done!</p>
+<p>If you have extended version of Hugo installed, copy the <code>postcss.config.js</code> file to the root of your Hugo Website directory after setting up the theme. We also recommend creating a <code>package.json</code> file in your Hugo Website directory.</p>
+<h3 id="using-boilerplate-provided">Using boilerplate provided</h3>
+<ol>
+<li>Copy exampleSite folder provided, and move into this folder (open this folder).</li>
+<li>Then run <code>hugo server</code> in terminal.</li>
+</ol>
+<p>And, we&rsquo;re done!</p>
+<p>Once set, jump over to the <code>config.yaml</code> file and start <a href="/post/configuration">configuring</a> your site.</p>]]></content:encoded>
+      
+      
+      <category>get started</category>
+      
+      <category>guide</category>
+      
+    </item>
+  </channel>
+</rss>

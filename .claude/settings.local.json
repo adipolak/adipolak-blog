@@ -69,7 +69,22 @@
       "WebFetch(domain:www.amazon.com)",
       "Bash(lsof -ti:1313)",
       "Bash(xargs kill:*)",
-      "Bash(curl -I https://adipolak.github.io/adipolak-blog/css/custom.css)"
+      "Bash(curl -I https://adipolak.github.io/adipolak-blog/css/custom.css)",
+      "Bash(curl -I https://adipolak.github.io/adipolak-blog/books/)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/books/ | head -250)",
+      "Bash(sleep 3 && curl -s http://localhost:1313/adipolak-blog/books/ | grep -A 3 \"book-card\" | head -20)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/ | grep -i \"book\" | head -20)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/ > /tmp/homepage.html && cat /tmp/homepage.html | grep -A 5 \"Books\\\\|Scaling Machine\\\\|High Performance\" | head -30)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/books/ | grep -c \"book-card\")",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/books/ | grep -A 2 \"Scaling Machine Learning\")",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/presentations/ | head -100)",
+      "Bash(ls -la /Users/adipolak/open-source/adipolak-blog/layouts/**/presentations* /Users/adipolak/open-source/adipolak-blog/layouts/**/*presentation* 2>/dev/null)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/search/ | grep -i \"search\\\\|input\" | head -20)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/subscribe/ | grep -i \"subscribe\\\\|newsletter\\\\|substack\" | head -20)",
+      "Bash(find /Users/adipolak/open-source/adipolak-blog/themes -name \"*subscribe*\" -type f 2>/dev/null | head -5)",
+      "Bash(grep -r \"subscribe\" /Users/adipolak/open-source/adipolak-blog/content/*.md 2>/dev/null | head -5)",
+      "Bash(grep -r \"layout:\" /Users/adipolak/open-source/adipolak-blog/content/*.md 2>/dev/null | grep -v \"^#\")",
+      "Bash(grep -r \"contact-me\" /Users/adipolak/open-source/adipolak-blog/content/*.md 2>/dev/null)"
     ]
   }
 }

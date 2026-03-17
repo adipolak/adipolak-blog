@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/adipolak-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=adipolak-blog/livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="/adipolak-blog/css/custom.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Adi Polak  | Koalas, Panda&#39;s Scalable Sibling</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.157.0">
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+
+    
+    
+      <link href="/adipolak-blog/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+
+    
+
+    <meta property="og:url" content="http://localhost:1313/adipolak-blog/post/koalas-pandas-scalable-sibling/">
+  <meta property="og:site_name" content="Adi Polak">
+  <meta property="og:title" content="Koalas, Panda&#39;s Scalable Sibling">
+  <meta property="og:description" content="Gental introduction to Koalas">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-01-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-01-10T00:00:00+00:00">
+    <meta property="article:tag" content="Beginners">
+    <meta property="article:tag" content="Apache Spark">
+    <meta property="article:tag" content="Koalas">
+    <meta property="article:tag" content="Pandas">
+    <meta property="article:tag" content="Distributed-Systems">
+    <meta property="article:tag" content="Kubernetes">
+
+  <meta itemprop="name" content="Koalas, Panda&#39;s Scalable Sibling">
+  <meta itemprop="description" content="Gental introduction to Koalas">
+  <meta itemprop="datePublished" content="2021-01-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-01-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="500">
+  <meta itemprop="keywords" content="Beginners,Apache Spark,Koalas,Pandas,Distributed-Systems,Kubernetes">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Koalas, Panda&#39;s Scalable Sibling">
+  <meta name="twitter:description" content="Gental introduction to Koalas">
+
+    
+
+
+<link rel="canonical" href="http://localhost:1313/adipolak-blog/post/koalas-pandas-scalable-sibling/" />
+
+
+<meta name="author" content="Adi Polak" />
+<meta name="creator" content="Adi Polak" />
+<meta name="publisher" content="Adi Polak" />
+
+
+<meta name="copyright" content="© 2026 Adi Polak. All rights reserved." />
+<meta name="rights" content="© 2026 Adi Polak" />
+
+
+<meta name="citation_author" content="Adi Polak" />
+<meta name="citation_author_institution" content="Vectorize.io" />
+
+<meta name="citation_title" content="Koalas, Panda&#39;s Scalable Sibling" />
+<meta name="citation_publication_date" content="2021/01/10" />
+<meta name="citation_online_date" content="2021/01/10" />
+
+
+
+<meta name="DC.title" content="Koalas, Panda&#39;s Scalable Sibling - Adi Polak" />
+<meta name="DC.creator" content="Adi Polak" />
+<meta name="DC.subject" content="beginners, apache spark, koalas, pandas, distributed-systems, kubernetes" />
+<meta name="DC.description" content="Gental introduction to Koalas" />
+<meta name="DC.publisher" content="Adi Polak" />
+<meta name="DC.type" content="Text" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="en" />
+<meta name="DC.rights" content="© 2026 Adi Polak" />
+
+
+
+<meta name="description" content="Gental introduction to Koalas - By Adi Polak" />
+
+
+
+
+<meta name="keywords" content="beginners, apache spark, koalas, pandas, distributed-systems, kubernetes, Adi Polak, Adi Polak" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2021-01-10T00:00:00Z" />
+<meta property="article:modified_time" content="2021-01-10T00:00:00Z" />
+<meta property="article:author" content="Adi Polak" />
+<meta property="article:section" content="post" />
+
+<meta property="article:tag" content="beginners" />
+
+<meta property="article:tag" content="apache spark" />
+
+<meta property="article:tag" content="koalas" />
+
+<meta property="article:tag" content="pandas" />
+
+<meta property="article:tag" content="distributed-systems" />
+
+<meta property="article:tag" content="kubernetes" />
+
+
+
+
+
+<meta name="topic" content="beginners" />
+<meta name="subject" content="Artificial Intelligence, AI Systems, Cloud Computing, Data Analytics, Technical Leadership" />
+<meta name="classification" content="Technical Blog" />
+
+
+<link rel="author" href="http://localhost:1313/adipolak-blog/about/" />
+<link rel="me" href="https://twitter.com/AdiPolak" />
+<link rel="me" href="https://github.com/AdiPolak" />
+
+    
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Koalas, Panda\u0027s Scalable Sibling",
+  "name": "Koalas, Panda\u0027s Scalable Sibling",
+  "description": "Gental introduction to Koalas",
+  "image": "http:\/\/localhost:1313\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png",
+  "datePublished": "2021-01-10T00:00:00Z",
+  "dateModified": "2021-01-10T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "url": "http:\/\/localhost:1313\/adipolak-blog\/about/",
+    "sameAs": [
+      "https://twitter.com/AdiPolak",
+      "https://github.com/AdiPolak",
+      "https://www.linkedin.com/in/polak-adi/"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http:\/\/localhost:1313\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/adipolak-blog\/post\/koalas-pandas-scalable-sibling\/"
+  },
+  "keywords": "beginners, apache spark, koalas, pandas, distributed-systems, kubernetes",
+  "articleSection": "post",
+  "inLanguage": "en-US",
+  "copyrightHolder": {
+    "@type": "Person",
+    "name": "Adi Polak"
+  },
+  "copyrightYear": "2021",
+  "creator": {
+    "@type": "Person",
+    "name": "Adi Polak"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "http:\/\/localhost:1313\/adipolak-blog\/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Writing",
+      "item": "http:\/\/localhost:1313\/adipolak-blog\/writing/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Koalas, Panda\u0027s Scalable Sibling",
+      "item": "http:\/\/localhost:1313\/adipolak-blog\/post\/koalas-pandas-scalable-sibling\/"
+    }
+  ]
+}
+</script>
+
+
+
+
+
+
+
+    
+  </head>
+
+  <body style="margin: 0; padding: 0; background-color: #11100F;">
+
+    <header>
+  <nav class="site-nav" role="navigation">
+  <div class="nav-container">
+    <a href="/adipolak-blog/" class="site-logo">
+      
+      <img src="/adipolak-blog/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" class="logo-icon" />
+      
+      <span class="logo-text">Adi Polak</span>
+    </a>
+    <div class="nav-menu">
+      
+        <ul class="nav-links">
+          
+            
+              <li>
+                <a href="/adipolak-blog/about/" title="about">about</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/books/" title="books">books</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/writing/" title="blog">blog</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/external-writing/" title="published elsewhere">published elsewhere</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/presentations/" title="presentations">presentations</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/search/" title="search">search</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/contact-me/" title="contact">contact</a>
+              </li>
+            
+          
+          <li>
+            <a href="/adipolak-blog/feed.xml" title="RSS Feed" aria-label="Subscribe via RSS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      
+      <a href="/adipolak-blog/subscribe" class="nav-cta">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+    <main role="main">
+      
+
+<article itemscope itemtype="https://schema.org/BlogPosting">
+
+  
+  <div class="article-header-wrapper">
+    
+
+
+
+
+<header class="article-header" style="text-align: center; margin-bottom: var(--space-2xl); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border-subtle);">
+
+  
+  <div style="margin-bottom: var(--space-md); color: var(--color-text-muted); font-size: var(--text-sm);">
+    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+      By <a href="http://localhost:1313/adipolak-blog/about/" itemprop="url" style="color: var(--color-link); font-weight: 600;">
+        <span itemprop="name">Adi Polak</span>
+      </a>
+    </span>
+    
+    <meta itemprop="author" content="Adi Polak" />
+    
+  </div>
+
+  
+  
+  <div class="post-meta" style="justify-content: center; margin-bottom: var(--space-md);">
+    
+    <time datetime="2021-01-10" itemprop="datePublished">
+      January 10, 2021
+    </time>
+    <meta itemprop="dateModified" content="2021-01-10" />
+    
+    
+      <span class="separator">·</span>
+      <span>3 min read</span>
+    
+    
+      <span class="separator">·</span>
+      <span>Adi Polak</span>
+    
+  </div>
+  
+
+  <h1 itemprop="headline name" style="margin-bottom: var(--space-md); font-size: var(--text-4xl);">Koalas, Panda&#39;s Scalable Sibling</h1>
+
+  
+    <div class="post-tags" style="justify-content: center;">
+      
+        <a href="/adipolak-blog/tags/beginners" class="tag">beginners</a>
+      
+        <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
+      
+        <a href="/adipolak-blog/tags/koalas" class="tag">koalas</a>
+      
+        <a href="/adipolak-blog/tags/pandas" class="tag">pandas</a>
+      
+        <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
+      
+        <a href="/adipolak-blog/tags/kubernetes" class="tag">kubernetes</a>
+      
+    </div>
+  
+
+  
+  <meta itemprop="inLanguage" content="en-US" />
+  <link itemprop="url" href="http://localhost:1313/adipolak-blog/post/koalas-pandas-scalable-sibling/" />
+  <meta itemprop="image" content="http://localhost:1313/adipolak-blog/assets/favicon/android-chrome-512x512.png" />
+
+</header>
+
+
+
+  </div>
+
+  
+  <div class="article-layout-container">
+    <div class="article-layout-grid">
+
+      
+      
+      <aside class="toc-sidebar">
+        <div class="toc-card">
+          <button class="toc-header" aria-expanded="true" aria-controls="toc-content">
+            <span class="toc-title">On This Page</span>
+            <svg class="toc-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 6 8 10 12 6"></polyline>
+            </svg>
+          </button>
+          <nav id="toc-content" class="toc-nav">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-it-all-about">What is it all about?</a></li>
+    <li><a href="#setting-up-the-environment">Setting up the environment</a></li>
+    <li><a href="#how-to-start-spark-pool-with-koalas-with-synapse">How to start Spark pool with Koalas with Synapse:</a></li>
+    <li><a href="#coding">Coding</a></li>
+  </ol>
+</nav>
+          </nav>
+        </div>
+      </aside>
+      
+
+      
+      <div class="article-body-column">
+
+        
+        <div class="post-body" itemprop="articleBody">
+          <h2 id="what-is-it-all-about">What is it all about?</h2>
+<p>From the <a href="https://pandas.pydata.org/docs/">pandas</a> docs: <em>&ldquo;pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.&rdquo;</em></p>
+<p>From the <a href="https://koalas.readthedocs.io/en/latest/">Koalas</a> docs: <em>&ldquo;The Koalas project makes data scientists more productive when interacting with big data, by implementing the pandas DataFrame API on top of Apache Spark.&rdquo;</em></p>
+<p>First thing first,</p>
+<h2 id="setting-up-the-environment">Setting up the environment</h2>
+<p>You can use any Apache Spark environment that suits you. I often work with Azure Databricks or Synapse as I know both well. \</p>
+<p>With <a href="https://docs.microsoft.com/en-us/azure/databricks/languages/koalas?WT.mc_id=spark-12578-adpolak">Databricks</a>, Koalas is pre-installed in Runtime 7.1 and above. With Datrbirkcs Runtime below, checkup <a href="https://docs.microsoft.com/en-us/azure/databricks/languages/koalas?WT.mc_id=spark-12578-adpolak">this tutorial</a>.</p>
+<p>With <a href="https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-overview?WT.mc_id=spark-12578-adpolak">Synapse</a>, you need to provide a <code>.txt</code> configuration file that can be used with the command <code>pip freeze</code>. The file staractire looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>{PyPI package name}=={desired version}
+</span></span><span style="display:flex;"><span>{PyPI second package name}=={desired version}
+</span></span></code></pre></div><p>Let&rsquo;s see how to get it done:</p>
+<h2 id="how-to-start-spark-pool-with-koalas-with-synapse">How to start Spark pool with Koalas with Synapse:</h2>
+<p>First, create your Spark pool.
+From the Synapse Studio workspace nevigate to <code>manage</code> -&gt; <code>Analytics pools</code> -&gt; <code>Apache Spark pools</code> and click on <code>+ New</code> button.</p>
+<p>A new UI will menu will pop on the right side of the screen enables you to add information such as size of cluster, auto-scale, name, number of nodes, etc. <br>
+On the additional setting you can config Spark version, and see the libraries versions that comes built in with the Synapse Spark pool. <br>
+Such as .NET for Apache Spark.\</p>
+<p>👉 .Net for Apache Spark is a library that developed by Microsoft to enable .NET developers easy way to work with Spark.<br>
+Read about it <a href="https://docs.microsoft.com/en-us/dotnet/spark/what-is-apache-spark-dotnet?WT.mc_id=spark-12578-adpolak">here</a>.</p>
+<p><img class="responsive" src="../../images/pandas-synapse-post/create-spark-pool.png" alt="drawing"> \</p>
+<p>Right from the <code>Additional Settings</code> tab, you can add the <code>.txt</code> configuration file.</p>
+<p>Create a text file, and copy this line into it:</p>
+<pre tabindex="0"><code>pandas==1.2.0
+</code></pre><p>You can upload it while creating the cluster, or add it to an existing cluster.</p>
+<p>If you have an existing cluster, from the same <code>Apache Spark Pools</code> you can add a new packages. <br>
+Clicking on the <code>...</code> 3 dots next to your cluster name will open a menu bar for you, inside there is a Packages option, click on it:</p>
+<p><img class="responsive" src="../../images/pandas-synapse-post/manage-packaging-synapse-ui.png" alt="drawing"> \</p>
+<p>It will prompt you to a right side bar where you can upload your text file.</p>
+<p><img class="responsive" src="../../images/pandas-synapse-post/upload-config-file.png" alt="drawing"> \</p>
+<p>Click the Upload button at the top and choose the file you would like to upload.<br>
+Now a new Upload blue button will appear at the bottom, click this too.</p>
+<p>The UI will show you the configuration file name and size, all you have to do is to click the blue Apply button at the buttom.<br>
+<img class="responsive" src="../../images/pandas-synapse-post/apply.png" alt="drawing"> \</p>
+<p>That&rsquo;s it, all set to start coding!</p>
+<h2 id="coding">Coding</h2>
+<p>Nevigate to <code>Develop</code> -&gt; <code>+</code> buttong and create a new Notebook, for <code>Attach to</code> choose your spark pool.</p>
+<p>We will write our code right here in the notebook so we can run it in an interactive manner and see the results of every operation live.</p>
+<p>Setting and importing Koalas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> databricks.koalas <span style="color:#66d9ef">as</span> ks
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> SparkSession
+</span></span></code></pre></div>
+        </div>
+
+        
+        <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
+          
+            <div style="margin-bottom: var(--space-lg);">
+              <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
+              <div class="post-tags">
+                
+                  <a href="/adipolak-blog/tags/beginners" class="tag">beginners</a>
+                
+                  <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
+                
+                  <a href="/adipolak-blog/tags/koalas" class="tag">koalas</a>
+                
+                  <a href="/adipolak-blog/tags/pandas" class="tag">pandas</a>
+                
+                  <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
+                
+                  <a href="/adipolak-blog/tags/kubernetes" class="tag">kubernetes</a>
+                
+              </div>
+            </div>
+          
+
+          
+          
+          <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
+            
+              
+              <a href="/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
+                <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
+                <div style="color: var(--color-text); font-weight: 500;">Kubernetes and Virtual Kubelet in a nutshell</div>
+              </a>
+              
+            
+            
+              
+              <a href="/adipolak-blog/post/apache-spark-ecosystem/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
+                <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Next</div>
+                <div style="color: var(--color-text); font-weight: 500;">Apache Spark Ecosystem, Jan 2021 Highlights</div>
+              </a>
+              
+            
+          </nav>
+          
+        </footer>
+
+      </div>
+
+    </div>
+  </div>
+
+</article>
+
+<style>
+   
+  .article-header-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-3xl) var(--space-md) var(--space-xl);
+  }
+
+   
+  .article-layout-container {
+    position: relative;
+    width: 100%;
+    padding: 0 var(--space-md) var(--space-3xl);
+  }
+
+  .article-layout-grid {
+    display: grid;
+    grid-template-columns:
+      [toc-start] minmax(0, 1fr)
+      [content-start] 680px
+      [content-end] minmax(0, 1fr) [toc-end];
+    gap: 0;
+    position: relative;
+  }
+
+   
+  .article-layout-grid.no-toc {
+    display: block;
+  }
+
+  .article-layout-grid.no-toc .article-body-column {
+    max-width: 680px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+   
+  .toc-sidebar {
+    grid-column: 1;
+    justify-self: end;
+    width: 260px;
+    margin-right: var(--space-2xl);
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+  }
+
+   
+  .article-body-column {
+    grid-column: 2;
+    width: 680px;
+  }
+
+   
+  .post-body {
+    font-size: var(--text-md);
+    line-height: 1.7;
+  }
+
+   
+  .toc-card {
+    background: rgba(29, 25, 22, 0.7);
+    border: 1px solid rgba(42, 36, 32, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+
+   
+  .toc-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(42, 36, 32, 0.7);
+  }
+
+  .toc-header:hover {
+    background: rgba(215, 185, 168, 0.05);
+  }
+
+  .toc-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #9E9085;
+    font-family: var(--font-sans);
+    font-weight: 600;
+  }
+
+  .toc-chevron {
+    color: #9E9085;
+    transition: transform 0.2s ease;
+    width: 14px;
+    height: 14px;
+  }
+
+  .toc-header[aria-expanded="false"] .toc-chevron {
+    transform: rotate(-90deg);
+  }
+
+   
+  .toc-nav {
+    padding: 14px 16px 16px;
+    font-size: 13.5px;
+    max-height: 600px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+  }
+
+  .toc-nav.collapsed {
+    max-height: 0;
+    padding: 0 18px;
+    overflow: hidden;
+  }
+
+  .toc-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-nav > ul {
+    margin: 0;
+  }
+
+  .toc-nav ul ul {
+    margin-left: 14px;
+    margin-top: 4px;
+  }
+
+  .toc-nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+   
+  .toc-nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-nav ol ol {
+    margin-left: 14px;
+    margin-top: 4px;
+  }
+
+  .toc-nav a {
+    display: block;
+    padding: 5px 0 5px 10px;
+    color: #C7BBB0;
+    text-decoration: none;
+    border: none;
+    border-left: 2px solid transparent;
+    margin-left: -10px;
+    margin-bottom: 2px;
+    transition: all 0.2s ease;
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    font-weight: 400;
+
+     
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .toc-nav a:hover {
+    color: #F2ECE6;
+    border-left-color: #D7B9A8;
+    background: rgba(215, 185, 168, 0.06);
+  }
+
+  .toc-nav a.active {
+    color: #D7B9A8;
+    border-left-color: #D7B9A8;
+    background: rgba(215, 185, 168, 0.1);
+    font-weight: 500;
+  }
+
+   
+  html {
+    scroll-behavior: smooth;
+  }
+
+   
+  .post-body h2,
+  .post-body h3,
+  .post-body h4 {
+    scroll-margin-top: 100px;
+  }
+
+   
+  @media (max-width: 768px) {
+    .toc-sidebar {
+      display: none !important;
+    }
+
+    .article-header-wrapper {
+      padding: var(--space-xl) var(--space-md);
+    }
+
+    .article-layout-grid {
+      display: block;
+    }
+
+    .article-layout-container {
+      padding: 0 var(--space-md) var(--space-xl);
+    }
+
+    .article-body-column {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+   
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .article-layout-grid:not(.no-toc) {
+      grid-template-columns:
+        [toc-start] minmax(0, 1fr)
+        [content-start] minmax(auto, 680px)
+        [content-end] minmax(0, 1fr) [toc-end];
+    }
+
+    .article-layout-grid:not(.no-toc) .toc-sidebar {
+      width: 220px;
+      margin-right: var(--space-lg);
+    }
+
+    .article-layout-grid:not(.no-toc) .article-body-column {
+      width: 100%;
+    }
+  }
+
+   
+  .toc-nav::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-nav::-webkit-scrollbar-thumb {
+    background: rgba(158, 144, 133, 0.3);
+    border-radius: 2px;
+  }
+
+  .toc-nav::-webkit-scrollbar-thumb:hover {
+    background: rgba(215, 185, 168, 0.5);
+  }
+</style>
+
+<script>
+(function() {
+  const tocHeader = document.querySelector('.toc-header');
+  const tocNav = document.querySelector('.toc-nav');
+
+  if (tocHeader && tocNav) {
+    
+    
+    tocHeader.addEventListener('click', () => {
+      const isExpanded = tocHeader.getAttribute('aria-expanded') === 'true';
+      tocHeader.setAttribute('aria-expanded', !isExpanded);
+      tocNav.classList.toggle('collapsed');
+    });
+  }
+
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+      if (tocLink) {
+        if (entry.intersectionRatio > 0) {
+          
+          document.querySelectorAll('.toc-nav a').forEach(link => {
+            link.classList.remove('active');
+          });
+          
+          tocLink.classList.add('active');
+        }
+      }
+    });
+  }, {
+    rootMargin: '-100px 0px -66%',
+    threshold: 0
+  });
+
+  
+  document.querySelectorAll('.post-body h2[id], .post-body h3[id], .post-body h4[id]').forEach((heading) => {
+    observer.observe(heading);
+  });
+
+  
+  document.querySelectorAll('.toc-nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+
+        
+        history.pushState(null, null, `#${targetId}`);
+      }
+    });
+  });
+})();
+</script>
+
+
+    </main>
+    <footer style="background: var(--warm-black); color: var(--color-text); padding: var(--space-2xl) var(--space-md); margin-top: var(--space-3xl);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-2xl);">
+
+      
+      <div>
+        <h3 style="font-family: var(--font-serif); font-size: var(--text-lg); margin: 0 0 var(--space-md); color: var(--warm-white);">Adi Polak</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.6; margin: 0;">
+          AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership
+        </p>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/about/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">about</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/books/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">books</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">blog</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/external-writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">published elsewhere</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/presentations/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">presentations</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/search/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">search</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/contact-me/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">contact</a>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Stay Updated</h4>
+        <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+          <a href="https://adipolak.substack.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link);">Substack Newsletter</a>
+          <a href="/adipolak-blog/feed.xml" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link); display: flex; align-items: center; gap: var(--space-xs);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9"></path>
+              <path d="M4 4a16 16 0 0 1 16 16"></path>
+              <circle cx="5" cy="19" r="1"></circle>
+            </svg>
+            RSS Feed
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div style="border-top: 1px solid var(--color-border-subtle); padding-top: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <p style="color: var(--color-text-muted); font-size: var(--text-xs); margin: 0;">
+        Copyright &#169; 2020 Adi Polak. All rights reserved.
+      </p>
+      <div>
+        
+<div style="display: flex; gap: var(--space-md); align-items: center;">
+  
+  <a href="https://twitter.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+    </svg>
+  </a>
+  
+  
+  <a href="https://github.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg>
+  </a>
+  
+  
+</div>
+
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    
+<script src="/adipolak-blog/js/theme-toggle.js"></script>
+
+
+
+<script>
+(function() {
+  
+  const main = document.querySelector('main');
+  if (main && !main.id) {
+    main.id = 'main-content';
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img:not([alt])');
+    images.forEach(function(img) {
+      console.warn('Image missing alt text:', img.src);
+      img.setAttribute('alt', '');
+    });
+
+    
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav a[href]');
+    navLinks.forEach(function(link) {
+      const linkPath = new URL(link.href, window.location.origin).pathname;
+      if (linkPath === currentPath ||
+          (currentPath !== '/' && linkPath !== '/' && currentPath.startsWith(linkPath))) {
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+  });
+})();
+</script>
+
+
+
+
+  <script src="/adipolak-blog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
