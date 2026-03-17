@@ -1,7 +1,540 @@
-<!doctype html><html lang=en-us><head><script src="/adipolak-blog/livereload.js?mindelay=10&amp;v=2&amp;port=57330&amp;path=adipolak-blog/livereload" data-no-instant defer></script><link rel=stylesheet href=/adipolak-blog/css/custom.css><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Adi Polak</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=generator content="Hugo 0.157.0"><meta name=ROBOTS content="INDEX, FOLLOW"><link rel="shortcut icon" type=image/png href=/assets/favicon/favicon-32x32.png><link href=/adipolak-blog/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css rel=stylesheet><link href=/adipolak-blog/feed.xml rel=alternate type=application/rss+xml title="Adi Polak"><link href=/adipolak-blog/feed.xml rel=feed type=application/rss+xml title="Adi Polak"><meta property="og:url" content="http://localhost:57330/adipolak-blog/"><meta property="og:site_name" content="Adi Polak"><meta property="og:title" content="Adi Polak"><meta property="og:locale" content="en_us"><meta property="og:type" content="website"><meta itemprop=name content="Adi Polak"><meta itemprop=datePublished content="2021-04-11T00:00:00+00:00"><meta itemprop=dateModified content="2021-04-11T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Adi Polak"><link rel=canonical href=http://localhost:57330/adipolak-blog/><meta name=author content="Adi Polak"><meta name=creator content="Adi Polak"><meta name=publisher content="Adi Polak"><meta name=copyright content="© 2026 Adi Polak. All rights reserved."><meta name=rights content="© 2026 Adi Polak"><meta name=citation_author content="Adi Polak"><meta name=citation_author_institution content="Vectorize.io"><meta name=DC.title content="Adi Polak"><meta name=DC.creator content="Adi Polak"><meta name=DC.subject content="Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership"><meta name=DC.description content="AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership"><meta name=DC.publisher content="Adi Polak"><meta name=DC.type content="Collection"><meta name=DC.format content="text/html"><meta name=DC.language content="en"><meta name=DC.rights content="© 2026 Adi Polak"><meta name=description content="AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership"><meta name=keywords content="Artificial Intelligence,AI Systems,Cloud Computing,Distributed Systems,Machine Learning in Production,Data Analytics,Technical Leadership,Apache Spark,Delta Lake,MLOps,Adi Polak"><meta name=topic content="Technology"><meta name=subject content="Artificial Intelligence, AI Systems, Cloud Computing, Data Analytics, Technical Leadership"><meta name=classification content="Technical Blog"><link rel=author href=http://localhost:57330/adipolak-blog/about/><link rel=me href=https://twitter.com/AdiPolak><link rel=me href=https://github.com/AdiPolak><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","name":"Adi Polak","url":"http:\/\/localhost:57330\/adipolak-blog\/","description":"AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership","author":{"@type":"Person","name":"Adi Polak","url":"http:\/\/localhost:57330\/adipolak-blog\/about/","jobTitle":"VP Developer Relations","worksFor":{"@type":"Organization","name":"Vectorize.io"},"sameAs":["https:\/\/twitter.com\/AdiPolak","https:\/\/github.com\/AdiPolak","https://www.linkedin.com/in/polak-adi/"],"knowsAbout":["Artificial Intelligence","AI Systems","Cloud Computing","Distributed Systems","Machine Learning in Production","Data Analytics","Technical Leadership","Apache Spark","Delta Lake","Data Engineering","MLOps","AI Infrastructure","Data Infrastructure","Kubernetes"]},"publisher":{"@type":"Person","name":"Adi Polak","url":"http:\/\/localhost:57330\/adipolak-blog\/"}}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Person","name":"Adi Polak","url":"http:\/\/localhost:57330\/adipolak-blog\/","image":"http:\/\/localhost:57330\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png","jobTitle":"VP Developer Relations","worksFor":{"@type":"Organization","name":"Vectorize.io"},"alumniOf":"Technion - Israel Institute of Technology","knowsAbout":["Artificial Intelligence","AI Systems","Cloud Computing","Distributed Systems","Machine Learning in Production","Data Analytics","Technical Leadership","Apache Spark","Delta Lake","Stream Processing","Data Engineering","MLOps","AI Infrastructure","Real-time Data Pipelines","Kubernetes"],"sameAs":["https://twitter.com/AdiPolak","https://github.com/AdiPolak","https://www.linkedin.com/in/polak-adi/"],"description":"AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership"}</script></head><body style=margin:0;padding:0;background-color:#11100f><header><nav class=site-nav role=navigation><div class=nav-container><a href=http://localhost:57330/adipolak-blog/ class=site-logo><img src=/adipolak-blog/assets/favicon/favicon-32x32.png alt="Adi Polak logo" class=logo-icon>
-<span class=logo-text>Adi Polak</span></a><div class=nav-menu><ul class=nav-links><li><a href=/adipolak-blog/writing/ title=writing>writing</a></li><li><a href=/adipolak-blog/external-writing/ title="published elsewhere">published elsewhere</a></li><li><a href=/adipolak-blog/about/ title=about>about</a></li><li><a href=/adipolak-blog/presentations/ title=presentations>presentations</a></li><li><a href=/adipolak-blog/search/ title=search>search</a></li><li><a href=/adipolak-blog/contact-me/ title=contact>contact</a></li><li><a href=/adipolak-blog/feed.xml title="RSS Feed" aria-label="Subscribe via RSS"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></li></ul><a href=/adipolak-blog/subscribe class=nav-cta>Subscribe</a></div></div></nav></header><main role=main><style>.focus-card{text-decoration:none;padding:32px;background:#181512;border-radius:10px;border:2px solid #3d342e;display:flex;flex-direction:column;min-height:180px;box-shadow:0 2px 8px rgba(0,0,0,.3);align-items:center;justify-content:center;transition:all .3s ease}.focus-card:hover{border-color:#d7b9a8;transform:translateY(-4px);box-shadow:0 4px 16px rgba(215,185,168,.2)}</style><a href=#main-content class=skip-to-main>Skip to main content</a><section class=hero-editorial style="background:linear-gradient(180deg,#11100F 0%,#181512 100%);padding:72px 32px 48px;text-align:center;position:relative;overflow:hidden"><div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(circle,rgba(183,134,111,8%) 0%,transparent 70%);filter:blur(60px);pointer-events:none;z-index:0"></div><div style="max-width:760px;margin:0 auto;position:relative;z-index:1"><p style=font-family:inter,sans-serif;font-size:20px;font-weight:400;line-height:1.6;color:#c7bbb0;margin:0>Helping teams build reliable AI systems and cloud infrastructure</p></div></section><section class=section style="padding:120px 32px;background:#11100f"><div style="max-width:960px;margin:0 auto;text-align:center;margin-bottom:72px"><h2 style=font-family:lora,serif;font-size:40px;font-weight:500;margin:0;color:#f2ece6>Areas of Focus</h2></div><div class=expertise-grid style="max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:32px"><a href=/adipolak-blog/tags/distributed-systems class=focus-card><h3 style=margin:0;font-size:20px;color:#d7b9a8;font-family:lora,serif;text-align:center>Distributed Systems</h3></a><a href=/adipolak-blog/tags/machine-learning class=focus-card><h3 style=margin:0;font-size:20px;color:#d7b9a8;font-family:lora,serif;text-align:center>ML in Production</h3></a><a href=/adipolak-blog/tags/leadership class=focus-card><h3 style=margin:0;font-size:20px;color:#d7b9a8;font-family:lora,serif;text-align:center>Technical Leadership</h3></a><a href=/adipolak-blog/tags/ai class=focus-card><h3 style=margin:0;font-size:20px;color:#d7b9a8;font-family:lora,serif;text-align:center>Embedding AI</h3></a></div></section><section class=section style="text-align:center;padding:120px 32px;background:#181512"><h2 style="font-family:lora,serif;font-size:40px;font-weight:500;margin:0 0 24px;color:#f2ece6">Let's Connect</h2><p style="max-width:760px;margin:0 auto 36px;color:#c7bbb0;line-height:1.7;font-size:18px">I'm always interested in conversations about building production systems, technical leadership, and the future of data infrastructure.</p><div style=display:flex;gap:16px;justify-content:center;flex-wrap:wrap><a href=/adipolak-blog/subscribe class=btn style="background:#d7b9a8;color:#171310;font-family:inter,sans-serif;font-size:17px;font-weight:600;padding:16px 28px;border-radius:10px;border:none">Subscribe for Updates</a>
-<a href=/adipolak-blog/contact-me class="btn-secondary btn" style="background:0 0;color:#f2ece6;border:1px solid #6e5c50;font-family:inter,sans-serif;font-size:17px;font-weight:600;padding:16px 28px;border-radius:10px">Get in Touch</a></div></section><section class=section style="background:#11100f;padding:120px 32px"><div style="max-width:960px;margin:0 auto"><div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px><article style="background:#1d1916;padding:32px;border-radius:10px;border:1px solid #2a2420;display:flex;flex-direction:column;min-height:300px"><div style=color:#d7b9a8;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px>Latest Writing · VentureBeat</div><h3 style="margin:0 0 16px;font-family:lora,serif;font-size:24px;line-height:1.3;flex-grow:0"><a href=https://venturebeat.com/technology/fixing-ai-failure-three-changes-enterprises-should-make-now target=_blank rel="noopener noreferrer" style=color:#f2ece6;border:none;text-decoration:none>Fixing AI failure: Three changes enterprises should make now</a></h3><div class=post-meta style=margin-bottom:16px;font-size:15px;color:#9e9085><time datetime=2026-03-15>March 15, 2026</time></div><p style=color:#c7bbb0;margin-bottom:auto;line-height:1.7;font-size:16px;flex-grow:1>Practical guidance for enterprises struggling with AI implementation failures. Outlines three critical organizational changes needed to transform AI initiatives from failed experiments into successful production systems.</p><a href=https://venturebeat.com/technology/fixing-ai-failure-three-changes-enterprises-should-make-now target=_blank rel="noopener noreferrer" style="color:#d7b9a8;font-size:15px;font-weight:600;border-bottom:1px solid #d7b9a8;text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-top:16px">Read on VentureBeat
-<svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="opacity:.7"><path d="M10.5 1.5l-9 9m9-9H4m6.5.0V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></article></div></div></section></main><footer style=background:var(--warm-black);color:var(--color-text);padding:var(--space-2xl)var(--space-md);margin-top:var(--space-3xl)><div style="max-width:1200px;margin:0 auto"><div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-xl);margin-bottom:var(--space-2xl)><div><h3 style="font-family:var(--font-serif);font-size:var(--text-lg);margin:0 0 var(--space-md);color:var(--warm-white)">Adi Polak</h3><p style=color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.6;margin:0>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</p></div><div><h4 style="font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted);margin:0 0 var(--space-md)">Quick Links</h4><ul style=list-style:none;padding:0;margin:0><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/writing/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>writing</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/external-writing/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>published elsewhere</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/about/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>about</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/presentations/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>presentations</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/search/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>search</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/contact-me/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>contact</a></li></ul></div><div><h4 style="font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted);margin:0 0 var(--space-md)">Stay Updated</h4><div style=display:flex;flex-direction:column;gap:var(--space-sm)><a href=https://adipolak.substack.com/ target=_blank rel="noopener noreferrer" style="color:var(--color-link);font-size:var(--text-sm);border-bottom:1px solid var(--color-link)">Substack Newsletter</a>
-<a href=/adipolak-blog/feed.xml style="color:var(--color-link);font-size:var(--text-sm);border-bottom:1px solid var(--color-link);display:flex;align-items:center;gap:var(--space-xs)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg>
-RSS Feed</a></div></div></div><div style="border-top:1px solid var(--color-border-subtle);padding-top:var(--space-lg);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-md)"><p style=color:var(--color-text-muted);font-size:var(--text-xs);margin:0>Copyright &#169; 2020 Adi Polak. All rights reserved.</p><div><div style=display:flex;gap:var(--space-md);align-items:center><a href=https://twitter.com/AdiPolak target=_blank rel="noopener noreferrer" aria-label=Twitter style=color:var(--color-text-muted);border:none><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg>
-</a><a href=https://github.com/AdiPolak target=_blank rel="noopener noreferrer" aria-label=GitHub style=color:var(--color-text-muted);border:none><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374.0.0 5.373.0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931.0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176.0.0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221.0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a></div></div></div></div></footer><script src=/adipolak-blog/js/theme-toggle.js></script><script>(function(){const e=document.querySelector("main");e&&!e.id&&(e.id="main-content"),document.addEventListener("DOMContentLoaded",function(){const t=document.querySelectorAll("img:not([alt])");t.forEach(function(e){console.warn("Image missing alt text:",e.src),e.setAttribute("alt","")});const e=window.location.pathname,n=document.querySelectorAll("nav a[href]");n.forEach(function(t){const n=new URL(t.href,window.location.origin).pathname;(n===e||e!=="/"&&n!=="/"&&e.startsWith(n))&&t.setAttribute("aria-current","page")})})})()</script><script src=/adipolak-blog/dist/js/app.3fc0f988d21662902933.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/adipolak-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=adipolak-blog/livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="/adipolak-blog/css/custom.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Adi Polak </title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.157.0">
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+
+    
+    
+      <link href="/adipolak-blog/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+
+    
+    
+      <link href="/adipolak-blog/feed.xml" rel="alternate" type="application/rss+xml" title="Adi Polak" />
+      <link href="/adipolak-blog/feed.xml" rel="feed" type="application/rss+xml" title="Adi Polak" />
+      
+    
+
+    <meta property="og:url" content="http://localhost:1314/adipolak-blog/">
+  <meta property="og:site_name" content="Adi Polak">
+  <meta property="og:title" content="Adi Polak">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Adi Polak">
+  <meta itemprop="datePublished" content="2021-04-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-04-11T00:00:00+00:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Adi Polak">
+
+    
+
+
+<link rel="canonical" href="http://localhost:1314/adipolak-blog/" />
+
+
+<meta name="author" content="Adi Polak" />
+<meta name="creator" content="Adi Polak" />
+<meta name="publisher" content="Adi Polak" />
+
+
+<meta name="copyright" content="© 2026 Adi Polak. All rights reserved." />
+<meta name="rights" content="© 2026 Adi Polak" />
+
+
+<meta name="citation_author" content="Adi Polak" />
+<meta name="citation_author_institution" content="Vectorize.io" />
+
+
+
+<meta name="DC.title" content="Adi Polak" />
+<meta name="DC.creator" content="Adi Polak" />
+<meta name="DC.subject" content="Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership" />
+<meta name="DC.description" content="AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership" />
+<meta name="DC.publisher" content="Adi Polak" />
+<meta name="DC.type" content="Collection" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="en" />
+<meta name="DC.rights" content="© 2026 Adi Polak" />
+
+
+
+<meta name="description" content="AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership" />
+
+
+
+
+<meta name="keywords" content="Artificial Intelligence, AI Systems, Cloud Computing, Distributed Systems, Machine Learning in Production, Data Analytics, Technical Leadership, Apache Spark, Delta Lake, MLOps, Adi Polak" />
+
+
+
+
+
+
+<meta name="topic" content="Technology" />
+<meta name="subject" content="Artificial Intelligence, AI Systems, Cloud Computing, Data Analytics, Technical Leadership" />
+<meta name="classification" content="Technical Blog" />
+
+
+<link rel="author" href="http://localhost:1314/adipolak-blog/about/" />
+<link rel="me" href="https://twitter.com/AdiPolak" />
+<link rel="me" href="https://github.com/AdiPolak" />
+
+    
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Adi Polak",
+  "url": "http:\/\/localhost:1314\/adipolak-blog\/",
+  "description": "AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership",
+  "author": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "url": "http:\/\/localhost:1314\/adipolak-blog\/about/",
+    "jobTitle": "VP Developer Relations",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vectorize.io"
+    },
+    "sameAs": [
+      "https:\/\/twitter.com\/AdiPolak",
+      "https:\/\/github.com\/AdiPolak",
+      "https://www.linkedin.com/in/polak-adi/"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "AI Systems",
+      "Cloud Computing",
+      "Distributed Systems",
+      "Machine Learning in Production",
+      "Data Analytics",
+      "Technical Leadership",
+      "Apache Spark",
+      "Delta Lake",
+      "Data Engineering",
+      "MLOps",
+      "AI Infrastructure",
+      "Data Infrastructure",
+      "Kubernetes"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "url": "http:\/\/localhost:1314\/adipolak-blog\/"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Adi Polak",
+  "url": "http:\/\/localhost:1314\/adipolak-blog\/",
+  "image": "http:\/\/localhost:1314\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png",
+  "jobTitle": "VP Developer Relations",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Vectorize.io"
+  },
+  "alumniOf": "Technion - Israel Institute of Technology",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "AI Systems",
+    "Cloud Computing",
+    "Distributed Systems",
+    "Machine Learning in Production",
+    "Data Analytics",
+    "Technical Leadership",
+    "Apache Spark",
+    "Delta Lake",
+    "Stream Processing",
+    "Data Engineering",
+    "MLOps",
+    "AI Infrastructure",
+    "Real-time Data Pipelines",
+    "Kubernetes"
+  ],
+  "sameAs": [
+    "https://twitter.com/AdiPolak",
+    "https://github.com/AdiPolak",
+    "https://www.linkedin.com/in/polak-adi/"
+  ],
+  "description": "AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership"
+}
+</script>
+
+
+
+
+
+
+
+
+    
+  </head>
+
+  <body style="margin: 0; padding: 0; background-color: #11100F;">
+
+    <header>
+  <nav class="site-nav" role="navigation">
+  <div class="nav-container">
+    <a href="http://localhost:1314/adipolak-blog/" class="site-logo">
+      
+      <img src="/adipolak-blog/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" class="logo-icon" />
+      
+      <span class="logo-text">Adi Polak</span>
+    </a>
+    <div class="nav-menu">
+      
+        <ul class="nav-links">
+          
+            
+              <li>
+                <a href="/adipolak-blog/writing/" title="writing">writing</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/external-writing/" title="published elsewhere">published elsewhere</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/about/" title="about">about</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/presentations/" title="presentations">presentations</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/search/" title="search">search</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/contact-me/" title="contact">contact</a>
+              </li>
+            
+          
+          <li>
+            <a href="/adipolak-blog/feed.xml" title="RSS Feed" aria-label="Subscribe via RSS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      
+      <a href="/adipolak-blog/subscribe" class="nav-cta">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+    <main role="main">
+      
+
+<style>
+  .focus-card {
+    text-decoration: none;
+    padding: 32px;
+    background: #181512;
+    border-radius: 10px;
+    border: 2px solid #3D342E;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .focus-card:hover {
+    border-color: #D7B9A8;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(215, 185, 168, 0.2);
+  }
+</style>
+
+<a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+
+
+<section class="hero-editorial" style="background: linear-gradient(180deg, #11100F 0%, #181512 100%); padding: 72px 32px 48px; text-align: center; position: relative; overflow: hidden;">
+
+  
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 400px; background: radial-gradient(circle, rgba(183, 134, 111, 0.08) 0%, transparent 70%); filter: blur(60px); pointer-events: none; z-index: 0;"></div>
+
+  <div style="max-width: 760px; margin: 0 auto; position: relative; z-index: 1;">
+    <p style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.6; color: #C7BBB0; margin: 0;">
+      Helping teams build reliable AI systems and cloud infrastructure
+    </p>
+  </div>
+</section>
+
+
+<section class="section" style="padding: 120px 32px; background: #11100F;">
+  <div style="max-width: 960px; margin: 0 auto; text-align: center; margin-bottom: 72px;">
+    <h2 style="font-family: 'Lora', serif; font-size: 40px; font-weight: 500; margin: 0; color: #F2ECE6;">Areas of Focus</h2>
+  </div>
+
+  <div class="expertise-grid" style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+
+    <a href="/adipolak-blog/tags/distributed-systems" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Distributed Systems</h3>
+    </a>
+
+    <a href="/adipolak-blog/tags/machine-learning" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">ML in Production</h3>
+    </a>
+
+    <a href="/adipolak-blog/tags/leadership" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Technical Leadership</h3>
+    </a>
+
+    <a href="/adipolak-blog/tags/ai" class="focus-card">
+      <h3 style="margin: 0; font-size: 20px; color: #D7B9A8; font-family: 'Lora', serif; text-align: center;">Embedding AI</h3>
+    </a>
+
+  </div>
+</section>
+
+
+<section class="section" style="text-align: center; padding: 120px 32px; background: #181512;">
+  <h2 style="font-family: 'Lora', serif; font-size: 40px; font-weight: 500; margin: 0 0 24px; color: #F2ECE6;">Let's Connect</h2>
+  <p style="max-width: 760px; margin: 0 auto 36px; color: #C7BBB0; line-height: 1.7; font-size: 18px;">
+    I'm always interested in conversations about building production systems, technical leadership, and the future of data infrastructure.
+  </p>
+  <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+    <a href="/adipolak-blog/subscribe" class="btn" style="background: #D7B9A8; color: #171310; font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 600; padding: 16px 28px; border-radius: 10px; border: none;">Subscribe for Updates</a>
+    <a href="/adipolak-blog/contact-me" class="btn-secondary btn" style="background: transparent; color: #F2ECE6; border: 1px solid #6E5C50; font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 600; padding: 16px 28px; border-radius: 10px;">Get in Touch</a>
+  </div>
+</section>
+
+
+<section class="section" style="background: #11100F; padding: 120px 32px;">
+  <div style="max-width: 960px; margin: 0 auto;">
+
+    
+    
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+    
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+
+      
+      
+
+      
+      
+        
+          
+          <article style="background: #1D1916; padding: 32px; border-radius: 10px; border: 1px solid #2A2420; display: flex; flex-direction: column; min-height: 300px;">
+            <div style="color: #D7B9A8; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px;">Latest Writing · VentureBeat</div>
+            <h3 style="margin: 0 0 16px; font-family: 'Lora', serif; font-size: 24px; line-height: 1.3; flex-grow: 0;">
+              <a href="https://venturebeat.com/technology/fixing-ai-failure-three-changes-enterprises-should-make-now" target="_blank" rel="noopener noreferrer" style="color: #F2ECE6; border: none; text-decoration: none;">Fixing AI failure: Three changes enterprises should make now</a>
+            </h3>
+            <div class="post-meta" style="margin-bottom: 16px; font-size: 15px; color: #9E9085;">
+              <time datetime="2026-03-15">March 15, 2026</time>
+            </div>
+            <p style="color: #C7BBB0; margin-bottom: auto; line-height: 1.7; font-size: 16px; flex-grow: 1;">
+              Practical guidance for enterprises struggling with AI implementation failures. Outlines three critical organizational changes needed to transform AI initiatives from failed experiments into successful production systems.
+            </p>
+            <a href="https://venturebeat.com/technology/fixing-ai-failure-three-changes-enterprises-should-make-now" target="_blank" rel="noopener noreferrer" style="color: #D7B9A8; font-size: 15px; font-weight: 600; border-bottom: 1px solid #D7B9A8; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-top: 16px;">
+              Read on VentureBeat
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.7;">
+                <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4M10.5 1.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+        
+      
+
+    </div>
+  </div>
+</section>
+
+
+    </main>
+    <footer style="background: var(--warm-black); color: var(--color-text); padding: var(--space-2xl) var(--space-md); margin-top: var(--space-3xl);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-2xl);">
+
+      
+      <div>
+        <h3 style="font-family: var(--font-serif); font-size: var(--text-lg); margin: 0 0 var(--space-md); color: var(--warm-white);">Adi Polak</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.6; margin: 0;">
+          AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership
+        </p>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">writing</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/external-writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">published elsewhere</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/about/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">about</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/presentations/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">presentations</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/search/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">search</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/contact-me/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">contact</a>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Stay Updated</h4>
+        <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+          <a href="https://adipolak.substack.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link);">Substack Newsletter</a>
+          <a href="/adipolak-blog/feed.xml" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link); display: flex; align-items: center; gap: var(--space-xs);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9"></path>
+              <path d="M4 4a16 16 0 0 1 16 16"></path>
+              <circle cx="5" cy="19" r="1"></circle>
+            </svg>
+            RSS Feed
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div style="border-top: 1px solid var(--color-border-subtle); padding-top: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <p style="color: var(--color-text-muted); font-size: var(--text-xs); margin: 0;">
+        Copyright &#169; 2020 Adi Polak. All rights reserved.
+      </p>
+      <div>
+        
+<div style="display: flex; gap: var(--space-md); align-items: center;">
+  
+  <a href="https://twitter.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+    </svg>
+  </a>
+  
+  
+  <a href="https://github.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg>
+  </a>
+  
+  
+</div>
+
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    
+<script src="/adipolak-blog/js/theme-toggle.js"></script>
+
+
+
+<script>
+(function() {
+  
+  const main = document.querySelector('main');
+  if (main && !main.id) {
+    main.id = 'main-content';
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img:not([alt])');
+    images.forEach(function(img) {
+      console.warn('Image missing alt text:', img.src);
+      img.setAttribute('alt', '');
+    });
+
+    
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav a[href]');
+    navLinks.forEach(function(link) {
+      const linkPath = new URL(link.href, window.location.origin).pathname;
+      if (linkPath === currentPath ||
+          (currentPath !== '/' && linkPath !== '/' && currentPath.startsWith(linkPath))) {
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+  });
+})();
+</script>
+
+
+
+
+  <script src="/adipolak-blog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

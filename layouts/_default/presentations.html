@@ -1,161 +1,690 @@
 {{ define "main" }}
 
-<section class="section">
-  <!-- Header -->
-  <div class="section-header">
-    <h1 class="section-title" style="font-size: var(--text-3xl);">Speaking & Presentations</h1>
-    <p class="section-subtitle">{{ .Content | plainify }}</p>
-  </div>
+<style>
+  /* Base Container */
+  .presentations-archive {
+    min-height: 100vh;
+    background: var(--warm-off-white);
+    color: var(--color-text);
+  }
 
-  {{ if .Site.Data.presentations }}
-    {{ $presentations := .Site.Data.presentations.presentations }}
+  /* Content wrapper */
+  .archive-content {
+    position: relative;
+    z-index: 1;
+  }
 
-    <!-- Featured Presentations -->
-    {{ $featured := where $presentations "featured" true }}
-    {{ if $featured }}
-      <div style="max-width: 900px; margin: 0 auto var(--space-2xl); padding: 0 var(--space-md);">
-        <h2 style="font-size: var(--text-lg); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-lg); text-align: center;">Recent Talks</h2>
+  /* Hero Section */
+  .archive-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-3xl) var(--space-md);
+    text-align: center;
+    background: var(--warm-black);
+  }
 
-        <div style="display: grid; gap: var(--space-xl);">
-          {{ range $featured }}
-            <article style="display: grid; grid-template-columns: 200px 1fr; gap: var(--space-lg); padding: var(--space-lg); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md);">
-              <!-- Thumbnail -->
-              {{ if .thumbnail }}
-                <div style="aspect-ratio: 16/9; background: var(--color-border-subtle); border-radius: var(--border-radius-sm); overflow: hidden;">
-                  <img src="{{ .thumbnail }}" alt="{{ .title }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0;">
-                </div>
-              {{ else }}
-                <div style="aspect-ratio: 16/9; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); border-radius: var(--border-radius-sm); display: flex; align-items: center; justify-content: center; color: white; font-size: var(--text-xs); text-align: center; padding: var(--space-sm);">
-                  {{ .title }}
-                </div>
-              {{ end }}
+  .archive-hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    color: var(--warm-white);
+    margin: 0 0 var(--space-md);
+    letter-spacing: -0.02em;
+  }
 
-              <!-- Content -->
-              <div>
-                <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">
-                  {{ dateFormat "January 2006" .date }}
-                  {{ if .location }} · {{ .location }}{{ end }}
-                </div>
+  .archive-intro {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 650px;
+    margin: 0 auto;
+  }
 
-                <h3 style="margin: 0 0 var(--space-xs); font-size: var(--text-xl);">
-                  {{ .title }}
-                </h3>
+  /* Stats Bar */
+  .archive-stats {
+    display: flex;
+    gap: var(--space-2xl);
+    justify-content: center;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-                <div style="font-size: var(--text-sm); color: var(--color-primary); margin-bottom: var(--space-sm); font-weight: 500;">
-                  {{ .event }}
-                </div>
+  .stat {
+    text-align: center;
+  }
 
-                {{ if .description }}
-                  <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.6; margin-bottom: var(--space-sm);">
-                    {{ .description }}
-                  </p>
-                {{ end }}
+  .stat-number {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--warm-white);
+    display: block;
+  }
 
-                <!-- Links -->
-                <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
-                  {{ if .slides_url }}
-                    <a href="{{ .slides_url }}" target="_blank" rel="noopener" style="font-size: var(--text-xs); color: var(--color-primary); border: 1px solid var(--color-border); padding: 0.375rem 0.75rem; border-radius: var(--border-radius-sm); font-weight: 500;">
-                      📊 Slides
-                    </a>
-                  {{ end }}
-                  {{ if .video_url }}
-                    <a href="{{ .video_url }}" target="_blank" rel="noopener" style="font-size: var(--text-xs); color: var(--color-primary); border: 1px solid var(--color-border); padding: 0.375rem 0.75rem; border-radius: var(--border-radius-sm); font-weight: 500;">
-                      🎥 Video
-                    </a>
-                  {{ end }}
-                </div>
-              </div>
-            </article>
-          {{ end }}
+  .stat-label {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+  }
+
+  /* Controls Section */
+  .archive-controls {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-md);
+    border-bottom: 1px solid var(--color-border-subtle);
+    background: var(--warm-off-white);
+  }
+
+  .search-bar {
+    max-width: 500px;
+    margin: 0 auto var(--space-xl);
+    position: relative;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 12px 16px 12px 40px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    transition: all 0.2s;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--color-link);
+    background: var(--color-bg);
+  }
+
+  .search-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    pointer-events: none;
+  }
+
+  .filters {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .filter-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .filter-label {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    color: var(--color-text);
+    font-size: 0.813rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: -apple-system, system-ui, sans-serif;
+  }
+
+  .filter-btn:hover {
+    border-color: var(--color-link);
+    color: var(--color-text);
+  }
+
+  .filter-btn.active {
+    background: var(--color-link);
+    border-color: var(--color-link);
+    color: white;
+  }
+
+  /* Featured Section */
+  .featured-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-3xl) var(--space-md);
+    background: var(--warm-off-white);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Featured Grid */
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .featured-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    padding: var(--space-xl);
+    transition: all 0.2s ease;
+  }
+
+  .featured-card:hover {
+    border-color: var(--color-link);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-label {
+    display: inline-block;
+    padding: 4px 10px;
+    background: var(--warm-off-white);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.688rem;
+    color: var(--color-link);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-md);
+  }
+
+  .card-meta {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--space-sm);
+    line-height: 1.4;
+  }
+
+  .card-event {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+  }
+
+  .card-description {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+  }
+
+  .card-links {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .card-link {
+    font-size: 0.813rem;
+    color: var(--color-link);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+  }
+
+  .card-link:hover {
+    border-bottom-color: var(--color-link);
+  }
+
+  /* Archive Section */
+  .archive-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-3xl) var(--space-md);
+    background: var(--warm-off-white);
+  }
+
+  .year-block {
+    margin-bottom: var(--space-3xl);
+  }
+
+  .year-header {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .year-label {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .year-count {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Talk List */
+  .talk-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .talk-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: var(--space-xl);
+    padding: var(--space-lg);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+  .talk-item:hover {
+    border-color: var(--color-link);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .talk-date {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .talk-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .talk-event {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+  }
+
+  .talk-location {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .talk-links {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+  }
+
+  .talk-link {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 0.75rem;
+    color: var(--color-link);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .talk-link:hover {
+    border-bottom-color: var(--color-link);
+  }
+
+  /* Grid View */
+  .grid-view .talk-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .grid-view .talk-item {
+    grid-template-columns: 1fr;
+    padding: var(--space-xl);
+  }
+
+  .grid-view .talk-date {
+    margin-bottom: var(--space-sm);
+  }
+
+  /* No Results */
+  .no-results {
+    text-align: center;
+    padding: var(--space-3xl);
+    color: var(--color-text-muted);
+    background: var(--warm-off-white);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .archive-stats {
+      gap: var(--space-lg);
+    }
+
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .filter-group {
+      flex-wrap: wrap;
+    }
+
+    .talk-item {
+      grid-template-columns: 1fr;
+    }
+
+    .talk-date {
+      margin-bottom: var(--space-xs);
+    }
+  }
+</style>
+
+<div class="presentations-archive">
+  <div class="archive-content">
+
+    <!-- Hero -->
+    <section class="archive-hero">
+      <h1>Talks & Presentations</h1>
+      <p class="archive-intro">
+        A curated archive of technical talks on AI systems, data streaming, and distributed infrastructure.
+        Topics include agentic AI, real-time processing with Kafka and Flink, context engineering,
+        and production-grade data architectures.
+      </p>
+
+      <div class="archive-stats">
+        <div class="stat">
+          <span class="stat-number">250+</span>
+          <span class="stat-label">Talks</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Years</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Videos</span>
         </div>
       </div>
+    </section>
+
+    <!-- Controls -->
+    <section class="archive-controls">
+      <div class="search-bar">
+        <span class="search-icon">⌕</span>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search talks..."
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="filters">
+        <div class="filter-group">
+          <span class="filter-label">View</span>
+          <button class="filter-btn view-btn" data-view="list">List</button>
+          <button class="filter-btn view-btn active" data-view="grid">Grid</button>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Filter</span>
+          <button class="filter-btn filter-toggle active" data-filter="all">All</button>
+          <button class="filter-btn filter-toggle" data-filter="videos">Videos</button>
+          <button class="filter-btn filter-toggle" data-filter="slides">Slides</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    {{ $featured := slice }}
+    {{ range .Site.Data.presentations.presentations }}
+      {{ if and (ge .date "2024-01-01") .description (or .slides_url (in .event "QCon")) }}
+        {{ $featured = $featured | append . }}
+      {{ end }}
     {{ end }}
+    {{ $featured = first 4 $featured }}
 
-    <!-- All Presentations Timeline -->
-    {{ $allPresentations := sort $presentations "date" "desc" }}
-    <div style="max-width: 800px; margin: 0 auto; padding: 0 var(--space-md);">
-      <h2 style="font-size: var(--text-lg); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-lg); text-align: center;">All Presentations</h2>
+    {{ if $featured }}
+    <section class="featured-section">
+      <div class="section-header">
+        <h2 class="section-title">Featured</h2>
+        <p class="section-subtitle">Recent keynotes and major conference talks</p>
+      </div>
 
-      <!-- Group by year manually -->
-      {{ $currentYear := "" }}
-      {{ range $allPresentations }}
-        {{ $year := substr .date 0 4 }}
-        {{ if ne $year $currentYear }}
-          {{ $currentYear = $year }}
-          {{ if ne $currentYear "" }}</div></div>{{ end }}
-          <div style="margin-bottom: var(--space-xl);">
-            <h3 style="font-size: var(--text-base); font-weight: 600; color: var(--color-text-muted); margin-bottom: var(--space-md); padding-bottom: var(--space-sm); border-bottom: 1px solid var(--color-border-subtle);">
-              {{ $year }}
-            </h3>
-            <div style="display: grid; gap: var(--space-lg);">
-        {{ end }}
+      <div class="featured-grid">
+        {{ range $featured }}
+        <article class="featured-card">
+          <span class="card-label">Featured</span>
 
-        <article style="display: flex; gap: var(--space-md); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border-subtle);">
-          <!-- Date -->
-          <div style="flex-shrink: 0; width: 80px;">
-            <time style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); display: block;">
-              {{ dateFormat "Jan 2" .date }}
-            </time>
+          <div class="card-meta">
+            {{ dateFormat "Jan 2006" .date }}{{ if .location }} · {{ .location }}{{ end }}
           </div>
 
-          <!-- Content -->
-          <div style="flex-grow: 1;">
-            <h4 style="margin: 0 0 var(--space-xs); font-size: var(--text-base); line-height: 1.4;">
-              {{ .title }}
-            </h4>
+          <h3 class="card-title">{{ .title }}</h3>
 
-            <div style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-xs);">
-              {{ .event }}{{ if .location }} · {{ .location }}{{ end }}
-            </div>
+          <div class="card-event">{{ .event }}</div>
 
-            {{ if or .slides_url .video_url }}
-              <div style="display: flex; gap: var(--space-sm); margin-top: var(--space-xs);">
-                {{ if .slides_url }}
-                  <a href="{{ .slides_url }}" target="_blank" rel="noopener" style="font-size: var(--text-xs); color: var(--color-primary);">
-                    Slides →
-                  </a>
-                {{ end }}
-                {{ if .video_url }}
-                  <a href="{{ .video_url }}" target="_blank" rel="noopener" style="font-size: var(--text-xs); color: var(--color-primary);">
-                    Video →
-                  </a>
-                {{ end }}
-              </div>
+          {{ if .description }}
+          <p class="card-description">{{ .description }}</p>
+          {{ end }}
+
+          <div class="card-links">
+            {{ if .slides_url }}
+            <a href="{{ .slides_url }}" target="_blank" rel="noopener" class="card-link">
+              slides →
+            </a>
+            {{ end }}
+            {{ if .video_url }}
+            <a href="{{ .video_url }}" target="_blank" rel="noopener" class="card-link">
+              video →
+            </a>
             {{ end }}
           </div>
         </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    <!-- Archive -->
+    <section class="archive-section grid-view" id="archiveList">
+      <div class="section-header">
+        <h2 class="section-title">Complete Archive</h2>
+        <p class="section-subtitle">All talks indexed by year</p>
+      </div>
+
+      {{ $byYear := dict }}
+      {{ range .Site.Data.presentations.presentations }}
+        {{ $year := substr .date 0 4 }}
+        {{ $talks := index $byYear $year | default slice }}
+        {{ $byYear = merge $byYear (dict $year ($talks | append .)) }}
       {{ end }}
-      {{ if $currentYear }}</div></div>{{ end }}
+
+      {{ $sortedYears := slice }}
+      {{ range $year, $talks := $byYear }}
+        {{ $sortedYears = $sortedYears | append $year }}
+      {{ end }}
+      {{ $sortedYears = sort $sortedYears "value" "desc" }}
+
+      {{ range $sortedYears }}
+        {{ $year := . }}
+        {{ $talks := index $byYear $year }}
+        {{ $sortedTalks := sort $talks "date" "desc" }}
+        <div class="year-block year-section" data-year="{{ $year }}">
+          <div class="year-header">
+            <h3 class="year-label">{{ $year }}</h3>
+            <span class="year-count">{{ len $talks }} talk{{ if ne (len $talks) 1 }}s{{ end }}</span>
+          </div>
+
+          <div class="talk-list">
+            {{ range $sortedTalks }}
+            <article class="talk-item"
+                     data-title="{{ .title | lower }}"
+                     data-event="{{ .event | lower }}"
+                     data-has-video="{{ if .video_url }}true{{ else }}false{{ end }}"
+                     data-has-slides="{{ if .slides_url }}true{{ else }}false{{ end }}">
+              <div class="talk-date">
+                {{ dateFormat "Jan 02" .date }}
+              </div>
+
+              <div class="talk-content">
+                <h3>{{ .title }}</h3>
+
+                <div class="talk-event">
+                  {{ .event }}{{ if .location }} <span class="talk-location">· {{ .location }}</span>{{ end }}
+                </div>
+
+                {{ if or .slides_url .video_url }}
+                <div class="talk-links">
+                  {{ if .slides_url }}
+                  <a href="{{ .slides_url }}" target="_blank" rel="noopener" class="talk-link">
+                    slides →
+                  </a>
+                  {{ end }}
+                  {{ if .video_url }}
+                  <a href="{{ .video_url }}" target="_blank" rel="noopener" class="talk-link">
+                    video →
+                  </a>
+                  {{ end }}
+                </div>
+                {{ end }}
+              </div>
+            </article>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </section>
+
+    <!-- No Results -->
+    <div id="noResults" class="no-results" style="display: none;">
+      <p>No talks found matching your search.</p>
     </div>
 
-  {{ else }}
-    <!-- No data available -->
-    <div style="max-width: 600px; margin: 0 auto; text-align: center; padding: var(--space-2xl) var(--space-md);">
-      <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">
-        Presentations coming soon. Check back later or reach out to discuss speaking opportunities.
-      </p>
-      <a href="{{ "contact-me" | relURL }}" class="btn-secondary btn">Get in Touch</a>
-    </div>
-  {{ end }}
+  </div>
+</div>
 
-</section>
-
-<!-- Dark Mode Toggle -->
-<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
 <script>
 (function() {
-  const btn = document.getElementById('dark-mode-btn');
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    btn.textContent = '☀️';
-  }
-  btn.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    btn.textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  const searchInput = document.getElementById('searchInput');
+  const viewBtns = document.querySelectorAll('.view-btn');
+  const filterBtns = document.querySelectorAll('.filter-toggle');
+  const archiveList = document.getElementById('archiveList');
+  const noResults = document.getElementById('noResults');
+  const talkItems = document.querySelectorAll('.talk-item');
+  const yearSections = document.querySelectorAll('.year-section');
+
+  let currentView = 'grid';
+  let currentFilter = 'all';
+  let currentSearch = '';
+
+  // View toggle
+  viewBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      viewBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentView = btn.dataset.view;
+
+      if (currentView === 'grid') {
+        archiveList.classList.add('grid-view');
+      } else {
+        archiveList.classList.remove('grid-view');
+      }
+    });
   });
+
+  // Filter toggle
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  // Search
+  searchInput.addEventListener('input', (e) => {
+    currentSearch = e.target.value.toLowerCase();
+    applyFilters();
+  });
+
+  function applyFilters() {
+    let visibleCount = 0;
+
+    talkItems.forEach(item => {
+      const title = item.dataset.title || '';
+      const event = item.dataset.event || '';
+      const hasVideo = item.dataset.hasVideo === 'true';
+      const hasSlides = item.dataset.hasSlides === 'true';
+
+      let show = true;
+
+      if (currentSearch && !title.includes(currentSearch) && !event.includes(currentSearch)) {
+        show = false;
+      }
+
+      if (currentFilter === 'videos' && !hasVideo) {
+        show = false;
+      } else if (currentFilter === 'slides' && !hasSlides) {
+        show = false;
+      }
+
+      item.style.display = show ? '' : 'none';
+      if (show) visibleCount++;
+    });
+
+    yearSections.forEach(section => {
+      const visibleInSection = section.querySelectorAll('.talk-item:not([style*="display: none"])').length;
+      section.style.display = visibleInSection > 0 ? '' : 'none';
+    });
+
+    if (visibleCount === 0) {
+      archiveList.style.display = 'none';
+      noResults.style.display = 'block';
+    } else {
+      archiveList.style.display = 'block';
+      noResults.style.display = 'none';
+    }
+  }
 })();
 </script>
 

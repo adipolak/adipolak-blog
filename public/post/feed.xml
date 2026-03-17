@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts - Adi Polak</title><link>http://localhost:57330/adipolak-blog/post/</link><description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Adi Polak</managingEditor><copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:57330/adipolak-blog/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>Data+AI Summit 2021 is Coming</title><link>http://localhost:57330/adipolak-blog/post/data_and_ai_summit2021/</link><pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/data_and_ai_summit2021/</guid><description>Knock Knock! Who's there? It's me, Summit. Summit who? Data + AI Summit</description><content:encoded><![CDATA[<p>It&rsquo;s almost been half a year since the last summit.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts - Adi Polak</title>
+    <link>http://localhost:1314/adipolak-blog/post/</link>
+    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>Adi Polak</managingEditor>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/post/feed.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Data&#43;AI Summit 2021 is Coming</title>
+      <link>http://localhost:1314/adipolak-blog/post/data_and_ai_summit2021/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/data_and_ai_summit2021/</guid>
+      <description>Knock Knock! Who&#39;s there? It&#39;s me, Summit. Summit who? Data &#43; AI Summit</description>
+      
+      <content:encoded><![CDATA[<p>It&rsquo;s almost been half a year since the last summit.</p>
 <p>Data+AI Summit 2021 starts on Monday, May 24 till Friday, May 28.
 The training will be held on May 24-25 and will cater to a large set of practitioners, definitely more extensive than previous times:
 Data Analyst, Data Engineer, Data Scientist, ML Engineer, Partner Data Engineer, Platform Engineer, Technical. The wide range of roles makes me curious about the various technical personas in the Data and AI space. It&rsquo;s not only Data Engineers and Data Scientists. There is a wide range of people who can benefit from attending the summit.</p>
@@ -33,7 +51,24 @@ In some cases, that means smaller revenue, but when we use machine learning to s
 <li><a href="https://databricks.com/dataaisummit/north-america-2021/agenda">Agenda</a></li>
 <li>Learn about <a href="https://bit.ly/3uABica">Azure Databricks</a></li>
 </ul>
-]]></content:encoded><category>conference</category><category>apache spark</category><category>distributed-systems</category></item><item><title>Machine Learning in Production - Concepts you should know</title><link>http://localhost:57330/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</guid><description>To productionize machine learning, know the concepts first</description><content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
+]]></content:encoded>
+      
+      
+      <category>conference</category>
+      
+      <category>apache spark</category>
+      
+      <category>distributed-systems</category>
+      
+    </item><item>
+      <title>Machine Learning in Production - Concepts you should know</title>
+      <link>http://localhost:1314/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</guid>
+      <description>To productionize machine learning, know the concepts first</description>
+      
+      <content:encoded><![CDATA[<p>Are you interested in learning about the Machine Learning side of data? Hurry 🎉 , you have reached the right place to start learning about it.</p>
 <p>Here is a list of concepts for you to get started:</p>
 <h2 id="ml-algorithm">ML Algorithm</h2>
 <p>ML algorithm is a procedure that runs on data and produces a machine learning model. Some of the popular ones are Decision trees, Naive Bayes, and Linear Regression.</p>
@@ -62,7 +97,26 @@ Machine learning&rsquo;s actual target variable can change over time in unforese
 <p>I hope it was helpful for you and gave you more clarity about the concepts.</p>
 <h2 id="-curious-to-learn-more">💡 Curious to learn more?</h2>
 <p>Read here about how to create <a href="https://docs.microsoft.com/en-us/learn/paths/create-machine-learn-models/?WT.mc_id=social-00000-adpolak">machine learning models with python</a>.</p>
-]]></content:encoded><category>data science</category><category>machine learning</category><category>terminology</category><category>ai</category></item><item><title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title><link>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link><pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid><description>Multi-part series that will take you from beginner to expert in Delta Lake</description><content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
+]]></content:encoded>
+      
+      
+      <category>data science</category>
+      
+      <category>machine learning</category>
+      
+      <category>terminology</category>
+      
+      <category>ai</category>
+      
+    </item><item>
+      <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
+      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
+      
+      <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
 <p>There are many great features that you can leverage in delta lake, from the ACID transaction, Schema Enforcement, Time Traveling, Exactly One semantic, and more.</p>
 <p>Let&rsquo;s discuss two common data pipelines patterns and solutions:</p>
 <h2 id="spark-structured-streaming-etl-with-deltalake-that-serves-multiple-users">Spark Structured Streaming ETL with DeltaLake that serves multiple Users</h2>
@@ -132,7 +186,30 @@ I will continue to share scenarios, insights, and code samples throughout the bl
 <li><a href="/post/delta-lake-essential-fundamentals-part-3/">Delta Lake essential Fundamentals: Part 3 - Compaction and Checkpoint</a></li>
 <li>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios (You are here)</li>
 </ol>
-]]></content:encoded><category>open-source</category><category>apache spark</category><category>delta lake</category><category>distributed-systems</category><category>beginner</category><category>scenarios</category></item><item><title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title><link>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid><description>Multi-part series that will take you from beginner to expert in Delta Lake</description><content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
+]]></content:encoded>
+      
+      
+      <category>open-source</category>
+      
+      <category>apache spark</category>
+      
+      <category>delta lake</category>
+      
+      <category>distributed-systems</category>
+      
+      <category>beginner</category>
+      
+      <category>scenarios</category>
+      
+    </item><item>
+      <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
+      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid>
+      <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
+      
+      <content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
 <h2 id="checkpoint">Checkpoint</h2>
 <p>There are two known checkpoints mechanism in Apache Spark that can confuse us with DeltaLake checkpoint, so let&rsquo;s understand them and how they differ from each other:</p>
 <h3 id="spark-rdd-checkpoint">Spark RDD Checkpoint</h3>
@@ -174,7 +251,30 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
     </div>
 
 <p>If you would like to get monthly updates, consider <a href="https://sub.adipolak.com/subscribe">subscribing</a>.</p>
-]]></content:encoded><category>open-source</category><category>apache spark</category><category>delta lake</category><category>distributed-systems</category><category>beginner</category><category>deltalog</category></item><item><title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title><link>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link><pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid><description>Multi-part series that will take you from beginner to expert in Delta Lake</description><content:encoded><![CDATA[<p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
+]]></content:encoded>
+      
+      
+      <category>open-source</category>
+      
+      <category>apache spark</category>
+      
+      <category>delta lake</category>
+      
+      <category>distributed-systems</category>
+      
+      <category>beginner</category>
+      
+      <category>deltalog</category>
+      
+    </item><item>
+      <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
+      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
+      <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
+      
+      <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
 In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
 <h2 id="transaction-log">Transaction Log</h2>
 <p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
@@ -267,7 +367,30 @@ That means that if there is a request to delete a file that at the same time is 
     </div>
 
 <p>If you would like to get monthly updates, consider <a href="https://sub.adipolak.com/subscribe">subscribing</a>.</p>
-]]></content:encoded><category>open-source</category><category>apache spark</category><category>delta lake</category><category>distributed-systems</category><category>beginner</category><category>deltalog</category></item><item><title>Delta Lake essential Fundamentals: Part 1 - ACID</title><link>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals/</link><pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals/</guid><description>Multi-part series that will take you from beginner to expert in Delta Lake</description><content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
+]]></content:encoded>
+      
+      
+      <category>open-source</category>
+      
+      <category>apache spark</category>
+      
+      <category>delta lake</category>
+      
+      <category>distributed-systems</category>
+      
+      <category>beginner</category>
+      
+      <category>deltalog</category>
+      
+    </item><item>
+      <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
+      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</guid>
+      <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
+      
+      <content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
 <h2 id="what-is-delta-lake-">What is Delta Lake ?</h2>
 <blockquote>
 <p>Delta Lake is an open-source storage layer that brings ACID
@@ -303,7 +426,30 @@ But it's not.</p>
 <hr>
 <h2 id="as-always-i-would-love-to-get-your-comments-and-feedback-on-adi-polak-">As always, I would love to get your comments and feedback on <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A1313%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=AdiPolak&amp;tw_p=followbutton">Adi Polak</a> 🐦.</h2>
 <p>If you would like to get monthly updates, consider <a href="https://sub.adipolak.com/subscribe">subscribing</a>.</p>
-]]></content:encoded><category>open-source</category><category>apache spark</category><category>delta lake</category><category>distributed-systems</category><category>beginner</category><category>acid</category></item><item><title>Apache Spark Ecosystem, Jan 2021 Highlights</title><link>http://localhost:57330/adipolak-blog/post/apache-spark-ecosystem/</link><pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/apache-spark-ecosystem/</guid><description>The ever growing Open Source Ecosystem</description><content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
+]]></content:encoded>
+      
+      
+      <category>open-source</category>
+      
+      <category>apache spark</category>
+      
+      <category>delta lake</category>
+      
+      <category>distributed-systems</category>
+      
+      <category>beginner</category>
+      
+      <category>acid</category>
+      
+    </item><item>
+      <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
+      <link>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</guid>
+      <description>The ever growing Open Source Ecosystem</description>
+      
+      <content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>
 Apache Spark is continually growing. It started as part of the Hadoop family,<br>
 but with <a href="https://medium.com/@acmurthy/hadoop-is-dead-long-live-hadoop-f22069b264ac">the slow death of hadoop</a> and the fast growth of Kubernetes, many new tools, connectors and open source have emerged.</p>
 <p>Let&rsquo;s take a look at three exciting open sources:</p>
@@ -357,7 +503,36 @@ I recommend being mindful with using this feature as saving snapshots and later 
 <h2 id="thats-it">That&rsquo;s it.</h2>
 <p>I hope you enjoyed reading this short recap on open sources for January 2021.<br>
 If you are interested in learning more and getting updates, follow <a href="https://twitter.com/AdiPolak">Adi Polak on Twitter.</a>.</p>
-]]></content:encoded><category>open-source</category><category>apache spark</category><category>koalas</category><category>pandas</category><category>delta lake</category><category>distributed-systems</category><category>ray</category><category>ray on spark</category><category>analytic zoo</category></item><item><title>Kubernetes and Virtual Kubelet in a nutshell</title><link>http://localhost:57330/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid><description>Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</description><content:encoded><![CDATA[<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
+]]></content:encoded>
+      
+      
+      <category>open-source</category>
+      
+      <category>apache spark</category>
+      
+      <category>koalas</category>
+      
+      <category>pandas</category>
+      
+      <category>delta lake</category>
+      
+      <category>distributed-systems</category>
+      
+      <category>ray</category>
+      
+      <category>ray on spark</category>
+      
+      <category>analytic zoo</category>
+      
+    </item><item>
+      <title>Kubernetes and Virtual Kubelet in a nutshell</title>
+      <link>http://localhost:1314/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
+      <description>Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</description>
+      
+      <content:encoded><![CDATA[<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
 <p>Today, you will learn how to take a web app (it can be any programming language,<br>
 we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
 <p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
@@ -536,4 +711,39 @@ For doing it, we need to expose it first - notice that we are exposing the app a
 <p>👉🏼 Kubernetes and Apache Spark on Azure <a href="https://docs.microsoft.com/en-us/azure/aks/spark-job?WT.mc_id=devto-blog-adpolak">tutorial</a></p>
 <p><br></br></p>
 <p><em>This article originally appeared in Adi Polak&rsquo;s Dev.to blog <a href="https://dev.to/adipolak/kubernetes-and-virtual-kubelet-in-a-nutshell-gn4">https://dev.to/adipolak/kubernetes-and-virtual-kubelet-in-a-nutshell-gn4</a>.</em></p>
-]]></content:encoded><category>beginners</category><category>devops</category><category>tutorial</category><category>kubernetes</category></item><item><title>AI Systems and Applications</title><link>http://localhost:57330/adipolak-blog/hidden/ai-placeholder/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/hidden/ai-placeholder/</guid><description>Collection of insights on AI systems</description><category>ai</category></item><item><title>Technical Leadership Insights</title><link>http://localhost:57330/adipolak-blog/hidden/leadership-placeholder/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/hidden/leadership-placeholder/</guid><description>Collection of insights on technical leadership</description><category>leadership</category></item></channel></rss>
+]]></content:encoded>
+      
+      
+      <category>beginners</category>
+      
+      <category>devops</category>
+      
+      <category>tutorial</category>
+      
+      <category>kubernetes</category>
+      
+    </item><item>
+      <title>AI Systems and Applications</title>
+      <link>http://localhost:1314/adipolak-blog/hidden/ai-placeholder/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/hidden/ai-placeholder/</guid>
+      <description>Collection of insights on AI systems</description>
+      
+      
+      <category>ai</category>
+      
+    </item><item>
+      <title>Technical Leadership Insights</title>
+      <link>http://localhost:1314/adipolak-blog/hidden/leadership-placeholder/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/hidden/leadership-placeholder/</guid>
+      <description>Collection of insights on technical leadership</description>
+      
+      
+      <category>leadership</category>
+      
+    </item>
+  </channel>
+</rss>

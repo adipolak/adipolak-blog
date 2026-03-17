@@ -653,37 +653,7 @@ img {
   display: inline-block;
 }
 
-/* Theme Toggle - Refined */
-.dark-mode-toggle {
-  position: fixed;
-  bottom: var(--space-lg);
-  right: var(--space-lg);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  color: var(--primary-text);
-  font-size: 1.25rem;
-  cursor: pointer;
-  box-shadow: var(--shadow-soft);
-  transition: var(--transition-smooth);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dark-mode-toggle:hover {
-  transform: scale(1.05);
-  box-shadow: var(--shadow-medium);
-  border-color: var(--accent-primary);
-}
-
-.dark-mode-toggle:focus {
-  outline: 2px solid var(--accent-hover);
-  outline-offset: 3px;
-}
+/* Theme Toggle - Removed (site uses dark theme by default) */
 
 /* Focus visible for keyboard navigation */
 *:focus-visible {
@@ -806,11 +776,6 @@ hr {
 
   .hero-editorial {
     padding: 48px var(--space-24);
-  }
-
-  .dark-mode-toggle {
-    bottom: var(--space-md);
-    right: var(--space-md);
   }
 
   .site-nav {

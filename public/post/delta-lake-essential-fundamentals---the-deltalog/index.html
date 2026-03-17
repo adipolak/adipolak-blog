@@ -1,40 +1,429 @@
-<!doctype html><html lang=en-us><head><script src="/adipolak-blog/livereload.js?mindelay=10&amp;v=2&amp;port=57330&amp;path=adipolak-blog/livereload" data-no-instant defer></script><link rel=stylesheet href=/adipolak-blog/css/custom.css><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Adi Polak | Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=generator content="Hugo 0.157.0"><meta name=ROBOTS content="INDEX, FOLLOW"><link rel="shortcut icon" type=image/png href=/assets/favicon/favicon-32x32.png><link href=/adipolak-blog/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css rel=stylesheet><meta property="og:url" content="http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/"><meta property="og:site_name" content="Adi Polak"><meta property="og:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog"><meta property="og:description" content="Multi-part series that will take you from beginner to expert in Delta Lake"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-02-11T00:00:00+00:00"><meta property="article:modified_time" content="2021-02-11T00:00:00+00:00"><meta property="article:tag" content="Open-Source"><meta property="article:tag" content="Apache Spark"><meta property="article:tag" content="Delta Lake"><meta property="article:tag" content="Distributed-Systems"><meta property="article:tag" content="Beginner"><meta property="article:tag" content="Deltalog"><meta itemprop=name content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog"><meta itemprop=description content="Multi-part series that will take you from beginner to expert in Delta Lake"><meta itemprop=datePublished content="2021-02-11T00:00:00+00:00"><meta itemprop=dateModified content="2021-02-11T00:00:00+00:00"><meta itemprop=wordCount content="1390"><meta itemprop=keywords content="Open-Source,Apache Spark,Delta Lake,Distributed-Systems,Beginner,Deltalog"><meta name=twitter:card content="summary"><meta name=twitter:title content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog"><meta name=twitter:description content="Multi-part series that will take you from beginner to expert in Delta Lake"><link rel=canonical href=http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/><meta name=author content="Adi Polak"><meta name=creator content="Adi Polak"><meta name=publisher content="Adi Polak"><meta name=copyright content="© 2026 Adi Polak. All rights reserved."><meta name=rights content="© 2026 Adi Polak"><meta name=citation_author content="Adi Polak"><meta name=citation_author_institution content="Vectorize.io"><meta name=citation_title content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog"><meta name=citation_publication_date content="2021/02/11"><meta name=citation_online_date content="2021/02/11"><meta name=DC.title content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog - Adi Polak"><meta name=DC.creator content="Adi Polak"><meta name=DC.subject content="open-source, apache spark, delta lake, distributed-systems, beginner, deltalog"><meta name=DC.description content="Multi-part series that will take you from beginner to expert in Delta Lake"><meta name=DC.publisher content="Adi Polak"><meta name=DC.type content="Text"><meta name=DC.format content="text/html"><meta name=DC.language content="en"><meta name=DC.rights content="© 2026 Adi Polak"><meta name=description content="Multi-part series that will take you from beginner to expert in Delta Lake - By Adi Polak"><meta name=keywords content="open-source,apache spark,delta lake,distributed-systems,beginner,deltalog,Adi Polak,Adi Polak"><meta property="article:published_time" content="2021-02-11T00:00:00Z"><meta property="article:modified_time" content="2021-02-11T00:00:00Z"><meta property="article:author" content="Adi Polak"><meta property="article:section" content="post"><meta property="article:tag" content="open-source"><meta property="article:tag" content="apache spark"><meta property="article:tag" content="delta lake"><meta property="article:tag" content="distributed-systems"><meta property="article:tag" content="beginner"><meta property="article:tag" content="deltalog"><meta name=topic content="open-source"><meta name=subject content="Artificial Intelligence, AI Systems, Cloud Computing, Data Analytics, Technical Leadership"><meta name=classification content="Technical Blog"><link rel=author href=http://localhost:57330/adipolak-blog/about/><link rel=me href=https://twitter.com/AdiPolak><link rel=me href=https://github.com/AdiPolak><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Delta Lake essential Fundamentals: Part 2 - The DeltaLog","name":"Delta Lake essential Fundamentals: Part 2 - The DeltaLog","description":"Multi-part series that will take you from beginner to expert in Delta Lake","image":"http:\/\/localhost:57330\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png","datePublished":"2021-02-11T00:00:00Z","dateModified":"2021-02-11T00:00:00Z","author":{"@type":"Person","name":"Adi Polak","url":"http:\/\/localhost:57330\/adipolak-blog\/about/","sameAs":["https://twitter.com/AdiPolak","https://github.com/AdiPolak","https://www.linkedin.com/in/polak-adi/"]},"publisher":{"@type":"Person","name":"Adi Polak","logo":{"@type":"ImageObject","url":"http:\/\/localhost:57330\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/localhost:57330\/adipolak-blog\/post\/delta-lake-essential-fundamentals---the-deltalog\/"},"keywords":"open-source, apache spark, delta lake, distributed-systems, beginner, deltalog","articleSection":"post","inLanguage":"en-US","copyrightHolder":{"@type":"Person","name":"Adi Polak"},"copyrightYear":"2021","creator":{"@type":"Person","name":"Adi Polak"}}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"http:\/\/localhost:57330\/adipolak-blog\/"},{"@type":"ListItem","position":2,"name":"Writing","item":"http:\/\/localhost:57330\/adipolak-blog\/writing/"},{"@type":"ListItem","position":3,"name":"Delta Lake essential Fundamentals: Part 2 - The DeltaLog","item":"http:\/\/localhost:57330\/adipolak-blog\/post\/delta-lake-essential-fundamentals---the-deltalog\/"}]}</script></head><body style=margin:0;padding:0;background-color:#11100f><header><nav class=site-nav role=navigation><div class=nav-container><a href=http://localhost:57330/adipolak-blog/ class=site-logo><img src=/adipolak-blog/assets/favicon/favicon-32x32.png alt="Adi Polak logo" class=logo-icon>
-<span class=logo-text>Adi Polak</span></a><div class=nav-menu><ul class=nav-links><li><a href=/adipolak-blog/writing/ title=writing>writing</a></li><li><a href=/adipolak-blog/external-writing/ title="published elsewhere">published elsewhere</a></li><li><a href=/adipolak-blog/about/ title=about>about</a></li><li><a href=/adipolak-blog/presentations/ title=presentations>presentations</a></li><li><a href=/adipolak-blog/search/ title=search>search</a></li><li><a href=/adipolak-blog/contact-me/ title=contact>contact</a></li><li><a href=/adipolak-blog/feed.xml title="RSS Feed" aria-label="Subscribe via RSS"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></li></ul><a href=/adipolak-blog/subscribe class=nav-cta>Subscribe</a></div></div></nav></header><main role=main><article class=article-content itemscope itemtype=https://schema.org/BlogPosting><header class=article-header style="text-align:center;margin-bottom:var(--space-2xl);padding-bottom:var(--space-lg);border-bottom:1px solid var(--color-border-subtle)"><div style=margin-bottom:var(--space-md);color:var(--color-text-muted);font-size:var(--text-sm)><span itemprop=author itemscope itemtype=https://schema.org/Person>By <a href=http://localhost:57330/adipolak-blog/about/ itemprop=url style=color:var(--color-link);font-weight:600><span itemprop=name>Adi Polak</span>
-</a></span><meta itemprop=author content="Adi Polak"></div><div class=post-meta style=justify-content:center;margin-bottom:var(--space-md)><time datetime=2021-02-11 itemprop=datePublished>February 11, 2021
-</time><meta itemprop=dateModified content="2021-02-11"><span class=separator>·</span>
-<span>7 min read</span>
-<span class=separator>·</span>
-<span>Adi Polak</span></div><h1 itemprop="headline name" style=margin-bottom:var(--space-md);font-size:var(--text-4xl)>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</h1><div class=post-tags style=justify-content:center><a href=/adipolak-blog/tags/open-source class=tag>open-source</a>
-<a href=/adipolak-blog/tags/apache-spark class=tag>apache spark</a>
-<a href=/adipolak-blog/tags/delta-lake class=tag>delta lake</a>
-<a href=/adipolak-blog/tags/distributed-systems class=tag>distributed-systems</a>
-<a href=/adipolak-blog/tags/beginner class=tag>beginner</a>
-<a href=/adipolak-blog/tags/deltalog class=tag>deltalog</a></div><meta itemprop=inLanguage content="en-US"><link itemprop=url href=http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/><meta itemprop=image content="http://localhost:57330/adipolak-blog/assets/favicon/android-chrome-512x512.png"></header><div class=post-body itemprop=articleBody><p>In the previous part, you learned what <a href=/post/delta-lake-essential-fundamentals>ACID transactions</a> are.<br>In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p><h2 id=transaction-log>Transaction Log</h2><p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href=/post/delta-lake-essential-fundamentals/>ACID properties</a> over a crash.</p><h2 id=deltalake-transaction-log---detlalog>DeltaLake transaction log - DetlaLog</h2><p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/adipolak-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=adipolak-blog/livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="/adipolak-blog/css/custom.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Adi Polak  | Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.157.0">
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png"/>
+
+    
+    
+      <link href="/adipolak-blog/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+
+    
+
+    <meta property="og:url" content="http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/">
+  <meta property="og:site_name" content="Adi Polak">
+  <meta property="og:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog">
+  <meta property="og:description" content="Multi-part series that will take you from beginner to expert in Delta Lake">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-02-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-02-11T00:00:00+00:00">
+    <meta property="article:tag" content="Open-Source">
+    <meta property="article:tag" content="Apache Spark">
+    <meta property="article:tag" content="Delta Lake">
+    <meta property="article:tag" content="Distributed-Systems">
+    <meta property="article:tag" content="Beginner">
+    <meta property="article:tag" content="Deltalog">
+
+  <meta itemprop="name" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog">
+  <meta itemprop="description" content="Multi-part series that will take you from beginner to expert in Delta Lake">
+  <meta itemprop="datePublished" content="2021-02-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-02-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1390">
+  <meta itemprop="keywords" content="Open-Source,Apache Spark,Delta Lake,Distributed-Systems,Beginner,Deltalog">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog">
+  <meta name="twitter:description" content="Multi-part series that will take you from beginner to expert in Delta Lake">
+
+    
+
+
+<link rel="canonical" href="http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/" />
+
+
+<meta name="author" content="Adi Polak" />
+<meta name="creator" content="Adi Polak" />
+<meta name="publisher" content="Adi Polak" />
+
+
+<meta name="copyright" content="© 2026 Adi Polak. All rights reserved." />
+<meta name="rights" content="© 2026 Adi Polak" />
+
+
+<meta name="citation_author" content="Adi Polak" />
+<meta name="citation_author_institution" content="Vectorize.io" />
+
+<meta name="citation_title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog" />
+<meta name="citation_publication_date" content="2021/02/11" />
+<meta name="citation_online_date" content="2021/02/11" />
+
+
+
+<meta name="DC.title" content="Delta Lake essential Fundamentals: Part 2 - The DeltaLog - Adi Polak" />
+<meta name="DC.creator" content="Adi Polak" />
+<meta name="DC.subject" content="open-source, apache spark, delta lake, distributed-systems, beginner, deltalog" />
+<meta name="DC.description" content="Multi-part series that will take you from beginner to expert in Delta Lake" />
+<meta name="DC.publisher" content="Adi Polak" />
+<meta name="DC.type" content="Text" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="en" />
+<meta name="DC.rights" content="© 2026 Adi Polak" />
+
+
+
+<meta name="description" content="Multi-part series that will take you from beginner to expert in Delta Lake - By Adi Polak" />
+
+
+
+
+<meta name="keywords" content="open-source, apache spark, delta lake, distributed-systems, beginner, deltalog, Adi Polak, Adi Polak" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2021-02-11T00:00:00Z" />
+<meta property="article:modified_time" content="2021-02-11T00:00:00Z" />
+<meta property="article:author" content="Adi Polak" />
+<meta property="article:section" content="post" />
+
+<meta property="article:tag" content="open-source" />
+
+<meta property="article:tag" content="apache spark" />
+
+<meta property="article:tag" content="delta lake" />
+
+<meta property="article:tag" content="distributed-systems" />
+
+<meta property="article:tag" content="beginner" />
+
+<meta property="article:tag" content="deltalog" />
+
+
+
+
+
+<meta name="topic" content="open-source" />
+<meta name="subject" content="Artificial Intelligence, AI Systems, Cloud Computing, Data Analytics, Technical Leadership" />
+<meta name="classification" content="Technical Blog" />
+
+
+<link rel="author" href="http://localhost:1314/adipolak-blog/about/" />
+<link rel="me" href="https://twitter.com/AdiPolak" />
+<link rel="me" href="https://github.com/AdiPolak" />
+
+    
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Delta Lake essential Fundamentals: Part 2 - The DeltaLog",
+  "name": "Delta Lake essential Fundamentals: Part 2 - The DeltaLog",
+  "description": "Multi-part series that will take you from beginner to expert in Delta Lake",
+  "image": "http:\/\/localhost:1314\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png",
+  "datePublished": "2021-02-11T00:00:00Z",
+  "dateModified": "2021-02-11T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "url": "http:\/\/localhost:1314\/adipolak-blog\/about/",
+    "sameAs": [
+      "https://twitter.com/AdiPolak",
+      "https://github.com/AdiPolak",
+      "https://www.linkedin.com/in/polak-adi/"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Adi Polak",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http:\/\/localhost:1314\/adipolak-blog\/assets\/favicon\/android-chrome-512x512.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1314\/adipolak-blog\/post\/delta-lake-essential-fundamentals---the-deltalog\/"
+  },
+  "keywords": "open-source, apache spark, delta lake, distributed-systems, beginner, deltalog",
+  "articleSection": "post",
+  "inLanguage": "en-US",
+  "copyrightHolder": {
+    "@type": "Person",
+    "name": "Adi Polak"
+  },
+  "copyrightYear": "2021",
+  "creator": {
+    "@type": "Person",
+    "name": "Adi Polak"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "http:\/\/localhost:1314\/adipolak-blog\/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Writing",
+      "item": "http:\/\/localhost:1314\/adipolak-blog\/writing/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Delta Lake essential Fundamentals: Part 2 - The DeltaLog",
+      "item": "http:\/\/localhost:1314\/adipolak-blog\/post\/delta-lake-essential-fundamentals---the-deltalog\/"
+    }
+  ]
+}
+</script>
+
+
+
+
+
+
+
+    
+  </head>
+
+  <body style="margin: 0; padding: 0; background-color: #11100F;">
+
+    <header>
+  <nav class="site-nav" role="navigation">
+  <div class="nav-container">
+    <a href="http://localhost:1314/adipolak-blog/" class="site-logo">
+      
+      <img src="/adipolak-blog/assets/favicon/favicon-32x32.png" alt="Adi Polak logo" class="logo-icon" />
+      
+      <span class="logo-text">Adi Polak</span>
+    </a>
+    <div class="nav-menu">
+      
+        <ul class="nav-links">
+          
+            
+              <li>
+                <a href="/adipolak-blog/writing/" title="writing">writing</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/external-writing/" title="published elsewhere">published elsewhere</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/about/" title="about">about</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/presentations/" title="presentations">presentations</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/search/" title="search">search</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/adipolak-blog/contact-me/" title="contact">contact</a>
+              </li>
+            
+          
+          <li>
+            <a href="/adipolak-blog/feed.xml" title="RSS Feed" aria-label="Subscribe via RSS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      
+      <a href="/adipolak-blog/subscribe" class="nav-cta">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+    <main role="main">
+      
+
+<article class="article-content" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  
+
+
+
+
+<header class="article-header" style="text-align: center; margin-bottom: var(--space-2xl); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border-subtle);">
+
+  
+  <div style="margin-bottom: var(--space-md); color: var(--color-text-muted); font-size: var(--text-sm);">
+    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+      By <a href="http://localhost:1314/adipolak-blog/about/" itemprop="url" style="color: var(--color-link); font-weight: 600;">
+        <span itemprop="name">Adi Polak</span>
+      </a>
+    </span>
+    
+    <meta itemprop="author" content="Adi Polak" />
+    
+  </div>
+
+  
+  
+  <div class="post-meta" style="justify-content: center; margin-bottom: var(--space-md);">
+    
+    <time datetime="2021-02-11" itemprop="datePublished">
+      February 11, 2021
+    </time>
+    <meta itemprop="dateModified" content="2021-02-11" />
+    
+    
+      <span class="separator">·</span>
+      <span>7 min read</span>
+    
+    
+      <span class="separator">·</span>
+      <span>Adi Polak</span>
+    
+  </div>
+  
+
+  <h1 itemprop="headline name" style="margin-bottom: var(--space-md); font-size: var(--text-4xl);">Delta Lake essential Fundamentals: Part 2 - The DeltaLog</h1>
+
+  
+    <div class="post-tags" style="justify-content: center;">
+      
+        <a href="/adipolak-blog/tags/open-source" class="tag">open-source</a>
+      
+        <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
+      
+        <a href="/adipolak-blog/tags/delta-lake" class="tag">delta lake</a>
+      
+        <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
+      
+        <a href="/adipolak-blog/tags/beginner" class="tag">beginner</a>
+      
+        <a href="/adipolak-blog/tags/deltalog" class="tag">deltalog</a>
+      
+    </div>
+  
+
+  
+  <meta itemprop="inLanguage" content="en-US" />
+  <link itemprop="url" href="http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/" />
+  <meta itemprop="image" content="http://localhost:1314/adipolak-blog/assets/favicon/android-chrome-512x512.png" />
+
+</header>
+
+
+
+
+  
+  <div class="post-body" itemprop="articleBody">
+    <p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
+In this part, you will understand how Delta Transaction Log, named DeltaLog, is achieving ACID.</p>
+<h2 id="transaction-log">Transaction Log</h2>
+<p>A transaction log is a history of actions executed by a (TaDa 💡) database management system with the goal to guarantee <a href="/post/delta-lake-essential-fundamentals/">ACID properties</a> over a crash.</p>
+<h2 id="deltalake-transaction-log---detlalog">DeltaLake transaction log - DetlaLog</h2>
+<p>DeltaLog is a transaction log directory that holds an <strong>ordered</strong> record of every transaction committed on a Delta Lake table since it was created.
 The goal of DeltaLog is to be the <strong>single</strong> source of truth for readers who read from the same table at the same time. That means, parallel readers read the <strong>exact</strong> same data.
-This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p><p>DeltaLog can also contain statistics on the data; depending on the type of the data/field/column, each column can have min/max values. Having this extra metadata can help with faster querying. DeltaTable read mechanism uses a simplified <a href=https://medium.com/microsoftazure/data-at-scale-learn-how-predicate-pushdown-will-save-you-money-7063b80878d7>push down predict</a>.</p><p>Here is a simplification of DeltaLog on the file systems from Databricks site:<br><img class=responsive src=../../images/Detla/deltalake-deltalog.png alt=drawing></p><p>The DeltaLog itself is a folder that consists of multiple JSON files. When it reaches 10 files, DeltaTable does a checkpoint and compaction operations (we will dive into it in the next chapter).</p><p>Here is an example of a DeltaLog JSON file from the code source test resources, each entry in the file is on JSON:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-json data-lang=json><span style=display:flex><span>{<span style=color:#f92672>&#34;remove&#34;</span>:{<span style=color:#f92672>&#34;path&#34;</span>:<span style=color:#e6db74>&#34;part-00001-f1cb1cf9-7a73-439c-b0ea-dcba5c2280a6-c000.snappy.parquet&#34;</span>,<span style=color:#f92672>&#34;dataChange&#34;</span>:<span style=color:#66d9ef>true</span>}}
-</span></span><span style=display:flex><span>{<span style=color:#f92672>&#34;remove&#34;</span>:{<span style=color:#f92672>&#34;path&#34;</span>:<span style=color:#e6db74>&#34;part-00000-f4aeebd0-a689-4e1b-bc7a-bbb0ec59dce5-c000.snappy.parquet&#34;</span>,<span style=color:#f92672>&#34;dataChange&#34;</span>:<span style=color:#66d9ef>true</span>}}
+This is achieved by tracking all the changes that users do: read, delete, update, etc. in the DeltaLog.</p>
+<p>DeltaLog can also contain statistics on the data; depending on the type of the data/field/column, each column can have min/max values. Having this extra metadata can help with faster querying. DeltaTable read mechanism uses a simplified <a href="https://medium.com/microsoftazure/data-at-scale-learn-how-predicate-pushdown-will-save-you-money-7063b80878d7">push down predict</a>.</p>
+<p>Here is a simplification of DeltaLog on the file systems from Databricks site: <br>
+<img class="responsive" src="../../images/Detla/deltalake-deltalog.png" alt="drawing"></p>
+<p>The DeltaLog itself is a folder that consists of multiple JSON files. When it reaches 10 files, DeltaTable does a checkpoint and compaction operations (we will dive into it in the next chapter).</p>
+<p>Here is an example of a DeltaLog JSON file from the code source test resources, each entry in the file is on JSON:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;remove&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;part-00001-f1cb1cf9-7a73-439c-b0ea-dcba5c2280a6-c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;remove&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;part-00000-f4aeebd0-a689-4e1b-bc7a-bbb0ec59dce5-c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
 </span></span></code></pre></div><p>There was a total of two commits captured in this file:
-<em>remove</em> -it can be a delete operation on a whole column or only specific values in it. In this operation the metadata field <em>dataChange</em> is set to true.</p><p>Here is a more complex JSON file example, each entry in the file is on JSON:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-json data-lang=json><span style=display:flex><span>{<span style=color:#f92672>&#34;metaData&#34;</span>:{<span style=color:#f92672>&#34;id&#34;</span>:<span style=color:#e6db74>&#34;2edf2c02-bb63-44e9-a84c-517fad0db296&#34;</span>,<span style=color:#f92672>&#34;format&#34;</span>:{<span style=color:#f92672>&#34;provider&#34;</span>:<span style=color:#e6db74>&#34;parquet&#34;</span>,<span style=color:#f92672>&#34;options&#34;</span>:{}},<span style=color:#f92672>&#34;schemaString&#34;</span>:<span style=color:#e6db74>&#34;{\&#34;type\&#34;:\&#34;struct\&#34;,\&#34;fields\&#34;:[{\&#34;name\&#34;:\&#34;id\&#34;,\&#34;type\&#34;:\&#34;integer\&#34;,\&#34;nullable\&#34;:true,\&#34;metadata\&#34;:{}},{\&#34;name\&#34;:\&#34;value\&#34;,\&#34;type\&#34;:\&#34;string\&#34;,\&#34;nullable\&#34;:true,\&#34;metadata\&#34;:{}}]}&#34;</span>,<span style=color:#f92672>&#34;partitionColumns&#34;</span>:[<span style=color:#e6db74>&#34;id&#34;</span>],<span style=color:#f92672>&#34;configuration&#34;</span>:{}}}
-</span></span><span style=display:flex><span>{<span style=color:#f92672>&#34;remove&#34;</span>:{<span style=color:#f92672>&#34;path&#34;</span>:<span style=color:#e6db74>&#34;part-00001-6d252218-2632-416e-9e46-f32316ec314a-c000.snappy.parquet&#34;</span>,<span style=color:#f92672>&#34;dataChange&#34;</span>:<span style=color:#66d9ef>true</span>}}
-</span></span><span style=display:flex><span>{<span style=color:#f92672>&#34;remove&#34;</span>:{<span style=color:#f92672>&#34;path&#34;</span>:<span style=color:#e6db74>&#34;part-00000-348d7f43-38f6-4778-88c7-45f379471c49-c000.snappy.parquet&#34;</span>,<span style=color:#f92672>&#34;dataChange&#34;</span>:<span style=color:#66d9ef>true</span>}}
-</span></span><span style=display:flex><span>{<span style=color:#f92672>&#34;add&#34;</span>:{<span style=color:#f92672>&#34;path&#34;</span>:<span style=color:#e6db74>&#34;id=5/part-00000-f1e0b560-ca00-409e-a274-f1ab264bc412.c000.snappy.parquet&#34;</span>,<span style=color:#f92672>&#34;partitionValues&#34;</span>:{<span style=color:#f92672>&#34;id&#34;</span>:<span style=color:#e6db74>&#34;5&#34;</span>},<span style=color:#f92672>&#34;size&#34;</span>:<span style=color:#ae81ff>362</span>,<span style=color:#f92672>&#34;modificationTime&#34;</span>:<span style=color:#ae81ff>1501109076000</span>,<span style=color:#f92672>&#34;dataChange&#34;</span>:<span style=color:#66d9ef>true</span>}}
-</span></span><span style=display:flex><span>{<span style=color:#f92672>&#34;add&#34;</span>:{<span style=color:#f92672>&#34;path&#34;</span>:<span style=color:#e6db74>&#34;id=6/part-00000-adb59f54-6b8f-4bfd-9915-ae26bd0f0e2c.c000.snappy.parquet&#34;</span>,<span style=color:#f92672>&#34;partitionValues&#34;</span>:{<span style=color:#f92672>&#34;id&#34;</span>:<span style=color:#e6db74>&#34;6&#34;</span>},<span style=color:#f92672>&#34;size&#34;</span>:<span style=color:#ae81ff>362</span>,<span style=color:#f92672>&#34;modificationTime&#34;</span>:<span style=color:#ae81ff>1501109076000</span>,<span style=color:#f92672>&#34;dataChange&#34;</span>:<span style=color:#66d9ef>true</span>}}
-</span></span><span style=display:flex><span>{<span style=color:#f92672>&#34;add&#34;</span>:{<span style=color:#f92672>&#34;path&#34;</span>:<span style=color:#e6db74>&#34;id=4/part-00001-36c738bf-7836-479b-9cc1-7a4934207856.c000.snappy.parquet&#34;</span>,<span style=color:#f92672>&#34;partitionValues&#34;</span>:{<span style=color:#f92672>&#34;id&#34;</span>:<span style=color:#e6db74>&#34;4&#34;</span>},<span style=color:#f92672>&#34;size&#34;</span>:<span style=color:#ae81ff>362</span>,<span style=color:#f92672>&#34;modificationTime&#34;</span>:<span style=color:#ae81ff>1501109076000</span>,<span style=color:#f92672>&#34;dataChange&#34;</span>:<span style=color:#66d9ef>true</span>}}
+<em>remove</em> -it can be a delete operation on a whole column or only specific values in it. In this operation the metadata field <em>dataChange</em> is set to true.</p>
+<p>Here is a more complex JSON file example, each entry in the file is on JSON:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;metaData&#34;</span>:{<span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;2edf2c02-bb63-44e9-a84c-517fad0db296&#34;</span>,<span style="color:#f92672">&#34;format&#34;</span>:{<span style="color:#f92672">&#34;provider&#34;</span>:<span style="color:#e6db74">&#34;parquet&#34;</span>,<span style="color:#f92672">&#34;options&#34;</span>:{}},<span style="color:#f92672">&#34;schemaString&#34;</span>:<span style="color:#e6db74">&#34;{\&#34;type\&#34;:\&#34;struct\&#34;,\&#34;fields\&#34;:[{\&#34;name\&#34;:\&#34;id\&#34;,\&#34;type\&#34;:\&#34;integer\&#34;,\&#34;nullable\&#34;:true,\&#34;metadata\&#34;:{}},{\&#34;name\&#34;:\&#34;value\&#34;,\&#34;type\&#34;:\&#34;string\&#34;,\&#34;nullable\&#34;:true,\&#34;metadata\&#34;:{}}]}&#34;</span>,<span style="color:#f92672">&#34;partitionColumns&#34;</span>:[<span style="color:#e6db74">&#34;id&#34;</span>],<span style="color:#f92672">&#34;configuration&#34;</span>:{}}}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;remove&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;part-00001-6d252218-2632-416e-9e46-f32316ec314a-c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;remove&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;part-00000-348d7f43-38f6-4778-88c7-45f379471c49-c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;add&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;id=5/part-00000-f1e0b560-ca00-409e-a274-f1ab264bc412.c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;partitionValues&#34;</span>:{<span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;5&#34;</span>},<span style="color:#f92672">&#34;size&#34;</span>:<span style="color:#ae81ff">362</span>,<span style="color:#f92672">&#34;modificationTime&#34;</span>:<span style="color:#ae81ff">1501109076000</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;add&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;id=6/part-00000-adb59f54-6b8f-4bfd-9915-ae26bd0f0e2c.c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;partitionValues&#34;</span>:{<span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;6&#34;</span>},<span style="color:#f92672">&#34;size&#34;</span>:<span style="color:#ae81ff">362</span>,<span style="color:#f92672">&#34;modificationTime&#34;</span>:<span style="color:#ae81ff">1501109076000</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;add&#34;</span>:{<span style="color:#f92672">&#34;path&#34;</span>:<span style="color:#e6db74">&#34;id=4/part-00001-36c738bf-7836-479b-9cc1-7a4934207856.c000.snappy.parquet&#34;</span>,<span style="color:#f92672">&#34;partitionValues&#34;</span>:{<span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;4&#34;</span>},<span style="color:#f92672">&#34;size&#34;</span>:<span style="color:#ae81ff">362</span>,<span style="color:#f92672">&#34;modificationTime&#34;</span>:<span style="color:#ae81ff">1501109076000</span>,<span style="color:#f92672">&#34;dataChange&#34;</span>:<span style="color:#66d9ef">true</span>}}
 </span></span></code></pre></div><p>In this example, there is the <em>metadata</em> object entry - it represents a change in the table columns either an update to the table schema or that a new table was created.
-Later we see two <em>remove</em> operations, followed by three <em>add</em> operations. These operation objects can have a <em>stat</em> field, which contains statistical information, such as the number of records, minValues, maxValues, and more.</p><p>These JSON files might also contain operation objects with fields such as - &ldquo;STREAMING UPDATE&rdquo;, &ldquo;NOTEBOOK&rdquo; if the operation took place from a notebook, isolationLevel, etc.</p><p>This information is valuable for managing the table and avoiding redundant full scan on the storage.</p><p>To simplify the connection between DeltaTable and DeltaLog, it&rsquo;s easier to think about DeltaTable as a direct result of a set of actions audited by the DeltaLog.</p><h2 id=deltalog-and-atomicity>DeltaLog and Atomicity</h2><p>From <a href=/post/delta-lake-essential-fundamentals>part one</a>, you already know that atomicity means that a transaction, either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
-The transactions that took place on the data can be broken into multiple components in which each one individually represents a commit in the DeltaLog. These breaking complex operations into small transactions help with ensuring atomicity.</p><h2 id=deltalog-and-isolation>DeltaLog and Isolation</h2><p>Operations such as Update, Delete, Add can harm isolation; Hence, since we want to guarantee isolation with DeltaTable, readers only get access to the table snapshot. This guarantees all parallel readers read the exact data. For handling deletion operations, Delta postpones the actual delete operation on the files; it first tags the files as deleted and later, remove them when considered safe (similar to Cassandra, and ElasticSearch delete operations with a tombstone).</p><p>In DeltaLake 0.8.1 source code, there is a comment saying that it&rsquo;s recommended to have the delete retention set to at least 2 weeks or longer than a duration of a job.<br><em>Note:</em> This will impact streaming workload as well, because there will be a need to delete the actual files at some point, which might result in blocking the stream.
-<img class=responsive src=../../images/Detla/delta-tombston-retention.png alt=drawing></p><h2 id=deltalog-and-consistency>DeltaLog and Consistency</h2><p>Delta Lake solves the problem of consistency by solving conflicts with an optimistic concurrency algorithm.
-The class in charge of this algorithm is the OptimisticTransaction class. It achieves it by using <a href=https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html>Java 8 ReentrantLock</a> that is controlled from a DeltaLog instance.<br>Here is the code snippet:<br></p><img class=responsive src=../../images/Detla/delta-log-optimistic-concurrency-algo.png alt=drawing><p>A DeltaTable instance actively uses the ReentrantLock in the OptimisticTransaction under the <code>doCommitRetryIteratively</code> function.
+Later we see two <em>remove</em> operations, followed by three <em>add</em> operations. These operation objects can have a <em>stat</em> field, which contains statistical information, such as the number of records, minValues, maxValues, and more.</p>
+<p>These JSON files might also contain operation objects with fields such as - &ldquo;STREAMING UPDATE&rdquo;, &ldquo;NOTEBOOK&rdquo;  if the operation took place from a notebook, isolationLevel, etc.</p>
+<p>This information is valuable for managing the table and avoiding redundant full scan on the storage.</p>
+<p>To simplify the connection between DeltaTable and DeltaLog, it&rsquo;s easier to think about DeltaTable as a direct result of a set of actions audited by the DeltaLog.</p>
+<h2 id="deltalog-and-atomicity">DeltaLog and Atomicity</h2>
+<p>From <a href="/post/delta-lake-essential-fundamentals">part one</a>, you already know that atomicity means that a transaction, either happened or not. The DeltaLog itself consists of atomic operations; each line in the log (like the ones you saw above) represents an action, which is an atomic unit; These are called commits.
+The transactions that took place on the data can be broken into multiple components in which each one individually represents a commit in the DeltaLog. These breaking complex operations into small transactions help with ensuring atomicity.</p>
+<h2 id="deltalog-and-isolation">DeltaLog and Isolation</h2>
+<p>Operations such as Update, Delete, Add can harm isolation; Hence, since we want to guarantee isolation with DeltaTable, readers only get access to the table snapshot. This guarantees all parallel readers read the exact data. For handling deletion operations, Delta postpones the actual delete operation on the files; it first tags the files as deleted and later, remove them when considered safe (similar to Cassandra, and ElasticSearch delete operations with a tombstone).</p>
+<p>In DeltaLake 0.8.1 source code, there is a comment saying that it&rsquo;s recommended to have the delete retention set to at least 2 weeks or longer than a duration of a job. <br>
+<em>Note:</em> This will impact streaming workload as well, because there will be a need to delete the actual files at some point, which might result in blocking the stream.
+<img class="responsive" src="../../images/Detla/delta-tombston-retention.png" alt="drawing"></p>
+<h2 id="deltalog-and-consistency">DeltaLog and Consistency</h2>
+<p>Delta Lake solves the problem of consistency by solving conflicts with an optimistic concurrency algorithm.
+The class in charge of this algorithm is the OptimisticTransaction class. It achieves it by using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html">Java 8 ReentrantLock</a> that is controlled from a DeltaLog instance. <br>
+Here is the code snippet: <br></p>
+<img class="responsive" src="../../images/Detla/delta-log-optimistic-concurrency-algo.png" alt="drawing">
+<p>A DeltaTable instance actively uses the ReentrantLock in the OptimisticTransaction under the <code>doCommitRetryIteratively</code> function.
 The optimistic approach was chosen here because in the big data world there is a tendency to add more data than to update existing records.
-It&rsquo;s rare to find and update a specific record, it is usually done when there was some data corruption on necessary data.</p><p>Here is the code snippet for the optimistic algorithm:
-<img class=responsive src=../../images/Detla/delta-log-OptimisticTransaction.png alt=drawing></p><p>Notice that in line 572, the program records the attempted version as the <code>commitVersion</code> instance which is of type <code>var</code>.
-<code>var</code> in Scala represents a mutable object instance, which means we should expect its value to change.</p><p>In line 575, we start the algorithm:
+It&rsquo;s rare to find and update a specific record, it is usually done when there was some data corruption on necessary data.</p>
+<p>Here is the code snippet for the optimistic algorithm:
+<img class="responsive" src="../../images/Detla/delta-log-OptimisticTransaction.png" alt="drawing"></p>
+<p>Notice that in line 572, the program records the attempted version as the <code>commitVersion</code> instance which is of type <code>var</code>.
+<code>var</code> in Scala represents a mutable object instance, which means we should expect its value to change.</p>
+<p>In line 575, we start the algorithm:
 it starts the <code>while(true)</code> loop and maintains an <code>attemptNumber</code> counter; if it&rsquo;s <code>==0</code>, it will try to commit; if it fails here, that means that a file with this <code>commitVersion</code> was already written/committed into the table and it will throw an exception. That exception is being caught in lines 592+593. From there, with each failure, the algorithm is increasing the attemptNumber by 1.
 After the first failure, the program won&rsquo;t go into the first if statement on line 577; it will go straights into the <code>else if</code> on line 579.
 If the program reached the state where <code>attemptNumber</code> is bigger than the maximum allowed/configured, it will throw a <code>DeltaErrors.maxCommitRetriesExceededException</code> exception.
 maxCommitRetriesExceededException exception will provide information about the commit version, the first commit version attempt, the number of attempted commits, and total time spent attempting this commit in ms.
 Otherwise, it will try to record this update with checkForConflict functionality in line 588.
-Multiple scenarios can bring us to this state.</p><p>High-level pseudo-code:</p><pre tabindex=0><code>while(tryCommit)
+Multiple scenarios can bring us to this state.</p>
+<p>High-level pseudo-code:</p>
+<pre tabindex="0"><code>while(tryCommit)
     if first attempt:
         do commit
     else if: attempt number &gt; max retries
@@ -46,15 +435,238 @@ Multiple scenarios can bring us to this state.</p><p>High-level pseudo-code:</p>
     retry on exceptions and attempt version +1
     if no exception - end loop
 end     
-</code></pre><p>To support the users, DeltaLake introduces a set of conflict exceptions that provide more information about the data and the conflicts:</p><img class=responsive src=../../images/Detla/delte-concurrent-exceptions.png alt=drawing><p>Let&rsquo;s look at some of the conflict scenarios.</p><h3 id=two-writers>Two Writers:</h3><p>This is the case of two writers who appends data to the same table simultaneously, without reading anything. In this scenario, one writer will commit, and the second writer will read the first one&rsquo;s updates before adding their own updates. Suppose it was only an append operation, like a counter which both are incrementing. In that case, there is no need to redo all computations, and it will automatically commit; if that&rsquo;s not the case, writer number two will need to redo the computation given the new information from writer one.</p><h3 id=delete-and-read>Delete and Read:</h3><p>In a more complex scenario like this one, there is no automated solution. For concurrent Delete-Read, there is a dedicated <code>ConcurentDeleteReadException</code>.
-That means that if there is a request to delete a file that at the same time is being used for a read, the program throws an exception.</p><img class=responsive src=../../images/Detla/ConcurrentDeleteReadException.png alt=drawing><h3 id=delete-and-delete>Delete and Delete:</h3><p>When two operations delete the same file, it might be due to a compaction mechanism or other operation, here too an exception will occur.</p><h2 id=deltalog-and-durability>DeltaLog and Durability</h2><p>Since all transactions made on a DeltaTable are being stored directly to the disk/file system, durability is a given. All commits are being <em>persisted</em> to disk. In case of a system failure, they can be restored from the disk.
-(Unless there is a true disaster like fire etc and damage to the actual disks holding the information).</p><hr><p>For exploring and learning about Delta, I did a deep dive into the code source itself. If you are interested in joining me, I captured it through videos, let me know if that is useful for you.</p><h1 id=whats-next>What&rsquo;s next?</h1><p>Next, we will see more examples, scenarios and use cases for DeltaLake! We will learn about the compaction mechanism, schema enforcement and how it can enforce exactly once operation.</p><p>As always, I would love to get your comments and feedback on <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A1313%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=AdiPolak&amp;tw_p=followbutton">Adi Polak</a> 🐦.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/i24ZA6mmvDI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p>If you would like to get monthly updates, consider <a href=https://sub.adipolak.com/subscribe>subscribing</a>.</p></div><footer style="margin-top:var(--space-2xl);padding-top:var(--space-xl);border-top:1px solid var(--color-border-subtle)"><div style=margin-bottom:var(--space-lg)><h3 style=font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted);margin-bottom:var(--space-sm)>Topics</h3><div class=post-tags><a href=/adipolak-blog/tags/open-source class=tag>open-source</a>
-<a href=/adipolak-blog/tags/apache-spark class=tag>apache spark</a>
-<a href=/adipolak-blog/tags/delta-lake class=tag>delta lake</a>
-<a href=/adipolak-blog/tags/distributed-systems class=tag>distributed-systems</a>
-<a href=/adipolak-blog/tags/beginner class=tag>beginner</a>
-<a href=/adipolak-blog/tags/deltalog class=tag>deltalog</a></div></div><nav style=display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-md);margin-top:var(--space-xl)><a href=http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals/ style="display:block;padding:var(--space-md);background:var(--color-bg-elevated);border:1px solid var(--color-border-subtle);border-radius:var(--border-radius-md);transition:var(--transition-smooth)"><div style=font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted);margin-bottom:var(--space-xs)>Previous</div><div style=color:var(--color-text);font-weight:500>Delta Lake essential Fundamentals: Part 1 - ACID</div></a><a href=http://localhost:57330/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/ style="display:block;padding:var(--space-md);background:var(--color-bg-elevated);border:1px solid var(--color-border-subtle);border-radius:var(--border-radius-md);transition:var(--transition-smooth);text-align:right"><div style=font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted);margin-bottom:var(--space-xs)>Next</div><div style=color:var(--color-text);font-weight:500>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</div></a></nav></footer></article><button class=dark-mode-toggle id=dark-mode-btn aria-label="Toggle dark mode">🌙</button>
-<script>(function(){const e=document.getElementById("dark-mode-btn");if(!e)return;const t=localStorage.getItem("theme");t==="dark"&&(document.body.classList.add("dark-mode"),e.textContent="☀️"),e.addEventListener("click",function(){document.body.classList.toggle("dark-mode");const t=document.body.classList.contains("dark-mode");e.textContent=t?"☀️":"🌙",localStorage.setItem("theme",t?"dark":"light")})})()</script></main><footer style=background:var(--warm-black);color:var(--color-text);padding:var(--space-2xl)var(--space-md);margin-top:var(--space-3xl)><div style="max-width:1200px;margin:0 auto"><div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-xl);margin-bottom:var(--space-2xl)><div><h3 style="font-family:var(--font-serif);font-size:var(--text-lg);margin:0 0 var(--space-md);color:var(--warm-white)">Adi Polak</h3><p style=color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.6;margin:0>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</p></div><div><h4 style="font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted);margin:0 0 var(--space-md)">Quick Links</h4><ul style=list-style:none;padding:0;margin:0><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/writing/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>writing</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/external-writing/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>published elsewhere</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/about/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>about</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/presentations/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>presentations</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/search/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>search</a></li><li style=margin-bottom:var(--space-xs)><a href=/adipolak-blog/contact-me/ style=color:var(--color-text-muted);font-size:var(--text-sm);border:none>contact</a></li></ul></div><div><h4 style="font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted);margin:0 0 var(--space-md)">Stay Updated</h4><div style=display:flex;flex-direction:column;gap:var(--space-sm)><a href=https://adipolak.substack.com/ target=_blank rel="noopener noreferrer" style="color:var(--color-link);font-size:var(--text-sm);border-bottom:1px solid var(--color-link)">Substack Newsletter</a>
-<a href=/adipolak-blog/feed.xml style="color:var(--color-link);font-size:var(--text-sm);border-bottom:1px solid var(--color-link);display:flex;align-items:center;gap:var(--space-xs)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg>
-RSS Feed</a></div></div></div><div style="border-top:1px solid var(--color-border-subtle);padding-top:var(--space-lg);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-md)"><p style=color:var(--color-text-muted);font-size:var(--text-xs);margin:0>Copyright &#169; 2020 Adi Polak. All rights reserved.</p><div><div style=display:flex;gap:var(--space-md);align-items:center><a href=https://twitter.com/AdiPolak target=_blank rel="noopener noreferrer" aria-label=Twitter style=color:var(--color-text-muted);border:none><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg>
-</a><a href=https://github.com/AdiPolak target=_blank rel="noopener noreferrer" aria-label=GitHub style=color:var(--color-text-muted);border:none><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374.0.0 5.373.0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931.0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176.0.0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221.0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a></div></div></div></div></footer><script src=/adipolak-blog/js/theme-toggle.js></script><script>(function(){const e=document.querySelector("main");e&&!e.id&&(e.id="main-content"),document.addEventListener("DOMContentLoaded",function(){const t=document.querySelectorAll("img:not([alt])");t.forEach(function(e){console.warn("Image missing alt text:",e.src),e.setAttribute("alt","")});const e=window.location.pathname,n=document.querySelectorAll("nav a[href]");n.forEach(function(t){const n=new URL(t.href,window.location.origin).pathname;(n===e||e!=="/"&&n!=="/"&&e.startsWith(n))&&t.setAttribute("aria-current","page")})})})()</script><script src=/adipolak-blog/dist/js/app.3fc0f988d21662902933.js></script></body></html>
+</code></pre><p>To support the users, DeltaLake introduces a set of conflict exceptions that provide more information about the data and the conflicts:</p>
+<img class="responsive" src="../../images/Detla/delte-concurrent-exceptions.png" alt="drawing">
+<p>Let&rsquo;s look at some of the conflict scenarios.</p>
+<h3 id="two-writers">Two Writers:</h3>
+<p>This is the case of two writers who appends data to the same table simultaneously, without reading anything. In this scenario, one writer will commit, and the second writer will read the first one&rsquo;s updates before adding their own updates. Suppose it was only an append operation, like a counter which both are incrementing. In that case, there is no need to redo all computations, and it will automatically commit; if that&rsquo;s not the case, writer number two will need to redo the computation given the new information from writer one.</p>
+<h3 id="delete-and-read">Delete and Read:</h3>
+<p>In a more complex scenario like this one, there is no automated solution. For concurrent Delete-Read, there is a dedicated <code>ConcurentDeleteReadException</code>.
+That means that if there is a request to delete a file that at the same time is being used for a read, the program throws an exception.</p>
+<img class="responsive" src="../../images/Detla/ConcurrentDeleteReadException.png" alt="drawing">
+<h3 id="delete-and-delete">Delete and Delete:</h3>
+<p>When two operations delete the same file, it might be due to a compaction mechanism or other operation, here too an exception will occur.</p>
+<h2 id="deltalog-and-durability">DeltaLog and Durability</h2>
+<p>Since all transactions made on a DeltaTable are being stored directly to the disk/file system, durability is a given. All commits are being <em>persisted</em> to disk.  In case of a system failure, they can be restored from the disk.
+(Unless there is a true disaster like fire etc and damage to the actual disks holding the information).</p>
+<hr>
+<p>For exploring and learning about Delta, I did a deep dive into the code source itself. If you are interested in joining me, I captured it through videos, let me know if that is useful for you.</p>
+<h1 id="whats-next">What&rsquo;s next?</h1>
+<p>Next, we will see more examples, scenarios and use cases for DeltaLake! We will learn about the compaction mechanism, schema enforcement and how it can enforce exactly once operation.</p>
+<p>As always, I would love to get your comments and feedback on <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A1313%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=AdiPolak&amp;tw_p=followbutton">Adi Polak</a> 🐦.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/i24ZA6mmvDI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<p>If you would like to get monthly updates, consider <a href="https://sub.adipolak.com/subscribe">subscribing</a>.</p>
+
+  </div>
+
+  
+  <footer style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border-subtle);">
+    
+      <div style="margin-bottom: var(--space-lg);">
+        <h3 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Topics</h3>
+        <div class="post-tags">
+          
+            <a href="/adipolak-blog/tags/open-source" class="tag">open-source</a>
+          
+            <a href="/adipolak-blog/tags/apache-spark" class="tag">apache spark</a>
+          
+            <a href="/adipolak-blog/tags/delta-lake" class="tag">delta lake</a>
+          
+            <a href="/adipolak-blog/tags/distributed-systems" class="tag">distributed-systems</a>
+          
+            <a href="/adipolak-blog/tags/beginner" class="tag">beginner</a>
+          
+            <a href="/adipolak-blog/tags/deltalog" class="tag">deltalog</a>
+          
+        </div>
+      </div>
+    
+
+    
+    
+    <nav style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl);">
+      
+        
+        <a href="http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth);">
+          <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Previous</div>
+          <div style="color: var(--color-text); font-weight: 500;">Delta Lake essential Fundamentals: Part 1 - ACID</div>
+        </a>
+        
+      
+      
+        
+        <a href="http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/" style="display: block; padding: var(--space-md); background: var(--color-bg-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--border-radius-md); transition: var(--transition-smooth); text-align: right;">
+          <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Next</div>
+          <div style="color: var(--color-text); font-weight: 500;">Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</div>
+        </a>
+        
+      
+    </nav>
+    
+  </footer>
+</article>
+
+
+<button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+<script>
+(function() {
+  const btn = document.getElementById('dark-mode-btn');
+  if (!btn) return;
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    btn.textContent = '☀️';
+  }
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    btn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+})();
+</script>
+
+
+    </main>
+    <footer style="background: var(--warm-black); color: var(--color-text); padding: var(--space-2xl) var(--space-md); margin-top: var(--space-3xl);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-2xl);">
+
+      
+      <div>
+        <h3 style="font-family: var(--font-serif); font-size: var(--text-lg); margin: 0 0 var(--space-md); color: var(--warm-white);">Adi Polak</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.6; margin: 0;">
+          AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership
+        </p>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">writing</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/external-writing/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">published elsewhere</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/about/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">about</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/presentations/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">presentations</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/search/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">search</a>
+          </li>
+          
+          <li style="margin-bottom: var(--space-xs);">
+            <a href="/adipolak-blog/contact-me/" style="color: var(--color-text-muted); font-size: var(--text-sm); border: none;">contact</a>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 var(--space-md);">Stay Updated</h4>
+        <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+          <a href="https://adipolak.substack.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link);">Substack Newsletter</a>
+          <a href="/adipolak-blog/feed.xml" style="color: var(--color-link); font-size: var(--text-sm); border-bottom: 1px solid var(--color-link); display: flex; align-items: center; gap: var(--space-xs);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9"></path>
+              <path d="M4 4a16 16 0 0 1 16 16"></path>
+              <circle cx="5" cy="19" r="1"></circle>
+            </svg>
+            RSS Feed
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div style="border-top: 1px solid var(--color-border-subtle); padding-top: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <p style="color: var(--color-text-muted); font-size: var(--text-xs); margin: 0;">
+        Copyright &#169; 2020 Adi Polak. All rights reserved.
+      </p>
+      <div>
+        
+<div style="display: flex; gap: var(--space-md); align-items: center;">
+  
+  <a href="https://twitter.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+    </svg>
+  </a>
+  
+  
+  <a href="https://github.com/AdiPolak" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="color: var(--color-text-muted); border: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg>
+  </a>
+  
+  
+</div>
+
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    
+<script src="/adipolak-blog/js/theme-toggle.js"></script>
+
+
+
+<script>
+(function() {
+  
+  const main = document.querySelector('main');
+  if (main && !main.id) {
+    main.id = 'main-content';
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img:not([alt])');
+    images.forEach(function(img) {
+      console.warn('Image missing alt text:', img.src);
+      img.setAttribute('alt', '');
+    });
+
+    
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav a[href]');
+    navLinks.forEach(function(link) {
+      const linkPath = new URL(link.href, window.location.origin).pathname;
+      if (linkPath === currentPath ||
+          (currentPath !== '/' && linkPath !== '/' && currentPath.startsWith(linkPath))) {
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+  });
+})();
+</script>
+
+
+
+
+  <script src="/adipolak-blog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

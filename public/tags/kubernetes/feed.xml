@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Kubernetes - Adi Polak</title><link>http://localhost:57330/adipolak-blog/tags/kubernetes/</link><description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Adi Polak</managingEditor><copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright><lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:57330/adipolak-blog/tags/kubernetes/feed.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes and Virtual Kubelet in a nutshell</title><link>http://localhost:57330/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><author>Adi Polak</author><guid>http://localhost:57330/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid><description>Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</description><content:encoded><![CDATA[<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kubernetes - Adi Polak</title>
+    <link>http://localhost:1314/adipolak-blog/tags/kubernetes/</link>
+    <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>Adi Polak</managingEditor>
+    <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/kubernetes/feed.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Kubernetes and Virtual Kubelet in a nutshell</title>
+      <link>http://localhost:1314/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <author>Adi Polak</author>
+      <guid>http://localhost:1314/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</guid>
+      <description>Step by step tutorial on how to scale web app using the right infrastructure such as Kubernetes and virtual kubelet</description>
+      
+      <content:encoded><![CDATA[<img class="responsive" src="https://images.unsplash.com/photo-1550587381-a9ec95bbe09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80;" alt="drawing">
 <p>Today, you will learn how to take a web app (it can be any programming language,<br>
 we used Java &amp; Kotlin) and distribute it using Kubernetes (K8s) and Virtual Kubelet (VK).</p>
 <p>Well, if you don&rsquo;t know yet why you should consider distributing your web app - read my post <a href="https://dev.to/azure/why-should-i-distribute-my-web-app-1kk8">here</a>.</p>
@@ -177,4 +195,17 @@ For doing it, we need to expose it first - notice that we are exposing the app a
 <p>👉🏼 Kubernetes and Apache Spark on Azure <a href="https://docs.microsoft.com/en-us/azure/aks/spark-job?WT.mc_id=devto-blog-adpolak">tutorial</a></p>
 <p><br></br></p>
 <p><em>This article originally appeared in Adi Polak&rsquo;s Dev.to blog <a href="https://dev.to/adipolak/kubernetes-and-virtual-kubelet-in-a-nutshell-gn4">https://dev.to/adipolak/kubernetes-and-virtual-kubelet-in-a-nutshell-gn4</a>.</em></p>
-]]></content:encoded><category>beginners</category><category>devops</category><category>tutorial</category><category>kubernetes</category></item></channel></rss>
+]]></content:encoded>
+      
+      
+      <category>beginners</category>
+      
+      <category>devops</category>
+      
+      <category>tutorial</category>
+      
+      <category>kubernetes</category>
+      
+    </item>
+  </channel>
+</rss>
