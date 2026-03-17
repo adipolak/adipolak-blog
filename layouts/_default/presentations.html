@@ -155,9 +155,10 @@
   }
 
   .filter-btn.active {
-    background: var(--color-link);
-    border-color: var(--color-link);
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    border-color: #7c3aed;
     color: white;
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
   }
 
   /* Featured Section */
@@ -460,8 +461,8 @@
       <div class="filters">
         <div class="filter-group">
           <span class="filter-label">View</span>
-          <button class="filter-btn view-btn" data-view="list">List</button>
           <button class="filter-btn view-btn active" data-view="grid">Grid</button>
+          <button class="filter-btn view-btn" data-view="list">List</button>
         </div>
 
         <div class="filter-group">
