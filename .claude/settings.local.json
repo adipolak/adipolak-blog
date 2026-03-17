@@ -49,7 +49,14 @@
       "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/presentations/\" | head -1)",
       "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/contact-me/\" | grep -A20 \"<form\" | head -30)",
       "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/contact-me/\" 2>&1 | head -50)",
-      "Bash(hugo --quiet && echo \"Build successful\")"
+      "Bash(hugo --quiet && echo \"Build successful\")",
+      "Bash(gh run:*)",
+      "Bash(curl -I \"https://adipolak.github.io/adipolak-blog/\" 2>&1 | head -15)",
+      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/\" | head -100 | grep -E \"\\(title|error|404\\)\" || echo \"Checking page content...\")",
+      "Bash(curl -s \"https://adipolak.github.io/adipolak-blog/contact-me/\" | grep -o \"<form\" | wc -l)",
+      "Bash(hugo --verbose 2>&1 | grep -i \"contact-me\" | head -20)",
+      "Bash(hugo server:*)",
+      "Bash(lsof -ti:1313 | xargs kill -9 2>/dev/null || echo \"No process on port 1313\")"
     ]
   }
 }
