@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Distributed-Systems - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/tags/distributed-systems/</link>
+    <link>https://adipolak.github.io/adipolak-blog/tags/distributed-systems/</link>
     <description>AI and Cloud expert sharing insights on AI systems, cloud computing, distributed systems, data analytics, and technical leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1314/adipolak-blog/tags/distributed-systems/feed.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://adipolak.github.io/adipolak-blog/tags/distributed-systems/feed.xml" rel="self" type="application/rss+xml" /><item>
       <title>Data&#43;AI Summit 2021 is Coming</title>
-      <link>http://localhost:1314/adipolak-blog/post/data_and_ai_summit2021/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/data_and_ai_summit2021/</link>
       <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/data_and_ai_summit2021/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/data_and_ai_summit2021/</guid>
       <description>Knock Knock! Who&#39;s there? It&#39;s me, Summit. Summit who? Data &#43; AI Summit</description>
       
       <content:encoded><![CDATA[<p>It&rsquo;s almost been half a year since the last summit.</p>
@@ -62,10 +62,10 @@ In some cases, that means smaller revenue, but when we use machine learning to s
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 4 - Practical Scenarios</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the 4th part of Delta Lake essential fundamentals: the practical scenarios! 🎉</p>
@@ -155,10 +155,10 @@ I will continue to share scenarios, insights, and code samples throughout the bl
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 3 - compaction and checkpoint</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>Let&rsquo;s understand what are Delta Lake compact and checkpoint and why they are important.</p>
@@ -220,10 +220,10 @@ Checkout the visualization of Delta Checkpoint file from Databricks site: <br>
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 2 - The DeltaLog</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>In the previous part, you learned what <a href="/post/delta-lake-essential-fundamentals">ACID transactions</a> are.<br>
@@ -336,10 +336,10 @@ That means that if there is a request to delete a file that at the same time is 
       
     </item><item>
       <title>Delta Lake essential Fundamentals: Part 1 - ACID</title>
-      <link>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals/</guid>
       <description>Multi-part series that will take you from beginner to expert in Delta Lake</description>
       
       <content:encoded><![CDATA[<p>🎉 Welcome to the first part of Delta Lake essential fundamentals! 🎉</p>
@@ -395,10 +395,10 @@ But it's not.</p>
       
     </item><item>
       <title>Apache Spark Ecosystem, Jan 2021 Highlights</title>
-      <link>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</link>
+      <link>https://adipolak.github.io/adipolak-blog/post/apache-spark-ecosystem/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <author>Adi Polak</author>
-      <guid>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</guid>
+      <guid>https://adipolak.github.io/adipolak-blog/post/apache-spark-ecosystem/</guid>
       <description>The ever growing Open Source Ecosystem</description>
       
       <content:encoded><![CDATA[<p>If you&rsquo;ve been reading here for a while, you know that I&rsquo;m a big fan of Apache Spark and have been using it for more than 8 years.<br>

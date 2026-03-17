@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Writing Across the Web - Adi Polak</title>
-    <link>http://localhost:1314/adipolak-blog/external-writing/</link>
+    <link>https://adipolak.github.io/adipolak-blog/external-writing/</link>
     <description>Articles and insights I&#39;ve published on other platforms and publications</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>Adi Polak</managingEditor>
     <copyright>Copyright &amp;#169; 2020 Adi Polak. All rights reserved.</copyright>
-    <atom:link href="http://localhost:1314/adipolak-blog/external-writing/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://adipolak.github.io/adipolak-blog/external-writing/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
