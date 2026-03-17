@@ -1,6 +1,6 @@
 ---
 title: "Writing"
-layout: "blog-list"
+type: "blog-list"
 url: "writing/"
 ---
 
