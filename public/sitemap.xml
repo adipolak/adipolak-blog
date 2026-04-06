@@ -2,147 +2,147 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1314/adipolak-blog/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/apache-spark/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/apache-spark/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/conference/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/conference/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/data_and_ai_summit2021/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/data_and_ai_summit2021/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/distributed-systems/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/distributed-systems/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/</loc>
     <lastmod>2021-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/ai/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/ai/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/data-science/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/data-science/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/machine-learning/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/machine-learning/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/machine-learning-in-production---concepts-you-should-know/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/terminology/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/terminology/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/beginner/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/beginner/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/delta-lake/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/delta-lake/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-4/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/open-source/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/open-source/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/scenarios/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/scenarios/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---part-3/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/deltalog/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/deltalog/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals---the-deltalog/</loc>
     <lastmod>2021-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/acid/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/acid/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/delta-lake-essential-fundamentals/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/delta-lake-essential-fundamentals/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/analytic-zoo/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/analytic-zoo/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/apache-spark-ecosystem/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/apache-spark-ecosystem/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/koalas/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/koalas/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/pandas/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/pandas/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/ray/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/ray/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/ray-on-spark/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/ray-on-spark/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/beginners/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/beginners/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/devops/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/devops/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/kubernetes/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/kubernetes/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/post/kubernetes-and-virtual-kubelet-in-a-nutshell/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/tutorial/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/tutorial/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/hidden/ai-placeholder/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/hidden/ai-placeholder/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/leadership/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/leadership/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/hidden/leadership-placeholder/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/hidden/leadership-placeholder/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/about/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/about/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/adi-polak/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/adi-polak/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/conferences/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/conferences/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/contact-me/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/contact-me/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/presentations/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/presentations/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/speaking/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/speaking/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/thankyou/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/thankyou/</loc>
     <lastmod>1970-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/books/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/books/</loc>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/search/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/search/</loc>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/presentations/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/presentations/</loc>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/subscribe/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/subscribe/</loc>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/tags/subscribe/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/tags/subscribe/</loc>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/writing/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/writing/</loc>
   </url><url>
-    <loc>http://localhost:1314/adipolak-blog/external-writing/</loc>
+    <loc>https://adipolak.github.io/adipolak-blog/external-writing/</loc>
   </url>
 </urlset>

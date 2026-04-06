@@ -84,7 +84,22 @@
       "Bash(find /Users/adipolak/open-source/adipolak-blog/themes -name \"*subscribe*\" -type f 2>/dev/null | head -5)",
       "Bash(grep -r \"subscribe\" /Users/adipolak/open-source/adipolak-blog/content/*.md 2>/dev/null | head -5)",
       "Bash(grep -r \"layout:\" /Users/adipolak/open-source/adipolak-blog/content/*.md 2>/dev/null | grep -v \"^#\")",
-      "Bash(grep -r \"contact-me\" /Users/adipolak/open-source/adipolak-blog/content/*.md 2>/dev/null)"
+      "Bash(grep -r \"contact-me\" /Users/adipolak/open-source/adipolak-blog/content/*.md 2>/dev/null)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/ | grep -o \"Books\\\\|Scaling Machine Learning\" | head -5)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/ | grep -E \"<h2|<h3\" | head -20)",
+      "Bash(curl -I https://adipolak.github.io/adipolak-blog/)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/index.html | head -100)",
+      "Bash(curl -I https://adipolak.github.io/adipolak-blog/about/ 2>&1 | grep -E \"HTTP|last-modified\")",
+      "Bash(gh api:*)",
+      "Bash(gh workflow:*)",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/ | grep -E \"Books|Scaling Machine\" | head -5)",
+      "WebFetch(domain:adipolak.github.io)",
+      "Bash(curl -I https://adipolak.github.io/adipolak-blog/tags/machine-learning/ 2>&1 | grep -E \"HTTP|content-type|last-modified\")",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/tags/machine-learning/ | grep -E \"<h1|<h2|Machine Learning\" | head -10)",
+      "Bash(curl -I https://adipolak.github.io/adipolak-blog/tags/ai/ 2>&1 | grep -E \"HTTP|content-type|last-modified\")",
+      "Bash(curl -s https://adipolak.github.io/adipolak-blog/tags/ai/ | grep -E \"<h1|section-title|section-subtitle|article\" | head -15)",
+      "Bash(find /Users/adipolak/open-source/adipolak-blog/content -name *machine-learning* -type f)",
+      "Skill(add-external-writing)"
     ]
   }
 }

@@ -5,6 +5,14 @@
 
 articles:
   # 2026
+  - title: "Context Engineering with Adi Polak"
+    publication: "InfoQ"
+    date: "2026-04-06"
+    url: "https://www.infoq.com/podcasts/context-engineering-large-language-models/"
+    image: "https://res.infoq.com/podcasts/context-engineering-large-language-models/en/card_header_image/adi-polak-twitter-card-1775129463355.jpg"
+    description: "Exploring the evolution from prompt engineering to context engineering for building stateful AI systems. Covers managing AI memory, event-driven architectures with Kafka and Flink, and creating reusable skills for multi-agent workflows."
+    tags: ["ai", "context engineering", "agentic ai", "kafka", "flink", "machine-learning"]
+
   - title: "Fixing AI failure: Three changes enterprises should make now"
     publication: "VentureBeat"
     date: "2026-03-15"
